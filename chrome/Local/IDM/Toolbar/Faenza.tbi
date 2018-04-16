@@ -1,0 +1,8 @@
+v=3
+name=Faenza
+large=Faenza_Small_Normal.bmp
+largeHot=Faenza_Small_Hot.bmp
+largeDisabled=Faenza_Small_Disable.bmp
+small=Faenza_Small_Normal.bmp
+smallHot=Faenza_Small_Hot.bmp
+smallDisabled=Faenza_Small_Disable.bmp

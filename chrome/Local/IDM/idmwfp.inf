@@ -1,0 +1,103 @@
+;;;
+;;; Copyright (c) Tonec, Inc. All rights reserved.
+;;;
+;;; IDM WFP driver install configuration.
+;;;
+
+[Version]
+Signature	= "$Windows NT$"
+Provider	= %Company%
+DriverVer	= 02/28/2018,6.30.7.77
+Class		= NetService
+ClassGuid	= {4d36e974-e325-11ce-bfc1-08002be10318}
+CatalogFile	= idmwfp.cat
+
+[DestinationDirs]
+DriverFiles32	= 12	; %windir%\system32\drivers
+DriverFiles64	= 12	; %windir%\system32\drivers
+
+;[Manufacturer]
+;%Company%	= Drivers,NTx86,NTamd64
+
+;[Drivers.NTx86]
+;%ServiceDesc%	= DefaultInstall.NTx86
+
+;[Drivers.NTamd64]
+;%ServiceDesc%	= DefaultInstall.NTamd64
+
+;;
+;; Default install sections
+;;
+
+[DefaultInstall]
+OptionDesc	= %ServiceDesc%
+
+[DefaultInstall.NTx86]
+CopyFiles	= DriverFiles32
+
+[DefaultInstall.NTamd64]
+CopyFiles	= DriverFiles64
+
+[DefaultInstall.NTx86.Services]
+AddService	= %ServiceName%,0,IdmWfp.Service
+
+[DefaultInstall.NTamd64.Services]
+AddService	= %ServiceName%,0,IdmWfp.Service
+
+;;
+;; Default uninstall sections
+;;
+
+[DefaultUninstall]
+
+[DefaultUninstall.NTx86]
+DelFiles	= DriverFiles32
+
+[DefaultUninstall.NTamd64]
+DelFiles	= DriverFiles64
+
+[DefaultUninstall.NTx86.Services]
+DelService	= %ServiceName%,0x200	; SPSVCINST_STOPSERVICE
+
+[DefaultUninstall.NTamd64.Services]
+DelService	= %ServiceName%,0x200	; SPSVCINST_STOPSERVICE
+
+;
+; Services Section
+;
+
+[IdmWfp.Service]
+DisplayName	= %ServiceName%
+Description	= %ServiceDesc%
+ServiceBinary	= %12%\idmwfp.sys	; %windir%\system32\drivers\idmwfp.sys
+ServiceType	= 1			; SERVICE_KERNEL_DRIVER
+StartType	= 2			; SERVICE_AUTO_START
+ErrorControl	= 0			; SERVICE_ERROR_IGNORE
+Dependencies	= BFE
+
+;
+; Copy Files
+;
+
+[DriverFiles32]
+idmwfp.sys,idmwfp32.sys,,0x04		; COPYFLG_NOVERSIONCHECK
+
+[DriverFiles64]
+idmwfp.sys,idmwfp64.sys,,0x04		; COPYFLG_NOVERSIONCHECK
+
+[SourceDisksNames]
+1 = %SourceDisk%
+
+[SourceDisksFiles]
+idmwfp32.sys	= 1
+idmwfp64.sys	= 1
+
+;;
+;; String Section
+;;
+
+[Strings]
+Company		= "Tonec, Inc."
+SourceDisk	= "Internet Download Manager WFP Driver Installation Files"
+ServiceDesc	= "Internet Download Manager WFP Driver"
+ServiceName	= "IDMWFP"

@@ -1,0 +1,187 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+########################################
+# Page: https://github.com/runningcheese/cheesehosts/wiki/how-to-use
+# Editor: runningcheese
+# LastUpdate: 2018-03-23
+# Hosts 已经不能用了，只保留了部分被“躺枪”的网站。
+########################################
+
+
+
+#WordPress START
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Update: 2017-10-15
+68.232.44.121 www.gravatar.com
+68.232.44.121 0.gravatar.com
+68.232.44.121 1.gravatar.com
+68.232.44.121 2.gravatar.com
+68.232.44.121 s.gravatar.com
+192.0.80.242 lb.gravatar.com
+192.0.80.242 secure.gravatar.com
+192.0.81.250 botd2.wordpress.com
+192.0.78.13 dashboard.wordpress.com
+192.0.78.13 en.blog.wordpress.com
+192.0.78.13 en.forums.wordpress.com
+192.0.78.13 forums.wordpress.com
+192.0.77.2 i0.wp.com
+192.0.77.2 i1.wp.com
+192.0.77.2 i2.wp.com
+192.0.78.13 lb.wordpress.com
+192.0.78.13 lucifr.wordpress.com
+192.0.81.250 r-login.wordpress.com
+68.232.44.119 s.stats.wordpress.com
+192.229.144.127 s.w.org
+192.0.77.32 s.wordpress.com
+192.0.77.32 s.wordpress.org
+192.0.77.32 s0.wp.com
+192.0.77.32 s1.wordpress.com
+192.0.77.32 s1.wp.com
+192.0.77.32 s2.wordpress.com
+192.0.77.32 s2.wp.com
+192.0.77.32 s3.wordpress.com
+192.0.78.13 stats.wordpress.com
+192.0.78.9 wordpress.com
+192.0.78.13 wpcom.wordpress.com
+192.0.78.13 zh.wordpress.com
+192.0.78.13 zh-cn.wordpress.com
+192.0.78.13 zh-sg.wordpress.com
+#WordPress END
+
+
+
+
+
+
+
+#DuckDuckGo START
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Update: 2016-01-28
+50.18.192.250	duckduckgo.com
+50.18.192.250	www.duckduckgo.com
+50.18.192.250	ac.duckduckgo.com
+54.229.110.205	icons.duckduckgo.com
+54.229.110.205	images.duckduckgo.com
+96.45.83.209	help.duckduckgo.com
+#DuckDuckGo END
+
+
+# Amazon AWS Start
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+54.239.31.69	aws.amazon.com
+54.239.30.25	console.aws.amazon.com
+54.239.96.90	ap-northeast-1.console.aws.amazon.com
+54.240.226.81	ap-southeast-1.console.aws.amazon.com
+54.240.193.125	ap-southeast-2.console.aws.amazon.com
+54.239.38.102	eu-west-1.console.aws.amazon.com
+54.239.54.102	eu-central-1.console.aws.amazon.com
+54.231.49.3	s3.amazonaws.com
+54.239.31.128	s3-console-us-standard.console.aws.amazon.com
+52.219.0.4	s3-ap-northeast-1.amazonaws.com
+54.231.242.170	s3-ap-southeast-1.amazonaws.com
+54.231.251.21	s3-ap-southeast-2.amazonaws.com
+52.218.16.140	s3-eu-west-1.amazonaws.com
+54.231.193.37	s3-eu-central-1.amazonaws.com
+52.92.72.2	s3-sa-east-1.amazonaws.com
+54.231.236.6	s3-us-west-1.amazonaws.com
+54.231.168.160	s3-us-west-2.amazonaws.com
+177.72.244.194	sa-east-1.console.aws.amazon.com
+176.32.114.59	us-west-1.console.aws.amazon.com
+54.240.254.230	us-west-2.console.aws.amazon.com
+52.216.80.48	github-cloud.s3.amazonaws.com
+54.231.48.40	github-com.s3.amazonaws.com
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Amazon AWS End 
+
+
+
+
+
+
+
+#Mega Start
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Update: 2017-02-10
+31.216.147.135	eu.api.mega.co.nz
+154.53.224.130	eu.static.mega.co.nz
+117.18.237.188	g.cdn1.mega.co.nz
+154.53.224.150	mega.co.nz
+154.53.224.166	mega.nz
+31.216.147.130	w.api.mega.co.nz
+#Mega END
+
+
+# Archive Start
+207.241.224.22	archive.org
+207.241.224.22	www.archive.org
+207.241.224.22	ia802704.us.archive.org
+207.241.224.22	analytics.archive.org
+207.241.226.190	web.archive.org
+207.241.225.186	web-beta.archive.org
+207.241.225.186	wwwb-sentry.us.archive.org
+# Archive End
+
+
+
+# Imgur Start
+151.101.100.193	imgur.com
+151.101.100.193	m.imgur.com
+151.101.100.193	api.imgur.com
+151.101.100.193	www.imgur.com
+151.101.100.193	store.imgur.com
+151.101.100.193	s.imgur.com
+151.101.100.193	p.imgur.com
+151.101.100.193	i.imgur.com
+# Iimgur End
+
+
+# SoundCloud Start
+72.21.91.127	soundcloud.com
+72.21.91.127	www.soundcloud.com
+72.21.91.127	m.soundcloud.com
+72.21.91.127	api.soundcloud.com
+72.21.91.127	api-mobile.soundcloud.com
+72.21.91.127	api-v2.soundcloud.com
+45.33.14.185	blog.soundcloud.com
+72.21.81.167	ec-media.soundcloud.com
+68.232.32.220	ec-rtmp-media.soundcloud.com
+72.21.91.127	on.soundcloud.com
+72.21.91.127	promoted.soundcloud.com
+72.21.91.127	visuals.soundcloud.com
+72.21.91.96	a1.sndcdn.com
+72.21.91.96	a-v2.sndcdn.com
+54.230.233.111	cf-media.sndcdn.com
+72.21.81.77	ec-media.sndcdn.com
+72.21.91.96	ec-preview-media.sndcdn.com
+72.21.91.96	style.sndcdn.com
+72.21.91.96	va.sndcdn.com
+# SoundCloud End
+
+
+# W3schools Start
+192.229.173.207	w3schools.com
+192.229.173.207	www.w3schools.com
+# W3schools End
+
+
+#Others END
