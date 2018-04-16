@@ -1,0 +1,118 @@
+/*AGENT_SHEET */
+
+/*@name        SimpleWhite For Firefox 57+
+  @author        RunningCheese
+  @homepage   https://www.runningcheese.com    
+  @version        v2018-04-11       
+*/
+
+@-moz-document url-prefix(about:newtab),url-prefix(about:home) {
+
+/*隐藏Mozilla信息*/
+#snippets{display:none !important;}
+    
+
+/*隐藏按钮*/
+#onboarding-overlay-button, .top-sites-list .top-site-outer .default-icon, .top-sites-list .top-site-outer .title .icon, .section-top-bar .info-option-icon, .context-menu-button{
+    display:none !important;
+}
+
+.prefs-button {opacity: 0 !important;}
+.prefs-button:hover {opacity: 1 !important;}
+
+
+
+/*按钮图标替换*/
+.prefs-pane-button button{
+background-image: url("../images/icons/addon-preferences.png") !important; 
+}
+
+
+/*背景图片*/
+body {
+background-image:url("https://www.runningcheese.com/cheese.php") !important;
+background-color:#fafafa !important;
+background-size: cover !important;
+}
+
+
+
+/*图标大小*/
+ .top-sites-list .top-site-outer .tile {
+    box-shadow:none  !important;
+    height:78px !important;
+	width:78px !important;
+    margin:auto !important;
+}
+
+ /*字体大小*/   
+.top-sites-list .top-site-outer .title {
+      font-size:13px !important;     
+}
+
+/*自带热门网站缩略图*/
+.rich-icon {border-radius: 26% !important; opacity: 1!important;}
+
+/*自定义网站缩略图*/
+.screenshot {border-radius: 26% !important; opacity: 1!important;}
+
+/*自定义网站缩略图用.screenshot，自带热门网站用.rich-icon*/     
+     [href*="www.quora.com"] .screenshot {
+        background: rgba(0, 0, 0, .05) url("../images/newtab/quora.png") center center no-repeat !important;
+				background-size: 100% 100%!important;
+    }
+     [href*="feedly.com"] .screenshot {
+        background: rgba(0, 0, 0, .05) url("../images/newtab/feedly.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    }
+     [href*="inoreader.com"] .screenshot {
+        background: rgba(0, 0, 0, .05) url("../images/newtab/inoreader.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    }      
+     [href*="getpocket.com"] .screenshot {
+        background: rgba(0, 0, 0, .05) url("../images/newtab/pocket.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    }   
+    [href*="music.163.com"] .screenshot {
+        background: rgba(0, 0, 0, .05) url("../images/newtab/music.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    }
+    [href*="youku.com"] .screenshot{
+        background: rgba(0, 0, 0, .05) url("../images/newtab/youku.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    }
+    [href*="instagram.com"] .screenshot {
+        background: rgba(0, 0, 0, .05) url("../images/newtab/instagram.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    }
+    [href*="weibo.com"] .screenshot {
+        background: rgba(0, 0, 0, .05) url("../images/newtab/weibo.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    }
+    [href*="instagram.com"] .rich-icon  {
+        background-image: rgba(0, 0, 0, .05) url("../images/newtab/instagram.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    }   
+    [href*="www.guokr.com"]  .screenshot {
+        background: rgba(0, 0, 0, .05) url("../images/newtab/guokr.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    } 
+    [href*="douban.com"] .screenshot {
+        background: rgba(0, 0, 0, .05) url("../images/newtab/douban.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    }
+    [href*="zhihu.com"] .screenshot {
+        background: rgba(0, 0, 0, .05) url("../images/newtab/zhihu.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    }
+    [href*="runningcheese.com"] .screenshot {
+        background: rgba(0, 0, 0, .05) url("../images/newtab/runningcheese.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    }
+    [href*="twitter.com"] .rich-icon {
+        background: rgba(0, 0, 0, .05) url("../images/newtab/twitter.png") center center no-repeat !important;
+        background-size: 100% 100%!important;
+    }  
+
+  
+}
