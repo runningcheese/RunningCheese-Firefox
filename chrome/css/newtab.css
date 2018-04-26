@@ -1,5 +1,3 @@
-/*AGENT_SHEET */
-
 /*@name        SimpleWhite For Firefox 57+
   @author        RunningCheese
   @homepage   https://www.runningcheese.com    
@@ -40,14 +38,14 @@ background-size: cover !important;
 /*图标大小*/
  .top-sites-list .top-site-outer .tile {
     box-shadow:none  !important;
-    height:78px !important;
-	width:78px !important;
+    height:72px !important;
+	  width:72px !important;
     margin:auto !important;
 }
 
  /*字体大小*/   
 .top-sites-list .top-site-outer .title {
-      font-size:13px !important;     
+      font-size:12px !important;     
 }
 
 /*自带热门网站缩略图*/
@@ -57,7 +55,7 @@ background-size: cover !important;
 .screenshot {border-radius: 26% !important; opacity: 1!important;}
 
 /*自定义网站缩略图用.screenshot，自带热门网站用.rich-icon*/     
-     [href*="www.quora.com"] .screenshot {
+       [href*="www.quora.com"] .screenshot {
         background: rgba(0, 0, 0, .05) url("../images/newtab/quora.png") center center no-repeat !important;
 				background-size: 100% 100%!important;
     }
@@ -65,7 +63,7 @@ background-size: cover !important;
         background: rgba(0, 0, 0, .05) url("../images/newtab/feedly.png") center center no-repeat !important;
         background-size: 100% 100%!important;
     }
-     [href*="inoreader.com"] .screenshot {
+     [href*="inoreader.com"] .rich-icon  {
         background: rgba(0, 0, 0, .05) url("../images/newtab/inoreader.png") center center no-repeat !important;
         background-size: 100% 100%!important;
     }      
@@ -77,7 +75,7 @@ background-size: cover !important;
         background: rgba(0, 0, 0, .05) url("../images/newtab/music.png") center center no-repeat !important;
         background-size: 100% 100%!important;
     }
-    [href*="youku.com"] .screenshot{
+    [href*="youku.com"] .rich-icon  {
         background: rgba(0, 0, 0, .05) url("../images/newtab/youku.png") center center no-repeat !important;
         background-size: 100% 100%!important;
     }
@@ -97,7 +95,7 @@ background-size: cover !important;
         background: rgba(0, 0, 0, .05) url("../images/newtab/guokr.png") center center no-repeat !important;
         background-size: 100% 100%!important;
     } 
-    [href*="douban.com"] .screenshot {
+    [href*="douban.com"] .rich-icon  {
         background: rgba(0, 0, 0, .05) url("../images/newtab/douban.png") center center no-repeat !important;
         background-size: 100% 100%!important;
     }
@@ -115,4 +113,89 @@ background-size: cover !important;
     }  
 
   
+}
+
+
+
+
+
+/*Speed Dail 2 新标签页调整*/
+@-moz-document url-prefix(moz-extension://48bde69f-bacc-4b6c-9f6b-5aca1a5d2017/newtab.html) {
+
+/*略缩图*/
+.thumbnail_container {
+width: 72px !important;
+height: 72px !important;
+border-radius: 26% !important;
+margin: auto!important;
+
+}
+
+.thumbnail_container:hover {
+margin-top: -2px !important;
+}
+
+#pages li a{
+  background: none !important;
+  border:none !important;
+}
+
+/*标题*/
+.title{
+  color:#000 !important;
+  font-size: 12px !important;
+}
+
+
+/*小组样式*/
+.is-with-groups .new-tab-header{
+box-shadow:none !important
+}
+
+.new-tab-header {
+    background: transparent !important
+}
+
+.search-form {display:none !important;}
+
+#groups{
+  float: right !important;
+  margin-right:-200px !important;
+  text-shadow:1px 1px 1px #000 !important;
+  color: #fff  !important;
+}
+
+#groups {
+  opacity: 0.4;
+  text-shadow:none !important;
+}
+
+#groups:hover {
+  opacity: 1;
+  text-shadow:1px 1px 1px #000 !important;
+}
+
+
+#groups .is-shown,
+#groups > li > a,
+#groups > li > a:hover,
+#groups > li > a.hovered,
+#groups > li > a.selected,
+#groups > li > a.hovered::after,
+#groups > li > a.selected::after 
+ {
+  font-size: 13px !important;
+   color: #fff  !important;
+}
+
+
+#groups > li > a.hovered::after,
+#groups > li > a.selected::after {
+  background: #fff  !important;
+}
+
+
+/*设置图标半透明*/
+#quick-settings-icon {opacity: 0.3 !important;}
+#quick-settings-icon:hover, #quick-settings-icon:active {opacity: 1 !important;}
 }

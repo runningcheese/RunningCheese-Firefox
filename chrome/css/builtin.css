@@ -15,47 +15,6 @@
 
 
 /*START 01=====================================阅读辅助 Reading Font=====================================*/
-/*全局雅黑 Gobal Microsoft Yahei Font*/
-@-moz-document regexp("((?!wenku.baidu).)*") {
-/*中文字体 */
-    @	font-face {
-		font-family: 'Simsun';
-		src: local('Microsoft YaHei UI')
-	}
-    @	font-face {
-		font-family: 'SimSun-ExtB';
-		src: local('Microsoft YaHei UI')
-	}
-    @	font-face {
-		font-family: 'Microsoft JhengHei';
-		src: local('Microsoft YaHei UI')
-	}
-    @	font-face {
-		font-family: 'NSimSun';
-		src: local('Microsoft YaHei UI')
-	}
-    @	font-face {
-		font-family: 'FZSongS';
-		src: local('Microsoft YaHei UI')
-	}
-    @	font-face {
-		font-family: '宋体';
-		src: local('Microsoft YaHei UI')
-	}
-    @	font-face {
-		font-family: '新宋体';
-		src: local('Microsoft YaHei UI')
-	}
-    @	font-face {
-		font-family: '黑体';
-		src: local('Microsoft YaHei UI')
-	}
-    @	font-face {
-		font-family: '仿宋';
-		src: local('Microsoft YaHei UI')
-	}
-}
-
 /*输入框字体 InputBox Font*/
 .textbox-input-box,.searchbar-textbox {
 	font-family: Tahoma,Microsoft Yahei, Arial,Helvetica, sans-serif !important;

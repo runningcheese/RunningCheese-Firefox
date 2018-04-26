@@ -1123,7 +1123,7 @@ new function () {
 {
 		label: "关闭所有标签",
     id:"context_closeAllTabs",
-		oncommand: "gBrowser.removeAllTabsBut(gBrowser.addTab('moz-extension://48bde69f-bacc-4b6c-9f6b-5aca1a5d2017/newtab.html'));",
+		oncommand: "gBrowser.removeAllTabsBut(gBrowser.mCurrentTab); gBrowser.removeCurrentTab();",
  	image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAP0lEQVQ4jWNgGHbgPwMDgz0eeXuoGoIKsBmCT46gQqI1Y9NAsmZ0Q8jSTLEBFHmBokCkOBqpkpAIAbJihHYAAKNEHEuIZ/qnAAAAAElFTkSuQmCC",
 	},
 {

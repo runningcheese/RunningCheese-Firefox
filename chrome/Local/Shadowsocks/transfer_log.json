@@ -108,15 +108,31 @@
 		"totalDownloadBytes" : 3158459
 	},
 	"113.212.225.112" : {
-		"totalUploadBytes" : 163169527,
-		"totalDownloadBytes" : 9384167199
+		"totalUploadBytes" : 175557155,
+		"totalDownloadBytes" : 9499039804
 	},
 	"103.44.61.105" : {
 		"totalUploadBytes" : 12485324,
 		"totalDownloadBytes" : 633461033
 	},
 	"47.75.182.198" : {
-		"totalUploadBytes" : 22523743,
-		"totalDownloadBytes" : 459253583
+		"totalUploadBytes" : 354572874,
+		"totalDownloadBytes" : 1858112025
+	},
+	"103.214.68.208" : {
+		"totalUploadBytes" : 159209601,
+		"totalDownloadBytes" : 216796835
+	},
+	"92.38.134.99" : {
+		"totalUploadBytes" : 20330,
+		"totalDownloadBytes" : 40656
+	},
+	"47.75.183.88" : {
+		"totalUploadBytes" : 23446,
+		"totalDownloadBytes" : 66363
+	},
+	"210.203.23.5" : {
+		"totalUploadBytes" : 22831,
+		"totalDownloadBytes" : 48884
 	}
 }

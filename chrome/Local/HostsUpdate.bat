@@ -20,7 +20,7 @@ SetLocal EnableDelayedExpansion
 :Menu
 Cls
 del "%~dp0hosts"
-wget --no-check-certificate https://git.oschina.net/runningcheese/cheesehosts/raw/master/hosts
+wget --no-check-certificate https://gitee.com/runningcheese/firefox/raw/master/Rules/hosts
 del %windir%\System32\drivers\etc\hosts
 copy /y "%~dp0hosts" %windir%\System32\drivers\etc\hosts
 ECHO.&ECHO.更新完成,请按任意键退出! &PAUSE >NUL 2>NUL

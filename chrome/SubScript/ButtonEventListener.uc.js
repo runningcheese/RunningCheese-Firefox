@@ -3,6 +3,7 @@
 // @description    为工具栏图标增加点击功能
 // @author          runningcheese
 // @reference      zbinlin, skofkyo, 小蛐蛐等等
+// @update         2018-04-20
 // @update         2018-04-04 增加一些功能
 // @update         2018-03-18 fix for 57+
 // @update         2017-11-30
@@ -14,66 +15,28 @@
 // ==/UserScript==
 
 
-/*自动切换到鼠标移动到的标签页*/
-/*
-((g, w) => {
+
+
+// 浏览器无边框
+((g) => {
   class TabPlus {
-    constructor() {
-      this.SelectedTabOnMouseover();
-    }
-    SelectedTabOnMouseover(timeout) {
-      g.tabContainer.addEventListener('mouseover', e => {
-        if (e.target.localName !== 'tab') return;
-        timeout = setTimeout(() => g.selectedTab = e.target, 250);
-      }, false);
-      g.tabContainer.addEventListener('mouseout', () => clearTimeout(timeout), false);
-    }
+    constructor() {      
+      this.NoShowBorder();        
+    }    
+    NoShowBorder() {
+        let Fun = updateTitlebarDisplay.toString();
+        Fun = Fun.replace('"0,2,2,2"', '"0,0,0,0"');
+        (new Function('updateTitlebarDisplay = ' + Fun)());
+        document.documentElement.setAttribute("chromemargin", "0,0,0,0");
+    }    
   }
   new TabPlus();
-})(gBrowser, window);
-*/
-
-
-/*右键关闭标签页*/
-/*
-((g, w) => {
-  class TabPlus {
-    constructor() {
-      this.rightClick()
-    }
-    rightClick() {
-      g.tabContainer.addEventListener('click', e => {
-         if (e.button === 2 && e.target.localName === "tab" && !e.ctrlKey) {
-           e.preventDefault();
-           g.removeTab(e.target);
-           e.stopPropagation();
-         }
-      }, false);
-    }
-  }
-  new TabPlus();
-})(gBrowser, window);
-*/
+})(gBrowser);
 
 
 
-// 双击标签页关闭标签页
-gBrowser.tabContainer.addEventListener('dblclick', function(event) {
-  if (event.target.localName == 'tab' && event.button == 0) {
-    gBrowser.removeTab(event.target, {animate: true});
-  }
-});
 
-
-
-// 设置标签最大宽度
-{var ruleEndPosition = document.styleSheets[1].cssRules.length;
-document.styleSheets[1].cssRules[document.styleSheets[1].insertRule('.tabbrowser-tab:not([pinned]){}', ruleEndPosition)];
-document.styleSheets[1].cssRules[ruleEndPosition].style.maxWidth="250px";
-}
-
-
-//指定代码文本编辑器
+// 指定代码文本编辑器
 {location == 'chrome://browser/content/browser.xul' && (function(){
 var PATH1 = Services.dirsvc.get("UChrm", Ci.nsIFile).path + "\\Local\\Notepad2\\Notepad2.exe";
 Services.prefs.setCharPref('view_source.editor.path', PATH1);
@@ -82,7 +45,7 @@ Services.prefs.setCharPref('view_source.editor.path', PATH1);
 
 
 
-//在网页的输入框里加入“粘贴并确定”
+// 在网页的输入框里加入“粘贴并确定”
 {	let undo = document.getElementById('context-undo');
 	window.CQC = {};
 	undo.setAttribute('label', '粘贴并确定');
@@ -99,25 +62,6 @@ Services.prefs.setCharPref('view_source.editor.path', PATH1);
 
 
 
-//鼠标移动到地址栏和搜索栏时自动全选里面的文字
-{if (location == "chrome://browser/content/browser.xul") {
-var autselectpulbar = document.getElementById("urlbar-container");
-autselectpulbar.addEventListener("mouseover", function(event){
-            if(event.target.compareDocumentPosition(document.activeElement)!= 20)
-                    event.target.select();
-    }, false);
-
-var autselectpsearchbar = document.getElementById("searchbar");
-autselectpsearchbar.addEventListener("mouseover", function(event){
-            if(event.target.compareDocumentPosition(document.activeElement)!= 20)
-                    event.target.select();
-    }, false);
-}
-};
-
-
-
-
 
 // 自动恢复地址栏地址显示
 {if (location == "chrome://browser/content/browser.xul") {
@@ -129,7 +73,9 @@ autselectpsearchbar.addEventListener("mouseover", function(event){
 };
 
 
-//搜索后自动清除搜索栏内容
+
+
+// 搜索后自动清除搜索栏内容
 (function () {
   var searchbar = document.getElementById("searchbar");
   if (BrowserSearch.searchBar && !document.getElementById('omnibar-defaultEngine')) {
@@ -142,10 +88,12 @@ autselectpsearchbar.addEventListener("mouseover", function(event){
 
 
 
-//中键点击地址栏自动复制网址
+// 中键点击地址栏自动复制网址
 document.getElementById('urlbar').addEventListener('click', function(e) {
 	if (e.button == 1) goDoCommand('cmd_copy');
 }, false);
+
+
 
 
 // 失出焦点自动关闭查找栏
@@ -159,7 +107,6 @@ document.getElementById('urlbar').addEventListener('click', function(e) {
 	}
 	addEventListener('blur', closeFindbar, false);
 })();
-
 
 
 
@@ -215,7 +162,7 @@ document.getElementById('toolbar-context-menu').style.display="-moz-popup";
 
 
 
-//左键 alltabs-button 用Tab Center Redux 代替展示
+// 左键 alltabs-button 用Tab Center Redux 代替展示
 	(function(doc) {
 		var OpenAllTabsButton = doc.getElementById('alltabs-button');
 		if (!OpenAllTabsButton) return;
@@ -234,7 +181,7 @@ document.getElementById('toolbar-context-menu').style.display="-moz-popup";
 
 
 
-	//右键 地址栏书签图标 打开书签管理界面
+// 右键 地址栏书签图标 打开书签管理界面
 	(function(doc) {
 		var OpenPlacesOrganizer = doc.getElementById('star-button-box');
 		if (!OpenPlacesOrganizer) return;
@@ -250,7 +197,7 @@ document.getElementById('toolbar-context-menu').style.display="-moz-popup";
 
 
 
-//右键 新建标签按钮访问剪切板内容
+// 右键 新建标签按钮访问剪切板内容
 location=="chrome://browser/content/browser.xul" &&
 window.addEventListener("click", function(e) {
     if (e.button === 2 && e.originalTarget.matches(".tabs-newtab-button")) {
@@ -268,7 +215,7 @@ window.addEventListener("click", function(e) {
 }, false);
 
 
-//中键点击新建标签页按钮 恢复关闭的标签页
+// 中键点击新建标签页按钮 恢复关闭的标签页
 (function() {
     var ucjsUndoCloseTab = function(e) {
         // Nur mit Mittelkick
@@ -294,7 +241,7 @@ window.addEventListener("click", function(e) {
 })();
 
 
-//刷新按钮移动到地址栏
+// 刷新按钮移动到地址栏
 (function() {
     function moveReloadIntoURL() {
         try {
@@ -338,7 +285,7 @@ window.addEventListener("click", function(e) {
 
 
 
-	//右键  地址栏刷新图标 强制刷新页面（跳过缓存）
+	// 右键  地址栏刷新图标 强制刷新页面（跳过缓存）
 	(function() {
 		var UndoClosedTabs = document.getElementById('stop_reload_button');
 		if (!UndoClosedTabs) return;
@@ -353,43 +300,9 @@ window.addEventListener("click", function(e) {
 
 
 
-//关闭标签页后选择左侧标签  
-(function () {
-      gBrowser.tabContainer.addEventListener("TabClose", tabCloseHandler, false);
-      function tabCloseHandler(event) {
-        var tab = event.target;
-        gBrowser.selectedTab = tab;
-        if (gBrowser.mCurrentTab._tPos != 0) {
-          gBrowser.tabContainer.advanceSelectedTab(-1, true);
-        }
-      }
-    })();
 
 
-
-// 在新标签页查看图片
-location == "chrome://browser/content/browser.xul" && (function () {
-    document.querySelector("#context-viewimage").setAttribute("oncommand", 'openUILinkIn(gContextMenu.imageURL,"tab")');
-})(); 
-
-
-
-//标签栏鼠标滚轮切换标签页 
- (function() {
-  // if (location != 'chrome://browser/content/browser.xul')
-  //   return;
-  const scrollRight = true;
-  const wrap = true;
-  gBrowser.tabContainer.addEventListener("wheel", function(event) {
-    let dir = (scrollRight ? 1 : -1) * Math.sign(event.deltaY);
-    setTimeout(function() {
-      gBrowser.tabContainer.advanceSelectedTab(dir, wrap);
-    }, 0);
-  }, true);
-})(); 
-
-
-//在 Firefox 57 新版的菜单中添加重启浏览器菜单选项
+// 在 Firefox 57 新版的菜单中添加重启浏览器菜单选项
 (function()
 {
     var quitBtn = document.getElementById("appMenu-quit-button");
@@ -410,7 +323,10 @@ location == "chrome://browser/content/browser.xul" && (function () {
 })();
 
 
-	//右键Identity-Box图标 弹出 选项菜单
+
+
+
+// 右键Identity-Box图标 弹出 选项菜单
 	(function() {
 
 		var faviconContextMenu = {
@@ -454,7 +370,7 @@ location == "chrome://browser/content/browser.xul" && (function () {
         }, {
 					label: "进入阅读模式",
           tooltiptext: "已复制到粘贴板",
-					oncommand: "ReaderParent.toggleReaderMode(event);",
+					oncommand: 'var url = "about:reader?url=" + gBrowser.currentURI.spec; gBrowser.selectedTab = gBrowser.loadURI(url);',
 				},{
 					label: "谷歌缓存查询",
           tooltiptext: "注意：需要科学上网",
@@ -532,7 +448,7 @@ location == "chrome://browser/content/browser.xul" && (function () {
 
 
 
-//------------新建Header Editor用户代理图标-----------
+// 新建Header Editor用户代理图标
 (function () {
 	CustomizableUI.createWidget({
 		id : "UserAgentChanger",
@@ -564,9 +480,9 @@ location == "chrome://browser/content/browser.xul" && (function () {
 })();
 
 
-//增加自定义函数
 
-//新浪短网址 
+
+// 增加自定义函数: 新浪短网址 
 function SinaShortURL() {
 var appkey = "1562966081"; //你的新浪开放平台appkey
                     Url = "http://api.t.sina.com.cn/short_url/shorten.json?source=" + appkey + "&url_long=" + addMenu.convertText("%RLINK_OR_URL_ENCODE%");
@@ -583,6 +499,53 @@ var appkey = "1562966081"; //你的新浪开放平台appkey
 
 
 
+
+
+// 书签增加“更新为当前书签”选项 （来自UpdateBookmark2.uc.js）
+{location == "chrome://browser/content/browser.xul" && (function () {
+	var separator = document.getElementById("placesContext_openSeparator");
+	var repBM = document.createElement('menuitem');
+	separator.parentNode.insertBefore(repBM, separator);
+	repBM.id = "placesContext_replaceURL";
+	repBM.setAttribute("label", "更新为当前书签");
+	repBM.setAttribute("accesskey", "U");
+	repBM.addEventListener("command", function () {
+		var itemId = document.popupNode._placesNode.itemId;
+		PlacesUtils.bookmarks.changeBookmarkURI(itemId, gBrowser.currentURI);  // Adresse aktualisieren
+		PlacesUtils.bookmarks.setItemTitle(itemId, gBrowser.contentTitle);     // Titel aktualisieren
+	}, false);
+	var obs = document.createElement("observes");
+	obs.setAttribute("element", "placesContext_open");
+	obs.setAttribute("attribute", "hidden");
+	repBM.appendChild(obs);
+})();
+}
+
+
+
+
+// 修改按钮名称和增加文字说明
+(function () {
+  cars = ['2'];
+  for (var i = 0; i < cars.length; i++)
+  {
+    setTimeout(function () {
+
+document.getElementById('PanelUI-menu-button').setAttribute("tooltiptext","左键：打开菜单\n右键：列出所有标签");
+document.getElementById('identity-box').setAttribute("tooltiptext","左键：显示网站信息\n右键：打开网页菜单");
+document.getElementById('identity-icon').setAttribute("tooltiptext","左键：显示网站信息\n右键：打开网页菜单");
+document.getElementById("maximizevideo_ettoolong-browser-action").setAttribute("tooltiptext","MaximizeVideo\n将HTML5/Flash 视频放到最大，填满页面");
+document.getElementById("maximizevideo_ettoolong-browser-action").setAttribute("label","宽屏模式");
+document.getElementById("popupwindow_ettoolong-browser-action").setAttribute("tooltiptext","PupWindow\n将当前标签弹出至独立窗口");
+document.getElementById("popupwindow_ettoolong-browser-action").setAttribute("label","小窗模式");
+document.getElementById("_b9db16a4-6edc-47ec-a1f4-b86292ed211d_-browser-action").setAttribute("label","视频下载");
+document.getElementById('star-button').setAttribute("tooltiptext","左键：将此页加入书签\r\n右键：打开书签管理器");
+document.getElementById('stop_reload_button').setAttribute("tooltiptext","左键：刷新当前页面\r\n右键：强制刷新当前页面");
+document.getElementById('new-tab-button').setAttribute("tooltiptext","左键：刷新当前页面\r\n右键：强制刷新当前页面");
+
+    }, cars[i] * 1000); //单位: 1秒
+  }
+}) ();
 
 
 

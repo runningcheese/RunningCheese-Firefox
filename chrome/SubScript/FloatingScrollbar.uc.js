@@ -30,14 +30,14 @@
     }\
     :not(select):not(hbox) > scrollbar[orient = "vertical"] {\
         -moz-margin-start: -15px;\
-        min-width: 0px;\
+        min-width: 15px;\
     }\
     :not(select):not(hbox) > scrollbar[orient = "vertical"] thumb {\
         min-height: 60px;\
     }\
    :not(select):not(hbox) > scrollbar[orient = "horizontal"] {\
         margin-top: -15px;\
-        min-height: 0px;\
+        min-height: 15px;\
     }\
     :not(select):not(hbox) > scrollbar[orient = "horizontal"] thumb {\
         min-width: 60px;\

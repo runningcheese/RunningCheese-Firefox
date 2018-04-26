@@ -137,6 +137,13 @@ panel[type="arrow"][animate],#BMB_bookmarksPopup {transition-duration: 0.01s !im
 #stop_reload_button {	-moz-box-ordinal-group: 5 !important;}
 
 
+/* 刷新停止按钮动画修正 Fix refresh button animation */
+#reload-button > .toolbarbutton-animatable-box,
+#stop-button > .toolbarbutton-animatable-box {
+  margin-left: 8px !important;
+}
+
+
 
 /*---------------------------------- 导航栏兼容 Navbar Compatible with Windows7,WindowsXP,Windows Vista ----------------------*/
 @media -moz-os-version: windows-xp), (-moz-os-version: windows-vista),
@@ -630,8 +637,10 @@ background-color: #eeeeee !important;
 }
 
 #appMenu-quit-button .toolbarbutton-icon {
-	-moz-image-region: rect(0, 108px, 18px, 90px);
-	margin-top: 1px !important;
+	list-style-image: url("../images/icons/shutdown.png")!important;
+	height:16px !important;
+	width:16px !important;
+	margin-left: 2px !important;
 }
 
 
@@ -719,6 +728,12 @@ toolbar :-moz-any(#back-button, #forward-button, #home-button, #stop-button, #re
 	padding: 5px !important;
 	margin: 0px 3px  !important;
 	border-radius: 0px !important;
+}
+
+/* 密度为触屏时的调整 fix for uidensity=touch */
+#main-window[uidensity=touch] #nav-bar-overflow-button .toolbarbutton-icon {
+	padding: 8px !important;
+	margin: 0px 0px  !important;
 }
 
 #widget-overflow-fixed-list .toolbarbutton-1 > .toolbarbutton-icon,
@@ -970,10 +985,6 @@ toolbarbutton.bookmark-item {
 	padding: 2px 4px 2px 4px !important;
 }
 
-toolbarbutton.bookmark-item:hover {
-	background-color: #e5e5e5!important;
-		padding: 0px 4px 2px 4px !important;
-}
 
 #PlacesToolbarItems{
 	  min-height:26px !important;
@@ -1388,9 +1399,8 @@ toolbarbutton.bookmark-item:hover {
 }
 
 
-/*隐藏选中文字右键 Hide selected text option*/
-#spell-check-enabled,
-#context-viewpartialsource-selection {
+/*隐藏选中文字下拉箭头 Hide selected text option*/
+#context-viewpartialsource-selection .menu-right{
 	display: none;
 }
 
@@ -1430,9 +1440,7 @@ toolbarbutton.bookmark-item:hover {
 #placesContext_ExportHTMLFolderSep,
 [id="placesContext_open:newwindow"],
 [id="placesContext_openContainer:tabs"],
-[id="placesContext_open:newprivatewindow"],
-.bookmarks-actions-menuseparator,
-.openintabs-menuitem{
+[id="placesContext_open:newprivatewindow"]{
 	display: none;
 }
 
@@ -1511,6 +1519,9 @@ toolbarbutton.bookmark-item:hover {
 
 
 /*--------------------------增加图标 Add Icons--------------------------*/
+#context-reloadimage {
+	list-style-image: url("../images/icons/refresh.png")!important;
+}
 
 #frame{
   -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
@@ -1793,8 +1804,7 @@ menuitem[_moz-menuactive="true"],splitmenu[active="true"],#dwhelper-button .menu
 /*下拉弹出菜单距离*/
 menu .menu-iconic-text,
 menuitem .menu-iconic-text,
-splitmenu .menu-iconic-text,
-#dwhelper-button .menu-iconic-text {
+splitmenu .menu-iconic-text {
 	margin-right: -9px!important;
 }
 
@@ -1802,6 +1812,7 @@ splitmenu .menu-iconic-text,
 menulist .menu-iconic-text,
 dialog .menu-iconic-text {
 	margin-right: 0px!important;
+	color:#000 !important;
 }
 
 
@@ -1816,10 +1827,7 @@ textbox menupopup .menu-accel-container {
 	margin-left: -1px !important;
 }
 
-/*细节距离调整*/
-#context_TabInfoCopy .menu-accel-container {
-	margin-left: -27px !important;
-}
+
 
 popupset menupopup menu,
 popupset menupopup menuitem,
@@ -1903,7 +1911,6 @@ menuitem[type="checkbox"]:active>.menu-iconic-left {
 
 
 
-
 /*START=================================================（06.URLBar）=========================================================*/
 /*=======================================06.下拉地址栏扁平化 Flat Urlbar Dropdown Style=========================================*/
 
@@ -1924,7 +1931,13 @@ menuitem[type="checkbox"]:active>.menu-iconic-left {
 	border-color:#e3e3e3 !important;
   }
 	
-  /* Hide line for searching sld.tld below "Visit" Line */
+/* 自动填写文字 */	
+		#PopupAutoCompleteRichResult * {
+		font: inherit !important;
+		font-family: "Segoe ui",sans-serif !important;
+		color: inherit !important;
+	}
+
   #PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="visiturl"] +
   richlistitem[actiontype="searchengine"] {
     display:none !important;
@@ -1933,13 +1946,14 @@ menuitem[type="checkbox"]:active>.menu-iconic-left {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
-  /* EXCEPTION: Show "Search with" for keyworded search engines */
+	
+/* 显示用什么搜索引擎搜索 */
   #PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="searchengine"][displayurl*=',"alias":'], 
   #PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="searchengine"][url*=',"alias":']{
     display:-moz-box !important;
   }
 
-  /* 下拉地址栏最大高度 Set max-height for items visible without scrolling */
+/* 下拉地址栏最大高度 Set max-height for items visible without scrolling */
   #PopupAutoCompleteRichResult .autocomplete-richlistbox {
     /* height:auto doesn't work in photon */
      max-height: calc(30px * 12) !important;
@@ -2021,9 +2035,16 @@ menuitem[type="checkbox"]:active>.menu-iconic-left {
 }
 
 #sidebar-switcher-target{
-	max-width:150px !important;
+	max-width:100px !important;
 }
 
+/*去除下拉三角 remove menu dropmarker*/
+#sidebar-header .toolbarbutton-menu-dropmarker{
+  display: none !important;
+}
+
+/*去除加载图标 remove loadding throbber*/
+#sidebar-throbber{display: none !important;}
 
 /*背景颜色 Background Color*/
 #sidebar-header,#sidebar{
@@ -2043,7 +2064,8 @@ menuitem[type="checkbox"]:active>.menu-iconic-left {
 
 /*最大宽度和最小宽度调整 Sidebar min&max Height and Width*/
 #sidebar-box,#sidebar{
-    max-width:1280px !important;
+	  overflow: hidden !important; 
+    max-width:800px !important;
 	  min-width:5px !important;
 }
 

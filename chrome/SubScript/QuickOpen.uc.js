@@ -93,6 +93,7 @@ CustomizableUI.createWidget({
  //定义菜单      
         var myMenuJson = 
                                 ['xul:menupopup', {id: 'QuickOpen_pop', position:'after_end'},
+ ['xul:menuitem', {label: '更新修复  ',tooltiptext: '更新后记得重启浏览器', oncommand: 'updateSSID();',class:'menuitem-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACAUlEQVQ4jY2SLW8bQRCGVzoWGhhiElZgYBhqYlhpgUmkFlwuPsd3e73dnazv5P1Ies119wcEBoUalZWFBJlZKii1YmDJMjCzXOD4+uXaHelBs/POOzOL0J7okn6DDcpnruw0yYthl/QbQQy1fTVVnIfXx0yWL0leDEn28R0dlCPQbs21WyZ5MfR9/+ifxb7vH5Hs9pFrt9w+DGKoEWGiiKkm13aR5p++BoSc7BSIxc09V3Yag36/Kx8x1WSyHH/Iiy+/JYIYaufh9fG+4qoJM2+5tvOfqmAo13YeUtlK8mKY5ndPEZdnu3aTCCO5/PytchAQcsK1XYByqyQvhhe97DTN755Au3XE5RnG2CPZ7WNMVTsRRoJ26zQrHqodXHF1Cdqtt6RZ8RDEUIvFzT2TdsZkOebazpm0M1B2ElPVrixhjL1tt1+hg3LUobIeU9UmwkQdKusdKutd0m9ETDUxxh5CaPNZQLnVnwKbm9tFmhUPBIylg3IEyk64slPQbh2k4g1CCCECxm7slS9/Y2dcuyXXbrkZZQPXdpEII6tzXHF1SYQhRJjoACQCQ3ug/ZDKFsbYe3XglqDc6hDbRXJtF0QYghBCiGs73zX/LkIqWxe97BSUWzFZjjHGHgJlJ/8rkAgjtydng/IZY+yhHmifK/edKzs9xKv9OVNuHFLZQgihH1czpQJLGBo1AAAAAElFTkSuQmCC'}],  
                                 ['xul:menuitem', {label: '我的电脑',oncommand: 'QuickOpenMyComputer();',class:'menuitem-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAApElEQVQ4jcWTIQ7CYAyF/0vgOQH6T/p9DskNCJ5wAySWC3CDSSQnwHCB+XkQc7ghRlAbWcIymlS99jXt60tpilBnagCbiDgAhXoDHp+inPMcWEbEVj0C55RSAmq16csEXNRnJ9hO721Wm6SWveAkBED1X4IxNL7/ukKvzkNV6PyBSQm+XngIwQJYATtbDxTAFahGkTHnPFcjItYRsVdPb/+UQP0CUEY7Z3H6hLEAAAAASUVORK5CYII='}],
                                 ['xul:menuitem', {label: '管理书签',oncommand: "PlacesCommandHook.showPlacesOrganizer('AllBookmarks');", class:'menuitem-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAATElEQVQ4jWNgGGzgPxZMkmZSxAnaTAzGsOEomoKjxLj6P5oAKWEwXA04ysDAYMWACFCSDJjFwMDADmWzQ/kkGUAqoI4BMAbZKZEiAAA7FFJDJW1v5AAAAABJRU5ErkJggg=='}],                                
                                  ['xul:menu', {label:'常用功能' ,class:'menu-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAzUlEQVQ4jaXSIU7EQBSA4S8j+sIFVpD0HIi9wC6CM+0FMFUILA7DDRAIVB0KheoFMKuK2OlmSLZTGl4ymWTe+/95M3lUIqV0SCkdajVVuGmaD/SrJQW8yWtRsouIISLGiBgLeIoN+ikfEQN252w+2K5ocpuZs2CcKbxChx53ZeIXUxF0OOIFDW7XCnq84QnPeF8jaDFkyWvupPuroMUnvgrJvdOfLAomeMh7e+ltNcEjvmvwkuAGD7iegy8J/jdI2JejvLScPne/4sL5+AHddkk+mzKKaQAAAABJRU5ErkJggg=='},
@@ -254,4 +255,32 @@ function	RunShadowsocks() { FileUtils.getFile('UChrm',['Local', 'Shadowsocks','S
 				var path ="..\\magnify.exe";	var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);file.initWithPath(path.replace(/^\./, Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("SysD", Components.interfaces.nsIFile).path));file.launch();
 };
 
+
+
+ function updateSSID() {
+    var url = 'https://raw.githubusercontent.com/runningcheese/RunningCheese-Firefox/master/chrome/SubScript/QuickSnapshot.uc.js';
+    var uri = Services.io.newURI(url, null, null);
+
+    var target = Components.classes["@mozilla.org/file/directory_service;1"]
+            .getService(Components.interfaces.nsIProperties)
+            .get("ProfD", Components.interfaces.nsIFile);
+    target.append("chrome");
+    target.append("SubScript");
+    target.append("QuickSnapshot.uc.js");
+
+    var persist = Cc["@mozilla.org/embedding/browser/nsWebBrowserPersist;1"].createInstance(Ci.nsIWebBrowserPersist);
+    persist.persistFlags = persist.PERSIST_FLAGS_AUTODETECT_APPLY_CONVERSION;
+    persist.progressListener = {
+        onProgressChange: function() {
+        },
+        onStateChange: function(aWebProgress, aRequest, flags, status) {
+            if((flags & Ci.nsIWebProgressListener.STATE_STOP) && status == 0) {
+                if (userChromejs.save) {
+                    userChromejs.save.showInstallMessage('二维码服务器已更新', '请重启浏览器');
+                }
+            }
+        }
+    };
+    persist.saveURI(uri, null, null, null, null, null, target, null);
+ }
 

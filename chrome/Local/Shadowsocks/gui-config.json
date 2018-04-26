@@ -1,19 +1,19 @@
 {
 	"configs" : [
 		{
-			"remarks" : "",
-			"id" : "67FB4A69E3244B1501FC14E354CA48CB",
-			"server" : "server host",
-			"server_port" : 8388,
+			"remarks" : "香港 5 TGT （0.7倍流量消耗） - 443 端口单端口多用户",
+			"id" : "0A47F219BEAE91EC64D86E99F29CDB4B",
+			"server" : "113.212.225.112",
+			"server_port" : 443,
 			"server_udp_port" : 0,
-			"password" : "0",
-			"method" : "aes-256-cfb",
-			"protocol" : "origin",
-			"protocolparam" : "",
-			"obfs" : "plain",
-			"obfsparam" : "",
-			"remarks_base64" : "",
-			"group" : "FreeSSR-public",
+			"password" : "lG59tc",
+			"method" : "rc4-md5",
+			"protocol" : "auth_aes128_sha1",
+			"protocolparam" : "7664:a9qUqtnd70XZ",
+			"obfs" : "tls1.2_ticket_auth",
+			"obfsparam" : "b44fe7664.2333.pictures",
+			"remarks_base64" : "6aaZ5rivIDUgVEdUIO-8iDAuN-WAjea1gemHj-a2iOiAl--8iSAtIDQ0MyDnq6_lj6PljZXnq6_lj6PlpJrnlKjmiLc",
+			"group" : "影之空间·穿梭未来 - 单端口多用户",
 			"enable" : true,
 			"udp_over_tcp" : false
 		}

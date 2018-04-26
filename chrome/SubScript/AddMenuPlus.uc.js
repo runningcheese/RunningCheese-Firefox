@@ -1324,12 +1324,3 @@ menugroup.addMenu > .menuitem-iconic > .menu-accel-container {\
 
 
 
-
-//增加函数
-
-function getCurrentURL(){
-    var currentWindow = Components.classes["@mozilla.org/appshell/window-mediator;1"].getService(Components.interfaces.nsIWindowMediator).getMostRecentWindow("navigator:browser");
-    var currBrowser = currentWindow.getBrowser();
-    var currURL = currBrowser.currentURI.spec;
-    return currURL;
-}

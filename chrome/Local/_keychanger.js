@@ -18,18 +18,20 @@ keys['F10'] = function(){var newtabs=["http://weibo.com/","https://www.inoreader
 
 //Alt组合键
 //--------------------------------------------------------------------------------------------------------------------------------------------
-keys["Alt+F1"] = function(){gBrowser.removeTabsToTheEndFrom(gBrowser.mCurrentTab);};  //关闭右侧所有标签页
+keys["Alt+F1"] = function(){for (let i = gBrowser.mCurrentTab._tPos - 1; i >= 0; i--) if (!gBrowser.tabs[i].pinned){ gBrowser.removeTab(gBrowser.tabs[i], {animate: true});}};  //关闭左侧所有标签页
+keys["Alt+F2"] = function(){gBrowser.removeTabsToTheEndFrom(gBrowser.mCurrentTab);};  //关闭右侧所有标签页
+keys["Alt+F3"] = function(){gBrowser.removeAllTabsBut(gBrowser.mCurrentTab);};  //关闭其他标签页
 keys['Alt+A'] = "gBrowser.selectedBrowser.messageManager.sendAsyncMessage('FGgTranslator', readFromClipboard());";//开启选中文字翻译
 keys["Alt+S"] = function() { gBrowser.loadURI("javascript:(function(){var%20night=function(w){(function(d){var%20css='html{opacity:0.9!important;background:black!important;}body{background:white!important;}';var%20s=d.getElementsByTagName('style');for(var%20i=0,si;si=s[i];i++){if(si.innerHTML==css){si.parentNode.removeChild(si);return}};var%20heads=d.getElementsByTagName('head');if(heads.length){var%20node=d.createElement('style');node.type='text/css';node.appendChild(d.createTextNode(css));heads[0].appendChild(node)}})(w.document);%20for(var%20i=0,f;f=w.frames[i];i++){try{arguments.callee(f)}catch(e){}}};night(window)})();");}; //夜晚模式
 keys["Alt+Q"] = function() {document.getElementById("_cd7e22de-2e34-40f0-aeff-cec824cbccac_-browser-action").click();};//打开Pocket稍后阅读 
-keys['Alt+W'] = "RIL.hotKeyToggle();"//稍后阅读标记/去除标记
-keys['Alt+E'] = "ReaderParent.toggleReaderMode(event);";//阅读模式
+keys['Alt+W'] = 'document.getElementById("pageAction-urlbar-_cd7e22de-2e34-40f0-aeff-cec824cbccac_").click();'//稍后阅读标记/去除标记
+keys['Alt+E'] = 'var url = "about:reader?url=" + gBrowser.currentURI.spec; gBrowser.selectedTab = gBrowser.loadURI(url);';//阅读模式
 keys['Alt+R'] = function () { if (window.windowState === 1) {restore();} else if (window.windowState === 2) {restore();} else if (window.windowState === 3) {maximize();}
 else if (window.windowState === 4) {restore();} else {} };//切换窗口大小
 keys['Alt+T'] = function () { window.open("http://m.iciba.com/","爱词霸翻译","resizable,scrollbars,status,title").resizeTo(420, 670); };//打开翻译窗口
 keys['Alt+Y'] = function () {  UploadImages(); };//上传图片（需要登录新浪微博）
-keys['Alt+G'] = "var s = prompt('谷歌站内搜索:', '');if (s.length > 0) gBrowser.addTab('https://www.google.com/search?q=site:' + encodeURIComponent( gBrowser.currentURI.spec) + ' ' + encodeURIComponent(s));";//Google站内搜索
-keys['Alt+B'] = "var s = prompt('百度站内搜索:', '');if (s.length > 0) gBrowser.addTab('https://www.baidu.com/s?wd=site:' + encodeURIComponent( gBrowser.currentURI.spec) + ' ' + encodeURIComponent(s));";//Baidu站内搜索
+keys['Alt+G'] = "var s = prompt('谷歌站内搜索:', '');if (s.length > 0) gBrowser.addTab('https://www.google.com/search?q=site:' + encodeURIComponent( gBrowser.currentURI.host) + ' ' + encodeURIComponent(s));";//Google站内搜索
+keys['Alt+B'] = "var s = prompt('百度站内搜索:', '');if (s.length > 0) gBrowser.addTab('https://www.baidu.com/s?wd=site:' + encodeURIComponent( gBrowser.currentURI.host) + ' ' + encodeURIComponent(s));";//Baidu站内搜索
 keys['Alt+X'] = "getWebNavigation().canGoForward && getWebNavigation().goForward();";//前进
 keys['Alt+Z'] = "getWebNavigation().canGoBack && getWebNavigation().goBack();";//后退
 keys['Alt+C'] = function() {var gClipboardHelper = Components.classes['@mozilla.org/widget/clipboardhelper;1'].getService(Components.interfaces.nsIClipboardHelper); gClipboardHelper.copyString(gBrowser.currentURI.spec); }; //复制当前页的URL
@@ -48,7 +50,9 @@ keys['Alt+I'] = function() {
 }; //用IE打开当前页
 keys['Alt+O'] = "openPreferences();"; //Firefox选项
 keys['Alt+P'] = "OpenBrowserWindow({private: true});"; //打开隐私窗口
-
+keys['Alt+,'] =  'document.getElementById("maximizevideo_ettoolong-browser-action").click();';//宽屏模式
+keys['Alt+.'] =  'document.getElementById("popupwindow_ettoolong-browser-action").click();';  //小窗模式
+keys['Alt+/'] =  'document.getElementById("maximizevideo_ettoolong-browser-action").click();document.getElementById("popupwindow_ettoolong-browser-action").click();'; //弹出视频
 
 //Shift组合键
 keys['Shift+F1'] =function() {document.getElementById("menu_browserToolbox").click();};//打开开发者工具箱

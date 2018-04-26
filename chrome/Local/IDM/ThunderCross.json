@@ -1,7 +1,7 @@
 {
   "name": "ThunderCross",
   "description": "Thunder invoker binary",
-  "path": "D:\\Internet\\RunningCheese_Firefox_V10\\Profiles\\V10\\chrome\\Local\\IDM\\ThunderCross_x86.exe",
+  "path": "D:\\Internet\\RunningCheese Firefox V10\\Profiles\\V10\\chrome\\Local\\IDM\\ThunderCross_x86.exe",
   "type": "stdio",
   "allowed_extensions": [
     "Thunder@Cross"

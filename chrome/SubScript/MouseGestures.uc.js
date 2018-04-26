@@ -28,7 +28,7 @@
 
 			'UD': {name: '刷新当前页面', cmd: function() {document.getElementById("Browser:Reload").doCommand();}},
 			'DU': {name: '网址向上一层', cmd:  function() { loadURI(content.location.host + content.location.pathname.replace(/\/[^\/]+\/?$/, ""));}},
-
+			'UDUD': {name: '跳过缓存刷新当前页面', cmd: function() {document.getElementById("Browser:ReloadSkipCache").doCommand();}},
 
 			'RL': {name: '打开新标签', cmd:  function() { BrowserOpenTab();  }},
 			'LR': {name: '添加/移除书签', cmd:  function() {document.getElementById("Browser:AddBookmarkAs").doCommand();	} },
@@ -38,7 +38,7 @@
 			'UR': {name: '激活右边的标签页', cmd: function(event) {gBrowser.tabContainer.advanceSelectedTab(1, true);}},
 
 
-			'DL': {name: '恢复关闭的标签', cmd:  function() { try {	document.getElementById('History:UndoCloseTab').doCommand();			} catch (ex) {				if ('undoRemoveTab' in gBrowser) gBrowser.undoRemoveTab();				else throw "Session Restore feature is disabled."			}		}  },
+			'DL': {name: '恢复关闭的标签', cmd:  function() { try {	document.getElementById('History:UndoCloseTab').doCommand();} catch (ex) {if ('undoRemoveTab' in gBrowser) gBrowser.undoRemoveTab();	else throw "Session Restore feature is disabled."}	} },
 			'DR': {name: '关闭当前标签', cmd: function(event) {gBrowser.removeCurrentTab();}},
 
 
@@ -65,10 +65,16 @@
 			'RULD': {name: '添加到稍后阅读',  cmd: function(event) {document.getElementById("pageAction-urlbar-_cd7e22de-2e34-40f0-aeff-cec824cbccac_").click();}},
 			'RULDR': {name: '添加到稍后阅读',  cmd: function(event) {document.getElementById("pageAction-urlbar-_cd7e22de-2e34-40f0-aeff-cec824cbccac_").click();}},
 
-
+		  'LDL': {name: '关闭左边的标签页', cmd: function(event) {	for (let i = gBrowser.mCurrentTab._tPos - 1; i >= 0; i--) if (!gBrowser.tabs[i].pinned){ gBrowser.removeTab(gBrowser.tabs[i], {animate: true});}}},
 		  'RDR': {name: '关闭右边的标签页', cmd: function(event) {	gBrowser.removeTabsToTheEndFrom(gBrowser.mCurrentTab);	}},
-			'LDRUL': {name: '打开鼠标手势设置文件',  cmd: function(event) {FileUtils.getFile('UChrm',['SubScript', 'MouseGestures.uc.js']).launch();}},
+		  'RDRD': {name: '关闭其他所有标签页', cmd: function(event) {gBrowser.removeAllTabsBut(gBrowser.mCurrentTab);	}},
 
+
+			'DRD': {name: '下一页',  cmd: function(event) {loadURI(gBrowser.currentURI.spec.replace(/(\d+)(?=\D*$)/, function($0) {return +$0 + 1}));}},
+			'DLD': {name: '上一页',  cmd: function(event) {loadURI(gBrowser.currentURI.spec.replace(/(\d+)(?=\D*$)/, function($0) {return +$0 - 1 > 0 ? +$0 - 1 : 0;}));}},
+
+
+			'LDRUL': {name: '打开鼠标手势设置文件',  cmd: function(event) {FileUtils.getFile('UChrm',['SubScript', 'MouseGestures.uc.js']).launch();}},
 
 		},
 
@@ -174,9 +180,5 @@
 	};
 	ucjsMouseGestures.init();
 })();
-
-
-
-
 
 

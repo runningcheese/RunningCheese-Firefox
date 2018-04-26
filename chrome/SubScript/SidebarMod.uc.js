@@ -247,10 +247,6 @@ if (!window.SidebarMod) {
       name: '青年图摘',
       url: 'https://qingniantuzhai.com/',
       favicon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAB3VBMVEX////9/f39///m6e3AwMb7//7//v/9/P///vn49vj39PPf3t/a19nOzdLLycz+/v72+Pzz9fbw9PX39fPy7vL89/Hr6enp5eba4OTo5uLX3d3FyM7DyMrAw8n+/f///vf////1///6///b8v202utfpNIacrj9///0/f/y/f/n9v/k+P3//vrz9fjE5/Ww3fTi7PKu0+ik0Ofk5OSYxOHh3+AdjNzX2dgji9cliNQWgtMjhs7Gx8tTmMcLeMa7wcMRdr46gbowgLkpernu///u/P/O8P7z+Pvg8Pn5+Pj49PjT8vju9vb59vXd7vX19PTs8vTt8fPM6vPX6fPe6PLz8vHn7PD68+/v7++k1+/F4uvi5efO2+S81eSOy+R9veOoyeKbxuFjuOHX3uCkyt+90968y96EvNubx9p9udlTn9jc29fP09eoytePvdeTvNaPu9WAttXHy9OEudMahdMmidEuitAsiNBWnc9MmM9+ss45kM4Wgc5opctnnstKkss7jctcnMoMeMnJyMdEjsclfsfBxMZansQifMQqg8MXe8PCxMIefsIIdMIogcBFir8xgb1Vkbwhe7sAaboAZ7cTbbM2fbEWcq8odK4AYakjcKgZaahUhacWZJ8RWooFPSyqAAAAIHRSTlPv/e/v7/vv7+/v7+/v7+/g7+/v7+/v7+/v7+/v7+/g4LIH5V0AAAEISURBVBjTHcjTdgMBEADQSbJJ49TGLGPbqm3btm3b/tae5j5eUIkgM08pEwiylfkCEBeBEN3hLkywh93IA5i6IpG2Djj6a7HidAgg9aiGGg7eHay/zqvRGEiBXDvORfesOrrHsdmJThnkIBPbtyFJ4eznQzkvCyTa3ZNJvaHMiOat+DimA5iiaxt6Q1sldqyeT5BJAOZHz8UCieqmoJdb+o/G2PLKLdvbd+z3fM1gMmQUs08u73Xk0u8KnZEtUpBWm96fQ9s+3+FNZLDUkgZ8Z33VTpx74e7Zt4/fERFA3bSFohkbQ1NjP98NfOBhe2CxVaMt0TV3j2pQCCoAiZwgFIoCQi4GfuEfTMs8p+k60I8AAAAASUVORK5CYII='
-       },{
-      name: '虎扑论坛',
-      url: 'https://m.hupu.com/bbs',
-      favicon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB/klEQVRYhe1X0Y2DMAxlhHxWKrbyWangdARGYARG6AiMwAiM0A3MCIzQEdig95GjhcSBFK4nnXSR/NUQP9vPz26S/J8dh5VWnGbFzA4n/XsAkOoOzWNqjHT1QAVsPwCg1gXwjv0AANNvdc5g+t0A9kTPQO2+6I/ni/RobP1XycpA3Z4II7PQhQGguX8cANJVdq60+rTzDs0jWAZOs0JI142R6qel1DBQN7OUmtmdqTklZTT3hfTT1QPgCIcoQmlWMOSl69xyat6ynFITBpBS4z9Ozda+58NJM1A7zQJDXoYBCOna2hWMZhgVk8H0jFTz8XwJOk8SX2BsjeOiZzC9w42W0QzzO0vRCx3wIlJecpoVIkeAOk9sIK/cdl4kn62/1AFzxNKd3b3/fFxit9OvrLRy0xpdHqXVMgCfgIN8Ly+jeYHmzkj1unOp/kC3V9QBkQnZu0sHQ14J9a+SZFvdNwDwe32svwQuRoCSxCqrFaKl9pP1v5uAe3v9en3ryLAERIx+TH/M8uE5seD5cNIuqT0yysJidzZWWklsd+XUUzs0g50BHrB27vx4vkg9PVEy/7fvzpieaF64c4AhLyUHoY0oJCZRzkMr2JRgjOZu//EII3lBydZWOEYzLE5BBrq5KXqOUTTDuFgEv5/MfM+Q6vUtWGkltQdDXq1K6F8+XzDIYkPazWfMAAAAAElFTkSuQmCC'
        },
 {
       name: '豆瓣网',
