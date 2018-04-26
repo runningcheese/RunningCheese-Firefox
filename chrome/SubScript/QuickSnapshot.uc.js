@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          QuickSnapshot.uc.js
-// @description   可移动多功能截图按钮 TEST
+// @description   可移动多功能截图按钮 TEST2222222222222
 // @author         Runningcheese
 // @namespace   https://www.runningcheese.com
 // @include        main
