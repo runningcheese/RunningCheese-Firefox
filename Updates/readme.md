@@ -1,4 +1,8 @@
-### 04-30更新说明
+### 自动更新功能演示
+比如，在04-30的更新版中，鼠标手势并没有“将当前窗口置顶”的功能，点击“火箭图标—>更新修复—>自动更新”后将得到更新。
+
+
+### 04-30 更新说明
 
 主要更新内容：\
 1、加入老板键，默认为 Ctrl+~ \
@@ -6,25 +10,4 @@
 3、修复已知菜单选项中存在的BUG。 \
 4、将各项可能需要自定义的选项放在一起，方便管理。 \
 5、加入各项批处理脚本，比如配置管理功能。 \
-6、这将是V10版本小幅更新和BUG修复需要手动更新的最后一次，日后可自动更新。
- \
-主要更新文件： \
-新增： \
-\Profiles\chrome\Local\Updates (整个文件夹) \
- \
-替换： \
-\Firefox\portable.ini \
-\Profiles\V10\user.js \
-\Profiles\V10\pref.js \
-\Profiles\V10\chrome\SubScript\ButtonEventListener.uc.js \
-\Profiles\V10\chrome\SubScript\FloatingScrollbar.uc.js \
-\Profiles\V10\chrome\SubScript\MouseGestures.uc.js \
-\Profiles\V10\chrome\SubScript\QuickOpen.uc.js \
-\Profiles\V10\chrome\SubScript\Tabplus.uc.js \
-\Profiles\V10\chrome\Local\_addmenu.js \
-\Profiles\V10\chrome\Local\_keychanger.js \
-\Profiles\V10\chrome\css (整个文件夹) \
-\Profiles\V10\chrome\images (整个文件夹) \
- \
-删除： \
-\Profiles\chrome\Local\BackupProfile (整个文件夹)
+6、这将是V10版本小幅更新和BUG修复需要手动更新的最后一次，日后可自动更新。\
