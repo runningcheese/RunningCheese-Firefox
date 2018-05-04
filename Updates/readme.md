@@ -11,6 +11,7 @@
 \Profiles\V10\chrome\SubScript\QuickOpen.uc.js\
 \Profiles\V10\chrome\Local\_keychanger.js
 
+--------------
 ### 04-30 更新说明
 主要更新内容：\
 1、加入老板键，默认为 Ctrl+~ \
