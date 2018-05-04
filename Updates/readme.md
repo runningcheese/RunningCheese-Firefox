@@ -6,7 +6,7 @@
 1、鼠标手势加入“将当前窗口置顶”的功能，默认手势是“T”字形，“右左下”。\
 2、快捷键加入“将当前窗口置顶”的功能，默认快捷键：Alt+]。
 
-#### 修改的文件\
+修改的文件：\
 \Profiles\V10\chrome\SubScript\MouseGestures.uc.js\
 \Profiles\V10\chrome\SubScript\QuickOpen.uc.js\
 \Profiles\V10\chrome\Local\_keychanger.js
