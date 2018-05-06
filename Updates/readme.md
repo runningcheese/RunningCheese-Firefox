@@ -1,8 +1,8 @@
 ### 自动更新功能说明
-点击“火箭图标—>更新修复—>自动更新” 就会自动更新
+点击“火箭图标—>更新修复—>自动更新” 就会自动更新。
 
 **更新文件:**\
-Updates.zip：自动更新的文件打包
+Updates.zip：自动更新的文件打包\
 HeaderEditor_反盗链.json：（用于拓展 Header Editor）\
 HeaderEditor_用户代理.json：（用于拓展 Header Editor）\
 HeaderEditor_重定向.json：（用于拓展 Header Editor）\ 
