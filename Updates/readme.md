@@ -1,22 +1,16 @@
-### 自动更新功能演示
+### 自动更新功能说明：
 
 1、比如在04-30的更新版中，鼠标手势并没有“将当前窗口置顶”的功能。\
 2、点击“火箭图标—>更新修复—>自动更新”后，将得到更新。（需要重新启动）
+基于dupontjoy 的规则修改而来：https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor
 
---------------
 
 ### 05-04 更新说明
 1、鼠标手势加入“将当前窗口置顶”的功能，默认手势是“T”字形，“右左下”。\
 2、快捷键加入“将当前窗口置顶”的功能，默认快捷键：Alt+]。
 
-修改的文件：\
-\Profiles\V10\chrome\SubScript\MouseGestures.uc.js\
-\Profiles\V10\chrome\SubScript\QuickOpen.uc.js\
-\Profiles\V10\chrome\Local\_keychanger.js
 
---------------
 ### 04-30 更新说明
-主要更新内容：\
 1、加入老板键，默认为 Ctrl+~ \
 2、加入自动更新功能，为你节省大量更新修复需要花费的时间。 \
 3、修复已知菜单选项中存在的BUG。 \
