@@ -1,22 +1,19 @@
 ### 自动更新功能说明
 点击“火箭图标—>更新修复—>自动更新” 就会自动更新
 
-**需要手动更新的规则:**\
-自动更新的文件打包：Updates.zip\
+**更新文件:**\
+Updates.zip：自动更新的文件打包
+HeaderEditor_反盗链.json：（用于拓展 Header Editor）\
+HeaderEditor_用户代理.json：（用于拓展 Header Editor）\
+HeaderEditor_重定向.json：（用于拓展 Header Editor）\ 
+（参考了 <a href="https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor" rel="noopener" target="_blank">dupontjoy</a> 的规则）\
+Context Search_searchEngines.json：(拓展 Context Search）\
+hosts：一小部分网站的hosts
 
-拓展 Header Editor：（参考了 <a href="https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor" rel="noopener" target="_blank">dupontjoy</a> 的规则）\
-HeaderEditor_反盗链.json\
-HeaderEditor_用户代理.json\
-HeaderEditor_重定向.json\
-
-拓展 Context Search：Context Search_searchEngines.json\
-
-一小部分网站的hosts：hosts
-
-**恢复默认：**\
-SpeedDail 2 默认布局：Speeddail2 default layout.txt\
-搜索栏默认搜索引擎：search.json.mozlz4\
-闪耀拖拽默认规则：GlitterDrag_拖拽规则.json\
+**恢复文件：**\
+Speeddail2 default layout.txt: SpeedDail 2 默认布局\
+search.json.mozlz4：搜索栏默认搜索引擎\
+GlitterDrag_拖拽规则.json：闪耀拖拽默认规则
 
 -------------
 ### 05-04 更新说明
