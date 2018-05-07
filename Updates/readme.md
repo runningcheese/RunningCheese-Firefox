@@ -3,6 +3,7 @@
 
 **更新文件:**
 * Updates.zip：自动更新的文件打包
+* UpdatesUnpackedFiles文件夹：Updates.zip 解压后的文件
 * HeaderEditor_反盗链.json：（用于拓展 Header Editor）
 * HeaderEditor_用户代理.json：（用于拓展 Header Editor，参考了 <a href="https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor" rel="noopener" target="_blank">dupontjoy</a>）
 * HeaderEditor_重定向.json：（用于拓展 Header Editor，参考了 <a href="https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor" rel="noopener" target="_blank">dupontjoy</a>）
@@ -14,6 +15,13 @@
 * Speeddail2 default layout.txt: SpeedDail 2 默认布局
 * search.json.mozlz4：搜索栏默认搜索引擎
 * GlitterDrag_拖拽规则.json：闪耀拖拽默认规则
+
+-------------
+### 05-07 更新说明
+1、Firefox 内核更新到59.03。\
+2、新增控制Firefox内存使用软件Firemin。\
+3、标签功能增加在当前标签页右侧打开新标签。
+4、修改多处错误和存在的BUG，以及一些小细节修改。\
 
 -------------
 ### 05-04 更新说明
