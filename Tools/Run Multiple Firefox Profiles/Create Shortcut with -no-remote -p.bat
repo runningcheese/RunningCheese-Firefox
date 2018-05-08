@@ -1,3 +1,4 @@
+:: by runningcheese
 @echo off
 echo set WshShell = WScript.CreateObject("WScript.Shell")>tmp.vbs
 echo set oShellLink = WshShell.CreateShortcut("%~dp0"  ^& "\Firefox Profiles.lnk")>>tmp.vbs
