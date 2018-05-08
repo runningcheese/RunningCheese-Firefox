@@ -4,7 +4,6 @@ echo set oShellLink = WshShell.CreateShortcut("%~dp0"  ^& "\Firefox V10.lnk")>>t
 echo oShellLink.TargetPath ="%~dp0Firefox\firefox.exe">>tmp.vbs
 echo oShellLink.Arguments = "-no-remote -p default">>tmp.vbs
 echo oShellLink.WindowStyle ="1">>tmp.vbs
-echo oShellLink.Hotkey = "CTRL+SHIFT+F">>tmp.vbs
 echo oShellLink.IconLocation = "%~dp0Firefox\firefox.exe">>tmp.vbs
 echo oShellLink.Description = "">>tmp.vbs
 echo oShellLink.WorkingDirectory = "%~dp0" >>tmp.vbs

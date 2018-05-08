@@ -1,2 +1,2 @@
-
-start /max ""  "%SystemDrive%\Users\%USERNAME%\AppData\Roaming\Mozilla\Firefox\profiles.ini"
+:: by runningcheese
+start /normal ""  "Profiles\V10\AppData\Mozilla\Firefox\profiles.ini"
