@@ -784,8 +784,11 @@ select,textarea,input {
 /*高级*/
 		list-style-image: url("../images/category-advanced.png") !important;
 	}
+/*隐藏更新按钮*/
+#checkForUpdatesButton {
+display: none !important;
 }
-
+}
 
 
 

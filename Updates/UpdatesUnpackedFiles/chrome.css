@@ -8,6 +8,8 @@
 
 
 
+
+
 /*START=================================================（01.Navbar）=========================================================*/
 /*==================================================导航栏调整 Navbar Adjustment==============================================*/
 
@@ -1356,6 +1358,14 @@ toolbarbutton.bookmark-item {
 #context_TabInfoCopy {-moz-box-ordinal-group: 15 !important;}  	
 
 
+/*文字选中菜单排充 Text Selection Menu Order*/
+#addmenu_context-copy{-moz-box-ordinal-group:0 !important;}
+#context-searchselect{-moz-box-ordinal-group:1 !important;}
+#olivier_debroqueville_gmail_com_5{-moz-box-ordinal-group:2 !important;}
+#context-viewpartialsource-selection{-moz-box-ordinal-group:3 !important;}
+#context-inspect{-moz-box-ordinal-group:3 !important;}
+#addmenu_context-translate{-moz-box-ordinal-group:3 !important;}
+
 
 /*隐藏页面右键菜单 Hide Page menu option*/
 #context-pocket,
@@ -2172,3 +2182,13 @@ menuitem[type="checkbox"]:active>.menu-iconic-left {
 .searchbar-search-icon {
   list-style-image: url("../images/icons/search.png")!important;
 }
+
+
+
+
+/*关于Firefoox界面隐藏更新按钮*/
+@-moz-document url-prefix(chrome://browser/content/aboutDialog.xul) {
+#updateBox{display: none !important;}	  
+}
+
+

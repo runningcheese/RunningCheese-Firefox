@@ -29,13 +29,13 @@ pref("browser.tabs.tabMinWidth", 100);//标签最小宽度
 
 
 //关闭自动更新
-pref("app.update.auto", false);
-pref("app.update.enabled", false);//禁用火狐浏览器更新
-pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 0);
-pref("app.update.service.enabled", false);
-pref("browser.search.update", false); //不自动升级搜索引擎
-pref("extensions.update.enabled", false); //禁用扩展更新和检查更新
-pref("extensions.getAddons.cache.enabled", false); //扩展页面扩展不下载自动推荐内容
+user_pref("app.update.auto", false);
+user_pref("app.update.enabled", false);//禁用火狐浏览器更新
+user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 0);
+user_pref("app.update.service.enabled", false);
+user_pref("browser.search.update", false); //不自动升级搜索引擎
+user_pref("extensions.update.enabled", false); //禁用扩展更新和检查更新
+user_pref("extensions.getAddons.cache.enabled", false); //扩展页面扩展不下载自动推荐内容
 
 
 //偏好设置

@@ -412,18 +412,10 @@ new function () {
 		text:"%SEL%",
 		image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAXElEQVQ4jWNgGCzgPxZMSA2GJKkWEmXAfwYGBg9yDfBgYGCYCcXEWogCjjIwMChDaZIBssY8KCYJ5DGghjhJrlBmwPTjTKg4ToCsAVvAeaCJ0S8dkGQARUl54AAAWsMsNkwmkt8AAAAASUVORK5CYII="
 	},
-{
-		label:"复制源代码",
-		image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEUAAAAAAABmZmbc3Ny3t7eRkZE6OjpRDxSxAAAAAXRSTlMAQObYZgAAADJJREFUCNdjwASCECDAIADhY2UwMQoKsgqAGUyMJiAGoyATYzJMhEEYxhDAoh1hBQYAAPxVA4qkxzcpAAAAAElFTkSuQmCC",
-	oncommand: function () {
-			var div = content.document.createElement('div');
-			div.appendChild(content.getSelection().getRangeAt(0).cloneContents());
-			Components.classes["@mozilla.org/widget/clipboardhelper;1"].getService(Components.interfaces.nsIClipboardHelper).copyString(div.innerHTML);
-		}},
 
 ];
 	
-	var menu = PageMenu({ condition:'select', insertBefore:'context-paste', onpopupshowing: syncHidden,image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAPklEQVQ4jWNgoCL4TyQWwGcAIQtgNFZDiDUAp1piDEDGBA3A6VdCBhAKRIIGEAOGqAuINoBiFwysAaRg6gAAE7tI6EZZDKkAAAAASUVORK5CYII="  });
+	var menu = PageMenu({ id:'addmenu_context-copy',condition:'select', insertBefore:'context-paste', onpopupshowing: syncHidden,image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAPklEQVQ4jWNgoCL4TyQWwGcAIQtgNFZDiDUAp1piDEDGBA3A6VdCBhAKRIIGEAOGqAuINoBiFwysAaRg6gAAE7tI6EZZDKkAAAAASUVORK5CYII="  });
 	menu(items);
 	//page({ condition:'select', insertBefore:'context-sep-copylink' });
 	items.forEach(function(it){
@@ -435,10 +427,10 @@ new function () {
 
 
 
-
 //翻译文本
 page([
 	{
+    id:'addmenu_context-translate',
 		label:"翻译选中文本",
 		condition: "select",
 		image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA7ElEQVR42mNkwATrgXg/EE9iIAIwYhETAOKDQFwOxDuIMeA/A3FgFhCnE+MCZBAMxI1ArEOMFw4AcTIQ30USOwrEcWhiOA2wBeIOILaG8j2AOAKIE0gJRJCmQCC+CsThQOwNxB9IMUAAGoXfiNGMbIA8EG+BBpYnEN8G4jtQORVoGChDxUKAeC22aFTBEViggLSCpg1WIOYEYiN80fgfjzjIkkXIMUOsAaD00ATE2kCcB8RuQOxDigEgb8wA4s1ArADE54FYEBTIuAwgJrm3A3EVIxF5YCaUbgPij1C2MxCvARlOjAG4AvUcKDYAi+YxEXgzorIAAAAASUVORK5CYII=",
@@ -446,13 +438,6 @@ page([
 	oncommand: "setTimeout(function(){	gBrowser.selectedBrowser.messageManager.sendAsyncMessage('FGgTranslator', readFromClipboard());}, 0);",
 }
 ]);
-
-
-
-
-
-
-
 
 
 
@@ -689,8 +674,7 @@ new function () {
         gBrowser.addTab('https://image.baidu.com/pcdutu?queryImageUrl=' + url);
         gBrowser.addTab('https://pic.sogou.com/ris?query=' + url);
     }
-},
-
+},{},
 {
     label: "OCR文字识别",
     image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAKlBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKE86IAAAADXRSTlMA8pCEUxQK59CV0pPm8Xt3/wAAAFlJREFUCNdjQALBCzhMQTSLuAJToQOQ4TuNgSHzCgMDqyRIeGIAA3MZ7927F9INGDgUQCJMC4AESATJEKAUSISpAagYxM0xgGrfGAA0cBsDQ/YVuBVwSxEAAEPFFhtdnlGhAAAAAElFTkSuQmCC",
