@@ -1,0 +1,8 @@
+<script language="VBScript">
+	set IDMLinkProcessor=CreateObject("DownlWithIDM.V2LinkProcessor")
+	if err<>0 then
+		MsgBox("IDM is not installed properly!"+ vbCrLf+"Please Install IDM again")
+	else
+		IDMLinkProcessor.Execute external.menuArguments
+        end if
+</script>

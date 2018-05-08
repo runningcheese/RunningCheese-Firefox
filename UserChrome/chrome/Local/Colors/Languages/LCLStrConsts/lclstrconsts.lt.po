@@ -1,0 +1,1501 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-08-07 00:34+0300\n"
+"Project-Id-Version: lclstrconsts\n"
+"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+"X-Generator: Lokalize 1.5\n"
+"MIME-Version: 1.0\n"
+"Last-Translator: Valdas Jankunas <zmuogs@gmail.com>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"POT-Creation-Date: \n"
+"Language: lt\n"
+
+#: lclstrconsts.hhshelpbrowsernotexecutable
+msgid "Browser %s%s%s not executable."
+msgstr "Naršyklė %s%s%s nėra vykdomasis failas."
+
+#: lclstrconsts.hhshelpbrowsernotfound
+msgid "Browser %s%s%s not found."
+msgstr "Naršyklė %s%s%s nerasta."
+
+#: lclstrconsts.hhshelperrorwhileexecuting
+msgid "Error while executing %s%s%s:%s%s"
+msgstr "Įvyko klaida vykdant %s%s%s:%s%s"
+
+#: lclstrconsts.hhshelpnohtmlbrowserfound
+msgid "Unable to find a HTML browser."
+msgstr "Nepavyko rasti HTML naršyklės."
+
+#: lclstrconsts.hhshelpnohtmlbrowserfoundpleasedefineone
+msgid "No HTML Browser found.%sPlease define one in Tools -> Options -> Help -> Help Options"
+msgstr "Nerasta HTML Naršyklė.%sJą galima nustatyti „Aplinka -> Aplinkos parinktys -> Žinynas -> Žinyno parinktys“"
+
+#: lclstrconsts.hhshelpthehelpdatabasewasunabletofindfile
+msgid "The help database %s%s%s was unable to find file %s%s%s."
+msgstr "Žinyno duomenų bazė %s%s%s nerado failo %s%s%s."
+
+#: lclstrconsts.hhshelpthemacrosinbrowserparamswillbereplacedbytheurl
+msgid "The macro %s in BrowserParams will be replaced by the URL."
+msgstr "Makrokomanda %s naršyklės parametruose bus pakeista URL reikšme."
+
+#: lclstrconsts.ifsalt
+msgid "Alt"
+msgstr "Alt"
+
+#: lclstrconsts.ifsctrl
+msgid "Ctrl"
+msgstr "Vald"
+
+#: lclstrconsts.ifsvk_accept
+msgid "Accept"
+msgstr "Priimti"
+
+#: lclstrconsts.ifsvk_apps
+msgid "application key"
+msgstr "Programos klavišas"
+
+#: lclstrconsts.ifsvk_back
+msgid "Backspace"
+msgstr "Naikinimo klavišas"
+
+#: lclstrconsts.ifsvk_cancel
+msgctxt "lclstrconsts.ifsvk_cancel"
+msgid "Cancel"
+msgstr "Atsisakyti"
+
+#: lclstrconsts.ifsvk_capital
+msgid "Capital"
+msgstr "Didž"
+
+#: lclstrconsts.ifsvk_clear
+msgid "Clear"
+msgstr "Išvalyti"
+
+#: lclstrconsts.ifsvk_cmd
+msgid "Cmd"
+msgstr "Cmd"
+
+#: lclstrconsts.ifsvk_control
+msgid "Control"
+msgstr "Vald"
+
+#: lclstrconsts.ifsvk_convert
+msgid "Convert"
+msgstr "Paversti"
+
+#: lclstrconsts.ifsvk_delete
+msgctxt "lclstrconsts.ifsvk_delete"
+msgid "Delete"
+msgstr "Šalinti"
+
+#: lclstrconsts.ifsvk_down
+msgctxt "lclstrconsts.ifsvk_down"
+msgid "Down"
+msgstr "Žemyn"
+
+#: lclstrconsts.ifsvk_end
+msgctxt "lclstrconsts.ifsvk_end"
+msgid "End"
+msgstr "Pabaiga"
+
+#: lclstrconsts.ifsvk_escape
+msgid "Escape"
+msgstr "Grįžimas"
+
+#: lclstrconsts.ifsvk_execute
+msgid "Execute"
+msgstr "Vykdyti"
+
+#: lclstrconsts.ifsvk_final
+msgid "Final"
+msgstr "Galutinis"
+
+#: lclstrconsts.ifsvk_hanja
+msgid "Hanja"
+msgstr "Hanja"
+
+#: lclstrconsts.ifsvk_help
+msgid "Help"
+msgstr "Žinynas"
+
+#: lclstrconsts.ifsvk_home
+msgctxt "lclstrconsts.ifsvk_home"
+msgid "Home"
+msgstr "Į pradžią"
+
+#: lclstrconsts.ifsvk_insert
+msgctxt "lclstrconsts.ifsvk_insert"
+msgid "Insert"
+msgstr "Įterpti"
+
+#: lclstrconsts.ifsvk_junja
+msgid "Junja"
+msgstr "Junja"
+
+#: lclstrconsts.ifsvk_kana
+msgid "Kana"
+msgstr "Kana"
+
+#: lclstrconsts.ifsvk_lbutton
+msgid "Mouse Button Left"
+msgstr "Kairys peles klavišas"
+
+#: lclstrconsts.ifsvk_left
+msgctxt "lclstrconsts.ifsvk_left"
+msgid "Left"
+msgstr "Kairėn"
+
+#: lclstrconsts.ifsvk_lwin
+msgid "left windows key"
+msgstr "Kairysis windows klavišas"
+
+#: lclstrconsts.ifsvk_mbutton
+msgid "Mouse Button Middle"
+msgstr "Vidurinis pelės klavišas"
+
+#: lclstrconsts.ifsvk_menu
+msgctxt "lclstrconsts.ifsvk_menu"
+msgid "Menu"
+msgstr "Meniu"
+
+#: lclstrconsts.ifsvk_meta
+msgid "Meta"
+msgstr "Meta"
+
+#: lclstrconsts.ifsvk_modechange
+msgid "Mode Change"
+msgstr "Būsenos keitimas"
+
+#: lclstrconsts.ifsvk_next
+msgctxt "lclstrconsts.ifsvk_next"
+msgid "Next"
+msgstr "Kitas"
+
+#: lclstrconsts.ifsvk_nonconvert
+msgid "Nonconvert"
+msgstr "Nonconvert"
+
+#: lclstrconsts.ifsvk_numlock
+msgid "Numlock"
+msgstr "Skaitm"
+
+#: lclstrconsts.ifsvk_numpad
+msgid "Numpad %d"
+msgstr "%d skaičių klaviatūros"
+
+#: lclstrconsts.ifsvk_pause
+msgid "Pause key"
+msgstr "Pazės klavišas"
+
+#: lclstrconsts.ifsvk_print
+msgid "Print"
+msgstr "Spausdinti"
+
+#: lclstrconsts.ifsvk_prior
+msgctxt "lclstrconsts.ifsvk_prior"
+msgid "Prior"
+msgstr "Ankstesnis"
+
+#: lclstrconsts.ifsvk_rbutton
+msgid "Mouse Button Right"
+msgstr "Dešinys pelės klavišas"
+
+#: lclstrconsts.ifsvk_return
+msgid "Return"
+msgstr "Įvedimas"
+
+#: lclstrconsts.ifsvk_right
+msgctxt "lclstrconsts.ifsvk_right"
+msgid "Right"
+msgstr "Dešinėn"
+
+#: lclstrconsts.ifsvk_rwin
+msgid "right windows key"
+msgstr "Dešinysis windows klavišas"
+
+#: lclstrconsts.ifsvk_scroll
+msgid "Scroll"
+msgstr "Slinkti"
+
+#: lclstrconsts.ifsvk_select
+msgid "Select"
+msgstr "Pasirinkti"
+
+#: lclstrconsts.ifsvk_shift
+msgid "Shift"
+msgstr "Lyg2"
+
+#: lclstrconsts.ifsvk_snapshot
+msgid "Snapshot"
+msgstr "Momentinė kopija"
+
+#: lclstrconsts.ifsvk_space
+msgid "Space key"
+msgstr "Tarpo klavišas"
+
+#: lclstrconsts.ifsvk_super
+msgid "Super"
+msgstr "Super"
+
+#: lclstrconsts.ifsvk_tab
+msgctxt "lclstrconsts.ifsvk_tab"
+msgid "Tab"
+msgstr "Tab"
+
+#: lclstrconsts.ifsvk_unknown
+msgid "Unknown"
+msgstr "Nežinomas"
+
+#: lclstrconsts.ifsvk_up
+msgctxt "lclstrconsts.ifsvk_up"
+msgid "Up"
+msgstr "Aukštyn"
+
+#: lclstrconsts.lislclresourcesnotfound
+msgctxt "lclstrconsts.lislclresourcesnotfound"
+msgid "Resource %s not found"
+msgstr "Resursas %s nerastas"
+
+#: lclstrconsts.rs3ddkshadowcolorcaption
+msgid "3D Dark Shadow"
+msgstr "3D tamsumos šešėlis"
+
+#: lclstrconsts.rs3dlightcolorcaption
+msgid "3D Light"
+msgstr "3D šviesuma"
+
+#: lclstrconsts.rsacontrolcannothaveitselfasparent
+#| msgid "A control can't have itself as parent"
+msgid "A control can't have itself as a parent"
+msgstr "Valdiklio tėvas negali būti pats valdiklis"
+
+#: lclstrconsts.rsactivebordercolorcaption
+msgid "Active Border"
+msgstr "Aktyvus rėmelis"
+
+#: lclstrconsts.rsactivecaptioncolorcaption
+msgid "Active Caption"
+msgstr "Aktyvi antraštė"
+
+#: lclstrconsts.rsallfiles
+msgid "All files (%s)|%s|%s"
+msgstr "Visi failai (%s)|%s|%s"
+
+#: lclstrconsts.rsappworkspacecolorcaption
+msgid "Application Workspace"
+msgstr "Programos darbo laukas"
+
+#: lclstrconsts.rsaquacolorcaption
+msgid "Aqua"
+msgstr "Žydra"
+
+#: lclstrconsts.rsbackgroundcolorcaption
+msgid "Desktop"
+msgstr "Darbalaukis"
+
+#: lclstrconsts.rsbackward
+msgid "Backward"
+msgstr "Atgal"
+
+#: lclstrconsts.rsbitmaps
+msgid "Bitmaps"
+msgstr "Rastriniai paveikslai"
+
+#: lclstrconsts.rsblackcolorcaption
+msgid "Black"
+msgstr "Juoda"
+
+#: lclstrconsts.rsblank
+msgid "Blank"
+msgstr "Tuščias"
+
+#: lclstrconsts.rsbluecolorcaption
+msgid "Blue"
+msgstr "Mėlyna"
+
+#: lclstrconsts.rsbtnfacecolorcaption
+msgid "Button Face"
+msgstr "Mygtuko paviršius"
+
+#: lclstrconsts.rsbtnhighlightcolorcaption
+msgid "Button Highlight"
+msgstr "Mygtuko paryškinimas"
+
+#: lclstrconsts.rsbtnshadowcolorcaption
+msgid "Button Shadow"
+msgstr "Mygtuko šešėlis"
+
+#: lclstrconsts.rsbtntextcolorcaption
+msgid "Button Text"
+msgstr "Mygtuko tekstas"
+
+#: lclstrconsts.rscalculator
+msgid "Calculator"
+msgstr "Skaičiuotuvas"
+
+#: lclstrconsts.rscancelrecordhint
+msgctxt "lclstrconsts.rscancelrecordhint"
+msgid "Cancel"
+msgstr "Atsisakyti"
+
+#: lclstrconsts.rscannotfocus
+msgid "Can not focus"
+msgstr "Negalima sufokusuoti"
+
+#: lclstrconsts.rscanvasdoesnotallowdrawing
+msgid "Canvas does not allow drawing"
+msgstr "Į „Canvas“ negalima piešti"
+
+#: lclstrconsts.rscaptiontextcolorcaption
+msgid "Caption Text"
+msgstr "Antraštės tekstas"
+
+#: lclstrconsts.rscasesensitive
+msgid "Case sensitive"
+msgstr "Skirti raidžių lygį"
+
+#: lclstrconsts.rscontrolclasscantcontainchildclass
+msgid "Control of class '%s' can't have control of class '%s' as a child"
+msgstr "„%s“ klasės valdiklis negali būti „%s“ klasės valdiklio tėvas"
+
+#: lclstrconsts.rscontrolhasnoparentwindow
+msgid "Control '%s' has no parent window"
+msgstr "„%s“ valdiklis neturi tėvinio lango"
+
+#: lclstrconsts.rscontrolisnotaparent
+msgid "'%s' is not a parent of '%s'"
+msgstr "„%s“ nėra „%s“ tėvas"
+
+#: lclstrconsts.rscreamcolorcaption
+msgid "Cream"
+msgstr "Kreminė"
+
+#: lclstrconsts.rscreatinggdbcatchableerror
+msgid "Creating gdb catchable error:"
+msgstr "Kuriama GDB aptinkama klaida:"
+
+#: lclstrconsts.rscursor
+msgid "Cursor"
+msgstr "Žymeklis"
+
+#: lclstrconsts.rscustomcolorcaption
+msgid "Custom ..."
+msgstr "Naudotojo…"
+
+#: lclstrconsts.rsdefaultcolorcaption
+msgid "Default"
+msgstr "Numatytasis"
+
+#: lclstrconsts.rsdefaultfileinfovalue
+msgid "permissions user group size date time"
+msgstr "leidimai naudotojas grupė dydis data laikas"
+
+#: lclstrconsts.rsdeleterecord
+msgid "Delete record?"
+msgstr "Ištrinti įrašą?"
+
+#: lclstrconsts.rsdeleterecordhint
+msgctxt "lclstrconsts.rsdeleterecordhint"
+msgid "Delete"
+msgstr "Šalinti"
+
+#: lclstrconsts.rsdirection
+msgid "Direction"
+msgstr "Kryptis"
+
+#: lclstrconsts.rsdirectory
+msgid "&Directory"
+msgstr "&Aplankas"
+
+#: lclstrconsts.rsdocking
+msgid "Docking"
+msgstr "Pritvirtinimas"
+
+#: lclstrconsts.rsduplicateiconformat
+msgid "Duplicate icon format."
+msgstr "Piktogramos formatai dubliuojasi."
+
+#: lclstrconsts.rseditrecordhint
+msgid "Edit"
+msgstr "Redaguoti"
+
+#: lclstrconsts.rsentirescope
+msgid "Search entire file"
+msgstr "Ieškoti visame faile"
+
+#: lclstrconsts.rserror
+msgctxt "lclstrconsts.rserror"
+msgid "Error"
+msgstr "Klaida"
+
+#: lclstrconsts.rserrorcreatingdevicecontext
+msgid "Error creating device context for %s.%s"
+msgstr "Įvyko klaida kuriant įrenginio kontekstą, skirtą %s.%s"
+
+#: lclstrconsts.rserrorinlcl
+msgid "ERROR in LCL: "
+msgstr "LCL klaida:"
+
+#: lclstrconsts.rserroroccurredinataddressframe
+msgid "Error occurred in %s at %sAddress %s%s Frame %s"
+msgstr "%s įvyko klaida:%sadresas %s%s, kadras %s"
+
+#: lclstrconsts.rserrorreadingproperty
+msgid "Error reading %s%s%s: %s"
+msgstr "Įvyko klaida skaitant %s%s%s: %s"
+
+#: lclstrconsts.rserrorwhilesavingbitmap
+msgid "Error while saving bitmap."
+msgstr "Įrašant rastrinį paveikslą įvyko klaida."
+
+#: lclstrconsts.rsexception
+msgid "Exception"
+msgstr "Išimtinė situacija"
+
+#: lclstrconsts.rsfddirectorymustexist
+msgid "Directory must exist"
+msgstr "Aplankas turi egzistuoti"
+
+#: lclstrconsts.rsfddirectorynotexist
+msgid "The directory \"%s\" does not exist."
+msgstr "Aplankas „%s“ neegzistuoja."
+
+#: lclstrconsts.rsfdfilealreadyexists
+msgid "The file \"%s\" already exists. Overwrite ?"
+msgstr "Failas „%s“ jau yra. Perrašyti?"
+
+#: lclstrconsts.rsfdfilemustexist
+msgid "File must exist"
+msgstr "Failas turi egzistuoti"
+
+#: lclstrconsts.rsfdfilenotexist
+msgid "The file \"%s\" does not exist."
+msgstr "Failas „%s“ neegzistuoja."
+
+#: lclstrconsts.rsfdfilereadonly
+msgid "The file \"%s\" is not writable."
+msgstr "Failas „%s“ nėra skirtas rašymui."
+
+#: lclstrconsts.rsfdfilereadonlytitle
+msgid "File is not writable"
+msgstr "Failas nėra skirtas rašymui"
+
+#: lclstrconsts.rsfdfilesaveas
+msgid "Save file as"
+msgstr "Įrašyti failą kaip"
+
+#: lclstrconsts.rsfdopenfile
+msgid "Open existing file"
+msgstr "Atverti egzistuojanti failą"
+
+#: lclstrconsts.rsfdoverwritefile
+msgid "Overwrite file ?"
+msgstr "Perrašyti failą?"
+
+#: lclstrconsts.rsfdpathmustexist
+msgid "Path must exist"
+msgstr "Kelias turi egzistuoti"
+
+#: lclstrconsts.rsfdpathnoexist
+msgid "The path \"%s\" does not exist."
+msgstr "Kelias „%s“ neegzistuoja."
+
+#: lclstrconsts.rsfdselectdirectory
+msgid "Select Directory"
+msgstr "Pasirinkite katalogą"
+
+#: lclstrconsts.rsfileinfofilenotfound
+msgid "(file not found: \"%s\")"
+msgstr "(failas nerastas: „%s“)"
+
+#: lclstrconsts.rsfileinformation
+msgid "File information"
+msgstr "Informacija apie failą"
+
+#: lclstrconsts.rsfilter
+msgctxt "lclstrconsts.rsfilter"
+msgid "(filter)"
+msgstr "(filtras)"
+
+#: lclstrconsts.rsfind
+msgid "Find"
+msgstr "Ieškoti"
+
+#: lclstrconsts.rsfindmore
+msgid "Find more"
+msgstr "Ieškoti toliau"
+
+#: lclstrconsts.rsfirstrecordhint
+msgid "First"
+msgstr "Pirmasis"
+
+#: lclstrconsts.rsfixedcolstoobig
+#, fuzzy
+#| msgid "FixedCols can't be >= ColCount"
+msgid "FixedCols can't be > ColCount"
+msgstr "„FixedCols“ reikšmė negali būti lygi ar didesnė nei „ColCount“"
+
+#: lclstrconsts.rsfixedrowstoobig
+#, fuzzy
+#| msgid "FixedRows can't be >= RowCount"
+msgid "FixedRows can't be > RowCount"
+msgstr "„FixedRows“ reikšmė negali būti lygi ar didesnė nei „RowCount“"
+
+#: lclstrconsts.rsformcolorcaption
+msgid "Form"
+msgstr "Forma"
+
+#: lclstrconsts.rsformresourcesnotfoundforresourcelessformscreatenew
+msgid "Form resource %s not found. For resourceless forms CreateNew constructor must be used. See the global variable RequireDerivedFormResource."
+msgstr "Nepavyko rasti formos ištekliaus „%s“. Formoms be išteklių turi būti naudojamas „CreateNew“ konstruktorius. Žvilktelėkite į globalų kintamąjį „RequireDerivedFormResource“."
+
+#: lclstrconsts.rsformstreamingerror
+msgid "Form streaming \"%s\" error: %s"
+msgstr "Formą siunčiant srautu „%s“ įvyko klaida: %s"
+
+#: lclstrconsts.rsforward
+msgid "Forward"
+msgstr "Pirmyn"
+
+#: lclstrconsts.rsfuchsiacolorcaption
+msgid "Fuchsia"
+msgstr "Šviesi purpurinė"
+
+#: lclstrconsts.rsgdkoptiondebug
+msgid "--gdk-debug flags     Turn on specific GDK trace/debug messages."
+msgstr "--gdk-debug žymės     Įjungti specialius GDK sekimo/derinimo pranešimus."
+
+#: lclstrconsts.rsgdkoptionnodebug
+msgid "--gdk-no-debug flags  Turn off specific GDK trace/debug messages."
+msgstr "--gdk-no-debug žymės     Išjungti specialius GDK sekimo/derinimo pranešimus."
+
+#: lclstrconsts.rsgif
+msgid "Graphics Interchange Format"
+msgstr "Graphics Interchange Format"
+
+#: lclstrconsts.rsgoptionfatalwarnings
+msgid "--g-fatal-warnings    Warnings and errors generated by Gtk+/GDK will halt the application."
+msgstr "--g-fatal-warnings     Įspėjimai ir klaidos, sugeneruotos GTK+ ar GDK, nutrauks programos darbą."
+
+#: lclstrconsts.rsgradientactivecaptioncolorcaption
+msgid "Gradient Active Caption"
+msgstr "Aktyvios antraštės gradientas"
+
+#: lclstrconsts.rsgradientinactivecaptioncolorcaption
+msgid "Gradient Inactive Caption"
+msgstr "Neaktyvios antraštės gradientas"
+
+#: lclstrconsts.rsgraphic
+msgid "Graphic"
+msgstr "Grafinis"
+
+#: lclstrconsts.rsgraycolorcaption
+msgid "Gray"
+msgstr "Pilka"
+
+#: lclstrconsts.rsgraytextcolorcaption
+msgid "Gray Text"
+msgstr "Neveiksnus tekstas"
+
+#: lclstrconsts.rsgreencolorcaption
+msgid "Green"
+msgstr "Žalia"
+
+#: lclstrconsts.rsgridfiledoesnotexists
+msgid "Grid file doesn't exists"
+msgstr "Tinklelio failas neegzistuoja"
+
+#: lclstrconsts.rsgridindexoutofrange
+msgid "Grid index out of range."
+msgstr "Tinklelio indeksas peržengia ribas."
+
+#: lclstrconsts.rsgroupindexcannotbelessthanprevious
+msgid "GroupIndex cannot be less than a previous menu item's GroupIndex"
+msgstr "„GroupIndex“ negali būti mažesnis už ankstesnių menių punktų „GroupIndex“"
+
+#: lclstrconsts.rsgtkfilter
+msgid "Filter:"
+msgstr "Filtras:"
+
+#: lclstrconsts.rsgtkhistory
+msgid "History:"
+msgstr "Istorija:"
+
+#: lclstrconsts.rsgtkoptionclass
+msgid "--class classname     Following Xt conventions, the class of a program is the program name with the initial character capitalized. For example, the classname for gimp is \"Gimp\". If --class is specified, the class of the program will be set to \"classname\"."
+msgstr "--class klasės_pavadinimas     Pagal Xt susitarimą, programos klasė yra programos pavadinimas, kuriame pirmoji raidė yra didžioji. Pavyzdžiui: GIMP programos klasė yra „Gimp“. Jei --class nurodytas, tai klasės pavadinimas bus priskirtas „klasės_pavadinimas“."
+
+#: lclstrconsts.rsgtkoptiondebug
+msgid "--gtk-debug flags     Turn on specific Gtk+ trace/debug messages."
+msgstr "--gtk-debug žymės     Įjungti specialius GTK+ sekimo/derinimo pranešimus."
+
+#: lclstrconsts.rsgtkoptiondisplay
+msgid "--display h:s:d       Connect to the specified X server, where \"h\" is the hostname, \"s\" is the server number (usually 0), and \"d\" is the display number (typically omitted). If --display is not specified, the DISPLAY environment variable is used."
+msgstr "--display h:s:d     Prisijungti prie nurodyto X serverio, čia „h“ yra hostname, „s“ - serverio numeris (paprastai 0), ir „d“ - ekrano numeris (dažniausia praleidžiamas). Jei --display nenurodytas, tada naudojamas aplinkos kintamasis DISPLAY."
+
+#: lclstrconsts.rsgtkoptionmodule
+msgid "--gtk-module module   Load the specified module at startup."
+msgstr "--gtk-module modulis     Paleidimo metu įkelti nurodytą modulį."
+
+#: lclstrconsts.rsgtkoptionname
+msgid "--name programe       Set program name to \"progname\". If not specified, program name will be set to ParamStrUTF8(0)."
+msgstr "--name programa       Programos pavadinimą nustatyti į „programa“. Jei nenurodyta, tai programos pavadinimas bus nustatytas į ParamStrUTF8(0)."
+
+#: lclstrconsts.rsgtkoptionnodebug
+msgid "--gtk-no-debug flags  Turn off specific Gtk+ trace/debug messages."
+msgstr "--gtk-no-debug žymės     Išjungti specialius GTK+ sekimo/derinimo pranešimus."
+
+#: lclstrconsts.rsgtkoptionnotransient
+msgid "--lcl-no-transient    Do not set transient order for modal forms"
+msgstr "--lcl-no-transient     Modalinėms formoms nesudaryti pereinamosios tvarkos"
+
+#: lclstrconsts.rsgtkoptionnoxshm
+msgid "--no-xshm             Disable use of the X Shared Memory Extension."
+msgstr "--no-xshm     Nenaudoti „X Shared Memory“ plėtinio."
+
+#: lclstrconsts.rsgtkoptionsync
+#| msgid "--sync                Call XSynchronize (display, True) after the Xserver connection has been established. This makes debugging X protocol errors easier, because X request buffering will be disabled and X errors will be received immediatey after the protocol request that generated the error has been processed by the X server."
+msgid "--sync                Call XSynchronize (display, True) after the Xserver connection has been established. This makes debugging X protocol errors easier, because X request buffering will be disabled and X errors will be received immediately after the protocol request that generated the error has been processed by the X server."
+msgstr "--sync     Kai XServer ryšys sukurtas, vykdyti „XSynchronize (display, True)“. Tai palengvins X protokolo klaidų derinimą, nes bus išjungtas X kreipinių buferis ir X serveriui apdorojant protokolo kreipinį įvykusi klaida bus gauta iškart."
+
+#: lclstrconsts.rshelpalreadyregistered
+msgid "%s: Already registered"
+msgstr "%s: jau yra registruotas"
+
+#: lclstrconsts.rshelpcontextnotfound
+#| msgid "Help Context not found"
+msgid "A help database was found for this topic, but this topic was not found"
+msgstr "Šiai temai rasta žinyno duomenų bazė, tačiau pačios temos rasti nepavyko"
+
+#: lclstrconsts.rshelpdatabasenotfound
+#| msgid "Help Database not found"
+msgid "There is no help database installed for this topic"
+msgstr "Šiai temai nėra įdiegtos žinyno duomenų bazės"
+
+#: lclstrconsts.rshelperror
+msgid "Help Error"
+msgstr "Žinyno klaida"
+
+#: lclstrconsts.rshelphelpcontextnotfound
+msgid "Help context %s not found."
+msgstr "Žinyno turinys %s nerastas."
+
+#: lclstrconsts.rshelphelpcontextnotfoundindatabase
+msgid "Help context %s not found in Database %s%s%s."
+msgstr "Žinyno turinys %s duomenų bazėje %s%s%s nerastas."
+
+#: lclstrconsts.rshelphelpdatabasedidnotfoundaviewerforahelppageoftype
+msgid "Help Database %s%s%s did not found a viewer for a help page of type %s"
+msgstr "Žinyno duomenų bazė %s%s%s nerado žiūryklės %s tipo žinyno lapui."
+
+#: lclstrconsts.rshelphelpdatabasenotfound
+msgid "Help Database %s%s%s not found"
+msgstr "Žinyno duomenų bazė %s%s%s nerasta."
+
+#: lclstrconsts.rshelphelpfordirectivenotfound
+msgid "Help for directive %s%s%s not found."
+msgstr "Žinyne nėra informacijos apie direktyvą %s%s%s."
+
+#: lclstrconsts.rshelphelpfordirectivenotfoundindatabase
+msgid "Help for directive %s%s%s not found in Database %s%s%s."
+msgstr "Informacijos apie direktyvą %s%s%s duomenų bazėje %s%s%s nerasta."
+
+#: lclstrconsts.rshelphelpkeywordnotfound
+msgid "Help keyword %s%s%s not found."
+msgstr "Žinyno raktažodis %s%s%s nerastas."
+
+#: lclstrconsts.rshelphelpkeywordnotfoundindatabase
+msgid "Help keyword %s%s%s not found in Database %s%s%s."
+msgstr "Žinyno raktažodis %s%s%s duomenų bazėje %s%s%s nerastas."
+
+#: lclstrconsts.rshelphelpnodehasnohelpdatabase
+msgid "Help node %s%s%s has no Help Database"
+msgstr "Žinyno mazgas %s%s%s neturi žinyno duomenų bazės."
+
+#: lclstrconsts.rshelpnohelpfoundforsource
+msgid "No help found for line %d, column %d of %s."
+msgstr "Žinyne nėra duomenų eilutei %d, stulpeliui %d šio %s."
+
+#: lclstrconsts.rshelpnohelpnodesavailable
+#| msgid "No help nodes available"
+msgid "No help entries available for this topic"
+msgstr "Žinyne nėra įrašų šia tema"
+
+#: lclstrconsts.rshelpnotfound
+#| msgid "Help not found"
+msgid "No help found for this topic"
+msgstr "Žinyne nėra informacijos šia tema"
+
+#: lclstrconsts.rshelpnotregistered
+msgid "%s: Not registered"
+msgstr "%s: neregistruotas"
+
+#: lclstrconsts.rshelpselectorerror
+msgid "Help Selector Error"
+msgstr "Žinyno parinkiklio klaida"
+
+#: lclstrconsts.rshelpthereisnoviewerforhelptype
+msgid "There is no viewer for help type %s%s%s"
+msgstr "Nerasta žiūryklė %s%s%s žinyno tipui."
+
+#: lclstrconsts.rshelpviewererror
+msgid "Help Viewer Error"
+msgstr "Žinyno žiūryklės klaida"
+
+#: lclstrconsts.rshelpviewernotfound
+#| msgid "Help Viewer not found"
+msgid "No viewer was found for this type of help content"
+msgstr "Nepavyko rasti žiūryklės šio tipo žinyno turiniui"
+
+#: lclstrconsts.rshighlightcolorcaption
+msgid "Highlight"
+msgstr "Paryškinimas"
+
+#: lclstrconsts.rshighlighttextcolorcaption
+msgid "Highlight Text"
+msgstr "Paryškintas tekstas"
+
+#: lclstrconsts.rshotlightcolorcaption
+msgid "Hot Light"
+msgstr "Indikatorius"
+
+#: lclstrconsts.rsicns
+#| msgid "OSX Icon Resource"
+msgid "Mac OS X Icon"
+msgstr "OSX piktogramos piktograma"
+
+#: lclstrconsts.rsicon
+msgid "Icon"
+msgstr "Piktograma"
+
+#: lclstrconsts.rsiconimageempty
+msgid "Icon image cannot be empty"
+msgstr "Piktogramos paveikslas turi būti netuščias"
+
+#: lclstrconsts.rsiconimageformat
+msgid "Icon image must have the same format"
+msgstr "Piktogramos paveikslas turi būti to paties formato"
+
+#: lclstrconsts.rsiconimageformatchange
+msgid "Cannot change format of icon image"
+msgstr "Negalima pakeisti piktogramos paveikslo formato"
+
+#: lclstrconsts.rsiconimagesize
+msgid "Icon image must have the same size"
+msgstr "Piktogramos paveikslas turi būti to paties dydžio"
+
+#: lclstrconsts.rsiconimagesizechange
+msgid "Cannot change size of icon image"
+msgstr "Negalima pakeisti piktogramos paveikslo dydžio"
+
+#: lclstrconsts.rsiconnocurrent
+msgid "Icon has no current image"
+msgstr "Piktograma neturi veikiamojo paveikslėlio"
+
+#: lclstrconsts.rsinactivebordercolorcaption
+msgid "Inactive Border"
+msgstr "Neaktyvus rėmelis"
+
+#: lclstrconsts.rsinactivecaptioncolorcaption
+msgctxt "lclstrconsts.rsinactivecaptioncolorcaption"
+msgid "Inactive Caption"
+msgstr "Neaktyvi antraštė"
+
+#: lclstrconsts.rsinactivecaptiontext
+msgctxt "lclstrconsts.rsinactivecaptiontext"
+msgid "Inactive Caption"
+msgstr "Neaktyvi antraštė"
+
+#: lclstrconsts.rsindexoutofbounds
+msgid "%s Index %d out of bounds 0 .. %d"
+msgstr "%s indeksas %d peržengia ribas 0 .. %d"
+
+#: lclstrconsts.rsindexoutofrange
+msgid "Index Out of range Cell[Col=%d Row=%d]"
+msgstr "Langelio [stulpelis = %d, eilutė = %d] indeksas peržengia ribas"
+
+#: lclstrconsts.rsinfobkcolorcaption
+msgid "Info Background"
+msgstr "Fonas informacijai"
+
+#: lclstrconsts.rsinfotextcolorcaption
+msgid "Info Text"
+msgstr "Informacijos tekstas"
+
+#: lclstrconsts.rsinsertrecordhint
+msgctxt "lclstrconsts.rsinsertrecordhint"
+msgid "Insert"
+msgstr "Įterpti"
+
+#: lclstrconsts.rsinvaliddate
+msgid "Invalid Date : %s"
+msgstr "Netinkama data: %s"
+
+#: lclstrconsts.rsinvaliddaterangehint
+msgid "Invalid Date: %s. Must be between %s and %s"
+msgstr "Netinkama data: %s. Ji turi būti tarp %s ir %s"
+
+#: lclstrconsts.rsinvalidformobjectstream
+msgid "invalid Form object stream"
+msgstr "netinkamas formos objekto srautas"
+
+#: lclstrconsts.rsinvalidpropertyvalue
+msgid "Invalid property value"
+msgstr "Netinkama savybės reikšmė"
+
+#: lclstrconsts.rsinvalidstreamformat
+msgid "Invalid stream format"
+msgstr "Netinkamas srauto formatas"
+
+#: lclstrconsts.rsisalreadyassociatedwith
+msgid "%s is already associated with %s"
+msgstr "%s jau yra susietas su %s"
+
+#: lclstrconsts.rsjpeg
+msgid "Joint Picture Expert Group"
+msgstr "Joint Picture Expert Group"
+
+#: lclstrconsts.rslastrecordhint
+msgid "Last"
+msgstr "Paskutinysis"
+
+#: lclstrconsts.rslimecolorcaption
+msgid "Lime"
+msgstr "Gelsvai žalsva"
+
+#: lclstrconsts.rslistindexexceedsbounds
+msgid "List index exceeds bounds (%d)"
+msgstr "Sąrašo indeksas peržengė ribas (%d)"
+
+#: lclstrconsts.rslistmustbeempty
+msgid "List must be empty"
+msgstr "Sąrašas turi būti tuščias"
+
+#: lclstrconsts.rsmarooncolorcaption
+msgid "Maroon"
+msgstr "Kaštoninė"
+
+#: lclstrconsts.rsmbabort
+msgid "Abort"
+msgstr "Nutraukti"
+
+#: lclstrconsts.rsmball
+msgid "&All"
+msgstr "&Visi"
+
+#: lclstrconsts.rsmbcancel
+msgctxt "lclstrconsts.rsmbcancel"
+msgid "Cancel"
+msgstr "Atsisakyti"
+
+#: lclstrconsts.rsmbclose
+msgid "&Close"
+msgstr "&Užverti"
+
+#: lclstrconsts.rsmbhelp
+msgid "&Help"
+msgstr "Žin&ynas"
+
+#: lclstrconsts.rsmbignore
+msgid "&Ignore"
+msgstr "&Ignoruoti"
+
+#: lclstrconsts.rsmbno
+msgid "&No"
+msgstr "&Ne"
+
+#: lclstrconsts.rsmbnotoall
+msgid "No to all"
+msgstr "Visada ne"
+
+#: lclstrconsts.rsmbok
+msgid "&OK"
+msgstr "&Gerai"
+
+#: lclstrconsts.rsmbopen
+msgid "&Open"
+msgstr "At&verti"
+
+#: lclstrconsts.rsmbretry
+msgid "&Retry"
+msgstr "Ka&rtoti"
+
+#: lclstrconsts.rsmbsave
+msgid "&Save"
+msgstr "Į&rašyti"
+
+#: lclstrconsts.rsmbunlock
+msgid "&Unlock"
+msgstr "&Atsklęsti"
+
+#: lclstrconsts.rsmbyes
+msgid "&Yes"
+msgstr "&Taip"
+
+#: lclstrconsts.rsmbyestoall
+msgid "Yes to &All"
+msgstr "Vis&ada taip"
+
+#: lclstrconsts.rsmedgraycolorcaption
+msgid "Medium Gray"
+msgstr "Vidutiniškai pilka"
+
+#: lclstrconsts.rsmenubarcolorcaption
+msgid "Menu Bar"
+msgstr "Meniu juosta"
+
+#: lclstrconsts.rsmenucolorcaption
+msgctxt "lclstrconsts.rsmenucolorcaption"
+msgid "Menu"
+msgstr "Meniu"
+
+#: lclstrconsts.rsmenuhighlightcolorcaption
+msgid "Menu Highlight"
+msgstr "Paryškintas meniu"
+
+#: lclstrconsts.rsmenutextcolorcaption
+msgid "Menu Text"
+msgstr "Menu tekstas"
+
+#: lclstrconsts.rsmodified
+msgid "  modified "
+msgstr "  pakeista "
+
+#: lclstrconsts.rsmoneygreencolorcaption
+msgid "Money Green"
+msgstr "Žalsva"
+
+#: lclstrconsts.rsmtauthentication
+msgid "Authentication"
+msgstr "Tapatumo nustatymas"
+
+#: lclstrconsts.rsmtconfirmation
+msgid "Confirmation"
+msgstr "Patvirtinimas"
+
+#: lclstrconsts.rsmtcustom
+msgid "Custom"
+msgstr "Naudotojo"
+
+#: lclstrconsts.rsmterror
+msgctxt "lclstrconsts.rsmterror"
+msgid "Error"
+msgstr "Klaida"
+
+#: lclstrconsts.rsmtinformation
+msgid "Information"
+msgstr "Informacija"
+
+#: lclstrconsts.rsmtwarning
+msgid "Warning"
+msgstr "Įspėjimas"
+
+#: lclstrconsts.rsnavycolorcaption
+msgid "Navy"
+msgstr "Tamsiai mėlyna"
+
+#: lclstrconsts.rsnextrecordhint
+msgctxt "lclstrconsts.rsnextrecordhint"
+msgid "Next"
+msgstr "Kitas"
+
+#: lclstrconsts.rsnonecolorcaption
+msgid "None"
+msgstr "Joks"
+
+#: lclstrconsts.rsnotavalidgridfile
+msgid "Not a valid grid file"
+msgstr "Netinkamas tinklelio failas"
+
+#: lclstrconsts.rsnowidgetset
+msgid "No widgetset object. Please check if the unit \"interfaces\" was added to the programs uses clause."
+msgstr "Ne valdiklio objektas. Patikrinkite ar modulis „interfaces“ įtrauktas į programos naudojamų modulių sąrašą."
+
+#: lclstrconsts.rsolivecolorcaption
+msgid "Olive"
+msgstr "Alyvų spalva"
+
+#: lclstrconsts.rspickdate
+msgid "Select a date"
+msgstr "Pasirinkite datą"
+
+#: lclstrconsts.rspixmap
+msgid "Pixmap"
+msgstr "Pixmap"
+
+#: lclstrconsts.rsportablebitmap
+msgid "Portable BitMap"
+msgstr "Portable BitMap"
+
+#: lclstrconsts.rsportablegraymap
+msgid "Portable GrayMap"
+msgstr "Portable GreyMap"
+
+#: lclstrconsts.rsportablenetworkgraphic
+msgid "Portable Network Graphic"
+msgstr "Portable Network Graphic"
+
+#: lclstrconsts.rsportablepixmap
+msgid "Portable PixMap"
+msgstr "Portable PixMap"
+
+#: lclstrconsts.rspostrecordhint
+msgid "Post"
+msgstr "Išsiųsti"
+
+#: lclstrconsts.rspressoktoignoreandriskdatacorruptionpresscanceltok
+#| msgid "%s%sPress Ok to ignore and risk data corruption.%sPress Cancel to kill the program."
+msgid "%s%sPress OK to ignore and risk data corruption.%sPress Cancel to kill the program."
+msgstr "%s%sSpauskite „Gerai“ jeigu norite ignoruoti ir rizikuoti sugadinti duomenis.%sSpauskite „Atsisakyti“, kad išjungtumėte programą."
+
+#: lclstrconsts.rspriorrecordhint
+msgctxt "lclstrconsts.rspriorrecordhint"
+msgid "Prior"
+msgstr "Ankstesnis"
+
+#: lclstrconsts.rspromptonreplace
+msgid "Prompt on replace"
+msgstr "Keičiant klausti patvirtinimo"
+
+#: lclstrconsts.rspropertydoesnotexist
+msgid "Property %s does not exist"
+msgstr "Savybė %s neegzistuoja"
+
+#: lclstrconsts.rspurplecolorcaption
+msgid "Purple"
+msgstr "Purpurinė"
+
+#: lclstrconsts.rsqtoptiondograb
+msgid "-dograb (only under X11), running under a debugger can cause an implicit -nograb, use -dograb to override. Need QT_DEBUG."
+msgstr "-dograb (tik su X11), derinant programą gali būti besąlygiškai nustatomas -nograb. Naudokite -dograb kad tą panaikintumėte. Reikia QT_DEBUG."
+
+#: lclstrconsts.rsqtoptiongraphicsstyle
+msgid "-graphicssystem param, sets the backend to be used for on-screen widgets and QPixmaps. Available options are native, raster and opengl. OpenGL is still unstable."
+msgstr "-graphicssystem parametras, nustato galinę sistemą, kuri bus naudojama ekrane rodomiems valdikliams ir QPixmaps. Galimi variantai yra „native“, „raster“ and „opengl“. OpenGL dar nestabilus."
+
+#: lclstrconsts.rsqtoptionnograb
+msgid "-nograb, tells Qt that it must never grab the mouse or the keyboard. Need QT_DEBUG."
+msgstr "-nograb, nurodo Qt, kad jis niekada neturi savintis palės ar klaviatūros. Reikia QT_DEBUG."
+
+#: lclstrconsts.rsqtoptionreverse
+msgid "-reverse, sets the application's layout direction to Qt::RightToLeft."
+msgstr "-reverse, nustato programos išdėstymo kryptį Qt::RightToLeft."
+
+#: lclstrconsts.rsqtoptionsession
+msgid "-session session, restores the application from an earlier session."
+msgstr "-session sesija, atkuria programą iš ankstesnės sesijos."
+
+#: lclstrconsts.rsqtoptionstyle
+msgid "-style style or -style=style, sets the application GUI style. Possible values are motif, windows, and platinum. If you compiled Qt with additional styles or have additional styles as plugins these will be available to the -style  command line option. NOTE: Not all styles are available on all platforms. If style param does not exist Qt will start an application with default common style (windows)."
+msgstr "-style stilius arba -style=stilius, nustato programos grafinės sąsajos stilių. Galimos reikšmės: „motif“, „windows“ ir „platinum“. Jeigu turite sukompiliuotą Qt su papildomais stiliais arba turite įdiegtų papildomų stilių kaip įskiepių, juos taip pat galima naudoti „-style“ komandinės eilutės parametre. PASTABA: Ne visi stiliai yra galimi visose platformose. Jeigu stiliaus parametras neegzistuoja, Qt paleis programą naudodamas numatytąjį stilių („windows“)."
+
+#: lclstrconsts.rsqtoptionstylesheet
+msgid "-stylesheet stylesheet or -stylesheet=stylesheet, sets the application Style Sheet. The value must be a path to a file that contains the Style Sheet. Note: Relative URLs in the Style Sheet file are relative to the Style Sheet file's path."
+msgstr "-stylesheet stiliaus_lapas arba -stylesheet=stiliaus_lapas, nustato programos stiliaus lapą. Reikšmė turi būti kelias iki failo, kuriame yra stiliaus lapas. Pastaba: santykiniai URL stiliaus lapo faile turi būti santykiniai stiliaus lapo failo keliui."
+
+#: lclstrconsts.rsqtoptionsync
+msgid "-sync (only under X11), switches to synchronous mode for debugging."
+msgstr "-sync (tiktai su X11), perjungia į sinchronizuotą veikseną derinimui."
+
+#: lclstrconsts.rsqtoptionwidgetcount
+msgid "-widgetcount, prints debug message at the end about number of widgets left undestroyed and maximum number of widgets existed at the same time."
+msgstr "-widgetcount, pabaigoje atspausdina derinimo žinutę, pasakančią kiek valdiklių yra likusių nesunaikintų ir kiek daugiausiai valdiklių egzistavo vienu metu."
+
+#: lclstrconsts.rsqtoptionx11bgcolor
+msgid "-bg or -background color, sets the default background color and an application palette (light and dark shades are calculated)."
+msgstr "-bg arba -background spalva, nustato numatytąją fono spalvą ir programos paletę (šviesusis ir tamsusis atspalviai yra apskaičiuojami)."
+
+#: lclstrconsts.rsqtoptionx11btncolor
+msgid "-btn or -button color, sets the default button color."
+msgstr "-btn arba -button spalva, nustato numatytąją mygtukų spalvą."
+
+#: lclstrconsts.rsqtoptionx11cmap
+msgid "-cmap, causes the application to install a private color map on an 8-bit display."
+msgstr "-cmap, priverčia programą įdiegti privatų spalvų atvaizdį 8 bitų monitoriuje."
+
+#: lclstrconsts.rsqtoptionx11display
+msgid "-display display, sets the X display (default is $DISPLAY)."
+msgstr "-display monitorius, nustato X monitorių (numatytasis yra $DISPLAY)."
+
+#: lclstrconsts.rsqtoptionx11fgcolor
+msgid "-fg or -foreground color, sets the default foreground color."
+msgstr "-fg arba -foreground spalva, nustato numatytąją priekinio plano spalvą."
+
+#: lclstrconsts.rsqtoptionx11font
+msgid "-fn or -font font, defines the application font. The font should be specified using an X logical font description."
+msgstr "-fn arba -font šriftas, nurodo programos šriftą. Šriftas turi būti nurodomas naudojantis X loginiu šrifto deskriptoriumi."
+
+#: lclstrconsts.rsqtoptionx11geometry
+msgid "-geometry geometry, sets the client geometry of the first window that is shown."
+msgstr "-geometry geometrija, nustato pirmojo parodomo lango geometriją."
+
+#: lclstrconsts.rsqtoptionx11im
+msgid "-im, sets the input method server (equivalent to setting the XMODIFIERS environment variable)."
+msgstr "-im, nustato įvesties metodo serverį (tas pats, kas nustatyti XMODIFIERS aplinkos kintamąjįi)."
+
+#: lclstrconsts.rsqtoptionx11inputstyle
+msgid "-inputstyle, defines how the input is inserted into the given widget, e.g. onTheSpot makes the input appear directly in the widget, while overTheSpot makes the input appear in a box floating over the widget and is not inserted until the editing is done."
+msgstr "-inputstyle, nurodo kaip įvestis yra įterpiama į duotąjį valdiklį, pvz. „onTheSpot“ padaro taip, kad įvestis atsirastų tiesiai valdiklyje, o „overTheSpot“ padaro taip, kad įvestis atsiranda langelyje esančiame virš valdiklio ir įteriamas tik tada, kai redagavimas baigiamas."
+
+#: lclstrconsts.rsqtoptionx11name
+msgid "-name name, sets the application name."
+msgstr "-name pavadinimas, nustato programos pavadinimą."
+
+#: lclstrconsts.rsqtoptionx11ncols
+msgid "-ncols count, limits the number of colors allocated in the color cube on an 8-bit display, if the application is using the QApplication::ManyColor color specification. If count is 216 then a 6x6x6 color cube is used (i.e. 6 levels of red, 6 of green, and 6 of blue); for other values, a cube approximately proportional to a 2x3x1 cube is used."
+msgstr "-ncols skaičius, riboja spalvų skaičių, paskirtų spalvų kube 8 bitų monitoriuje, jeigu programa naudoja QApplication::ManyColor spalvų specifikaciją. Jeigu skaičius yra 216 tada yra naudojamas 6x6x6 spalvų kubas (t. y. 6 raudonos lygiai, 6 žalios lygiai ir 6 mėlynos lygiai); kitoms reikšmėms yra naudojamas kubas, apytiksliai proporcingas 2x3x1."
+
+#: lclstrconsts.rsqtoptionx11title
+msgid "-title title, sets the application title."
+msgstr "-title antraštė, nustato programos antraštę."
+
+#: lclstrconsts.rsqtoptionx11visual
+msgid "-visual TrueColor, forces the application to use a TrueColor visual on an 8-bit display."
+msgstr "-visual TrueColor, priverčia programą naudoti TrueColor vaizdą 8 bitų monitoriuje."
+
+#: lclstrconsts.rsrasterimageendupdate
+msgid "Endupdate while no update in progress"
+msgstr "„Endupdate“, tačiau niekas neatnaujinama"
+
+#: lclstrconsts.rsrasterimagesaveinupdate
+msgid "Cannot save image while update in progress"
+msgstr "Neįmanoma įrašyti paveikslo kol jis atnaujinamas"
+
+#: lclstrconsts.rsrasterimageupdateall
+msgid "Cannot begin update all when canvas only update in progress"
+msgstr "Visko atnaujinti negalima kai atnaujinamas tik „Canvas“"
+
+#: lclstrconsts.rsredcolorcaption
+msgid "Red"
+msgstr "Raudona"
+
+#: lclstrconsts.rsrefreshrecordshint
+msgid "Refresh"
+msgstr "Atnaujinti"
+
+#: lclstrconsts.rsreplace
+msgid "Replace"
+msgstr "Pakeisti"
+
+#: lclstrconsts.rsreplaceall
+msgid "Replace all"
+msgstr "Pakeisti visus"
+
+#: lclstrconsts.rsresourcenotfound
+msgctxt "lclstrconsts.rsresourcenotfound"
+msgid "Resource %s not found"
+msgstr "Resursas %s nerastas"
+
+#: lclstrconsts.rsscrollbarcolorcaption
+msgid "ScrollBar"
+msgstr "Slinkties juosta"
+
+#: lclstrconsts.rsscrollbaroutofrange
+msgid "ScrollBar property out of range"
+msgstr "Savybės „ScrollBar“ vertė peržengia ribas"
+
+#: lclstrconsts.rsselectcolortitle
+msgid "Select color"
+msgstr "Pasirinkite spalvą"
+
+#: lclstrconsts.rsselectfonttitle
+msgid "Select a font"
+msgstr "Pasirinkite šriftą"
+
+#: lclstrconsts.rssilvercolorcaption
+msgid "Silver"
+msgstr "Sidabrinė"
+
+#: lclstrconsts.rssize
+msgid "  size "
+msgstr "  dydis "
+
+#: lclstrconsts.rsskybluecolorcaption
+msgid "Sky Blue"
+msgstr "Dangaus žydrumo"
+
+#: lclstrconsts.rstcustomtabcontrolaccessibilitydescription
+msgid "A control with tabs"
+msgstr "Valdiklis su ąselėmis"
+
+#: lclstrconsts.rstealcolorcaption
+msgid "Teal"
+msgstr "Tamsiai žydra"
+
+#: lclstrconsts.rstext
+msgid "Text"
+msgstr "Tekstas"
+
+#: lclstrconsts.rstiff
+msgid "Tagged Image File Format"
+msgstr "„Tagged Image File Format“"
+
+#: lclstrconsts.rstpanelaccessibilitydescription
+msgctxt "lclstrconsts.rstpanelaccessibilitydescription"
+msgid "Panel"
+msgstr "Skydas"
+
+#: lclstrconsts.rstsplitteraccessibilitydescription
+msgctxt "lclstrconsts.rstsplitteraccessibilitydescription"
+msgid "A grip to control how much size to give two parts of an area"
+msgstr "Rankenėlė, kuria galima keisti dviejų srities dalių dydžius"
+
+#: lclstrconsts.rsttreeviewaccessibilitydescription
+msgctxt "lclstrconsts.rsttreeviewaccessibilitydescription"
+msgid "A tree of items"
+msgstr "Elementų medis"
+
+#: lclstrconsts.rsunabletoloaddefaultfont
+msgid "Unable to load default font"
+msgstr "Nepavyko įkelti numatyto šrifto"
+
+#: lclstrconsts.rsunknownerrorpleasereportthisbug
+msgid "Unknown Error, please report this bug"
+msgstr "Nežinoma klaida, prašau praneškite kūrėjams apie šią klaidą"
+
+#: lclstrconsts.rsunknownpictureextension
+msgid "Unknown picture extension"
+msgstr "Nežinomas paveikslo plėtinys"
+
+#: lclstrconsts.rsunknownpictureformat
+msgid "Unknown picture format"
+msgstr "Nežinomas paveikslo formatas"
+
+#: lclstrconsts.rsunsupportedbitmapformat
+msgid "Unsupported bitmap format."
+msgstr "Nepalaikomas rastrinio paveikslo formatas."
+
+#: lclstrconsts.rsunsupportedclipboardformat
+msgid "Unsupported clipboard format: %s"
+msgstr "Nepalaikomas iškarpinės formatas: %s"
+
+#: lclstrconsts.rswarningunreleaseddcsdump
+msgid " WARNING: There are %d unreleased DCs, a detailed dump follows:"
+msgstr " Įspėjimas: liko %d neatlaisvinti „DC“, išsamiau:"
+
+#: lclstrconsts.rswarningunreleasedgdiobjectsdump
+msgid " WARNING: There are %d unreleased GDIObjects, a detailed dump follows:"
+msgstr " Įspėjimas: liko %d neatlaisvinti „GDIObject“, išsamiau:"
+
+#: lclstrconsts.rswarningunreleasedmessagesinqueue
+msgid " WARNING: There are %d messages left in the queue! I'll free them"
+msgstr " Įspėjimas: eilėje dar yra %d pranešimai, jie bus sunaikinti."
+
+#: lclstrconsts.rswarningunreleasedtimerinfos
+msgid " WARNING: There are %d TimerInfo structures left, I'll free them"
+msgstr " Įspėjimas: dar liko %d „TimerInfo“ struktūrų, jos bus sunaikintos."
+
+#: lclstrconsts.rswarningunremovedpaintmessages
+msgid " WARNING: There are %s unremoved LM_PAINT/LM_GtkPAINT message links left."
+msgstr " Įspėjimas: liko %s nepašalintos nuorodos į LM_PAINT/LM_GtkPAINT pranešimus."
+
+#: lclstrconsts.rswhitecolorcaption
+msgid "White"
+msgstr "Balta"
+
+#: lclstrconsts.rswholewordsonly
+msgid "Whole words only"
+msgstr "Tik ištisų žodžių"
+
+#: lclstrconsts.rswin32error
+msgid "Error:"
+msgstr "Klaida:"
+
+#: lclstrconsts.rswin32warning
+msgid "Warning:"
+msgstr "Įspėjimas:"
+
+#: lclstrconsts.rswindowcolorcaption
+msgid "Window"
+msgstr "Langas"
+
+#: lclstrconsts.rswindowframecolorcaption
+msgid "Window Frame"
+msgstr "Lango rėmelis"
+
+#: lclstrconsts.rswindowtextcolorcaption
+msgid "Window Text"
+msgstr "Lango tekstas"
+
+#: lclstrconsts.rsyellowcolorcaption
+msgid "Yellow"
+msgstr "Geltona"
+
+#: lclstrconsts.scannotfocus
+msgid "Cannot focus a disabled or invisible window"
+msgstr "Negalima sufokusuoti neveiksnaus ar nematomo lango"
+
+#: lclstrconsts.sduplicatemenus
+msgid "Duplicate menus"
+msgstr "Meniu dubliuojasi"
+
+#: lclstrconsts.sinvalidactioncreation
+msgid "Invalid action creation"
+msgstr "Netinkamas veiksmo kūrimas"
+
+#: lclstrconsts.sinvalidactionenumeration
+msgid "Invalid action enumeration"
+msgstr "Netinkamas veiksmo išvardijimas"
+
+#: lclstrconsts.sinvalidactionregistration
+msgid "Invalid action registration"
+msgstr "Netinkamas veiksmo registravimas"
+
+#: lclstrconsts.sinvalidactionunregistration
+msgid "Invalid action unregistration"
+msgstr "Netinakamas veiksmo išregistravimas"
+
+#: lclstrconsts.sinvalidcharset
+msgid "The char set in mask \"%s\" is not valid!"
+msgstr "Netinkama kaukės „%s“ koduotė!"
+
+#: lclstrconsts.sinvalidimagesize
+msgid "Invalid image size"
+msgstr "Netinkamas paveikslo dydis"
+
+#: lclstrconsts.sinvalidindex
+msgid "Invalid ImageList Index"
+msgstr "Netinkamas „ImageList“ indeksas"
+
+#: lclstrconsts.smaskeditnomatch
+msgid "The current text does not match the specified mask."
+msgstr "Dabartinis tekstas nedera prie nurodytos kaukės."
+
+#: lclstrconsts.smenuindexerror
+msgid "Menu index out of range"
+msgstr "Meniu indeksas peržengia ribas"
+
+#: lclstrconsts.smenuitemisnil
+msgid "MenuItem is nil"
+msgstr "„MenuItem“ reikšmė yra nil"
+
+#: lclstrconsts.smenunotfound
+msgid "Sub-menu is not in menu"
+msgstr "Submeniu nėra įdėtas į menių"
+
+#: lclstrconsts.smkcalt
+msgid "Alt+"
+msgstr "Alt+"
+
+#: lclstrconsts.smkcbksp
+msgid "BkSp"
+msgstr "Grįž"
+
+#: lclstrconsts.smkcctrl
+msgid "Ctrl+"
+msgstr "Vald+"
+
+#: lclstrconsts.smkcdel
+msgid "Del"
+msgstr "Šal"
+
+#: lclstrconsts.smkcdown
+msgctxt "lclstrconsts.smkcdown"
+msgid "Down"
+msgstr "Žemyn"
+
+#: lclstrconsts.smkcend
+msgctxt "lclstrconsts.smkcend"
+msgid "End"
+msgstr "Pab"
+
+#: lclstrconsts.smkcenter
+msgid "Enter"
+msgstr "Įvesti"
+
+#: lclstrconsts.smkcesc
+msgid "Esc"
+msgstr "Gr"
+
+#: lclstrconsts.smkchome
+msgctxt "lclstrconsts.smkchome"
+msgid "Home"
+msgstr "Prad"
+
+#: lclstrconsts.smkcins
+msgid "Ins"
+msgstr "Įterpti"
+
+#: lclstrconsts.smkcleft
+msgctxt "lclstrconsts.smkcleft"
+msgid "Left"
+msgstr "Kairėn"
+
+#: lclstrconsts.smkcmeta
+msgid "Meta+"
+msgstr "Meta+"
+
+#: lclstrconsts.smkcpgdn
+msgid "PgDn"
+msgstr "Psl. žemyn"
+
+#: lclstrconsts.smkcpgup
+msgid "PgUp"
+msgstr "Psl. aukštyn"
+
+#: lclstrconsts.smkcright
+msgctxt "lclstrconsts.smkcright"
+msgid "Right"
+msgstr "Dešinėn"
+
+#: lclstrconsts.smkcshift
+msgid "Shift+"
+msgstr "Lyg2+"
+
+#: lclstrconsts.smkcspace
+msgid "Space"
+msgstr "Tarpas"
+
+#: lclstrconsts.smkctab
+msgctxt "lclstrconsts.smkctab"
+msgid "Tab"
+msgstr "Tab"
+
+#: lclstrconsts.smkcup
+msgctxt "lclstrconsts.smkcup"
+msgid "Up"
+msgstr "Aukštyn"
+
+#: lclstrconsts.snomdiform
+msgid "No MDI form present."
+msgstr "MDI formos nėra."
+
+#: lclstrconsts.snotimers
+msgid "No timers available"
+msgstr "Nėra laikmačių"
+
+#: lclstrconsts.sparexpected
+msgid "Wrong token type: %s expected"
+msgstr "Klaidingas leksemos tipas: tikėtasi %s"
+
+#: lclstrconsts.sparinvalidfloat
+msgid "Invalid floating point number: %s"
+msgstr "Netinkamas slankaus kablelio skaičius: %s"
+
+#: lclstrconsts.sparinvalidinteger
+msgid "Invalid integer number: %s"
+msgstr "Netinkamas sveikasis skaičius: %s"
+
+#: lclstrconsts.sparlocinfo
+#| msgid " (at %d,%d, stream offset %.8x)"
+msgid " (at %d,%d, stream offset %d)"
+msgstr " (ties %d,%d, srauto poslinkis: %d)"
+
+#: lclstrconsts.sparunterminatedbinvalue
+msgid "Unterminated byte value"
+msgstr "Nepabaigta bitų vertė"
+
+#: lclstrconsts.sparunterminatedstring
+msgid "Unterminated string"
+msgstr "Nepabaigta eilutė"
+
+#: lclstrconsts.sparwrongtokensymbol
+msgid "Wrong token symbol: %s expected but %s found"
+msgstr "Klaidingas leksemos simbolis: tikėtasi %s, tačiau rasta %s"
+
+#: lclstrconsts.sparwrongtokentype
+msgid "Wrong token type: %s expected but %s found"
+msgstr "Klaidingas leksemos tipas: tikėtasi %s, tačiau rasta %s"
+
