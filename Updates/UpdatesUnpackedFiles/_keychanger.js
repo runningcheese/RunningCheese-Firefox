@@ -39,7 +39,7 @@ keys['Alt+G'] = "var s = prompt('谷歌站内搜索:', '');if (s.length > 0) gBr
 keys['Alt+B'] = "var s = prompt('百度站内搜索:', '');if (s.length > 0) gBrowser.addTab('https://www.baidu.com/s?wd=site:' + encodeURIComponent( gBrowser.currentURI.host) + ' ' + encodeURIComponent(s));";//Baidu站内搜索
 keys['Alt+X'] = "getWebNavigation().canGoForward && getWebNavigation().goForward();";//前进
 keys['Alt+Z'] = "getWebNavigation().canGoBack && getWebNavigation().goBack();";//后退
-keys['Alt+C'] = function() {gClipboardHelper.copyString(gBrowser.currentURI.spec); }; //复制当前页的URL
+keys['Alt+C'] = function() { var gClipboardHelper = Components.classes['@mozilla.org/widget/clipboardhelper;1'].getService(Components.interfaces.nsIClipboardHelper);gClipboardHelper.copyString(gBrowser.currentURI.spec); }; //复制当前页的URL
 keys['Alt+V'] =function() {openUILinkIn(readFromClipboard(),   gBrowser.currentURI.spec == "about:blank" && !gBrowser.selectedTab.hasAttribute("busy") ? "current" : "tab",   true)}; //打开剪切板内容
 keys['Alt+U'] = function(ev) {BrowserPageInfo();}; //查看页面信息
 keys['Alt+I'] = function() {
