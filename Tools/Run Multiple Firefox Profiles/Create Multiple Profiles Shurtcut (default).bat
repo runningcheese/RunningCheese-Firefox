@@ -1,9 +1,9 @@
 :: by runningcheese
 @echo off
 echo set WshShell = WScript.CreateObject("WScript.Shell")>tmp.vbs
-echo set oShellLink = WshShell.CreateShortcut("%~dp0"  ^& "\Firefox V10.lnk")>>tmp.vbs
+echo set oShellLink = WshShell.CreateShortcut("%~dp0"  ^& "\Firefox default.lnk")>>tmp.vbs
 echo oShellLink.TargetPath ="%~dp0Firefox\firefox.exe">>tmp.vbs
-echo oShellLink.Arguments = "-no-remote -p V10">>tmp.vbs
+echo oShellLink.Arguments = "-no-remote -p default">>tmp.vbs
 echo oShellLink.WindowStyle ="1">>tmp.vbs
 echo oShellLink.IconLocation = "%~dp0Firefox\firefox.exe">>tmp.vbs
 echo oShellLink.Description = "">>tmp.vbs
