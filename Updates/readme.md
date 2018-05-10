@@ -9,7 +9,7 @@
 * Updates.zip：自动更新的文件打包
 * UpdatesUnpackedFiles 文件夹：Updates.zip 解压后的文件
 
-**手动更新文件:**\
+**手动更新文件:**
 * HeaderEditor_反盗链.json：用于拓展 Header Editor
 * HeaderEditor_用户代理.json：用于拓展 Header Editor，参考了 <a href="https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor" rel="noopener" target="_blank">dupontjoy</a>
 * HeaderEditor_重定向.json：用于拓展 Header Editor，参考了 <a href="https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor" rel="noopener" target="_blank">dupontjoy</a>
