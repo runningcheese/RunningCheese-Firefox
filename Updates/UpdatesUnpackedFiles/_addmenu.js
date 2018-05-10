@@ -7,15 +7,16 @@ page([{label:'复制',id:"context-copy",condition:"select",accesskey:"",clone:fa
 
 
 
-
-// 视频右键菜单
-new function () {
-	var items = [
+//标签右键菜单项
+tab([
 {
-label : "置顶播放",
-id:"context_StickyTab",
-onclick : function () {
-	(function ()
+        id:'context_SmallWindow',
+				label : '弹出当前标签',
+				image :"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQ0lEQVQ4jWNgoBL4TyZGMYAcS2ljALGG4XUBMQYS9MJ/PHJEGQATJ8sAnNFFqguIBsQYQHFCwhdTg8QAQpkGbxiQDQDkmEO9y3ip2QAAAABJRU5ErkJggg==",
+oncommand : function () {
+document.getElementById("nav-bar-overflow-button").click();document.getElementById("popupwindow_ettoolong-browser-action").click();
+setTimeout(function(){
+(function ()
 {if(document.getElementById('main-window').hasAttribute('ontop'))
 onTop=false;else onTop=true;
 	try {
@@ -77,38 +78,9 @@ onTop=false;else onTop=true;
 		alwaysontop_log(ex);
 	}
 })()
+}, 300);}
 },
-image :"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGUlEQVQ4jZ2QsUoDURBF8xfvzbm/IWhAFEEtFCwsBRE1nWUqySeIKAoiooWineA/pBEt0qUQP8BiXVAknbA2s/CUbDbmVvPum3vvzDQaYwDoSroep3coJOWSCuBsUoNnSU3gC7iaxKBIa+DyP+IPoAt8lhwwkHT0qxFoSToG7oBl594knXt9AbwAi2Y2J6mQdFOmNH20zMwOgb43PP4J6Tn/BGRAL/3ck5Qn720gk9Tx9wHwHkKYGbVvOz1YCGEa+AYegMFYRwM2fJ1ZN91KTWsRY5z3PQszm3KTV2CpVlym+eitMhk4AW5His1s00dfS7h9STnQB04rxeXeMcbVIVO13Xi3Srzj4pWqgBjjQmW6pHszW69sqMEPppVYpMrPTWIAAAAASUVORK5CYII=",
-},
- {
-				label : '宽屏模式',
-				image :"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUUlEQVQ4jWNgoAL4jwMTrQ6bYlIshxvgycDA8AyPTTD8DKoWw4BnDAwM1kTYag1Vi2EAKV7BqoccAwgLDg0DKA5EqkUjxQmJHAA3gKLMRBEAAPmLTP1ErtdyAAAAAElFTkSuQmCC",
-				oncommand: 'document.getElementById("maximizevideo_ettoolong-browser-action").click();',
-},{
-				label : '小窗模式',
-				image :"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQ0lEQVQ4jWNgoBL4TyZGMYAcS2ljALGG4XUBMQYS9MJ/PHJEGQATJ8sAnNFFqguIBsQYQHFCwhdTg8QAQpkGbxiQDQDkmEO9y3ip2QAAAABJRU5ErkJggg==",
-				oncommand: 'document.getElementById("popupwindow_ettoolong-browser-action").click();',
-},{
-				label : '弹出视频',
-				image :"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAcUlEQVQ4jbXTvQmFQBBF4S+wCMNXgh1oRfZmblsiYqCBBr7FnxHZCxMt9+yZhSVDfliC8yn5AQV6DBgxJaU/wNN+NeZ9LgFnBsdyvVuEAWnZW4O0DF0UUNoerr0wCxlUd4UI4PZGNF8B8cMoIPvnOc0KNDA9zZlUdtUAAAAASUVORK5CYII=",
-				oncommand: 'document.getElementById("maximizevideo_ettoolong-browser-action").click();document.getElementById("popupwindow_ettoolong-browser-action").click();',
-},
-];
-	var menu = PageMenu({
-		label: "多功能菜单",
-		condition: 'media',
-		insertBefore: 'context-media-play',
-		image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABBJREFUCNdjgID6fxCaIBcAcUwEeC1dweYAAAAASUVORK5CYII="
-	});
-	menu(items);
-};
-
-
-
-
-
-
-
+]);
 
 
 // 页面信息右键菜单
@@ -369,7 +341,7 @@ new function () {
 		label:"IE浏览器打开",
 		oncommand: function() {
 	try {
-		var path ="..\\..\\..\\Program Files\\Internet Explorer\\iexplore.exe";	var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);file.initWithPath(path.replace(/^\./, Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("SysD", Components.interfaces.nsIFile).path));file.launch();
+		var path ="..\\..\\..\\Program Files\\Internet Explorer\\iexplore.exe";	var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);file.initWithPath(path.replace(/^\./, Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("SysD", Components.interfaces.nsIFile).path));
 		var process = Cc["@mozilla.org/process/util;1"].createInstance(Ci.nsIProcess);
 		process.init(file);
 		process.run(false, [gContextMenu.linkURL], 1);
@@ -474,7 +446,7 @@ oncommand:"gBrowser.replaceTabWithWindow(TabContextMenu.contextTab);",
 		label:"IE浏览器打开",
 		oncommand: function() {
 	try {
-		var path ="..\\..\\..\\Program Files\\Internet Explorer\\iexplore.exe";	var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);file.initWithPath(path.replace(/^\./, Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("SysD", Components.interfaces.nsIFile).path));file.launch();
+		var path ="..\\..\\..\\Program Files\\Internet Explorer\\iexplore.exe";	var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);file.initWithPath(path.replace(/^\./, Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("SysD", Components.interfaces.nsIFile).path));
 
 		var process = Cc["@mozilla.org/process/util;1"].createInstance(Ci.nsIProcess);
 		process.init(file);
@@ -985,33 +957,6 @@ SPE3([
 new function () {
 	var items = [
 {
-		label: "关闭右侧标签",
-    id:"context_closeTabsToTheLast",
-    oncommand:  function() {gBrowser.removeTabsToTheEndFrom(gBrowser.mCurrentTab);	},
-	 image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAOUlEQVQ4jWNgGGzgPxQPNwPyGBhyGRgY/kNp8lwAMySTgaGNGAPwYnwuoZoLsGqmKAyIBQNvwBAEAIkvKboNt20DAAAAAElFTkSuQmCC"
-	},{
-    command:"context_closeLeftTabs",
-	image:"",
-	},
-    {
-		label: "关闭左侧标签",
-    id:"context_closeTabsToTheFirst",
-		image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEUAAABuAABpAAAAAACOszMyAAAAA3RSTlMAbYYu/vchAAAAH0lEQVQI12NABswHkIkSIMF0AUiw//8PYkHF0NWhAgAbAQzws7ptnwAAAABJRU5ErkJggg==",
-		oncommand: function closeTabsToTheFirst() { for (let i = TabContextMenu.contextTab._tPos - 1; i >= 0; i--) if (!gBrowser.tabs[i].pinned){ gBrowser.removeTab(gBrowser.tabs[i], {animate: true});}}
-},
-{
-		label: "关闭其他标签",
-    id:"context_removeAllTabsButCurrent",
-		oncommand: "gBrowser.removeAllTabsBut(TabContextMenu.contextTab);",
- 	image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAATElEQVQ4jdXSQQrAMAhE0edxs0iOkWvbVQsFs2m7aD64cWQcRH5NkEFuYjDoQQ76yqCaAY1ZCVWC06Qxb40ndS18leCTG6zY7A/25QBZhDm3YCnePQAAAABJRU5ErkJggg==",
-	},
-{
-		label: "关闭所有标签",
-    id:"context_closeAllTabs",
-		oncommand: "gBrowser.removeAllTabsBut(gBrowser.mCurrentTab); gBrowser.removeCurrentTab();",
- 	image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAP0lEQVQ4jWNgGHbgPwMDgz0eeXuoGoIKsBmCT46gQqI1Y9NAsmZ0Q8jSTLEBFHmBokCkOBqpkpAIAbJihHYAAKNEHEuIZ/qnAAAAAElFTkSuQmCC",
-	},
-{
 label : "关闭重复标签",
 id:"context_CloseSameTab",
  	image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAkUlEQVQ4jc3SPQrDMAwF4G/Kks1rT5MDhRwgB+vaHsFTltwlHaqCMXFTSCkVCMzTz3uSxT9ahxEZW3gOrDsqvmDFFQP68CGwNXKazCvmNwQzllZwDBYhOxWxFBjcMe01yCG1LEjVW+Tsqtg8561ZazV9oea7DU6P8OkSbxpLPP2NnDykUskUTK8lLoEdnvLv7QFhATCavYcOYgAAAABJRU5ErkJggg==",
@@ -1053,7 +998,34 @@ oncommand : function () {
 	else
 		alert("\u6CA1\u6709\u91CD\u590D\u6807\u7B7E\u9875");
 },
+},{
+		label: "关闭右侧标签",
+    id:"context_closeTabsToTheLast",
+    oncommand:  function() {gBrowser.removeTabsToTheEndFrom(gBrowser.mCurrentTab);	},
+	 image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAOUlEQVQ4jWNgGGzgPxQPNwPyGBhyGRgY/kNp8lwAMySTgaGNGAPwYnwuoZoLsGqmKAyIBQNvwBAEAIkvKboNt20DAAAAAElFTkSuQmCC"
+	},{
+    command:"context_closeLeftTabs",
+	image:"",
+	},
+    {
+		label: "关闭左侧标签",
+    id:"context_closeTabsToTheFirst",
+		image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEUAAABuAABpAAAAAACOszMyAAAAA3RSTlMAbYYu/vchAAAAH0lEQVQI12NABswHkIkSIMF0AUiw//8PYkHF0NWhAgAbAQzws7ptnwAAAABJRU5ErkJggg==",
+		oncommand: function closeTabsToTheFirst() { for (let i = TabContextMenu.contextTab._tPos - 1; i >= 0; i--) if (!gBrowser.tabs[i].pinned){ gBrowser.removeTab(gBrowser.tabs[i], {animate: true});}}
 },
+{
+		label: "关闭其他标签",
+    id:"context_removeAllTabsButCurrent",
+		oncommand: "gBrowser.removeAllTabsBut(TabContextMenu.contextTab);",
+ 	image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAATElEQVQ4jdXSQQrAMAhE0edxs0iOkWvbVQsFs2m7aD64cWQcRH5NkEFuYjDoQQ76yqCaAY1ZCVWC06Qxb40ndS18leCTG6zY7A/25QBZhDm3YCnePQAAAABJRU5ErkJggg==",
+	},
+{
+		label: "关闭所有标签",
+    id:"context_closeAllTabs",
+		oncommand: "gBrowser.removeAllTabsBut(gBrowser.mCurrentTab); gBrowser.removeCurrentTab();",
+ 	image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAP0lEQVQ4jWNgGHbgPwMDgz0eeXuoGoIKsBmCT46gQqI1Y9NAsmZ0Q8jSTLEBFHmBokCkOBqpkpAIAbJihHYAAKNEHEuIZ/qnAAAAAElFTkSuQmCC",
+	},
+
 	];
 	var menu = TabMenu({id:"context_CloseTab", onpopupshowing: syncHidden});
 	menu(items);

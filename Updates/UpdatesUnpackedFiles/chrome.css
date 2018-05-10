@@ -1350,9 +1350,9 @@ toolbarbutton.bookmark-item {
 /*标签页右键菜单排序 Tabs Option Order*/
 #context_CopyTab {-moz-box-ordinal-group: 1 !important;}
 #context_pinTab, #context_unpinTab {-moz-box-ordinal-group: 2 !important;}
-#context_SidebarOpen {-moz-box-ordinal-group: 3 !important;}
-#context_CloseTab {-moz-box-ordinal-group: 4 !important;}
-#context_StickOnTop {-moz-box-ordinal-group: 5 !important;}
+#context_CloseTab {-moz-box-ordinal-group: 3 !important;}
+#context_SidebarOpen {-moz-box-ordinal-group: 4 !important;}
+#context_SmallWindow {-moz-box-ordinal-group: 5 !important;}
 #context_sendTabToDevice {-moz-box-ordinal-group: 6 !important;}
 #context_bookmarkAllTabs {-moz-box-ordinal-group: 13 !important;}
 #context_TabInfoCopy {-moz-box-ordinal-group: 15 !important;}  	
@@ -1524,7 +1524,7 @@ toolbarbutton.bookmark-item {
 #context-inspect:after {content: "查看页面元素";	position: absolute !important;padding-right:10px!important;}
 
 #context_bookmarkAllTabs .menu-iconic-text {display: none;}
-#context_bookmarkAllTabs:after {content: "全部标签添加到书签";	position: absolute !important;}
+#context_bookmarkAllTabs:after {content: "所有标签加入书签";	position: absolute !important;}
 
 [label="將此連結彈出至獨立視窗"] .menu-iconic-text { display:none !important; }
 [label="將此連結彈出至獨立視窗"]:after {content: "将此链接弹出至独立窗口";	margin-left:-8px; position: absolute !important; padding-right:20px!important;}
