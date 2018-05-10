@@ -15,12 +15,12 @@
 * hosts：一小部分网站的hosts
 
 **恢复文件：**
-* Speeddail2 default layout.txt: SpeedDail 2 默认布局
+* SpeedDail2文件夹: SpeedDail 2 默认布局
 * search.json.mozlz4：搜索栏默认搜索引擎
 * GlitterDrag_拖拽规则.json：闪耀拖拽默认规则
 
 -------------
-### 05-09 更新说明
+### 05-10 更新说明
 1、标签菜单新增一键弹窗置顶播放按钮。\
 2、移除拓展 Maximize Video。\
 3、修正一些菜单选项的错误。
