@@ -38,6 +38,9 @@
 			'UL': {name: '激活左边的标签页', cmd:  function(event) {gBrowser.tabContainer.advanceSelectedTab(-1, true);}},
 			'UR': {name: '激活右边的标签页', cmd: function(event) {gBrowser.tabContainer.advanceSelectedTab(1, true);}},
 
+			'ULU': {name: '激活第一个标签页', cmd:  function(event) {	gBrowser.selectedTab = (gBrowser.visibleTabs || gBrowser.mTabs)[0];}},
+			'URU': {name: '激活最后一个标签页', cmd: function(event) { gBrowser.selectedTab = (gBrowser.visibleTabs || gBrowser.mTabs)[(gBrowser.visibleTabs || gBrowser.mTabs).length - 1];}},
+
 
 			'DL': {name: '恢复关闭的标签', cmd:  function() { try {	document.getElementById('History:UndoCloseTab').doCommand();} catch (ex) {if ('undoRemoveTab' in gBrowser) gBrowser.undoRemoveTab();	else throw "Session Restore feature is disabled."}	} },
 			'DR': {name: '关闭当前标签', cmd: function(event) {gBrowser.removeCurrentTab();}},

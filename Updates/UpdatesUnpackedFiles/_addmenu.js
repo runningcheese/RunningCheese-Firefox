@@ -183,7 +183,18 @@ onTop=false;else onTop=true;
 		label:"查看明文密码",
 		url: "javascript:(function()%7Bvar%20IN,F;IN=document.getElementsByTagName('input');for(var%20i=0;i<IN.length;i++)%7BF=IN%5Bi%5D;if(F.type.toLowerCase()=='password')%7Btry%7BF.type='text'%7Dcatch(r)%7Bvar%20n,Fa;n=document.createElement('input');Fa=F.attributes;for(var%20ii=0;ii<Fa.length;ii++)%7Bvar%20k,knn,knv;k=Fa%5Bii%5D;knn=k.nodeName;knv=k.nodeValue;if(knn.toLowerCase()!='type')%7Bif(knn!='height'&&knn!='width'&!!knv)n%5Bknn%5D=knv%7D%7D;F.parentNode.replaceChild(n,F)%7D%7D%7D%7D)()",
 		image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAjVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqhzP4AAAALnRSTlMAtqa4rqqURQbFn4+EciQUDdbAvJxhCs6ximldV1BNSTwmHBr25+XLsnpYMjAfbW7huwAAAKRJREFUGNM9yFWuxEAMBdFqSneYM8yPwftf3sjSKMcfJV9UnMzWm+nMi82/b8vS1MM2AaTc8jJtOqAoWJUe4ieqaVD5CVvDLeuD+yh/YfaYO7XInLqdSEVnCFQiJVWP01o9kfOfSJuJDFhMSyZvTR2vIj4lg93D9Ws8/by7Cxw8lxzgP8aHdjhCyFhVBug267LrW81ixv0dHrMb9VfHwoXgigPAE+P4C0U7fVB0AAAAAElFTkSuQmCC"
-	}
+	},
+ {
+		label: "浏览器界面截图",
+		oncommand: function(event) {
+			var canvas = document.createElementNS("http://www.w3.org/1999/xhtml", "canvas");
+			canvas.width = innerWidth;
+			canvas.height = innerHeight;
+			var ctx = canvas.getContext("2d");
+			ctx.drawWindow(window, 0, 0, canvas.width, canvas.height, "rgb(255,255,255)");
+			saveImageURL(canvas.toDataURL(), "Firefox.png");
+		}
+	},
 ];
 	var menu = PageMenu({
 		label: "多功能菜单",

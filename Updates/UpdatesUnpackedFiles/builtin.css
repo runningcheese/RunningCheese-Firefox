@@ -64,6 +64,10 @@ select,textarea,input {
 		background: #272822 !important;
 	}
 
+#viewsource {
+  height: auto !important;
+}
+
 	*::-moz-selection {
 		background-color: #49483E;
 	}

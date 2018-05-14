@@ -17,9 +17,10 @@
         prefs.setBoolPref('userChromeJS.floating_scrollbar.enabled', true);
         enabled = true;
     }
-
+// ÅÅ³ýÎ¢ÐÅÍøÒ³°æ
     var css = '\
     @namespace url(http: //www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
+    @-moz-document regexp("https?://(?!(wx2.qq.com)).*") {\
     :not(select):not(hbox) > scrollbar {\
         -moz-appearance: none!important;\
         position: relative;\
@@ -53,8 +54,8 @@
         background-color: #9B9B9B!important;\
     }\
     :not(select):not(hbox) > scrollbar scrollbarbutton, :not(select):not(hbox) > scrollbar gripper {\
-        display: none;\
-    }';
+        display: none;}\
+   }';
 
     var sss = Cc['@mozilla.org/content/style-sheet-service;1'].getService(Ci.nsIStyleSheetService);
     var uri = makeURI('data:text/css;charset=UTF=8,' + encodeURIComponent(css));

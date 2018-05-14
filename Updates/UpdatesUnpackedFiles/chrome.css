@@ -1337,7 +1337,6 @@ toolbarbutton.bookmark-item {
 #context_reloadAllTabs,
 #context_closeOtherTabs,
 #context_closeTabsToTheEnd,
-#context_toggleMuteTab,
 #context_openTabInWindow + menuseparator,
 #context_closeOtherTabs + menuseparator,
 #context_sendTabToDevice + menuseparator,
@@ -1352,19 +1351,23 @@ toolbarbutton.bookmark-item {
 #context_pinTab, #context_unpinTab {-moz-box-ordinal-group: 2 !important;}
 #context_CloseTab {-moz-box-ordinal-group: 3 !important;}
 #context_SidebarOpen {-moz-box-ordinal-group: 4 !important;}
-#context_SmallWindow {-moz-box-ordinal-group: 5 !important;}
-#context_sendTabToDevice {-moz-box-ordinal-group: 6 !important;}
+#context_toggleMuteTab{-moz-box-ordinal-group: 5 !important;}
+#context_SmallWindow {-moz-box-ordinal-group: 6 !important;}
+#context_sendTabToDevice {-moz-box-ordinal-group: 7 !important;}
 #context_bookmarkAllTabs {-moz-box-ordinal-group: 13 !important;}
 #context_TabInfoCopy {-moz-box-ordinal-group: 15 !important;}  	
 
 
-/*文字选中菜单排充 Text Selection Menu Order*/
+/*文字选中菜单排序 Text Selection Menu Order*/
 #addmenu_context-copy{-moz-box-ordinal-group:0 !important;}
 #context-searchselect{-moz-box-ordinal-group:1 !important;}
-#olivier_debroqueville_gmail_com_5{-moz-box-ordinal-group:2 !important;}
-#context-viewpartialsource-selection{-moz-box-ordinal-group:3 !important;}
-#context-inspect{-moz-box-ordinal-group:3 !important;}
-#addmenu_context-translate{-moz-box-ordinal-group:3 !important;}
+[id*="olivier_debroqueville_gmail_com_"]{-moz-box-ordinal-group:2 !important;}
+#context-keywordfield{-moz-box-ordinal-group:3 !important;}
+[id*="addsearch_burningmoth_com_"]{-moz-box-ordinal-group:3 !important;}
+#context-viewpartialsource-selection{-moz-box-ordinal-group:5 !important;}
+#context-inspect{-moz-box-ordinal-group:5 !important;}
+#addmenu_context-translate{-moz-box-ordinal-group:5 !important;}
+
 
 
 /*隐藏页面右键菜单 Hide Page menu option*/
@@ -1420,8 +1423,7 @@ toolbarbutton.bookmark-item {
 #spell-separator,
 #spell-add-dictionaries-main,
 #context-sep-paste,
-#spell-dictionaries,
-#context-keywordfield {
+#spell-dictionaries {
 	display: none;
 }
 
@@ -1464,7 +1466,7 @@ toolbarbutton.bookmark-item {
 #context-inspect .menu-iconic-text,
 #context-viewimage .menu-iconic-text,
 #context-viewpartialsource-selection .menu-iconic-text,
-[label="✚ Add to Pocket"] .menu-iconic-text,
+[id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac__"] .menu-iconic-text,
 #context_pinTab .menu-iconic-text,
 #context_unpinTab .menu-iconic-text,
 #context-media-play .menu-iconic-text,
@@ -1502,8 +1504,8 @@ toolbarbutton.bookmark-item {
 
 /*---------------------文本替换修改 Text Replace------------------*/
 
-[label="✚ Add to Pocket"] .menu-iconic-text {display: none;}
-[label="✚ Add to Pocket"]:after {content: "添加到稍后阅读";	position: absolute !important;	margin-left: -9px !important;}
+[id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac__"] .menu-iconic-text {display: none;}
+[id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac__"]:after {content: "添加到稍后阅读";	position: absolute !important;	margin-left: -9px !important;}
 
 #context_duplicateTab .menu-iconic-text {display: none !important;}
 #context_duplicateTab:after {	content: "复制当前标签";	position: absolute !important;}
@@ -1526,18 +1528,50 @@ toolbarbutton.bookmark-item {
 #context_bookmarkAllTabs .menu-iconic-text {display: none;}
 #context_bookmarkAllTabs:after {content: "所有标签加入书签";	position: absolute !important;}
 
-[label="將此連結彈出至獨立視窗"] .menu-iconic-text { display:none !important; }
-[label="將此連結彈出至獨立視窗"]:after {content: "将此链接弹出至独立窗口";	margin-left:-8px; position: absolute !important; padding-right:20px!important;}
+#context_toggleMuteTab .menu-iconic-text {display: none;}
+#context_toggleMuteTab:after {content: "静音当前标签";	position: absolute !important;}
+
+[id*="popupwindow_ettoolong_"] .menu-iconic-text { display:none !important; }
+[id*="popupwindow_ettoolong_"]:after {content: "将此链接弹出至独立窗口";	margin-left:-8px; position: absolute !important; padding-right:20px!important;}
 
 #thunder_cross_contextDownloadLink .menu-iconic-text { display:none !important; }
 #thunder_cross_contextDownloadLink:after {content: "调用IDM等软件下载"; position: absolute !important;padding-right:20px !important;}
 
-
 #context-openlinkintab .menu-iconic-text {display: none;}
 #context-openlinkintab:after {content: "新标签页打开";	position: absolute !important;}
 
+#context-keywordfield .menu-iconic-text{display: none;}
+#context-keywordfield:after {content: "添加搜索关键字";	position: absolute !important;}
+
+[id*="addsearch_burningmoth_com_"] .menu-iconic-text{display: none;}
+[id*="addsearch_burningmoth_com_"]:after {content: "添加搜索到搜索栏";	margin-left:-8px; padding-right:20px;}
+
+
+
 
 /*--------------------------增加图标 Add Icons--------------------------*/
+
+#context-copyimage-contents{
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
+	list-style-image: url("../images/icons/copy.png")!important;
+	padding-left: 4px !important;
+}
+#context-copyimage-contents .menu-iconic-text{
+	padding-left: 9px !important;
+}
+
+#context-keywordfield{
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
+	list-style-image: url("../images/icons/addkeywork.png")!important;
+	padding-left: 4px !important;
+}
+
+#context_toggleMuteTab{
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
+	list-style-image: url("../images/icons/mute.png")!important;
+	padding-left: 4px !important;
+}
+
 #context-reloadimage {
 	list-style-image: url("../images/icons/refresh.png")!important;
 }
