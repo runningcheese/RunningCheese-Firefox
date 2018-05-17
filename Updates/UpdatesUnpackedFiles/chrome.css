@@ -1359,7 +1359,9 @@ toolbarbutton.bookmark-item {
 
 
 /*文字选中菜单排序 Text Selection Menu Order*/
+#context-undo,#context-sep-undo{-moz-box-ordinal-group:0 !important;}
 #addmenu_context-copy{-moz-box-ordinal-group:0 !important;}
+#context-paste,#context-delete,#context-cut{-moz-box-ordinal-group:1 !important;}
 #context-searchselect{-moz-box-ordinal-group:1 !important;}
 [id*="olivier_debroqueville_gmail_com_"]{-moz-box-ordinal-group:2 !important;}
 #context-keywordfield{-moz-box-ordinal-group:3 !important;}
@@ -1377,6 +1379,7 @@ toolbarbutton.bookmark-item {
 #inspect-separator,
 #context-sep-viewbgimage,
 #fill-login,
+#context-keywordfield,
 #context-media-eme-learnmore + menuseparator,
 #context-sep-selectall,
 [id*="support_lastpass_com_"],

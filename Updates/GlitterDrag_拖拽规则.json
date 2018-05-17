@@ -8,7 +8,7 @@
   "enableCtrlKey": false,
   "enableShiftKey": false,
   "timeoutCancel": 2000,
-  "triggeredDistance": 20,
+  "triggeredDistance": 10,
   "maxTriggeredDistance": 9999,
   "disableAdjustTabSequence": false,
   "switchToParentTab": false,
@@ -1355,5 +1355,5 @@
   ],
   "maxProcessSize": 5,
   "debug": false,
-  "version": "1.54.2"
+  "version": "1.54.3"
 }
