@@ -11,7 +11,7 @@
 			"action": "redirect",
 			"to": "http://master.dl.sourceforge.net/project/$1/$4",
 			"_reg": {},
-			"id": 1
+			"id": 65
 		},
 		{
 			"enable": 1,
@@ -24,7 +24,7 @@
 			"action": "redirect",
 			"to": "http://$1",
 			"_reg": {},
-			"id": 2
+			"id": 66
 		},
 		{
 			"enable": 0,
@@ -37,7 +37,7 @@
 			"action": "redirect",
 			"to": "https://www.google.com/ncr#$1&hl=en-US&safe=off",
 			"_reg": {},
-			"id": 3
+			"id": 67
 		},
 		{
 			"enable": 1,
@@ -51,7 +51,7 @@
 			"to": "http://www.ftchinese.com/story/$1?full=y",
 			"_reg": {},
 			"_exclude": {},
-			"id": 4
+			"id": 68
 		},
 		{
 			"enable": 1,
@@ -64,7 +64,7 @@
 			"action": "redirect",
 			"to": "$1",
 			"_reg": {},
-			"id": 5
+			"id": 69
 		},
 		{
 			"enable": 1,
@@ -77,7 +77,7 @@
 			"action": "redirect",
 			"to": "$2",
 			"_reg": {},
-			"id": 6
+			"id": 70
 		},
 		{
 			"enable": 1,
@@ -90,7 +90,7 @@
 			"action": "redirect",
 			"to": "$1",
 			"_reg": {},
-			"id": 7
+			"id": 71
 		},
 		{
 			"enable": 1,
@@ -103,7 +103,7 @@
 			"action": "redirect",
 			"to": "$1",
 			"_reg": {},
-			"id": 8
+			"id": 72
 		},
 		{
 			"enable": 1,
@@ -116,7 +116,7 @@
 			"action": "redirect",
 			"to": "$2",
 			"_reg": {},
-			"id": 9
+			"id": 73
 		},
 		{
 			"enable": 1,
@@ -129,7 +129,7 @@
 			"action": "redirect",
 			"to": "https://fonts.geekzu.org/$1",
 			"_reg": {},
-			"id": 10
+			"id": 74
 		},
 		{
 			"enable": 1,
@@ -142,20 +142,7 @@
 			"action": "redirect",
 			"to": "https://gapis.geekzu.org/ajax/$1",
 			"_reg": {},
-			"id": 11
-		},
-		{
-			"enable": 1,
-			"name": "google fonts.gstatic >> 极客族",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/fonts\\.gstatic\\.com\\/(.*)$",
-			"exclude": "",
-			"isFunction": 0,
-			"action": "redirect",
-			"to": "https://gapis.geekzu.org/$1",
-			"_reg": {},
-			"id": 12
+			"id": 75
 		},
 		{
 			"enable": 1,
@@ -168,7 +155,7 @@
 			"action": "redirect",
 			"to": "https://gapis.geekzu.org/g-themes/$1",
 			"_reg": {},
-			"id": 13
+			"id": 77
 		},
 		{
 			"enable": 1,
@@ -181,7 +168,7 @@
 			"action": "redirect",
 			"to": "https://zh.wikipedia.org/zh-cn/$2",
 			"_reg": {},
-			"id": 14
+			"id": 78
 		},
 		{
 			"enable": 1,
@@ -194,7 +181,7 @@
 			"action": "redirect",
 			"to": "https://$1$2$3",
 			"_reg": {},
-			"id": 15
+			"id": 79
 		},
 		{
 			"enable": 1,
@@ -206,8 +193,8 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
-			"id": 16,
-			"_reg": {}
+			"_reg": {},
+			"id": 80
 		}
 	],
 	"sendHeader": [],
