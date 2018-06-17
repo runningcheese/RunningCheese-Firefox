@@ -18,21 +18,38 @@
 
 
 // 浏览器无边框
-((g) => {
-  class TabPlus {
-    constructor() {      
-      this.NoShowBorder();        
-    }    
-    NoShowBorder() {
-        let Fun = updateTitlebarDisplay.toString();
-        Fun = Fun.replace('"0,2,2,2"', '"0,0,0,0"');
-        (new Function('updateTitlebarDisplay = ' + Fun)());
-        document.documentElement.setAttribute("chromemargin", "0,0,0,0");
-    }    
-  }
-  new TabPlus();
-})(gBrowser);
+(function() {
+	var gav = Services.wm.getEnumerator("navigator:browser");
+	while (gav.hasMoreElements()) {
+		if (gav.getNext().chromemargin && !document.documentElement.outerHTML.match('chromehidden=""')) return;
+	}
 
+	if (window.chromemargin) {
+		window.chromemargin.onDestroy();
+		delete window.chromemargin;
+	}
+
+	window.chromemargin = {
+		init: function() {
+			window.addEventListener("resize", this, true);
+			window.addEventListener("aftercustomization", this, false);
+			window.addEventListener("customizationchange", this, false);
+			setTimeout(function() {
+				document.documentElement.setAttribute("chromemargin", "0,8,8,8");
+			}, 100);
+		},
+		onDestroy: function() {
+			window.removeEventListener("resize", this, true);
+			window.removeEventListener("aftercustomization", this, false);
+			window.removeEventListener("customizationchange", this, false);
+			document.documentElement.setAttribute("chromemargin", "0,2,2,2");
+		},
+		handleEvent: function(evnet) {
+			document.documentElement.setAttribute("chromemargin", "0,8,8,8");
+		}
+	};
+	window.chromemargin.init();
+})();
 
 
 
@@ -148,6 +165,14 @@ document.getElementById('urlbar').addEventListener('click', function(e) {
 
 
 
+// 左键点击书签菜单不自动关闭
+location == "chrome://browser/content/browser.xul" && document.querySelector("#personal-bookmarks").addEventListener("mouseover", function (event) {
+    event.originalTarget.classList.contains("bookmark-item") && event.originalTarget.setAttribute('closemenu', "none")
+}, true);
+
+
+
+
 // 右键 导航栏显示菜单选项
 	(function(doc) {
 		var ShowTabsToolbar  = doc.getElementById('tabbrowser-tabs');
@@ -200,7 +225,7 @@ document.getElementById('toolbar-context-menu').style.display="-moz-popup";
 // 右键 新建标签按钮访问剪切板内容
 location=="chrome://browser/content/browser.xul" &&
 window.addEventListener("click", function(e) {
-    if (e.button === 2 && e.originalTarget.matches(".tabs-newtab-button")) {
+    if (e.button === 2 && (e.originalTarget.matches(".tabs-newtab-button")||e.originalTarget.matches("#new-tab-button"))) {
         let url = readFromClipboard();
         try {
             switchToTabHavingURI(url, true);
@@ -341,7 +366,7 @@ window.addEventListener("click", function(e) {
 			case 0:
 				// 左键：选择用户代理
   (function(){
-       window.open("moz-extension://4d2f0ccd-4b48-4d63-bbb6-f924b7cc7581/manage.html","Header Editor","resizable,scrollbars,status,title","centerscreen").resizeTo(450, 680);
+       window.open("moz-extension://7171b2f2-e3cc-4031-b9ab-a9a0273ab809/manage.html","Header Editor","resizable,scrollbars,status,title","centerscreen").resizeTo(450, 680);
     })();
 				break;
 			case 1:
@@ -365,7 +390,7 @@ window.addEventListener("click", function(e) {
 
 
 // 书签增加“更新为当前书签”选项 （来自UpdateBookmark2.uc.js）
-{location == "chrome://browser/content/browser.xul" && (function () {
+location == "chrome://browser/content/browser.xul" && (function () {
 	var separator = document.getElementById("placesContext_openSeparator");
 	var repBM = document.createElement('menuitem');
 	separator.parentNode.insertBefore(repBM, separator);
@@ -374,15 +399,20 @@ window.addEventListener("click", function(e) {
 	repBM.setAttribute("accesskey", "U");
 	repBM.addEventListener("command", function () {
 		var itemId = document.popupNode._placesNode.itemId;
-		PlacesUtils.bookmarks.changeBookmarkURI(itemId, gBrowser.currentURI);  // Adresse aktualisieren
-		PlacesUtils.bookmarks.setItemTitle(itemId, gBrowser.contentTitle);     // Titel aktualisieren
+		PlacesUtils.bookmarks.update({
+                            guid: document.popupNode._placesNode.bookmarkGuid,
+                            url:gBrowser.currentURI.spec,
+                            title:gBrowser.contentTitle
+                           });
 	}, false);
 	var obs = document.createElement("observes");
 	obs.setAttribute("element", "placesContext_open");
 	obs.setAttribute("attribute", "hidden");
 	repBM.appendChild(obs);
 })();
-}
+
+
+
 
 
 
@@ -421,13 +451,13 @@ window.addEventListener("click", function(e) {
 				},{
 					label: "sep",
 				}, {
-					label: "查看页面信息",
-					oncommand: "BrowserPageInfo();",
-        }, {
 					label: "进入阅读模式",
-          tooltiptext: "已复制到粘贴板",
 					oncommand: 'var url = "about:reader?url=" + gBrowser.currentURI.spec; gBrowser.selectedTab = gBrowser.loadURI(url);',
 				},{
+		label:"查看谷歌缓存",
+    tooltiptext: '注意：需科学上网',
+		oncommand: "gBrowser.addTab('https://webcache.googleusercontent.com/search?q=cache:' + decodeURIComponent(gBrowser.currentURI.spec));",
+	},	{
 					label: "网站综合信息",
           tooltiptext: "包括IP, SEO, Alexa, Whois查询",
 					oncommand: function () {var eTLDService = Cc["@mozilla.org/network/effective-tld-service;1"].getService(Ci.nsIEffectiveTLDService); gBrowser.addTab('http://ip.chinaz.com/' + decodeURIComponent(gBrowser.currentURI.spec)); gBrowser.addTab('http://seo.chinaz.com/?q=' + decodeURIComponent(gBrowser.currentURI.spec)); gBrowser.addTab('http://www.alexa.com/siteinfo/' + decodeURIComponent(gBrowser.currentURI.spec)); gBrowser.addTab('http://whois.chinaz.com/' + eTLDService.getBaseDomain(makeURI(gBrowser.selectedBrowser.currentURI.spec)));}
@@ -490,7 +520,7 @@ window.addEventListener("click", function(e) {
 		faviconContextMenu.init();
 		window.faviconContextMenu = faviconContextMenu;
 
-		function $(id) document.getElementById(id);
+		function $(id) { return document.getElementById(id); }
 
 		function $C(name, attr) {
 			var el = document.createElement(name);

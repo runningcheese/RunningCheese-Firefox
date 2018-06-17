@@ -136,5 +136,5 @@ function	takeSnapshotFSCapture() { FileUtils.getFile('UChrm',['Local', 'FSCaptur
 
 function	takeSnapshotSystem() {var path ="..\\mspaint.exe";	var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);file.initWithPath(path.replace(/^\./, Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("SysD", Components.interfaces.nsIFile).path));file.launch();};
 
-function	UploadImages() {window.open('moz-extension://1ee5f42f-0654-49e7-953d-9728f2d28968/pages/tuchuang.html','新浪图床','resizable,scrollbars,status,title').resizeTo(400, 400);};
+function	UploadImages() {window.open('moz-extension://3576f6a3-a2a6-4116-ac9a-e5b02932d89e/pages/tuchuang.html','新浪图床','resizable,scrollbars,status,title').resizeTo(400, 400);};
 

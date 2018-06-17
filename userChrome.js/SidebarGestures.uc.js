@@ -10,8 +10,8 @@ location == "chrome://browser/content/browser.xul" && (function () {
         hideFireContext: false,
         shouldFireContext: false,
         GESTURES: {
-            //后退
             "L": {
+								name: "后退",
                 cmd: function() {
         var sidebar = document.getElementById('sidebar');
         var webPanel = sidebar.contentDocument.getElementById("web-panels-browser");
@@ -21,40 +21,40 @@ location == "chrome://browser/content/browser.xul" && (function () {
 }
                 }
             },
-            //前进
             "R": {
+								name: "前进",
                 cmd: function() {
                     var win = ucjsSidebarGestures.getSidebarWindow();
                     win.history.forward();
                 }
             },
-            //刷新当前页面
             "UD": {
+								name: "刷新当前页面",
                 cmd: function() {
                     var win = ucjsSidebarGestures.getSidebarWindow();
                     win.location.reload();
                 }
             },
-            //向上滚动
             "U": {
+								name: "向上滚动",
                 cmd: function() {
                    goDoCommand('cmd_scrollPageUp');
                 }
             },
-            //向下滚动
             "D": {
+								name: "向下滚动",
                 cmd: function() {
                         goDoCommand('cmd_scrollPageDown');
                 }
             },
-            //转到页首
             "RU": {
+								name: "转到页首",
                 cmd: function() {
                         goDoCommand('cmd_scrollTop');
                 }
             },
-            //转到页尾
             "RD": {
+								name: "转到页尾",
                 cmd: function() {
                         goDoCommand('cmd_scrollBottom');
                 }

@@ -127,7 +127,7 @@
 		
 	function $C(name, attr) {
 		var el = document.createElement(name);
-		if (attr) Object.keys(attr).forEach(function(n) el.setAttribute(n, attr[n]));
+		if (attr) Object.keys(attr).forEach(function(n) { return el.setAttribute(n, attr[n]);});
 		return el;
 	}
 })();
