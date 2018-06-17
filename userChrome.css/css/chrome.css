@@ -1,10 +1,10 @@
 /*@name         SimpleWhite For Firefox 57+
-  @author         RunningCheese
-  @homepage    https://www.runningcheese.com
-  @reference     Inspired by Simplewhite Theme and QQ Browser 
-  @version         v2018-04-08       
+  @author       RunningCheese
+  @homepage     https://www.runningcheese.com
+  @reference    Inspired by Simplewhite Theme and QQ Browser 
+  @version      v2018-06-17 fix 60+
+  @version      v2018-04-08       
 */
-
 
 
 
@@ -40,14 +40,15 @@
 /*移除后退按钮的圆圈 Remove Backbutton circle*/
 :root:not([uidensity="compact"]) #back-button > .toolbarbutton-icon {
 	background-color: unset !important;
-	border: unset !important;
-	padding: var(--toolbarbutton-inner-padding) !important;
+	border: var(--toolbarbutton-border) !important;
 	border-radius: var(--toolbarbutton-border-radius) !important;
-	width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+  width: 32px!important;
+  height: 32px!important;
 }
 
 :root:not([uidensity="compact"]) #back-button:hover:not([disabled]) > .toolbarbutton-icon {
 	background-color: var(--toolbarbutton-hover-background) !important;
+	
 }
 
 :root:not([uidensity="compact"]) #back-button:active:not([disabled]) > .toolbarbutton-icon {
@@ -61,7 +62,7 @@
 
 /* 标签拖拽空间距离 Drag Space Height*/
 :root[extradragspace][tabsintitlebar]:not([inFullscreen]) {
-	--space-above-tabbar: 10px !important;
+	--space-above-tabbar: 11px !important;
 }
 
 
@@ -109,9 +110,8 @@
 
 /* 导航栏高度 Navbar Height*/
 #nav-bar > * {
-	margin: -3px 0px -3px 2px !important;
+	margin: -3px 0px -3px 0px !important;
 }
-
 
 /* 地址栏和搜索栏无边框 Remove Urlbar and searchbar border */
 #urlbar, .searchbar-textbox {
@@ -149,8 +149,7 @@ panel[type="arrow"][animate],#BMB_bookmarksPopup {transition-duration: 0.01s !im
 
 
 /*---------------------------------- 导航栏兼容 Navbar Compatible with Windows7,WindowsXP,Windows Vista ----------------------*/
-@media -moz-os-version: windows-xp), (-moz-os-version: windows-vista),
-(-moz-os-version: windows-win7) {
+@media -moz-os-version: windows-xp), (-moz-os-version: windows-vista),(-moz-os-version: windows-win7),(-moz-os-version: windows-win8)  {
    
 
 /* 新建标签页位置调整 */
@@ -161,7 +160,7 @@ panel[type="arrow"][animate],#BMB_bookmarksPopup {transition-duration: 0.01s !im
 
 /*--标签栏背景&系统控制按钮--*/ 
   
-	#main-window {
+#main-window {
 -moz-appearance: none !important;
 background-color: #eeeeee !important;
 
@@ -174,16 +173,12 @@ background-color: #eeeeee !important;
 		display: inline-block !important;
 	}
 
-	#main-window:not([inFullscreen]) #titlebar-min, 
+#main-window:not([inFullscreen]) #titlebar-min, 
 #main-window:not([inFullscreen]) #titlebar-max, 
 #main-window:not([inFullscreen]) #titlebar-close {
 		list-style-image: none !important;
 	}
 
-
-
-	
-	
 	
 /*----win10下修复大小和背景-----*/
 	#titlebar-buttonbox .toolbarbutton-icon {
@@ -193,7 +188,7 @@ background-color: #eeeeee !important;
 
   
 /*Min*/
-	#main-window[tabsintitlebar="true"][sizemode="normal"] #titlebar-min,
+#main-window[tabsintitlebar="true"][sizemode="normal"] #titlebar-min,
 #main-window[tabsintitlebar="true"][sizemode="normal"] #titlebar-min:hover,
 #main-window[tabsintitlebar="true"][sizemode="normal"] #titlebar-min:active {
 		list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAAAoCAYAAAAiyK7sAAAA0klEQVR4nO3TwQnAMBDEwPTflVtwQ04FAT9E5BAJ9n8w3HUd2hhjtf3ZXo/NOdeJs8GCDNLJBgsSygYLEsoGCxLKBgsSygYLEsoGCxLKBgsSygYLEsoGCxLKBgsSygYLEsoGCxLKBgsSygYLEsoGCxLKBgsSygb7E+Ta3KuQu3e9Dbl7Vx/ZR56ZDRYklA0WJJQNFiSUDRYklA0WJJQNFiSUDRYklA0WJJQNFiSUDRYklA0WJJQNFiSUDRYklA0WJJQNFiSUDRYklA0WJJQN9jXIGwY3tASVWk/hAAAAAElFTkSuQmCC")!important;
@@ -324,6 +319,10 @@ background-color: #eeeeee !important;
 }
 
 
+/*关于Firefoox界面隐藏更新按钮*/
+@-moz-document url-prefix(chrome://browser/content/aboutDialog.xul) {
+#updateBox{display: none !important;}	  
+}
 
 
 
@@ -762,16 +761,17 @@ toolbar :-moz-any(#back-button, #forward-button, #home-button, #stop-button, #re
 	list-style-image: url("../images/icons/nimimode.png");
 }
 
-/*uBlock Origin*/
-#ublock0_raymondhill_net-browser-action [label="uBlock Origin (0)"] {
-	list-style-image: url("../images/icons/adblockplus.png");
-	-moz-image-region: rect(16px, 16px, 32px, 0px);
+#s3google_translator-browser-action .toolbarbutton-icon {
+	list-style-image: url("../images/icons/language.png");
 }
 
-#ublock0_raymondhill_net-browser-action [label="uBlock Origin (off)"] {
-	list-style-image: url("../images/icons/adblockplus.png");
-	-moz-image-region: rect(0px, 16px, 16px, 0px);
+
+
+/*uBlock Origin*/
+#ublock0_raymondhill_net-browser-action [label*="uBlock Origin"] {
+	list-style-image: url("../images/icons/ublock.png");
 }
+
 
 /*xstyle*/
 #xstyle-amo_addon_firefoxcn_net-browser-action {
@@ -909,6 +909,14 @@ toolbar :-moz-any(#back-button, #forward-button, #home-button, #stop-button, #re
 }
 
 
+/*搜索栏引擎图标替换*/
+.searchbar-search-icon {
+  list-style-image: url("../images/icons/search.png")!important;
+}
+
+
+
+
 
 /*------------------------------Favicon菜单图标修改 Favico Menu Change----------------------------*/
 
@@ -928,10 +936,13 @@ toolbar :-moz-any(#back-button, #forward-button, #home-button, #stop-button, #re
 	list-style-image: url("../images/icons/qrcode.png") !important;
 }
 [label="进入阅读模式"] {
-	list-style-image: url("../images/icons/clearly.png") !important;
+	list-style-image: url("../images/icons/menu.png") !important;
 }
 [label="查看页面信息"] {
 	list-style-image: url("../images/icons/viewinfo.png") !important;
+}
+[label="查看谷歌缓存"] {
+	list-style-image: url("../images/icons/server.png") !important;
 }
 [label="网站综合信息"] {
 	list-style-image: url("../images/icons/info.png") !important;
@@ -944,12 +955,27 @@ toolbar :-moz-any(#back-button, #forward-button, #home-button, #stop-button, #re
 }
 
 
+
+/*------------------------------音乐播放器图标修改 Music Player Icons----------------------------*/
+[label="云音乐"] {
+	list-style-image: url("../images/favicons/163music.png") !important;
+}
+
+
+
+
+
+
+
 /*----------------------------------书签图标修改 Bookmark Button Change----------------------------------*/
 
 /*书签工具栏居中 PersonalToolbar Align Center */
 #PersonalToolbar #PlacesToolbarItems {
 	-moz-box-pack: center !important;
 }
+
+/*隐藏添加书签动画*/
+#star-button-animatable-image {display:none !important;}
 
 /*隐藏分割线*/
 :root:not([uidensity=compact]):not([chromehidden~="toolbar"]) #PanelUI-button {
@@ -986,7 +1012,6 @@ toolbarbutton.bookmark-item {
 	border-radius: 0px !important;
 	padding: 2px 4px 2px 4px !important;
 }
-
 
 #PlacesToolbarItems{
 	  min-height:26px !important;
@@ -1032,7 +1057,10 @@ toolbarbutton.bookmark-item {
 #wrapper-_7be2ba16-0f1e-4d93-9ebc-5164397477a9_-browser-action,
 #wrapper-glitterdrag_harytfw-browser-action,
 #wrapper-_0ad88674-2b41-4cfb-99e3-e206c74a0076_-browser-action,
-#wrapper-michal_simonfy_gmail_com-browser-action
+#wrapper-michal_simonfy_gmail_com-browser-action,
+#wrapper-firefox_ypsuperkey_meek_com_cn-browser-action,
+#wrapper-weibopic_ac-browser-action,
+#wrapper-download-filename-encoding_qw_linux-2g64_local-browser-action
 {
 	display: none !important;
 }
@@ -1059,8 +1087,14 @@ toolbarbutton.bookmark-item {
 	--tabs-border-top: 1px solid red!important;
 	--tabs-border: none !important;
 	--tab-min-height: 28px!important;
-	
 }
+
+
+/*标签高度*/
+#titlebar,#tabbrowser-tabs {
+	--tab-min-height: 29px !important;
+}
+
 
 /*去除标签页蓝条 Remove Tab line*/
 .tab-line {
@@ -1070,6 +1104,9 @@ toolbarbutton.bookmark-item {
 .tab-background[selected=true] {
 	  border-top-color: transparent !important;
 }
+
+/*去除标签上面的白线*/
+.tab-background {  border: 0px none transparent !important;}
 
 
 /*移除标签边框 Remove borders from tabs */
@@ -1156,7 +1193,6 @@ toolbarbutton.bookmark-item {
 	-moz-border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAcAQMAAABic7x4AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAAtJREFUCNdjoAEAAABUAAEeQayUAAAAAElFTkSuQmCC") 0 3 0 / 0px 3px 0px repeat stretch!important;
 	background-color: #ffffff !important;
 	-moz-appearance: none !important;
-	margin-top: -1px !important
 }
 
 /*正常窗口时的标签页 When is noarmal size*/
@@ -1243,8 +1279,14 @@ toolbarbutton.bookmark-item {
 /* 选中标签颜色 */ /*魅力蓝 Blue*/
 #TabsToolbar .tabbrowser-tab[selected] {
 	background: -moz-linear-gradient(left, #00c0f1, #0080e2) !important;
+	background-color: -moz-linear-gradient(left, #00c0f1, #0080e2) !important;
 	--lwt-header-image: !important;
 	color: #fff !important;
+}
+
+/* 移动标签颜色 */
+.tab-background[selected=true]{
+  background-color: var(--tabbrowser-tab-bgcolor)!important;
 }
 
 /*森林绿 Green*/
@@ -1338,7 +1380,6 @@ toolbarbutton.bookmark-item {
 #context_closeOtherTabs,
 #context_closeTabsToTheEnd,
 #context_openTabInWindow + menuseparator,
-#context_closeOtherTabs + menuseparator,
 #context_sendTabToDevice + menuseparator,
 #context_duplicateTab + menuseparator,
 #context_toggleMuteTab + menuseparator {
@@ -1349,26 +1390,38 @@ toolbarbutton.bookmark-item {
 /*标签页右键菜单排序 Tabs Option Order*/
 #context_CopyTab {-moz-box-ordinal-group: 1 !important;}
 #context_pinTab, #context_unpinTab {-moz-box-ordinal-group: 2 !important;}
-#context_CloseTab {-moz-box-ordinal-group: 3 !important;}
-#context_SidebarOpen {-moz-box-ordinal-group: 4 !important;}
-#context_toggleMuteTab{-moz-box-ordinal-group: 5 !important;}
-#context_SmallWindow {-moz-box-ordinal-group: 6 !important;}
-#context_sendTabToDevice {-moz-box-ordinal-group: 7 !important;}
-#context_bookmarkAllTabs {-moz-box-ordinal-group: 13 !important;}
-#context_TabInfoCopy {-moz-box-ordinal-group: 15 !important;}  	
+#context_toggleMuteTab{-moz-box-ordinal-group: 3 !important;}
+#context_CloseTab {-moz-box-ordinal-group: 4 !important;}
+#context_SidebarOpen {-moz-box-ordinal-group: 5 !important;}
+#context_closeOtherTabs + menuseparator{-moz-box-ordinal-group: 6 !important;}
+#context_SmallWindow {-moz-box-ordinal-group: 7 !important;}
+#context_sendTabToDevice {-moz-box-ordinal-group: 8 !important;}
+#context_bookmarkAllTabs {-moz-box-ordinal-group: 9 !important;}
+#context_TabInfoCopy {-moz-box-ordinal-group: 10 !important;}  	
+
 
 
 /*文字选中菜单排序 Text Selection Menu Order*/
-#context-undo,#context-sep-undo{-moz-box-ordinal-group:0 !important;}
-#addmenu_context-copy{-moz-box-ordinal-group:0 !important;}
-#context-paste,#context-delete,#context-cut{-moz-box-ordinal-group:1 !important;}
+#context-undo,#context-sep-undo,#addmenu_context-copy{-moz-box-ordinal-group:0 !important;}
+#context-cut,#context-paste,#context-delete{-moz-box-ordinal-group:1 !important;}
 #context-searchselect{-moz-box-ordinal-group:1 !important;}
-[id*="olivier_debroqueville_gmail_com_"]{-moz-box-ordinal-group:2 !important;}
-#context-keywordfield{-moz-box-ordinal-group:3 !important;}
-[id*="addsearch_burningmoth_com_"]{-moz-box-ordinal-group:3 !important;}
+[id*="olivier_debroqueville_gmail_com_"]{-moz-box-ordinal-group:3 !important;}
+#context-keywordfield{-moz-box-ordinal-group:4 !important;}
+[id*="addsearch_burningmoth_com_"]{-moz-box-ordinal-group:4 !important;}
 #context-viewpartialsource-selection{-moz-box-ordinal-group:5 !important;}
 #context-inspect{-moz-box-ordinal-group:5 !important;}
-#addmenu_context-translate{-moz-box-ordinal-group:5 !important;}
+
+
+
+/*页面右键菜单排序 Page Menu Order*/
+[label="多功能菜单"]{-moz-box-ordinal-group:1 !important;}
+[label="阅读辅助工具"]{-moz-box-ordinal-group:1 !important;}
+[label="分享当前页面"]{-moz-box-ordinal-group:1 !important;}
+[label="翻译当前页面"]{-moz-box-ordinal-group:2 !important;}
+[id*="s3google_translator-menuitem-"]{-moz-box-ordinal-group:2 !important;}
+#context-viewsource {-moz-box-ordinal-group:6 !important;}
+#context-viewinfo {-moz-box-ordinal-group:7 !important;}
+#context-inspect {-moz-box-ordinal-group:8 !important;}
 
 
 
@@ -1382,8 +1435,8 @@ toolbarbutton.bookmark-item {
 #context-keywordfield,
 #context-media-eme-learnmore + menuseparator,
 #context-sep-selectall,
-[id*="support_lastpass_com_"],
-[id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac__"] {
+[id*="support_lastpass_com-menuitem-"],
+[id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac_-menuitem-"] {
 	display: none !important;
 }
 
@@ -1391,8 +1444,7 @@ toolbarbutton.bookmark-item {
 /* 隐藏“发送到设备” Hide sent to device option*/
 #context-sendpagetodevice,
 #context-sep-sendpagetodevice,
-#context-sendlinktodevice, 
-#context-sep-sendlinktodevice {
+#context-sendlinktodevice{
 	display: none !important;
 }
 
@@ -1408,7 +1460,7 @@ toolbarbutton.bookmark-item {
 #context-sep-open,
 #context-bookmarklink,
 #context-navigation,
-#screenshots_mozilla_org_create-screenshot,
+#screenshots_mozilla_org-menuitem-_create-screenshot,
 #context-viewbgimage,
 #context-sep-viewsource,
 #context-sep-navigation {
@@ -1425,7 +1477,7 @@ toolbarbutton.bookmark-item {
 /*隐藏输入框右键 Hide Text area option*/
 #spell-separator,
 #spell-add-dictionaries-main,
-#context-sep-paste,
+#context-sep-undo,
 #spell-dictionaries {
 	display: none;
 }
@@ -1463,6 +1515,7 @@ toolbarbutton.bookmark-item {
 
 
 /*START---------------为没有图标的菜单增加图标 Add Icons for Blank Menu--------------*/
+/*为没有图标的菜单增加图标 Add Icons for Blank Menu--------------*/
 #context-openlinkintab .menu-iconic-text,
 #context-viewsource .menu-iconic-text,
 #context-viewinfo .menu-iconic-text,
@@ -1500,54 +1553,54 @@ toolbarbutton.bookmark-item {
 #context-media-playbackrate .menu-iconic-text,
 #context-viewimageinfo .menu-iconic-text,
 #frame .menu-iconic-text{
-	margin-left: 11px !important;
+	padding-left: 8px !important;
 }
 
 
 
-/*---------------------文本替换修改 Text Replace------------------*/
 
+/*---------------------文本替换修改 Text Replace------------------*/
 [id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac__"] .menu-iconic-text {display: none;}
-[id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac__"]:after {content: "添加到稍后阅读";	position: absolute !important;	margin-left: -9px !important;}
+[id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac__"]:after {content: "添加到稍后阅读";	position: absolute !important; margin-left: -11px !important;}
 
 #context_duplicateTab .menu-iconic-text {display: none !important;}
-#context_duplicateTab:after {	content: "复制当前标签";	position: absolute !important;}
+#context_duplicateTab:after {	content: "复制当前标签";	position: absolute !important; margin-left: -11px !important;}
 
 #context_sendTabToDevice .menu-iconic-text {display: none !important;}
-#context_sendTabToDevice:after {content: "发送到移动设备";	position: absolute !important;}
+#context_sendTabToDevice:after {content: "发送到移动设备";	position: absolute !important;margin-left: -11px !important;}
 
 #context_openTabInWindow .menu-iconic-text {display: none;}
-#context_openTabInWindow:after {content: "移动到新窗口";	position: absolute !important;}
+#context_openTabInWindow:after {content: "移动到新窗口";	position: absolute !important;margin-left: -11px !important;}
 
 #context-viewsource .menu-iconic-text,#context-viewsource .menu-right {	display: none;}
-#context-viewsource:after {content: "查看页面代码";	position: absolute !important;}
+#context-viewsource:after {content: "查看页面代码";	position: absolute !important;margin-left: -11px !important;}
 
 #context-viewinfo .menu-iconic-text {	display: none;}
-#context-viewinfo:after {content: "查看页面信息";	position: absolute !important;padding-right:10px!important;}
+#context-viewinfo:after {content: "查看页面信息";	position: absolute !important;margin-left: -11px !important;}
 
 #context-inspect .menu-iconic-text {	display: none;}
-#context-inspect:after {content: "查看页面元素";	position: absolute !important;padding-right:10px!important;}
+#context-inspect:after {content: "查看页面元素";	position: absolute !important;margin-left: -11px !important;}
 
 #context_bookmarkAllTabs .menu-iconic-text {display: none;}
-#context_bookmarkAllTabs:after {content: "所有标签加入书签";	position: absolute !important;}
+#context_bookmarkAllTabs:after {content: "所有标签加入书签";	position: absolute !important; margin-left: -11px !important;}
 
 #context_toggleMuteTab .menu-iconic-text {display: none;}
-#context_toggleMuteTab:after {content: "静音当前标签";	position: absolute !important;}
+#context_toggleMuteTab:after {content: "静音当前标签";	position: absolute !important;margin-left: -11px !important;}
 
-[id*="popupwindow_ettoolong_"] .menu-iconic-text { display:none !important; }
-[id*="popupwindow_ettoolong_"]:after {content: "将此链接弹出至独立窗口";	margin-left:-8px; position: absolute !important; padding-right:20px!important;}
+[id*="popupwindow_ettoolong-menuitem-"] .menu-iconic-text { display:none !important; }
+[id*="popupwindow_ettoolong-menuitem-"]:after {content: "弹出至独立窗口";	position: absolute !important; margin-left: -19px !important;}
 
-#thunder_cross_contextDownloadLink .menu-iconic-text { display:none !important; }
-#thunder_cross_contextDownloadLink:after {content: "调用IDM等软件下载"; position: absolute !important;padding-right:20px !important;}
+#thunder_cross-menuitem-_contextDownloadLink .menu-iconic-text { display:none !important; }
+#thunder_cross-menuitem-_contextDownloadLink:after {content: "调用下载软件下载"; position: absolute !important; margin-left: -11px !important;}
 
 #context-openlinkintab .menu-iconic-text {display: none;}
-#context-openlinkintab:after {content: "新标签页打开";	position: absolute !important;}
+#context-openlinkintab:after {content: "新标签页打开";	position: absolute !important;margin-left: -11px !important;}
 
 #context-keywordfield .menu-iconic-text{display: none;}
-#context-keywordfield:after {content: "添加搜索关键字";	position: absolute !important;}
+#context-keywordfield:after {content: "添加搜索关键字";	position: absolute !important;margin-left: -11px !important;}
 
-[id*="addsearch_burningmoth_com_"] .menu-iconic-text{display: none;}
-[id*="addsearch_burningmoth_com_"]:after {content: "添加搜索到搜索栏";	margin-left:-8px; padding-right:20px;}
+[id*="addsearch_burningmoth_com-menuitem-"] .menu-iconic-text{display: none;}
+[id*="addsearch_burningmoth_com-menuitem-"]:after {content: "添加搜索引擎";	margin-left: -19px !important;}
 
 
 
@@ -1628,7 +1681,7 @@ toolbarbutton.bookmark-item {
 	padding-left: 4px !important;
 }
 
-#thunder_cross_contextDownloadLink {
+#thunder_cross-menuitem-_contextDownloadLink {
 	-moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
 	list-style-image: url("../images/icons/download.png")!important;
 	padding-left: 4px !important;
@@ -1876,14 +1929,12 @@ dialog .menu-iconic-text {
 popupset menupopup .menu-accel-container,
 #PlacesToolbarItems  menupopup .menu-accel-container,
 #toolbar-menubar  menupopup .menu-accel-container {
-	margin-left: -14px !important;
+	margin-left: -4px !important;
 }
 
 textbox menupopup .menu-accel-container {
 	margin-left: -1px !important;
 }
-
-
 
 popupset menupopup menu,
 popupset menupopup menuitem,
@@ -1940,8 +1991,8 @@ textbox menupopup menuseparator,
 /*Checkbox*/
 menuitem[type="checkbox"]>.menu-iconic-left {
 	-moz-appearance: none!important;
-	min-width: 27px!important;
-	max-width: 27px!important;
+	min-width: 30px!important;
+	max-width: 30px!important;
 	min-height: 22px!important;
 	max-height: 22px!important;
 }
@@ -1976,7 +2027,6 @@ menuitem[type="checkbox"]:active>.menu-iconic-left {
   /* 地址栏去除"访问"选项Remove " - Visit" or " - Search with" bar in the drop-down */
   #PopupAutoCompleteRichResult richlistitem:first-of-type[type*="heuristic"],
   #PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="searchengine"],
-  #PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="visiturl"],
   #PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="keyword"] {
     display:none !important;
     box-shadow: none !important;
@@ -2123,109 +2173,6 @@ menuitem[type="checkbox"]:active>.menu-iconic-left {
 	  overflow: hidden !important; 
     max-width:800px !important;
 	  min-width:5px !important;
-}
-
-
-
-
-
-/*START=================================================（08.SearchBar）=========================================================*/
-/*===============================================08.搜索栏调整 SearchBar Adjustment===============================================*/
-/*搜索栏双列搜索*//* Make the one-off buttons span the full width */
-.searchbar-engine-one-off-item[tooltiptext] {
-	width: 100% !important;
-	height: 24px !important;
-	background-image: none !important;
-	padding-left: 6px !important;
-	box-sizing: content-box !important;
-	line-height: 1em !important;
-	color:#000 !important;
-}
-
-/* Hide the empties */
-.searchbar-engine-one-off-item:not([tooltiptext]) {
-	display: none !important;
-}
-
-/* Fix up borders */
-.searchbar-engine-one-off-item[tooltiptext], .addengine-item {
-	border-bottom: 1px solid #ccc !important;
-}
-
-.search-setting-button.search-panel-header, .addengine-item,
-.search-panel-header.search-panel-current-input {
-	border-top: none !important;
-	max-height: 26px !important;
-	min-height: 16px !important;
-	padding-top: 1px !important;
-}
-
-/* Insert descriptive name for search engine plugin */
-.searchbar-engine-one-off-item[tooltiptext]::after {
-	content: attr(tooltiptext);
-	margin: 5px 6px 0px !important;
-	display: block !important;
-}
-
-/* Fix icon positioning */
-.searchbar-engine-one-off-item[tooltiptext] > .button-box {
-	display: inline-flex !important;
-	width: 16px !important;
-	max-width: 16px !important;
-	border: none !important;
-	padding: 0 0 !important;
-}
-
-.searchbar-engine-one-off-item[tooltiptext] > .button-box > .button-icon {
-	display: block !important;
-	margin-top: 4px !important;
-	margin-left: -1px !important;
-}
-
-/* Lock in space for 5 search suggestions with scroll bar */
-#PopupSearchAutoComplete .autocomplete-tree.plain.search-panel-tree .tree-bodybox,
-#PopupSearchAutoComplete .autocomplete-tree.plain.search-panel-tree .autocomplete-treebody {
-	display: flex !important;
-	flex: 1 1 auto !important;
-}
-
-#PopupSearchAutoComplete .autocomplete-tree.plain.search-panel-tree .autocomplete-treebody {
-	max-height: calc(5 * 1.5em) !important;
-	min-height: calc(5 * 1.5em) !important;
-}
-
-#PopupSearchAutoComplete .autocomplete-tree.plain.search-panel-tree .tree-scrollbar[collapsed="true"] {
-	visibility: visible !important;
-}
-
-/* Two columns - standard spacing */
-#PopupSearchAutoComplete {
-	width: calc(21em + 4px) !important;
-	min-width: calc(21em + 4px) !important;
-}
-
-.searchbar-engine-one-off-item[tooltiptext] {
-	width: 10em !important;
-	white-space: nowrap;
-	overflow: hidden !important;
-}
-
-/* Hiding "Search for ..." */
-.search-panel-header.search-panel-current-input {
-	display: none !important;
-}
-
-/*搜索栏引擎图标替换*/
-.searchbar-search-icon {
-  list-style-image: url("../images/icons/search.png")!important;
-}
-
-
-
-
-/*关于Firefoox界面隐藏更新按钮*/
-@-moz-document url-prefix(chrome://browser/content/aboutDialog.xul) {
-#updateBox{display: none !important;}	  
 }
 
 

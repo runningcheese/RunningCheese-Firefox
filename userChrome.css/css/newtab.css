@@ -1,6 +1,7 @@
 /*@name        SimpleWhite For Firefox 57+
   @author        RunningCheese
   @homepage   https://www.runningcheese.com    
+  @version        v2018-06-17       
   @version        v2018-04-11       
 */
 
@@ -120,7 +121,7 @@ background-size: cover !important;
 
 
 /*Speed Dail 2 新标签页调整*/
-@-moz-document url-prefix(moz-extension://48bde69f-bacc-4b6c-9f6b-5aca1a5d2017/newtab.html) {
+@-moz-document url-prefix(moz-extension://227f931e-8ca1-4460-b234-3b420a9b255f/newtab.html) {
 
 /*略缩图*/
 .thumbnail_container {

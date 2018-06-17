@@ -2,21 +2,14 @@
   @author          RunningCheese
   @homepage    https://www.runningcheese.com
   @reference     Inspired by Simplewhite Theme and QQ Browser   
+  @version         v2018-06-17    
   @version         v2018-04-29     
 */
 
 
-/*隐藏微博图床 Display Ads*/
-@-moz-document url(moz-extension://1ee5f42f-0654-49e7-953d-9728f2d28968/pages/tuchuang.html) {
+/*隐藏微博图床标题*/
+@-moz-document url(moz-extension://3576f6a3-a2a6-4116-ac9a-e5b02932d89e/pages/tuchuang.html) {
 	#title {
-		display: none !important
-	}
-}
-
-
-/*隐藏爱词霸 Display Ads*/
-@-moz-document url-prefix(http://m.iciba.com) {
-	.index-red{
 		display: none !important
 	}
 }
