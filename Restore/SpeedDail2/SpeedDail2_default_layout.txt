@@ -3,29 +3,17 @@
     {
       "id": 1,
       "title": "Social",
-      "position": 2
+      "position": 1,
+      "color": ""
     },
     {
       "id": 2,
       "title": "Work",
-      "position": 99
+      "position": 3,
+      "color": ""
     }
   ],
   "dials": [
-    {
-      "id": 4,
-      "url": "https://getpocket.com",
-      "title": "Pocket",
-      "thumbnail": "https://gitee.com/runningcheese/firefox/raw/master/Icons/NewtabIcons/pocket.png",
-      "idgroup": 1,
-      "position": 0,
-      "ts_created": 1522475123,
-      "visits_afternoon": 0,
-      "visits_evening": 0,
-      "visits_morning": 0,
-      "visits_night": 0,
-      "visits": 0
-    },
     {
       "id": 6,
       "url": "https://www.quora.com",
@@ -38,8 +26,8 @@
       "visits_evening": 0,
       "visits_morning": 0,
       "visits_night": 0,
-      "visits": 1,
-      "visits_dayPart": 1
+      "visits": 6,
+      "visits_dayPart": 6
     },
     {
       "id": 1,
@@ -53,23 +41,23 @@
       "visits_evening": 0,
       "visits_morning": 0,
       "visits_night": 0,
-      "visits": 0,
-      "visits_dayPart": 16
+      "visits": 2,
+      "visits_dayPart": 18
     },
     {
-      "url": "https://www.yinxiang.com",
-      "title": "Evernote",
-      "thumbnail": "https://gitee.com/runningcheese/firefox/raw/master/Icons/NewtabIcons/evernote.png",
-      "ts_created": 1524039039,
+      "id": 13,
+      "url": "http://www.guokr.com",
+      "title": "Guokr",
+      "thumbnail": "https://gitee.com/runningcheese/firefox/raw/master/Icons/NewtabIcons/guokr.png",
       "idgroup": 1,
       "position": 1,
-      "visits": 0,
+      "ts_created": 1522475328,
       "visits_afternoon": 0,
       "visits_evening": 0,
       "visits_morning": 0,
       "visits_night": 0,
-      "id": 27,
-      "visits_dayPart": null
+      "visits": 0,
+      "visits_dayPart": 1
     },
     {
       "id": 12,
@@ -83,23 +71,23 @@
       "visits_evening": 0,
       "visits_morning": 0,
       "visits_night": 0,
-      "visits": 0,
-      "visits_dayPart": null
+      "visits": 1,
+      "visits_dayPart": 1
     },
     {
-      "id": 13,
-      "url": "http://www.guokr.com",
-      "title": "Guokr",
-      "thumbnail": "https://gitee.com/runningcheese/firefox/raw/master/Icons/NewtabIcons/guokr.png",
+      "url": "https://www.yinxiang.com",
+      "title": "Evernote",
+      "thumbnail": "https://gitee.com/runningcheese/firefox/raw/master/Icons/NewtabIcons/evernote.png",
+      "ts_created": 1524039039,
       "idgroup": 1,
       "position": 2,
-      "ts_created": 1522475328,
+      "visits": 0,
       "visits_afternoon": 0,
       "visits_evening": 0,
       "visits_morning": 0,
       "visits_night": 0,
-      "visits": 0,
-      "visits_dayPart": 1
+      "id": 27,
+      "visits_dayPart": null
     },
     {
       "url": "http://www.youku.com",
@@ -108,13 +96,13 @@
       "ts_created": 1523971672,
       "idgroup": 0,
       "position": 3,
-      "visits": 2,
+      "visits": 11,
       "visits_afternoon": 0,
       "visits_evening": 0,
       "visits_morning": 0,
       "visits_night": 0,
       "id": 14,
-      "visits_dayPart": 1
+      "visits_dayPart": 10
     },
     {
       "url": "http://tieba.baidu.com/",
@@ -142,8 +130,8 @@
       "visits_evening": 0,
       "visits_morning": 0,
       "visits_night": 0,
-      "visits": 24,
-      "visits_dayPart": 23
+      "visits": 83,
+      "visits_dayPart": 82
     },
     {
       "id": 17,
@@ -171,7 +159,8 @@
       "visits_evening": 0,
       "visits_morning": 0,
       "visits_night": 0,
-      "visits": 0
+      "visits": 2,
+      "visits_dayPart": 1
     },
     {
       "id": 18,
@@ -199,7 +188,8 @@
       "visits_evening": 0,
       "visits_morning": 0,
       "visits_night": 0,
-      "visits": 0
+      "visits": 1,
+      "visits_dayPart": null
     },
     {
       "id": 19,
@@ -222,12 +212,13 @@
       "ts_created": 1523971824,
       "idgroup": 0,
       "position": 7,
-      "visits": 0,
+      "visits": 4,
       "visits_afternoon": 0,
       "visits_evening": 0,
       "visits_morning": 0,
       "visits_night": 0,
-      "id": 15
+      "id": 15,
+      "visits_dayPart": 3
     },
     {
       "url": "https://www.github.com",
@@ -255,8 +246,8 @@
       "visits_evening": 0,
       "visits_morning": 0,
       "visits_night": 0,
-      "visits": 1,
-      "visits_dayPart": null
+      "visits": 5,
+      "visits_dayPart": 4
     },
     {
       "url": "https://www.tumblr.com/",
@@ -279,13 +270,13 @@
       "ts_created": 1522475274,
       "idgroup": 0,
       "position": 9,
-      "visits": 137,
+      "visits": 455,
       "visits_afternoon": 0,
       "visits_evening": 0,
       "visits_morning": 0,
       "visits_night": 0,
       "id": 11,
-      "visits_dayPart": 136
+      "visits_dayPart": 454
     },
     {
       "url": "http://www.ted.com/",
@@ -371,11 +362,25 @@
       "visits_morning": 0,
       "visits_night": 0,
       "id": 29
+    },
+    {
+      "id": 4,
+      "url": "https://getpocket.com",
+      "title": "Pocket",
+      "thumbnail": "https://gitee.com/runningcheese/firefox/raw/master/Icons/NewtabIcons/pocket.png",
+      "idgroup": 1,
+      "position": 999,
+      "ts_created": 1522475123,
+      "visits_afternoon": 0,
+      "visits_evening": 0,
+      "visits_morning": 0,
+      "visits_night": 0,
+      "visits": 0
     }
   ],
   "settings": {
     "options.dialSpace": "64",
-    "options.dialspacing": "0",
+    "options.dialspacing": "20",
     "options.colors.dialbginner": "FFFFFF",
     "options.order": "position",
     "options.colors.dialbginnerover": "FFFFFF",
@@ -390,7 +395,7 @@
     "options.fontstyle": "font-weight:normal;font-style:normal;",
     "options.showAddButton": "0",
     "firstTime": "false",
-    "options.installation_time": "1523297993",
+    "options.installation_time": "1525694778",
     "options.defaultGroupName": "Home",
     "options.columns": "5",
     "options.fontface": "Helvetica,\"Helvetica Nueue\";arial,sans-serif",
@@ -399,7 +404,7 @@
     "options.centerVertically": "1",
     "options.backgroundSize": "cover",
     "options.centerThumbnailsVertically": "1",
-    "options.thumbnailQuality": "low",
+    "options.thumbnailQuality": "high",
     "options.dialstyle.corners": "4",
     "options.colors.titleover": "333333",
     "options.backgroundPosition": "left top",
@@ -417,7 +422,7 @@
     "options.showSearch": "1",
     "options.apps.show": "0",
     "options.sidebar.showApps": "0",
-    "options.highlight": "1",
+    "options.highlight": "0",
     "options.titleAlign": "center",
     "options.showVisits": "0",
     "options.colors.title": "8C7E7E",

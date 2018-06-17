@@ -1197,7 +1197,30 @@
     "linkAction": "ALLOW_NORMAL",
     "imageAction": "ALLOW_NORMAL"
   },
-  "cmdPanel_textAction": [
+  "downloadDirectories": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "function(){\n    return `${host}/${today}/${filename}`\n}"
+  ],
+  "style": "/* Author：harytfw */\n\n#GDPrompt {\n    background-color: rgba(9, 150, 248, 0.85) !important;\n    border-color: rgb(6, 112, 204) !important;\n    border-radius: 0px !important;\n    color: white !important;\n    width: 130px !important;\n}\n\n#GDArrow {\n    font: normal normal normal 20px FontAwesome !important;\n    line-height: 2em !important;\n    height: 40px !important;\n    border-radius: 0px !important;\n    width: 130px !important;\n}\n\n.GDArrow-UP-R::after,\n.GDArrow-U::after,\n.GDArrow-UP-L::after {\n    content: \"\\f062\" !important;\n}\n\n.GDArrow-L::after {\n    content: \"\\f060\" !important;\n}\n\n.GDArrow-R::after {\n    content: \"\\f061\" !important;\n}\n\n.GDArrow-LOW-L::after,\n.GDArrow-D::after,\n.GDArrow-LOW-R::after {\n    content: \"\\f063\" !important;\n}\n\n#GDIndicator {\n    border-style: solid !important;\n    border-color: rgba(0, 0, 0, 0.25) !important;\n}",
+  "specialHosts": [],
+  "allowExts": [
+    ".txt",
+    ".jpg",
+    ".jpeg",
+    ".png"
+  ],
+  "maxProcessSize": 5,
+  "debug": false,
+  "version": "1.54.3",
+  "imageReferrer": false,
+  "Panel_textAction": [
     {
       "act_name": "ACT_NONE",
       "tab_pos": "TAB_CRIGHT",
@@ -1210,7 +1233,9 @@
       "copy_type": "COPY_TEXT",
       "download_type": "DOWNLOAD_TEXT",
       "download_saveas": true,
-      "search_onsite": false
+      "search_onsite": false,
+      "icon": "",
+      "panel_tips": "%g-%a"
     },
     {
       "act_name": "ACT_OPEN",
@@ -1224,7 +1249,9 @@
       "copy_type": "COPY_TEXT",
       "download_type": "DOWNLOAD_TEXT",
       "download_saveas": true,
-      "search_onsite": false
+      "search_onsite": false,
+      "icon": "",
+      "panel_tips": "%g-%a"
     },
     {
       "act_name": "ACT_OPEN",
@@ -1238,10 +1265,12 @@
       "copy_type": "COPY_TEXT",
       "download_type": "DOWNLOAD_TEXT",
       "download_saveas": true,
-      "search_onsite": false
+      "search_onsite": false,
+      "icon": "",
+      "panel_tips": "%g-%a"
     }
   ],
-  "cmdPanel_linkAction": [
+  "Panel_linkAction": [
     {
       "act_name": "ACT_OPEN",
       "tab_active": true,
@@ -1255,7 +1284,8 @@
       "download_directory": 0,
       "download_saveas": true,
       "search_onsite": false,
-      "icon": ""
+      "icon": "",
+      "panel_tips": "%g-%a"
     },
     {
       "act_name": "ACT_OPEN",
@@ -1270,7 +1300,8 @@
       "download_directory": 0,
       "download_saveas": true,
       "search_onsite": false,
-      "icon": ""
+      "icon": "",
+      "panel_tips": "%g-%a"
     },
     {
       "act_name": "ACT_OPEN",
@@ -1285,10 +1316,11 @@
       "download_directory": 0,
       "download_saveas": true,
       "search_onsite": false,
-      "icon": ""
+      "icon": "",
+      "panel_tips": "%g-%a"
     }
   ],
-  "cmdPanel_imageAction": [
+  "Panel_imageAction": [
     {
       "act_name": "ACT_OPEN",
       "tab_active": true,
@@ -1302,7 +1334,8 @@
       "download_directory": 0,
       "download_saveas": true,
       "search_onsite": false,
-      "icon": ""
+      "icon": "",
+      "panel_tips": "%g-%a"
     },
     {
       "act_name": "ACT_OPEN",
@@ -1317,7 +1350,8 @@
       "download_directory": 0,
       "download_saveas": true,
       "search_onsite": false,
-      "icon": ""
+      "icon": "",
+      "panel_tips": "%g-%a"
     },
     {
       "act_name": "ACT_OPEN",
@@ -1332,28 +1366,17 @@
       "download_directory": 0,
       "download_saveas": true,
       "search_onsite": false,
-      "icon": ""
+      "icon": "",
+      "panel_tips": "%g-%a"
     }
   ],
-  "downloadDirectories": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
-  "style": "/* Author：harytfw */\n\n#GDPrompt {\n    background-color: rgba(9, 150, 248, 0.85) !important;\n    border-color: rgb(6, 112, 204) !important;\n    border-radius: 0px !important;\n    color: white !important;\n    width: 130px !important;\n}\n\n#GDArrow {\n    font: normal normal normal 20px FontAwesome !important;\n    line-height: 2em !important;\n    height: 40px !important;\n    border-radius: 0px !important;\n    width: 130px !important;\n}\n\n.GDArrow-UP-R::after,\n.GDArrow-U::after,\n.GDArrow-UP-L::after {\n    content: \"\\f062\" !important;\n}\n\n.GDArrow-L::after {\n    content: \"\\f060\" !important;\n}\n\n.GDArrow-R::after {\n    content: \"\\f061\" !important;\n}\n\n.GDArrow-LOW-L::after,\n.GDArrow-D::after,\n.GDArrow-LOW-R::after {\n    content: \"\\f063\" !important;\n}\n\n#GDIndicator {\n    border-style: solid !important;\n    border-color: rgba(0, 0, 0, 0.25) !important;\n}",
-  "specialHosts": [],
-  "allowExts": [
-    ".txt",
-    ".jpg",
-    ".jpeg",
-    ".png"
-  ],
-  "maxProcessSize": 5,
-  "debug": false,
-  "version": "1.54.3"
+  "enableLockScrollbar": false,
+  "translator": {
+    "baidu_gtk": "",
+    "baidu_token": "",
+    "primary_provider": "google",
+    "recent_sourcelang": "auto",
+    "recent_targetlang": "auto"
+  },
+  "firefoxVersion": 60
 }
