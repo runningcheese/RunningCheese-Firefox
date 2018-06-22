@@ -1,26 +1,19 @@
 ### 自动更新功能说明
-* Firefox 内核更新牵扯到的东西很多，所以很难做到自动更新，但 RC Firefox 会定期更新内核。
+* Firefox 内核更新牵扯到的东西很多，较小幅度的 Firefox 版本更新意义并不那么大，RC Firefox 将会定期更新 Firefox 核心程序。
 * 自动更新指的是配置的更新，点击“火箭图标—>更新修复—>自动更新” 就会自动更新。
 * 如果你有自己的一些自定义修改，你可以使用“手动更新”选项下载更新包。
 * 你可以把你自定义的内容用一个新的文件保存起来，或者记录一下修改的内容。
-* 有一些规则类的文件，更新频率不那么高，需要手动更新。
+
 
 **自动更新文件:**
 * Updates.zip：自动更新的文件打包
 * UpdatesUnpackedFiles 文件夹：Updates.zip 解压后的文件
 
-**手动更新文件:**
-* HeaderEditor_反盗链.json：用于拓展 Header Editor
-* HeaderEditor_用户代理.json：用于拓展 Header Editor，参考了 <a href="https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor" rel="noopener" target="_blank">dupontjoy</a>
-* HeaderEditor_重定向.json：用于拓展 Header Editor，参考了 <a href="https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor" rel="noopener" target="_blank">dupontjoy</a>
-* Context Search_searchEngines.json：用于拓展 Context Search
-* VoilentMoneky_Scripts_暴力猴脚本合集.zip：用于拓展 暴力猴
-* hosts：一小部分网站的hosts
 
-**恢复文件：**
-* SpeedDail2 文件夹: SpeedDail 2 默认布局
-* search.json.mozlz4：搜索栏默认搜索引擎
-* GlitterDrag_拖拽规则.json：闪耀拖拽默认规则
+-------------
+### 06-18 更新说明
+1、内核更新至60.0.2ESR，需要重新下载安装。\
+2、多处内容修改。
 
 -------------
 ### 05-14 更新说明
