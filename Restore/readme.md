@@ -1,4 +1,11 @@
 **选项恢复：**
+
+| 水果        | 价格    |  数量  |
+| --------   | -----:   | :----: |
+| 香蕉        | $1      |   5    |
+| 苹果        | $1      |   6    |
+| 草莓        | $1      |   7    |
+
 |HeaderEditor_反盗链.json|（用于拓展 Header Editor）|
 | --------   | --------   |
 |HeaderEditor_用户代理.json|（用于拓展 Header Editor），参考了 <a href="https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor" rel="noopener" target="_blank">dupontjoy</a>|
