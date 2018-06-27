@@ -23,7 +23,7 @@
 
 **具体文件修改**：
 新增：\
-拓展 [Bookmark[Tab Here][https://addons.mozilla.org/zh-CN/firefox/addon/bookmark-tab-here/?src=search] \
+拓展 [Bookmark[Tab Here](https://addons.mozilla.org/zh-CN/firefox/addon/bookmark-tab-here/?src=search) \
 
 替换：
 \Profiles\V10\user.js \
