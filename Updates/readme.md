@@ -18,12 +18,12 @@
 3、默认全局开店Flash，不再需要点击启动Flash。\
 4、快捷键的部分修改。\
 5、新增多身份标签小号功能。\
-6、因部分网友不知道如何使用Xstyle，故换用了同类拓展 Stylish。 \
+6、因部分网友不知道如何使用Xstyle，故换用了同类拓展 Stylish。 
 
 
-**具体文件修改**：
+**具体文件修改**：\
 新增：\
-拓展 [Bookmark[Tab Here](https://addons.mozilla.org/zh-CN/firefox/addon/bookmark-tab-here/?src=search) \
+拓展 [BookmarkTab Here](https://addons.mozilla.org/zh-CN/firefox/addon/bookmark-tab-here/?src=search) 
 
 替换：
 \Profiles\V10\user.js \
