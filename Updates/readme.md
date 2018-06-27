@@ -23,10 +23,10 @@
 
 **具体文件修改**：
 
-新增：\
+**新增：**\
 拓展 [BookmarkTab Here](https://addons.mozilla.org/zh-CN/firefox/addon/bookmark-tab-here/?src=search) 
 
-替换：\
+**修改：**\
 \Profiles\V10\user.js \
 \Profiles\V10\chrome\css\chrome.css \
 \Profiles\V10\chrome\css\newtab.css \
@@ -36,7 +36,7 @@
 \Profiles\V10\chrome\SubScript\SimpleMusicPlayer.uc.js  \
 \Profiles\V10\chrome\SubScript\Tabplus.uc.js  
  
-删除：\
+**删除：**\
 \Profiles\V10\chrome\SubScript\AddBMHere.uc.js  
 
 
