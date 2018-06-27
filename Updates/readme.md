@@ -14,28 +14,28 @@
 -------------
 ### 06-27 更新说明
 1、内核更新至60.1.0ESR，需要重新下载安装。\
-2、修正书签移动时的错位BUG。  
-3、默认全局开店Flash，不再需要点击启动Flash。  
-4、快捷键的部分修改。
-5、新增多身份标签小号功能。
-6、因部分网友不知道如何使用Xstyle，故换用了同类拓展 Stylish。 
+2、修正书签移动时的错位BUG。  \
+3、默认全局开店Flash，不再需要点击启动Flash。\
+4、快捷键的部分修改。\
+5、新增多身份标签小号功能。\
+6、因部分网友不知道如何使用Xstyle，故换用了同类拓展 Stylish。 \
 
 
 **具体文件修改**：
-新增：
-拓展 [Bookmark][Tab Here https://addons.mozilla.org/zh-CN/firefox/addon/bookmark-tab-here/?src=search] 
+新增：\
+拓展 [Bookmark[Tab Here][https://addons.mozilla.org/zh-CN/firefox/addon/bookmark-tab-here/?src=search] \
 
 替换：
-\Profiles\V10\user.js 
-\Profiles\V10\chrome\css\chrome.css 
-\Profiles\V10\chrome\css\newtab.css 
-\Profiles\V10\chrome\images\icons\profile.png 
-\Profiles\V10\chrome\Local\_keychanger.js 
-\Profiles\V10\chrome\SubScript\QuickOpen.uc.js  
-\Profiles\V10\chrome\SubScript\SimpleMusicPlayer.uc.js  
-\Profiles\V10\chrome\SubScript\Tabplus.uc.js  
+\Profiles\V10\user.js \
+\Profiles\V10\chrome\css\chrome.css \
+\Profiles\V10\chrome\css\newtab.css \
+\Profiles\V10\chrome\images\icons\profile.png \
+\Profiles\V10\chrome\Local\_keychanger.js \
+\Profiles\V10\chrome\SubScript\QuickOpen.uc.js  \
+\Profiles\V10\chrome\SubScript\SimpleMusicPlayer.uc.js  \
+\Profiles\V10\chrome\SubScript\Tabplus.uc.js  \
  
-删除： 
+删除： \
 \Profiles\V10\chrome\SubScript\AddBMHere.uc.js  
 
 
