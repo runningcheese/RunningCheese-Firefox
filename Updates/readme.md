@@ -25,7 +25,7 @@
 新增：\
 拓展 [BookmarkTab Here](https://addons.mozilla.org/zh-CN/firefox/addon/bookmark-tab-here/?src=search) 
 
-替换：
+替换：\
 \Profiles\V10\user.js \
 \Profiles\V10\chrome\css\chrome.css \
 \Profiles\V10\chrome\css\newtab.css \
@@ -33,9 +33,9 @@
 \Profiles\V10\chrome\Local\_keychanger.js \
 \Profiles\V10\chrome\SubScript\QuickOpen.uc.js  \
 \Profiles\V10\chrome\SubScript\SimpleMusicPlayer.uc.js  \
-\Profiles\V10\chrome\SubScript\Tabplus.uc.js  \
+\Profiles\V10\chrome\SubScript\Tabplus.uc.js  
  
-删除： \
+删除：\
 \Profiles\V10\chrome\SubScript\AddBMHere.uc.js  
 
 
