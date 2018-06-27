@@ -21,7 +21,7 @@
 6、因部分网友不知道如何使用Xstyle，故换用了同类拓展 Stylish。 
 
 
-**具体文件修改**：\
+**具体文件修改**：
 
 新增：\
 拓展 [BookmarkTab Here](https://addons.mozilla.org/zh-CN/firefox/addon/bookmark-tab-here/?src=search) 
