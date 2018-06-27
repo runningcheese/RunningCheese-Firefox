@@ -7,7 +7,7 @@
 
 **自动更新文件:**
 * Updates.zip：自动更新的文件打包
-* UpdatesUnpackedFiles 文件夹：Updates.zip 解压后的文件
+* UpdatesUnpackedFiles：Updates.zip 解压后的文件
 
 
 
