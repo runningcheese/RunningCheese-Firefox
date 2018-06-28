@@ -9,7 +9,9 @@
 * Updates.zip：自动更新的文件打包
 * UpdatesUnpackedFiles：Updates.zip 解压后的文件
 
-
+-------------
+### 06-28 更新说明
+1、修正 about:newtab 显示空白的Bug
 
 -------------
 ### 06-27 更新说明
