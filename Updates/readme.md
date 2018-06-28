@@ -13,6 +13,10 @@
 ### 06-28 更新说明
 1、修正 about:newtab 显示空白的Bug
 
+**修改内容：**\
+\Profiles\V10\user.js \
+\Profiles\V10\chrome\css\newtab.css 
+
 -------------
 ### 06-27 更新说明
 1、内核更新至60.1.0ESR，需要重新下载安装。\
