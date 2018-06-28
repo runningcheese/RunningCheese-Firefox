@@ -64,7 +64,7 @@ background-size: cover !important;
         background: rgba(0, 0, 0, .05) url("../images/newtab/feedly.png") center center no-repeat !important;
         background-size: 100% 100%!important;
     }
-     [href*="inoreader.com"] .rich-icon  {
+     [href*="inoreader.com"] .screenshot {
         background: rgba(0, 0, 0, .05) url("../images/newtab/inoreader.png") center center no-repeat !important;
         background-size: 100% 100%!important;
     }      
@@ -76,7 +76,7 @@ background-size: cover !important;
         background: rgba(0, 0, 0, .05) url("../images/newtab/music.png") center center no-repeat !important;
         background-size: 100% 100%!important;
     }
-    [href*="youku.com"] .rich-icon  {
+    [href*="youku.com"] .screenshot  {
         background: rgba(0, 0, 0, .05) url("../images/newtab/youku.png") center center no-repeat !important;
         background-size: 100% 100%!important;
     }

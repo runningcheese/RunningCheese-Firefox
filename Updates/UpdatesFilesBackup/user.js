@@ -166,7 +166,7 @@ user_pref("browser.onboarding.tour.onboarding-tour-private-browsing.completed", 
 user_pref("browser.onboarding.tour.onboarding-tour-screenshots.completed", true);
 //禁止生成略缩图
 user_pref("browser.pagethumbnails.capturing_disabled", true);
-user_pref("browser.newtabpage.enabled", false);
+user_pref("browser.newtabpage.enabled", true);
 user_pref("pageThumbs.enabled", false);
 user_pref("browser.newtabpage.pinned", "[{\"url\":\"https://www.quora.com\",\"label\":\"Quora\"},{\"url\":\"https://www.inoreader.com\",\"label\":\"Inoreader\"},{\"url\":\"https://getpocket.com\",\"label\":\"Pocket\"},{\"url\":\"http://www.youku.com\",\"label\":\"Youku\"},{\"url\":\"https://twitter.com\",\"label\":\"Twitter\"},{\"url\":\"https://weibo.com\",\"label\":\"Weibo\"},{\"url\":\"https://www.instagram.com\",\"label\":\"Instagram\"},{\"url\":\"http://music.163.com\",\"label\":\"Music\"},{\"url\":\"http://www.zhihu.com\",\"label\":\"Zhihu\"},{\"url\":\"http://www.guokr.com\",\"label\":\"Guokr\"},{\"url\":\"http://www.douban.com\",\"label\":\"Douban\"},{\"url\":\"https://www.runningcheese.com\",\"label\":\"Cheese\"}]");
 
