@@ -12,8 +12,8 @@ user_pref("config.trim_on_minimize", true);//最小化时释放物理内存
 
 
 //标签选项
+pref("browser.tabs.warnOnCloseOtherTabs", false); //关闭多个标签页时不提醒
 user_pref("browser.tabs.warnOnClose", false); //关闭最后一个标签不关闭浏览器
-user_pref("browser.tabs.warnOnCloseOtherTabs", false); //关闭标签页提醒
 user_pref("browser.tabs.closeWindowWithLastTab", false); //关闭最后一个标签时不关闭浏览器
 user_pref("browser.sessionstore.max_tabs_undo", 20);//最近撤销标签历史最大数
 user_pref("privacy.userContext.enabled", true);//开启身份标签页
