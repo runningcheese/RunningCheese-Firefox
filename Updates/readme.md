@@ -17,7 +17,7 @@
 1、修正复制所有标签标题和地址的Bug\
 2、修改了一些设置\
 3、样式管理器弃用Stylish，换用Xstyle\
-4、删除拓展 Video Speed Control\
+4、删除拓展 Video Speed Control
 
 **修改内容：**\
 \Profiles\V10\user.js \
