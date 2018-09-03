@@ -11,6 +11,33 @@
 
 
 
+-------------
+### 09-03 更新说明
+1、优化了一些细节，修复了一些BUG。\
+1、内核更新至60.2.0 ESR 长期支持版本\
+2、修复”小书签栏“中失效了的小书签\
+3、新增拓展 Listen 1，集成了“音乐播放器”中，搜索和播放音乐更加方便了\
+4、拨号页拓展换用 InfinityTab，添加图标更加简单\
+PS:（注意，InfinityTab 拓展默认自带的购物类网站都带有小尾巴，是拓展本身就自带有的，非本作者添加）。
+
+
+**修改内容：**\
+\Profiles\V10\chrome\SubScript\Tabplus.uc.js\
+\Profiles\V10\chrome\SubScript\SidebarMod.uc.js\
+\Profiles\V10\chrome\SubScript\SimpleMusicPlayer.uc.js\
+\Profiles\V10\chrome\SubScript\ButtonEventListener.uc.js\
+\Profiles\V10\chrome\css\chrome.css\
+\Profiles\V10\chrome\Local\_addmenu.js\
+
+**新增拓展：**\
+InfinityTab
+Listen 1 
+
+**删除拓展：**\
+Speed Dail 2 
+
+
+
 
 -------------
 ### 07-19 更新说明
