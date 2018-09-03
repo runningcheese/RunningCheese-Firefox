@@ -13,7 +13,6 @@
 				"name": "User-Agent",
 				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
 			},
-			"_reg": {},
 			"id": 35
 		},
 		{
@@ -28,7 +27,6 @@
 				"name": "User-Agent",
 				"value": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36"
 			},
-			"_reg": {},
 			"id": 36
 		},
 		{
@@ -43,7 +41,6 @@
 				"name": "User-Agent",
 				"value": "Mozilla/5.0 (Linux; U; Android 2.0; en-us; Droid Build/ESD20) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
 			},
-			"_reg": {},
 			"id": 37
 		},
 		{
@@ -58,7 +55,6 @@
 				"name": "User-Agent",
 				"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10; rv:48.0) Gecko/20100101 Firefox/48.0"
 			},
-			"_reg": {},
 			"id": 38
 		},
 		{
@@ -73,7 +69,6 @@
 				"name": "User-Agent",
 				"value": "Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5355d Safari/8536.25"
 			},
-			"_reg": {},
 			"id": 39
 		},
 		{
@@ -88,7 +83,6 @@
 				"name": "User-Agent",
 				"value": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 			},
-			"_reg": {},
 			"id": 40
 		},
 		{
@@ -103,7 +97,6 @@
 				"name": "User-Agent",
 				"value": "Mozilla/5.0 (Linux; U; Android 5.1.1; zh-cn; NX510J Build/LMY47V) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025489 Mobile Safari/533.1 V1_AND_SQ_6.2.3_336_YYB_D QQ/6.2.3.2700 NetType/WIFI WebP/0.3.0 Pixel/1080"
 			},
-			"_reg": {},
 			"id": 41
 		},
 		{
@@ -118,7 +111,6 @@
 				"name": "User-Agent",
 				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
 			},
-			"_reg": {},
 			"id": 42
 		},
 		{
@@ -133,7 +125,6 @@
 				"name": "User-Agent",
 				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
 			},
-			"_reg": {},
 			"id": 43
 		},
 		{
@@ -148,7 +139,6 @@
 				"name": "User-Agent",
 				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
 			},
-			"_reg": {},
 			"id": 44
 		},
 		{
@@ -156,14 +146,13 @@
 			"name": "直播平台 换用 Chrome Html5 播放器",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "^http(s?)://www\\.(douyu|huya|yy|panda|meipai)(\\.com|\\.tv)/(.*)",
+			"pattern": "^http(s?)://www\\.(douyu|yy|panda|meipai)(\\.com|\\.tv)/(.*)",
 			"exclude": "https://www.huya.com/$",
 			"isFunction": false,
 			"action": {
 				"name": "User-Agent",
 				"value": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36"
 			},
-			"_reg": {},
 			"id": 45,
 			"_exclude": {}
 		}

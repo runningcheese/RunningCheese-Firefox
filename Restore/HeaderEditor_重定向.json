@@ -10,21 +10,7 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "http://master.dl.sourceforge.net/project/$1/$4",
-			"_reg": {},
-			"id": 65
-		},
-		{
-			"enable": 1,
-			"name": "微信图片重定向",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/(mmbiz\\.(qpic|qlogo)\\.cn\\/[^?]+)\\?.*$",
-			"exclude": "",
-			"isFunction": 0,
-			"action": "redirect",
-			"to": "http://$1",
-			"_reg": {},
-			"id": 66
+			"id": 1
 		},
 		{
 			"enable": 0,
@@ -36,8 +22,7 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://www.google.com/ncr#$1&hl=en-US&safe=off",
-			"_reg": {},
-			"id": 67
+			"id": 3
 		},
 		{
 			"enable": 1,
@@ -49,9 +34,8 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "http://www.ftchinese.com/story/$1?full=y",
-			"_reg": {},
 			"_exclude": {},
-			"id": 68
+			"id": 4
 		},
 		{
 			"enable": 1,
@@ -63,8 +47,7 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
-			"_reg": {},
-			"id": 69
+			"id": 5
 		},
 		{
 			"enable": 1,
@@ -76,8 +59,7 @@
 			"isFunction": 0,
 			"action": "redirect",
 			"to": "$2",
-			"_reg": {},
-			"id": 70
+			"id": 6
 		},
 		{
 			"enable": 1,
@@ -89,8 +71,7 @@
 			"isFunction": 0,
 			"action": "redirect",
 			"to": "$1",
-			"_reg": {},
-			"id": 71
+			"id": 7
 		},
 		{
 			"enable": 1,
@@ -102,8 +83,7 @@
 			"isFunction": 0,
 			"action": "redirect",
 			"to": "$1",
-			"_reg": {},
-			"id": 72
+			"id": 8
 		},
 		{
 			"enable": 1,
@@ -115,8 +95,7 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$2",
-			"_reg": {},
-			"id": 73
+			"id": 9
 		},
 		{
 			"enable": 1,
@@ -128,8 +107,7 @@
 			"isFunction": 0,
 			"action": "redirect",
 			"to": "https://fonts.geekzu.org/$1",
-			"_reg": {},
-			"id": 74
+			"id": 10
 		},
 		{
 			"enable": 1,
@@ -141,8 +119,7 @@
 			"isFunction": 0,
 			"action": "redirect",
 			"to": "https://gapis.geekzu.org/ajax/$1",
-			"_reg": {},
-			"id": 75
+			"id": 11
 		},
 		{
 			"enable": 1,
@@ -154,8 +131,7 @@
 			"isFunction": 0,
 			"action": "redirect",
 			"to": "https://gapis.geekzu.org/g-themes/$1",
-			"_reg": {},
-			"id": 77
+			"id": 12
 		},
 		{
 			"enable": 1,
@@ -167,8 +143,7 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://zh.wikipedia.org/zh-cn/$2",
-			"_reg": {},
-			"id": 78
+			"id": 13
 		},
 		{
 			"enable": 1,
@@ -180,8 +155,7 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://$1$2$3",
-			"_reg": {},
-			"id": 79
+			"id": 14
 		},
 		{
 			"enable": 1,
@@ -193,8 +167,7 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
-			"_reg": {},
-			"id": 80
+			"id": 15
 		}
 	],
 	"sendHeader": [],
