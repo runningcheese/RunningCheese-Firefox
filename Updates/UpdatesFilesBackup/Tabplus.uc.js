@@ -122,12 +122,14 @@ location == "chrome://browser/content/browser.xul" && (function () {
 
 // 09. 鼠标移动到地址栏和搜索栏时自动全选里面的文字
 {if (location == "chrome://browser/content/browser.xul") {
-var autselectpulbar = document.getElementById("urlbar-container");
-autselectpulbar.addEventListener("mouseover", function(event){
-            if(event.target.compareDocumentPosition(document.activeElement)!= 20)
-                    event.target.select();
-    }, false);
+// 地址栏
+// var autselectpulbar = document.getElementById("urlbar-container");
+// autselectpulbar.addEventListener("mouseover", function(event){
+//             if(event.target.compareDocumentPosition(document.activeElement)!= 20)
+//                     event.target.select();
+//     }, false);
 
+// 搜索栏
 var autselectpsearchbar = document.getElementById("searchbar");
 autselectpsearchbar.addEventListener("mouseover", function(event){
             if(event.target.compareDocumentPosition(document.activeElement)!= 20)

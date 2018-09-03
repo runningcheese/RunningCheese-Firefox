@@ -36,9 +36,9 @@
 		url: "http://music.163.com/",
 		iframeStyle: "width: 1080px; height: 600px;",
 	}, {
-		name: "QQ音乐",
-		url: "https://y.qq.com/portal/player.html",
-		iframeStyle: "width: 1080px; height: 600px;",
+		name: "Listen 1",
+		url: "moz-extension://e4d169db-851e-47a8-811c-20793452192c/listen1.html",
+		iframeStyle: "width: 1080px; height: 700px;",
 	}, {
 		name: "豆瓣FM",
 		url: "https://douban.fm/",
@@ -65,12 +65,12 @@
    },{
 		name: "环境音乐",
 		url: "http://www.lavaradio.com/demo/search/boutique?a=1",
-		iframeStyle: "width: 1150px; height: 600px;",
+		iframeStyle: "width: 1150px; height: 700px;",
 	},{
 		name: "高效白噪音",
 		url: "https://www.noisli.com/",
 		iframeStyle: "width: 420px; height: 650px;",
-	}, 
+	},
 	];
 
 
