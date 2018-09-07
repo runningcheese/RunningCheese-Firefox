@@ -18,7 +18,7 @@ RunningCheese Firefox 是一款旨在提高Firefox易用性的浏览器，界面
 谷歌网盘：https://drive.google.com/drive/folders/19DUhiuNxoPciVSIZwkQjPz_tbuHT1dPO
 
 使用手册：https://www.runningcheese.com/firefox-usage  
-开发手册：https://www.runningcheese.com/firefox-guide
+开发手册：https://www.runningcheese.com/firefox-development
 
 
 如果觉得好用，可以按上方的 ★Star 帮助更多的朋友发现这个项目。
