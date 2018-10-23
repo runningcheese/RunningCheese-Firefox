@@ -773,8 +773,8 @@ toolbar :-moz-any(#back-button, #forward-button, #home-button, #stop-button, #re
 }
 
 
-/*xstyle*/
-#xstyle-amo_addon_firefoxcn_net-browser-action {
+/*xstyle & Stylish & Stylus*/
+#xstyle-amo_addon_firefoxcn_net-browser-action,#_46551ec9-40f0-4e47-8e18-8e5cf550cfb8_-browser-action,#_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action {
 	list-style-image: url("../images/icons/stylish.png")!important;
 }
 
@@ -1027,12 +1027,22 @@ toolbarbutton.bookmark-item {
 
 
 /*在添加到书签对话框中加入关键词选项 Show Tag Option on Edit Bookmark Panel*/
-#editBMPanel_locationRow,#editBMPanel_descriptionRow {
-	visibility: visible !important;
+#editBookmarkPanel [collapsed="true"],#editBMPanel_descriptionRow,#editBMPanel_locationRow {
+	visibility:visible !important
 }
+#editBookmarkPanel *|*.textbox-input:-moz-placeholder {
+	color:transparent !important;
+	text-shadow:none !important;
+}
+#editBMPanel_folderTree {
+	min-height:15em !important;
 
-#editBMPanel_tagsSelector[collapsed="true"] {
-	display: none !important;
+}
+#editBMPanel_tagsSelector {
+	max-height:2em !important;
+}
+#editBMPanel_descriptionField {
+	max-height:4em !important;
 }
 
 
@@ -1060,7 +1070,9 @@ toolbarbutton.bookmark-item {
 #wrapper-michal_simonfy_gmail_com-browser-action,
 #wrapper-firefox_ypsuperkey_meek_com_cn-browser-action,
 #wrapper-weibopic_ac-browser-action,
-#wrapper-download-filename-encoding_qw_linux-2g64_local-browser-action
+#wrapper-download-filename-encoding_qw_linux-2g64_local-browser-action,
+#wrapper-_5f246670-f5e2-45ff-b183-be21cbeb065c_-browser-action,
+#wrapper-_1c26aa63-9254-43b0-ba27-7c3746171ad1_-browser-action
 {
 	display: none !important;
 }
@@ -1290,7 +1302,7 @@ toolbarbutton.bookmark-item {
 }
 
 /*森林绿 Green*/
-#TabsToolbar .tabbrowser-tab[selected]:-moz-any([image*="feedly"],[image*="evernote"],[image*="360"],[image*="douban"],[image*="guokr"]) {
+#TabsToolbar .tabbrowser-tab[selected]:-moz-any([image*="feedly"],[image*="evernote"],[image*="iqiyi"],[image*="360"],[image*="douban"],[image*="guokr"]) {
 	background: -moz-linear-gradient(left, #68d045, #22ae02) !important;
 }
 
@@ -1305,7 +1317,7 @@ toolbarbutton.bookmark-item {
 }
 
 /*可爱粉 Pink*/
-#TabsToolbar .tabbrowser-tab[selected]:-moz-any([image*="dribbble"],[image*="vip"],[image*="hdslb"],[image*="acfun"],[image*="meilishuo"]) {
+#TabsToolbar .tabbrowser-tab[selected]:-moz-any([image*="bilibili"],[image*="dribbble"],[image*="vip"],[image*="acfun"],[image*="meilishuo"]) {
 	background: -moz-linear-gradient(left, #e842c5, #e951b6) !important;
 }
 
@@ -1382,12 +1394,14 @@ toolbarbutton.bookmark-item {
 #context_openTabInWindow + menuseparator,
 #context_sendTabToDevice + menuseparator,
 #context_duplicateTab + menuseparator,
-#context_toggleMuteTab + menuseparator {
+#context_toggleMuteTab + menuseparator,
+[id="placesContext_show:info"] + menuseparator{
 	display: none;
 }
 
 
 /*标签页右键菜单排序 Tabs Option Order*/
+#_bc21b9a1-3ad6-4b00-bca4-ef5b7e21253b_-menuitem-_BTH  {-moz-box-ordinal-group: 0 !important;}
 #context_CopyTab {-moz-box-ordinal-group: 1 !important;}
 #context_pinTab, #context_unpinTab {-moz-box-ordinal-group: 2 !important;}
 #context_toggleMuteTab{-moz-box-ordinal-group: 3 !important;}
@@ -1403,9 +1417,10 @@ toolbarbutton.bookmark-item {
 
 /*文字选中菜单排序 Text Selection Menu Order*/
 #context-undo,#context-sep-undo,#addmenu_context-copy{-moz-box-ordinal-group:0 !important;}
-#context-cut,#context-paste,#context-delete{-moz-box-ordinal-group:1 !important;}
+#context-paste,#context-delete{-moz-box-ordinal-group:1 !important;}
+#context-cut{-moz-box-ordinal-group:1 !important;}
 #context-searchselect{-moz-box-ordinal-group:1 !important;}
-[id*="olivier_debroqueville_gmail_com_"]{-moz-box-ordinal-group:3 !important;}
+[id*="addsearch_burningmoth_com-menuitem"]{-moz-box-ordinal-group:3 !important;}
 #context-keywordfield{-moz-box-ordinal-group:4 !important;}
 [id*="addsearch_burningmoth_com_"]{-moz-box-ordinal-group:4 !important;}
 #context-viewpartialsource-selection{-moz-box-ordinal-group:5 !important;}
@@ -1414,10 +1429,10 @@ toolbarbutton.bookmark-item {
 
 
 /*页面右键菜单排序 Page Menu Order*/
-[label="多功能菜单"]{-moz-box-ordinal-group:1 !important;}
-[label="阅读辅助工具"]{-moz-box-ordinal-group:1 !important;}
-[label="分享当前页面"]{-moz-box-ordinal-group:1 !important;}
-[label="翻译当前页面"]{-moz-box-ordinal-group:2 !important;}
+[label="多功能菜单"]{-moz-box-ordinal-group:0 !important;}
+[label="阅读辅助工具"]{-moz-box-ordinal-group:0 !important;}
+[label="分享当前页面"]{-moz-box-ordinal-group:0 !important;}
+[label="翻译当前页面"]{-moz-box-ordinal-group:1 !important;}
 [id*="s3google_translator-menuitem-"]{-moz-box-ordinal-group:2 !important;}
 #context-viewsource {-moz-box-ordinal-group:6 !important;}
 #context-viewinfo {-moz-box-ordinal-group:7 !important;}
@@ -1436,7 +1451,8 @@ toolbarbutton.bookmark-item {
 #context-media-eme-learnmore + menuseparator,
 #context-sep-selectall,
 [id*="support_lastpass_com-menuitem-"],
-[id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac_-menuitem-"] {
+[id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac_-menuitem-"],
+#context-sendaudio{
 	display: none !important;
 }
 
@@ -1454,7 +1470,6 @@ toolbarbutton.bookmark-item {
 #context-savelink,
 #context-openlinkincurrent,
 #context-savelinktopocket,
-#context-openlinkinusercontext-menu,
 #context-openlinkprivate,
 #context-openlink,
 #context-sep-open,
@@ -1535,8 +1550,10 @@ toolbarbutton.bookmark-item {
 #context-video-showstats .menu-iconic-text, 
 #context-video-hidestats .menu-iconic-text, 
 #context-savevideo .menu-iconic-text,
+#context-saveaudio .menu-iconic-text,
 #context-video-saveimage .menu-iconic-text,
 #context-copyvideourl .menu-iconic-text,
+#context-copyaudiourl .menu-iconic-text,
 #context-viewvideo .menu-iconic-text,
 #context-leave-dom-fullscreen .menu-iconic-text,
 #context-reloadimage .menu-iconic-text,
@@ -1552,7 +1569,9 @@ toolbarbutton.bookmark-item {
 #context-undo .menu-iconic-text,
 #context-media-playbackrate .menu-iconic-text,
 #context-viewimageinfo .menu-iconic-text,
-#frame .menu-iconic-text{
+#frame .menu-iconic-text,
+#context-openlinkinusercontext-menu .menu-iconic-text,
+#context-openlinkincontainertab .menu-iconic-text{
 	padding-left: 8px !important;
 }
 
@@ -1560,6 +1579,10 @@ toolbarbutton.bookmark-item {
 
 
 /*---------------------文本替换修改 Text Replace------------------*/
+
+#_bc21b9a1-3ad6-4b00-bca4-ef5b7e21253b_-menuitem-_BTH .menu-iconic-text {display: none !important;}
+#_bc21b9a1-3ad6-4b00-bca4-ef5b7e21253b_-menuitem-_BTH:after {	content: "添加书签到此..."; position: absolute !important; margin-left:-11px !important;}
+
 [id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac__"] .menu-iconic-text {display: none;}
 [id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac__"]:after {content: "添加到稍后阅读";	position: absolute !important; margin-left: -11px !important;}
 
@@ -1607,7 +1630,27 @@ toolbarbutton.bookmark-item {
 
 /*--------------------------增加图标 Add Icons--------------------------*/
 
-#context-copyimage-contents{
+#context-openlinkincontainertab  {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
+	list-style-image: url("../images/icons/tab.png")!important;
+	padding-left: 4px !important;
+}
+
+#context-openlinkinusercontext-menu  {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
+	list-style-image: url("../images/icons/profile.png")!important;
+	padding-left: 4px !important;
+}
+
+
+#_bc21b9a1-3ad6-4b00-bca4-ef5b7e21253b_-menuitem-_BTH {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
+	list-style-image: url("../images/icons/tab.png")!important;
+	padding-left: 4px !important;
+}
+
+
+#context-copyimage-contents,#context-copyaudiourl{
   -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
 	list-style-image: url("../images/icons/copy.png")!important;
 	padding-left: 4px !important;
@@ -1654,6 +1697,14 @@ toolbarbutton.bookmark-item {
 	list-style-image: url("../images/icons/speed.png")!important;
 	padding-left: 4px !important;
 }
+
+#context-saveaudio{
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
+	list-style-image: url("../images/icons/save.png")!important;
+	padding-left: 4px !important;
+}
+
+
 
 #context-copyvideourl{
 	list-style-image: url("../images/icons/copy.png")!important;

@@ -1302,7 +1302,7 @@ toolbarbutton.bookmark-item {
 }
 
 /*森林绿 Green*/
-#TabsToolbar .tabbrowser-tab[selected]:-moz-any([image*="feedly"],[image*="evernote"],[image*="360"],[image*="douban"],[image*="guokr"]) {
+#TabsToolbar .tabbrowser-tab[selected]:-moz-any([image*="feedly"],[image*="evernote"],[image*="iqiyi"],[image*="360"],[image*="douban"],[image*="guokr"]) {
 	background: -moz-linear-gradient(left, #68d045, #22ae02) !important;
 }
 

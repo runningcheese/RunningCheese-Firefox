@@ -84,7 +84,7 @@ pref("security.mixed_content.block_display_content", false); //关闭ssl不安�
 pref("security.dialog_enable_delay", 0);//安装附加组件时的等待时间
 pref("browser.safebrowsing.downloads.enabled", false);//解决下载卡在最后一秒的问题
 pref("browser.backspace_action", 1); //去除退格键使网页后退的功能，改成向上滚动页面。
-pref("services.sync.engine.prefs",false); //取消首选项的同步功能
+
 pref("datareporting.healthreport.uploadEnabled", false);//关闭安全检测健康中心
 pref("datareporting.policy.dataSubmissionEnabled", false); //关闭安全检测健康中心
 pref("dom.flyweb.enabled", false);//关闭物联网扩展
@@ -94,7 +94,8 @@ pref("security.enterprise_roots.enabled", true);//去除访问所有HTTPS网站�
 //pref("dom.event.contextmenu.enabled", false);//破解右键限制 (开启会导致SpeedDail右键菜单重叠)
 //pref("browser.urlbar.formatting.enabled", false);//关闭域名高亮
 //pref("services.sync.engine.addons",false); //取消附加组件的同步功能
-
+//pref("services.sync.engine.prefs",false); //取消首选项的同步功能
+pref("media.gmp-widevinecdm.visible",false);//去除播放DRM内容黄条提示
 
 
 //动画
