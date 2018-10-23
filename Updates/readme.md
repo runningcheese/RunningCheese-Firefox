@@ -11,6 +11,18 @@
 
 
 -------------
+### 10-23 更新说明
+1、拓展和脚本惯例更新\
+2、解决网易云音乐“我的音乐”404的问题\
+3、重新换回书签自动居中的CSS样式\
+4、更换百度网盘加速下载脚本\
+
+**修改内容：**\
+\Profiles\V10\chrome\user.js\
+\Profiles\V10\chrome\css\chrome.css\
+\Profiles\V10\chrome\css\ButtonEventListener.uc.js
+
+-------------
 ### 10-08 更新说明
 1、内核更新至60.2.2 ESR，Flash更新到31.0\
 2、解决无法设置为默认浏览器的问题\
