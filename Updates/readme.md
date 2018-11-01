@@ -18,9 +18,10 @@
 
 **修改内容：**\
 \Profiles\V10\chrome\css\chrome.css\
-新增拓展：IDM Integration Module\
-删除拓展：ThunderCross
-
+**新增拓展：**\
+IDM Integration Module\
+**删除拓展：**\
+ThunderCross
 
 
 -------------
