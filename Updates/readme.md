@@ -10,6 +10,19 @@
 * UpdatesUnpackedFiles：Updates.zip 解压后的文件
 
 
+
+-------------
+### 11-01 更新说明
+1、换用原生IDM调用拓展\
+2、解决首页第一次打开总是空白的问题。\
+
+**修改内容：**\
+\Profiles\V10\chrome\css\chrome.css\
+新增拓展：IDM Integration Module\
+删除拓展：ThunderCross
+
+
+
 -------------
 ### 10-23 更新说明
 1、拓展和脚本惯例更新\
