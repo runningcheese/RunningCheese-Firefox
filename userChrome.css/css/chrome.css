@@ -1452,6 +1452,9 @@ toolbarbutton.bookmark-item {
 #context-sep-selectall,
 [id*="support_lastpass_com-menuitem-"],
 [id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac_-menuitem-"],
+[id*="mozilla_cc3_internetdownloadmanager_com-menuitem-9"],
+[id*="mozilla_cc3_internetdownloadmanager_com-menuitem-10"],
+#thunder_cross-menuitem-_contextDownloadLink,
 #context-sendaudio{
 	display: none !important;
 }
@@ -1565,7 +1568,6 @@ toolbarbutton.bookmark-item {
 #context_duplicateTab .menu-iconic-text,
 #context-saveimage .menu-iconic-text,
 #context-searchselect .menu-iconic-text,
-#thunder_cross_contextDownloadLink .menu-iconic-text,
 #context-undo .menu-iconic-text,
 #context-media-playbackrate .menu-iconic-text,
 #context-viewimageinfo .menu-iconic-text,
@@ -1613,8 +1615,6 @@ toolbarbutton.bookmark-item {
 [id*="popupwindow_ettoolong-menuitem-"] .menu-iconic-text { display:none !important; }
 [id*="popupwindow_ettoolong-menuitem-"]:after {content: "弹出至独立窗口";	position: absolute !important; margin-left: -19px !important;}
 
-#thunder_cross-menuitem-_contextDownloadLink .menu-iconic-text { display:none !important; }
-#thunder_cross-menuitem-_contextDownloadLink:after {content: "调用下载软件下载"; position: absolute !important; margin-left: -11px !important;}
 
 #context-openlinkintab .menu-iconic-text {display: none;}
 #context-openlinkintab:after {content: "新标签页打开";	position: absolute !important;margin-left: -11px !important;}
@@ -1732,11 +1732,6 @@ toolbarbutton.bookmark-item {
 	padding-left: 4px !important;
 }
 
-#thunder_cross-menuitem-_contextDownloadLink {
-	-moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
-	list-style-image: url("../images/icons/download.png")!important;
-	padding-left: 4px !important;
-}
 
 #context-searchselect {
 	-moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
