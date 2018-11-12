@@ -2,6 +2,7 @@
   @author       RunningCheese
   @homepage     https://www.runningcheese.com
   @reference    Inspired by Simplewhite Theme and QQ Browser 
+  @version      v2018-11-12 
   @version      v2018-06-17 fix 60+
   @version      v2018-04-08       
 */
@@ -1405,8 +1406,8 @@ toolbarbutton.bookmark-item {
 #context_CopyTab {-moz-box-ordinal-group: 1 !important;}
 #context_pinTab, #context_unpinTab {-moz-box-ordinal-group: 2 !important;}
 #context_toggleMuteTab{-moz-box-ordinal-group: 3 !important;}
-#context_CloseTab {-moz-box-ordinal-group: 4 !important;}
-#context_SidebarOpen {-moz-box-ordinal-group: 5 !important;}
+#context_SidebarOpen {-moz-box-ordinal-group: 4 !important;}
+#context_CloseTab {-moz-box-ordinal-group: 5 !important;}
 #context_closeOtherTabs + menuseparator{-moz-box-ordinal-group: 6 !important;}
 #context_SmallWindow {-moz-box-ordinal-group: 7 !important;}
 #context_sendTabToDevice {-moz-box-ordinal-group: 8 !important;}
@@ -1433,10 +1434,34 @@ toolbarbutton.bookmark-item {
 [label="阅读辅助工具"]{-moz-box-ordinal-group:0 !important;}
 [label="分享当前页面"]{-moz-box-ordinal-group:0 !important;}
 [label="翻译当前页面"]{-moz-box-ordinal-group:1 !important;}
-[id*="s3google_translator-menuitem-"]{-moz-box-ordinal-group:2 !important;}
-#context-viewsource {-moz-box-ordinal-group:6 !important;}
-#context-viewinfo {-moz-box-ordinal-group:7 !important;}
-#context-inspect {-moz-box-ordinal-group:8 !important;}
+#context-copylink_new,#context-sep-copylink{-moz-box-ordinal-group:1 !important;}
+
+#context-viewimage,
+#context-copyimage_new,
+#context-searchimage
+{-moz-box-ordinal-group:2 !important;}
+
+#context-sep-open,
+#_72d92df5-2aa0-4b06-b807-aa21767545cd_-menuitem-_save-in-_-_-root
+{-moz-box-ordinal-group:3 !important;}
+
+#context-saveimage,
+#context-viewimageinfo
+{-moz-box-ordinal-group:4 !important;}
+
+#context-sep-copyimage
+{-moz-box-ordinal-group:5 !important;}
+
+[id*="s3google_translator-menuitem-"]
+{-moz-box-ordinal-group:6 !important;}
+
+[id*="popupwindow_ettoolong-menuitem-"],
+#context-viewsource 
+{-moz-box-ordinal-group:7 !important;}
+
+#context-viewpartialsource-selection,
+#context-viewinfo {-moz-box-ordinal-group:8 !important;}
+#context-inspect {-moz-box-ordinal-group:9 !important;}
 
 
 
@@ -1453,9 +1478,11 @@ toolbarbutton.bookmark-item {
 [id*="support_lastpass_com-menuitem-"],
 [id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac_-menuitem-"],
 [id*="mozilla_cc3_internetdownloadmanager_com-menuitem-9"],
-[id*="mozilla_cc3_internetdownloadmanager_com-menuitem-10"],
+[id*="mozilla_cc3_internetdownloadmanager_com-menuitem-1"],
 #thunder_cross-menuitem-_contextDownloadLink,
-#context-sendaudio{
+#context-sendaudio,
+#context-sep-sendlinktodevice,
+#context-searchselect{
 	display: none !important;
 }
 
@@ -1475,13 +1502,13 @@ toolbarbutton.bookmark-item {
 #context-savelinktopocket,
 #context-openlinkprivate,
 #context-openlink,
-#context-sep-open,
 #context-bookmarklink,
 #context-navigation,
 #screenshots_mozilla_org-menuitem-_create-screenshot,
 #context-viewbgimage,
 #context-sep-viewsource,
-#context-sep-navigation {
+#context-sep-navigation,
+#context-openlinkinusercontext-menu{
 	display: none;
 }
 
@@ -1502,7 +1529,6 @@ toolbarbutton.bookmark-item {
 
 
 /*隐藏图像右键菜单 Hide Image menu option*/
-#context-sep-copyimage,
 #context-sendimage,
 #context-setDesktopBackground, 
 #context-copyimage {
@@ -1624,6 +1650,9 @@ toolbarbutton.bookmark-item {
 
 [id*="addsearch_burningmoth_com-menuitem-"] .menu-iconic-text{display: none;}
 [id*="addsearch_burningmoth_com-menuitem-"]:after {content: "添加搜索引擎";	margin-left: -19px !important;}
+
+#context-viewpartialsource-selection .menu-iconic-text {display: none;}
+#context-viewpartialsource-selection:after {content: "查找选中部分源代码";	position: absolute !important;margin-left: -11px !important;}
 
 
 
