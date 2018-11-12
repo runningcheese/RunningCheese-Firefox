@@ -9,6 +9,25 @@
 * Updates.zip：自动更新的文件打包
 * UpdatesUnpackedFiles：Updates.zip 解压后的文件
 
+-------------
+### 11-12 更新说明
+1、新增拓展 Save in 和 Sidebar note。\
+2、优化右键菜单的排布，更加的清晰了。\
+3、为自定义选项修改增加引导图片。\
+4、解决百度云下载脚本下载出错显示 user is not authorized 的问题。\
+5、解决虎扑论坛帖子回转到首页的问题。\
+6、解决部分网页下拉选项无法点击的问题。\
+
+**修改内容：**\
+\Profiles\V10\chrome\css\chrome.css\
+\Profiles\V10\chrome\Local\_addmenu.js\
+\Profiles\V10\chrome\SubScript\QuickOpen.uc.js
+
+**新增拓展：**\
+Save in \
+Sidebar Note 
+
+
 
 
 -------------
