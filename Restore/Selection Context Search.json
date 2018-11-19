@@ -1,0 +1,415 @@
+{
+  "sVersion": "5.18",
+  "websiteList": [
+    {
+      "type": "link",
+      "name": "百度",
+      "address": "https://www.baidu.com/s?wd=",
+      "contexts": [
+        "selection"
+      ],
+      "id": 43
+    },
+    {
+      "type": "link",
+      "name": "Google",
+      "address": "https://www.google.com/search?q=",
+      "contexts": [
+        "selection"
+      ],
+      "popup": true,
+      "prompt": true,
+      "id": 3
+    },
+    {
+      "type": "link",
+      "name": "Google Lucky",
+      "address": "https://www.google.com/search?hl=en&q=~$S$~&btnI=I'm+Feeling+Lucky",
+      "contexts": [
+        "selection"
+      ],
+      "id": 44
+    },
+    {
+      "type": "link",
+      "name": "Google Images",
+      "address": "https://www.google.com/images?q=",
+      "contexts": [
+        "selection"
+      ],
+      "popup": true,
+      "id": 5
+    },
+    {
+      "type": "folder",
+      "name": "社交网络",
+      "folder": [
+        {
+          "type": "link",
+          "name": "Wikipedia",
+          "address": "https://en.wikipedia.org/wiki/",
+          "contexts": [
+            "selection"
+          ],
+          "popup": true,
+          "id": 7
+        },
+        {
+          "type": "link",
+          "name": "Yandex",
+          "address": "https://yandex.com/search/?text=",
+          "contexts": [
+            "selection"
+          ],
+          "id": 46
+        },
+        {
+          "type": "link",
+          "name": "YouTube",
+          "address": "https://www.youtube.com/results?search_query=",
+          "contexts": [
+            "selection"
+          ],
+          "popup": true,
+          "id": 4
+        },
+        {
+          "type": "link",
+          "name": "Bilibili",
+          "address": "http://search.bilibili.com/all?keyword=",
+          "contexts": [
+            "selection"
+          ],
+          "id": 49
+        },
+        {
+          "type": "link",
+          "name": "优酷",
+          "address": "http://so.youku.com/search_video/q_",
+          "contexts": [
+            "selection"
+          ],
+          "id": 48
+        },
+        {
+          "type": "link",
+          "name": "简书",
+          "address": "https://www.jianshu.com/search?q=",
+          "contexts": [
+            "selection"
+          ],
+          "id": 55
+        },
+        {
+          "type": "link",
+          "name": "云音乐",
+          "address": "https://music.163.com/#/search/m/?s=",
+          "contexts": [
+            "selection"
+          ],
+          "id": 56,
+          "icon": "https://s1.music.126.net/style/favicon.ico"
+        },
+        {
+          "type": "link",
+          "name": "知乎",
+          "address": "http://www.zhihu.com/search?q=",
+          "contexts": [
+            "selection"
+          ],
+          "id": 54
+        },
+        {
+          "type": "link",
+          "name": "微博",
+          "address": "http://s.weibo.com/weibo/",
+          "contexts": [
+            "selection"
+          ],
+          "id": 52
+        },
+        {
+          "type": "link",
+          "name": "微信",
+          "address": "http://weixin.sogou.com/weixin?type=2&query=",
+          "contexts": [
+            "selection"
+          ],
+          "id": 51
+        },
+        {
+          "type": "link",
+          "name": "Quora",
+          "address": "https://www.quora.com/search?q=",
+          "contexts": [
+            "selection"
+          ],
+          "id": 50
+        },
+        {
+          "type": "link",
+          "name": "Twitter",
+          "address": "https://mobile.twitter.com/search?q=",
+          "contexts": [
+            "selection"
+          ],
+          "id": 15
+        },
+        {
+          "type": "link",
+          "name": "Facebook",
+          "address": "https://www.facebook.com/public?query=",
+          "contexts": [
+            "selection"
+          ],
+          "id": 14
+        }
+      ],
+      "id": 9,
+      "collapse": true
+    },
+    {
+      "type": "separator",
+      "contexts": [
+        "selection"
+      ],
+      "id": 35
+    },
+    {
+      "type": "link",
+      "name": "百度站内搜索",
+      "address": "https://www.baidu.com/s?wd=~$S$~+site:~$B$~",
+      "contexts": [
+        "selection",
+        "page",
+        "frame"
+      ],
+      "id": 57,
+      "prompt": true
+    },
+    {
+      "type": "link",
+      "name": "谷歌站内搜索",
+      "address": "https://www.google.com/search?q=~$S$~+site:~$B$~",
+      "contexts": [
+        "selection",
+        "page",
+        "frame"
+      ],
+      "id": 24,
+      "prompt": true
+    },
+    {
+      "type": "separator",
+      "contexts": [
+        "selection",
+        "page",
+        "link"
+      ],
+      "id": 66
+    },
+    {
+      "type": "link",
+      "name": "Google搜图",
+      "address": "https://images.google.com/searchbyimage?image_url=~$U$~",
+      "contexts": [
+        "image"
+      ],
+      "id": 26
+    },
+    {
+      "type": "link",
+      "name": "Yandex搜图",
+      "address": "https://yandex.com/images/search?source=collections&&url=~$U$~&rpt=imageview",
+      "contexts": [
+        "image"
+      ],
+      "id": 39
+    },
+    {
+      "type": "link",
+      "name": "TinEye 搜图",
+      "address": "https://www.tineye.com/search?url=~$U$~",
+      "contexts": [
+        "image"
+      ],
+      "id": 27
+    },
+    {
+      "type": "link",
+      "name": "Baidu 搜图",
+      "address": "https://image.baidu.com/pcdutu?queryImageUrl=~$U$~",
+      "contexts": [
+        "image"
+      ],
+      "id": 38
+    },
+    {
+      "type": "separator",
+      "contexts": [
+        "image"
+      ],
+      "id": 67
+    },
+    {
+      "type": "link",
+      "name": "页面二维码",
+      "address": "http://qr.liantu.com/api.php?w=250&text=~$U$~",
+      "contexts": [
+        "page"
+      ],
+      "id": 37
+    },
+    {
+      "type": "link",
+      "name": "图片二维码",
+      "address": "http://qr.liantu.com/api.php?w=250&text=~$U$~",
+      "contexts": [
+        "image"
+      ],
+      "id": 40
+    },
+    {
+      "type": "link",
+      "name": "文字二维码",
+      "address": "http://qr.liantu.com/api.php?w=250&text=~$S$~",
+      "contexts": [
+        "selection"
+      ],
+      "id": 41
+    },
+    {
+      "type": "link",
+      "name": "链接二维码",
+      "address": "http://qr.liantu.com/api.php?w=250&text=~$U$~",
+      "contexts": [
+        "link"
+      ],
+      "id": 42
+    },
+    {
+      "type": "link",
+      "name": "生成短链接",
+      "address": "https://tinyurl.com/api-create.php?url=~$U$~",
+      "contexts": [
+        "page",
+        "link"
+      ],
+      "id": 64
+    },
+    {
+      "type": "separator",
+      "contexts": [
+        "selection",
+        "page",
+        "link",
+        "frame"
+      ],
+      "id": 65
+    },
+    {
+      "type": "link",
+      "name": "快照查询",
+      "address": "https://webcache.googleusercontent.com/search?q=cache:~$U$~",
+      "contexts": [
+        "page",
+        "link",
+        "frame"
+      ],
+      "id": 59
+    },
+    {
+      "type": "link",
+      "name": "网页时光机",
+      "address": "https://web.archive.org/web/*/~$U$~",
+      "icon": "https://web.archive.org/static/images/archive.ico",
+      "contexts": [
+        "page",
+        "frame",
+        "link"
+      ],
+      "id": 30
+    },
+    {
+      "type": "link",
+      "name": "存档当前页",
+      "address": "http://archive.fo/?run=1&url=~$U$~",
+      "contexts": [
+        "page",
+        "frame",
+        "link"
+      ],
+      "id": 62,
+      "icon": "https://ws1.sinaimg.cn/large/7a6a15d5gy1fxayf41ej0j200w00wgld.jpg"
+    },
+    {
+      "type": "folder",
+      "id": 63,
+      "name": "网页信息查询",
+      "icon": "",
+      "folder": [
+        {
+          "type": "link",
+          "name": "SEO查询",
+          "address": "http://seo.chinaz.com/?q=~$U$~",
+          "contexts": [
+            "page"
+          ],
+          "id": 61
+        },
+        {
+          "type": "link",
+          "name": "Alexa查询",
+          "address": "https://www.alexa.com/siteinfo/~$D$~",
+          "contexts": [
+            "page",
+            "frame"
+          ],
+          "id": 60
+        },
+        {
+          "type": "link",
+          "name": "Whois查询",
+          "address": "http://whois.chinaz.com/~$D$~",
+          "contexts": [
+            "page",
+            "frame"
+          ],
+          "id": 29
+        }
+      ],
+      "collapse": true
+    },
+    {
+      "type": "separator",
+      "contexts": [
+        "selection"
+      ],
+      "id": 58
+    },
+    {
+      "type": "options",
+      "contexts": [
+        "selection"
+      ],
+      "id": 36
+    }
+  ],
+  "sMenuLabel": "Find '%s' using ...",
+  "bShowPopup": false,
+  "iPopupMaxColumns": 6,
+  "iPopupIconSize": 21,
+  "bClosePopupOnClick": true,
+  "bClosePopupOnScroll": true,
+  "bClosePopupOnTimeout": true,
+  "iPopupCloseTimeout": 4,
+  "bShowAddSearchPage": false,
+  "bCopySelection": false,
+  "sOpenSearchIn": "opntnx",
+  "oPlaceHolder": {
+    "keywords": "~$S$~",
+    "url": "~$U$~",
+    "subdomain": "~$B$~",
+    "domain": "~$D$~"
+  }
+}
