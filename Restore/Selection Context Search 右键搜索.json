@@ -61,7 +61,8 @@
           "contexts": [
             "selection"
           ],
-          "id": 46
+          "id": 46,
+          "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABI0lEQVQ4jZ3OvUrDYBjF8f8m6FbBltJakyZv0i9BXBxcnJ3ES3DyAoRugkWr96Gbm1chuLgVFxGkWhDphxbSkhyXClJoTfOOz/uc33Mg5htanMhDcqjPXBrb7Mrn8BFWpv8iw3NURG8ZKjOB0KUhH3WzHP2dBzlqKqGRzc3cmu0s6zIoMtxPNWvKIBXYmwsAvFrcqYT6S3i/Mxm6nxZf/4YBnjLsq4YGBc4A6stsq4w+HJqxgMnFYduhB9DJcKkyeljFjw28p2mogkYpdrRBa+zRih0G6KSxQ4Pk8iIPDdY4XggA+Ha4lUHy6fVypBYG+mscqIyCHNcLhwGCPFX5KMhzkQyw2IwcJMN5YkAuCosJgVGBrQlwlaxBkapcFNqcztv7Ae/0dba36CN6AAAAAElFTkSuQmCC"
         },
         {
           "type": "link",
@@ -71,7 +72,8 @@
             "selection"
           ],
           "popup": true,
-          "id": 4
+          "id": 4,
+          "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdklEQVQ4jc2SURHAIAxDI6ESkIAEJCABCZOAJCQgBSfZD/3ZDTbox5a7fEHeXdsAvxEBIRC688D6LtdwIsBFJw37jbDag0A0ABL6bPcfWiNDmAHyHKAqhXTOAKh1E9AaGePjCOMlirxaou2M5iINqnxwpcqf6gRg3lq818aBPAAAAABJRU5ErkJggg=="
         },
         {
           "type": "link",
@@ -144,16 +146,18 @@
           "contexts": [
             "selection"
           ],
-          "id": 50
+          "id": 50,
+          "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjElEQVQ4jc2RsUtVYRiHHxsibBAcMkTPOfc73znd0iG8k4uDi5ODk9Cf0BykW4tINLSVDV0u13O/7/3u1SBUBF0CkegPEJcgGnQQdVCQMOJtaBHusWgI+q3v+3t4Xl747+JyqsUdWn6Ic59xLClnwbDVGmbij2UfM+MTLldqaKfGY4m57xNmveFUDOoS5q4tF3d54FO00Yt+esnk1dmbQXrF8t1V0HbOTCmgY+j4CuoNX0vtUkJIUW/5DPR0LYjlSAwqGdtlgDDMguSopKhLqHYvGC6CRYuYzTJAO2JRMtQbdKmf8W7FjP0iRtfH2AFoDvBIDM9dlWkAZ1lsRWjI+bE3RX+3QcqTIkLXHnKyXaPPJdSdRcWgLqPhDFvLMbpqqZcZ8gxuiOVjfRBdG+UtwIsBbovlSCq/bm8OsVtavgK5GWJcO0dX7nFYpLyWlG8hQcWijYgRoGdvjvnfgpYtYz7h1buM1WB52oj40orRkHEgOZdLt8pffW02ZsnfWz64BPWG/WZM5a8A/zQ/AWpvkT+OOGgIAAAAAElFTkSuQmCC"
         },
         {
           "type": "link",
           "name": "Twitter",
-          "address": "https://mobile.twitter.com/search?q=",
+          "address": "https://twitter.com/search?q=",
           "contexts": [
             "selection"
           ],
-          "id": 15
+          "id": 15,
+          "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB80lEQVQ4ja2SP2gUQRTGXyCK3EHQjWHj7sysuS6gjViYIlFBsEiwEEsLQQimSCeiXdBOIYkQDy+5u+zs3p/gGQv/EOXUKBZa2AUxRUDSyLlHws7Mrtxp4FkkEZfLqkUefN33+973hgHYhWn7l0G7512wnOAZ5ap6KO8PAwCQB82je6+974XE+PJxI+9fjYO7c/XTxJaKconbMmw/bZa+lw/e/nISDhcaVyhXSB7iZAud+ZogXKxbjsI/AxhXSLjYMAvhEHRlvQHKJbJyE7snPn/ovLFwHsYW2wEAOsaFRh0ZgSmXyNwAyczaQnLymw4A0GbY/iNm+8jmfqI1j2jm11dJTkyRnMzsHKDQmK6fAwCAnhc4QLh6a876GxGjsyW+syw3HAQAgH2DIymSryMr/4g1R7bbCmmxiTCzWR8AAPSp1SFWwU//E2C5AZpZ73XLg1sVXKSOQmqLvwak3iAmz46cidKnxtq1W0vZ1HNE6oaxIcyRSOcbj2N/XKL/4jFaDN+xUqM1wJFIuFzW79SSEcgsIOmcU73azZd9+y9NjNKSWqFuuAUqZG6AlEs0Z/1XHVmhtWzV0rUTesZ7alUQe57gZv3fJwgk3F8y7q9djq0Nwx/3dKW9fuYE101buCYXVcpFlXJV1KdrowfurhyJh3dhfgHzzY2Ogy5eAgAAAABJRU5ErkJggg=="
         },
         {
           "type": "link",
@@ -162,11 +166,11 @@
           "contexts": [
             "selection"
           ],
-          "id": 14
+          "id": 14,
+          "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABeklEQVQ4jZ2TT0sbQRjG93t4KYIHK4IXN4cWdicx/UOklEallw0UzewmKHuq/RjqJygIKQllWmd2s9Bcc/FqT+LJfoUJxT8Iv15MbKXZtX3gvc383ud5Z17Hj0wmpLFC6n8sY/3IZE45NBRVJTJ4W5pSQ+EGiqebR6y0EsqhwRGhHuVdrrZTlgPF4kaPF9spq3FGtZUgpEGEeuQIqe30zgnLgUJIQzo85+fFNQAf9SmzrzoIqW0uwNvSLKz36A9/8LsO0zMerT4AUGooqu2Ui8sbAPY6Jzx595VqK8GXejqgEhmENMzXu4jQTDovvf3MzPNDSo0vPGun0wFiHKGpWdsdTABv3n/Db2pe7vTxmzkO3EBRizOurm74m/Y735l7/en/AR8OjllY7xVH8O9FWNsd3Fq/PVc0xMf1Lp7UE4AnNfP1Ll5TU4mS4mccRxmrFme4gbpzKrXN/cqFgFCPcpepCFAODU7eOruBsrW4bwEL2Frct26g/ljnX4lmkV7GZ1xjAAAAAElFTkSuQmCC"
         }
       ],
-      "id": 9,
-      "collapse": true
+      "id": 9
     },
     {
       "type": "separator",
@@ -224,7 +228,8 @@
       "contexts": [
         "image"
       ],
-      "id": 39
+      "id": 39,
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABI0lEQVQ4jZ3OvUrDYBjF8f8m6FbBltJakyZv0i9BXBxcnJ3ES3DyAoRugkWr96Gbm1chuLgVFxGkWhDphxbSkhyXClJoTfOOz/uc33Mg5htanMhDcqjPXBrb7Mrn8BFWpv8iw3NURG8ZKjOB0KUhH3WzHP2dBzlqKqGRzc3cmu0s6zIoMtxPNWvKIBXYmwsAvFrcqYT6S3i/Mxm6nxZf/4YBnjLsq4YGBc4A6stsq4w+HJqxgMnFYduhB9DJcKkyeljFjw28p2mogkYpdrRBa+zRih0G6KSxQ4Pk8iIPDdY4XggA+Ha4lUHy6fVypBYG+mscqIyCHNcLhwGCPFX5KMhzkQyw2IwcJMN5YkAuCosJgVGBrQlwlaxBkapcFNqcztv7Ae/0dba36CN6AAAAAElFTkSuQmCC"
     },
     {
       "type": "link",
@@ -233,7 +238,8 @@
       "contexts": [
         "image"
       ],
-      "id": 27
+      "id": 27,
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADf0lEQVQ4jT2RbUwUBBjHn+acfWGSWq7SUVMqWyhTzMQXQsEOmAUKGF0SwiYOEZ3BiW53vpzjDjkUhPOQE8vLHJokUKJFCXqE2A3Hi8QQwdU8xDljPPXBqfnrg3XP9v/2//+23x65fvehP7rcp/MOdGrUoWtqcLTqygMtGufs1KRTfk36+o4meoY1yTOsq78c1ujKHp1raVbDQa/231W/fOZup37HB1wqjCKm9AqL7O2sqh4gofIa8z61EBKVyisLDUwNjyVk7mLW7Khga90gi+xXWVvdhWQWHVO2C5olxFnrSDj1gNSqDiQ4FBEJZJII6Wvfx2h3kuOqJa+ylgznRZV4V5emGz9mZfIG1p/2Y7l0h5SEpSSKsG2+YF09k6Npb1JnXUf5KBT0PyX30gBp7gbS9pepxNcM6vQsN2HGvey/0MMn9dc50niWgTobbVe+peHHelwnqjHu3MOqvN1sspWTe8CJ6VwbW5p6VeKrujU8180K4yZsvfcxX/QRsX4rz0fEMzk0gqDprxH00kzytptYsnABIsIEEVJ3FlEygsryYq+mHL5MfsOvZNac4+VpU7CY8tm9d1/A32xz8P+9PicMESFpl53SUVQi7a26ocbHkaGHyAsv8uq0KYGyw3kUEeEXXyc9XV08ffKYZu9VRISYtAwOP0DFcLRPI3PKyKjwMCHkLdasTmC/rRjPF8cBEHmOAvMeNuduZrC/j38g8JUC92kVQ6VPF+efZMvJZgyFNkSE2NhYhvp6/wM80zjfdJFHOkbepmxEhIlBwSSb9qnElLTqckcHpsZh3LfGmZOaxbKERBov/EB65sYAYPaCSIyFVsKSs/iwyIW1cwTnCCqrSr26wnGFaFsLu74bwHMPCpq7iS3xEFNUw8azbWy50E12Uzc5LTepHoczT8Dy0++EJW17Bogra2N58WUizM2kHPLy+Te9mL2jOIagyg+Vtx5R8dvfWFtuk+NqYtm6rYgEs2SCqCyxt6rhoJdoeyvJNT7SartZf6KDbIuDmIXhhMwOJ+y9aGbMepugaTMDSktFaKirUvmoop2Q/POYfh7ixN1xvhoZ48jQGPbO25jtFkJFEJnI9CmTA+OpIpQXplJ6H+TGH2P+xKp2zazv1rzvb+i+9mE9NjCqzpt/quMv9PiZYxo3Y5LOnf+uzpr9hoZMFC1Ofkdd/fd08DH+fwH9MmqFwCCktQAAAABJRU5ErkJggg=="
     },
     {
       "type": "link",
@@ -309,7 +315,7 @@
     },
     {
       "type": "link",
-      "name": "快照查询",
+      "name": "网页快照查询",
       "address": "https://webcache.googleusercontent.com/search?q=cache:~$U$~",
       "contexts": [
         "page",
@@ -322,7 +328,7 @@
       "type": "link",
       "name": "网页时光机",
       "address": "https://web.archive.org/web/*/~$U$~",
-      "icon": "https://web.archive.org/static/images/archive.ico",
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFQElEQVRYhbWXy2tTTxTH576apOBCEbRNXHTX3iQ2uvPxD2hTitidCiI0idVuBBdZxJvUahcVCooI7l25sFRSG18USxpNti5s1NqHS/+BgMnnt3GGuUlqyw+8cLiPOXPme77ncWeEaZoIIRBCYFkWpmliWRaWZWEYBoZh4DiOGhNCYNs2gUBAiW3bmKaJYRjqLp/luxBC3eX3P+sKNUEflAYkGNM01cISsC6BQEABlfbkPB1QB4j2Adu2sW0by7K6LiSEIBwOk06nmZubI51O09fXt6uuBK57rQMTuvc9PT0dBgzDIBgMcuHCBZ49e0a1WqVer9NoNABoNBrU63VqtRpPnz5lbGyMw4cP/9UBnREVAun5uXPnGB8fp1Ao8OHDB/7v1Ww2efHiBdeuXWNkZESxJEMk70JDQk9PD/Pz8zx69Ij5+Xnm5uaYnZ1lZmaGu3fvMj09TaFQYHp62ieFQgHP8/A8j5mZGe7fv8/s7CwPHjzg4cOHPH78mOPHjysAOhNCeyAYDJLNZsnlcuRyOTzPI5/Pk8/nKRQK5PN5PM+jUCio9/Zx+ex5Hrlcjmw2y507dzh58qSPAbmmrwp6e3v/N+V7Xbdu3VLV0hECiSYQCFAul3n//j3FYpF3795RrVap1WpUKhWWlpZYWlpibW2NWq3Gx48fqVarvHnzhmKxyMrKCrVajVqtRrlcplgssri4yKdPnxgbG1NhliFXANppicfjjI+PMzAw4ItXMplkZGSkI6vj8TgXL14kHA531W9vRHovEHqzEUJw5MgRvn37BsCTJ08IBAJYlsXVq1cVnZcvX8a2bRzH4ejRo2xsbADw8uVLQqEQtm1z5coVpX/p0iVVadJhlYztH44dO6bqfGFhQfWGyclJGo0GjUaDGzduKE8jkQjr6+s0Gg1KpRKhUAghBDdv3uzQl/HXu6PQu5UE8PXrVwDevn2rWm86nVYepVIpX1eU+q9fv1aAu+nLsa5VIBmIRCI+g8FgECEEqVRKGUyn0z4A6+vrSr8bYKkvnWyTTgD1er3DoA5AZ6C/v58vX74AsLy8rLxMpVI0m01arZbS3xWA3qF0gzql+wFQKpV8DLRarf0x0A5AUloqlfYEEA6HFWPLy8s+xlqt1v4Y2C0E7ZTulgMyZ/QqyGQyHfqO4+zOgOxOehLuB0B/f39XBiYmJjoY+ysAvQz1JJRVoGd1JpNRBvSy1ZNWZ+D69es+AL4y9O1O/lDaLasnJycBaLVaTExM+ELQLQl1BqS+4zj+H5HshHoSRiIRHwDdYLPZ7AhBX1+fStpXr14pxjKZDL9///YloXTG1wnbAQwMDLC1taUAhEIhTNNkampKeTQ1NaX2eLr+ysoKvb29XfUNwyAQCHTbJQt9f4bjODx//pxfv35x+/Zt5emZM2fY2dlhe3ub06dPq++2bSv9e/fuqe9nz57l58+f7OzscOrUqd1zQC9By7IYHBwkHo9z4sQJ4vE4rusSjUaJxWIMDw+TSCRwXZdYLIbrugwODhKLxUgkEkSjUYaGhhgaGsJ1XRKJBMPDw0SjUQ4ePIjubNdd8YEDB/hXVzabxTCMjjwQ7ZScP3+e0dFRksmk2lAkk0lGR0f3FF1Pzpf2Dh06pBaWf18FQPaAhYUFKpUKq6urVCoVyuWykrW1tT1F19Xnrq6u8vnzZ2KxmMobXw5IWhYXF9ne3ubHjx9sbm6yubmpnre2tvaU3fS+f//OxsYGruv6+oA6mOit+F+Lvh/0HUz009Fu4jgOjuPsS6/bPL3+O6qg7bz2T7zudgr/D1btuaaMYsEYAAAAAElFTkSuQmCC",
       "contexts": [
         "page",
         "frame",
@@ -353,7 +359,8 @@
           "name": "SEO查询",
           "address": "http://seo.chinaz.com/?q=~$U$~",
           "contexts": [
-            "page"
+            "page",
+            "frame"
           ],
           "id": 61
         },
@@ -376,9 +383,18 @@
             "frame"
           ],
           "id": 29
+        },
+        {
+          "type": "link",
+          "name": "相似网页查询",
+          "address": "https://www.similarsites.com/site/~$D$~",
+          "contexts": [
+            "page",
+            "frame"
+          ],
+          "id": 68
         }
-      ],
-      "collapse": true
+      ]
     },
     {
       "type": "separator",
