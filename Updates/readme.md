@@ -9,6 +9,15 @@
 * Updates.zip：自动更新的文件打包
 * UpdatesUnpackedFiles：Updates.zip 解压后的文件
 
+
+-------------
+### 12-24 更新说明
+1、内核更新至 Firefox 64，惯例更新所有拓展和脚本。\
+2、启用 WebRender，Firefox 变得丝般顺滑，比快更快。\
+3、同步修改升级 Firefox 64 导致需要修改的内容。\
+4、修改更新以及重新排布功能选项的排布。\
+5、更新内容较多，建议全新下载。
+
 -------------
 ### 11-12 更新说明
 1、新增拓展 Save in 和 Sidebar note。\
