@@ -11,6 +11,17 @@
 
 
 -------------
+### 12-25 更新说明
+修复狐友反馈的诸多问题。\
+
+**修改内容：**\
+\Profiles\V10\chrome\css\chrome.css\
+\Profiles\V10\chrome\Local\_addmenu.js\
+\Profiles\V10\chrome\SubScript\Tabplus.uc.js\
+\Profiles\V10\chrome\SubScript\ButtonEventListener.uc.js
+
+
+-------------
 ### 12-24 更新说明
 1、内核更新至 Firefox 64，惯例更新所有拓展和脚本。\
 2、启用 WebRender，Firefox 变得丝般顺滑，比快更快。\
