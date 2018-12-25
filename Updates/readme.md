@@ -15,6 +15,7 @@
 修复狐友反馈的诸多问题。\
 
 **修改内容：**\
+新增拓展：“关闭当前页后选取”
 \Profiles\V10\chrome\css\chrome.css\
 \Profiles\V10\chrome\Local\_addmenu.js\
 \Profiles\V10\chrome\SubScript\Tabplus.uc.js\
