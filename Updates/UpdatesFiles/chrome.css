@@ -997,7 +997,7 @@ toolbarbutton.bookmark-item {
 #reader-mode-button,/*阅读模式图标*/
 #pageActionSeparator,
 #historydropmarker,
-#pageActionButton,/*PageAction*/
+#pageActionButton, /*PageAction*/
 #notification-popup-box,/*隐藏插件使用权限图标*/
 .search-go-button/*点击搜索按钮隐藏*/
 {
@@ -1387,7 +1387,6 @@ toolbarbutton.bookmark-item {
 #context_selectAllTabs{-moz-box-ordinal-group: 6 !important;}
 #context_SidebarOpen {-moz-box-ordinal-group: 7 !important;}
 #context_CloseTab {-moz-box-ordinal-group: 8 !important;}
-
 #context_sendTabToDevice + menuseparator{-moz-box-ordinal-group: 10 !important;}
 #context_sendTabToDevice {-moz-box-ordinal-group: 11 !important;}
 #context_bookmarkTab, #context_bookmarkSelectedTabs{-moz-box-ordinal-group:13 !important;}
@@ -1451,6 +1450,7 @@ toolbarbutton.bookmark-item {
 
 
 /*隐藏页面右键菜单 Hide Page menu option*/
+#side-view_mozilla_org-menuitem-_open-link-in-sidebar,
 #context-pocket,
 #context-savepage,
 #context-selectall,

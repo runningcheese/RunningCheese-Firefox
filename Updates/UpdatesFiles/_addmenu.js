@@ -276,6 +276,12 @@ new function () {
 		oncommand:"gContextMenu.openLinkInPrivateWindow();",
 	image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyUlEQVQ4je3RIUzDQBjF8V9CMotEoTCYufopBBqLx1ZOYiZn0JVIVC0WXTuJm6mqmpmY6Dt2CYIESXjJ9a7/vn7fvTv+hJ6wRocPTNhnfg+fcMCA1/gfsIIjtmgLiC5SfIPrsCZsiz6F58cvNcInbgJKhBHPlXEd3xgPLLGTnPeBh2T7qh7tMz/GI76+VH+p4JBd1NHK+1A16Mzn5iod7n4KXGmVfy4LaALawAVus7s260W+tYn3reHS+Wom8wF1Gbtkn/AW77+iE6SaONczlmqVAAAAAElFTkSuQmCC"
 	},
+{
+label:"侧边栏中打开",
+id:"context_TabFloatSidebar",
+oncommand:'document.getElementById("side-view_mozilla_org-menuitem-_open-link-in-sidebar").click();',
+image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAR0lEQVQ4jWNgoALwZGBgeMbAwPCfRPwMqpfhGQMDgzWJlh6B6nnGADWNXPAfRlCCMVxAiotGDRg+BqAnZWINgCdlijMTRQAA+35MwhZlde0AAAAASUVORK5CYII="
+},
    {
 		label:"IE 浏览器打开",
 		oncommand: function() {
@@ -348,7 +354,7 @@ new function () {
 {
 label:"侧边栏中打开",
 id:"context_TabFloatSidebar",
-oncommand:'document.getElementById("nav-bar-overflow-button").click();  setTimeout(function(){document.getElementById("side-view_mozilla_org-browser-action").click();}, 100); Services.prefs.setBoolPref("sidebar.position_start",true);',
+oncommand:'window.document.getElementById("pageActionButton").click(); window.setTimeout(function() {window.document.getElementById("pageAction-panel-side-view_mozilla_org").click();}, 0);',
 image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAR0lEQVQ4jWNgoALwZGBgeMbAwPCfRPwMqpfhGQMDgzWJlh6B6nnGADWNXPAfRlCCMVxAiotGDRg+BqAnZWINgCdlijMTRQAA+35MwhZlde0AAAAASUVORK5CYII="
 },{
 		label:"新窗口中打开",
