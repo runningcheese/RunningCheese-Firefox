@@ -11,6 +11,18 @@
 
 
 -------------
+### 12-27 更新说明。\
+修复一些BUG以及细节调整。
+
+**修改内容：**\
+\Profiles\V10\chrome\css\chrome.css\
+\Profiles\V10\chrome\Local\_addmenu.js\
+\Profiles\V10\chrome\SubScript\Tabplus.uc.js\
+\Profiles\V10\chrome\SubScript\ButtonEventListener.uc.js
+\Profiles\V10\chrome\SubScript\MouseGestures.uc.js
+\Profiles\V10\chrome\SubScript\QuickSnapshot.uc.js
+
+-------------
 ### 12-25 更新说明
 修复狐友反馈的诸多问题。\
 
