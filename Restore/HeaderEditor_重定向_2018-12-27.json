@@ -1,7 +1,7 @@
 {
 	"request": [
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "Sourceforge下载 >> 镜像站点",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -10,10 +10,10 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "http://master.dl.sourceforge.net/project/$1/$4",
-			"id": 1
+			"group": "重定向"
 		},
 		{
-			"enable": 0,
+			"enable": false,
 			"name": "Google中文 >> Google英文",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -22,10 +22,10 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://www.google.com/ncr#$1&hl=en-US&safe=off",
-			"id": 2
+			"group": "重定向"
 		},
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "FT中文网 >> 全文",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -35,10 +35,10 @@
 			"action": "redirect",
 			"to": "http://www.ftchinese.com/story/$1?full=y",
 			"_exclude": {},
-			"id": 3
+			"group": "重定向"
 		},
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "Zhihu去跳转",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -47,46 +47,46 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
-			"id": 4
+			"group": "重定向"
 		},
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "AMO去跳转",
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https?:\\/\\/outgoing\\.(mozilla\\.org|prod\\.mozaws\\.net)\\/v\\d+/\\w+/(.+)$",
 			"exclude": "",
-			"isFunction": 0,
+			"isFunction": false,
 			"action": "redirect",
 			"to": "$2",
-			"id": 5
+			"group": "重定向"
 		},
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "Pocket去跳转",
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https?:\\/\\/getpocket\\.com\\/redirect\\?url=(.*)&formCheck=.*$",
 			"exclude": "",
-			"isFunction": 0,
+			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
-			"id": 6
+			"group": "重定向"
 		},
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "百度网盘去跳转",
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https?:\\/\\/.+\\?url=((https?:\\/\\/)?pan\\.baidu\\.com\\/s\\/.+)$",
 			"exclude": "",
-			"isFunction": 0,
+			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
-			"id": 7
+			"group": "重定向"
 		},
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "Youtube去跳转",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -95,46 +95,46 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$2",
-			"id": 8
+			"group": "重定向"
 		},
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "google fonts >> 极客族",
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https?:\\/\\/fonts\\.googleapis\\.com\\/(.*)$",
 			"exclude": "",
-			"isFunction": 0,
+			"isFunction": false,
 			"action": "redirect",
 			"to": "https://fonts.geekzu.org/$1",
-			"id": 9
+			"group": "重定向"
 		},
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "google ajax >> 极客族",
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https?:\\/\\/ajax\\.googleapis\\.com\\/(.*)$",
 			"exclude": "",
-			"isFunction": 0,
+			"isFunction": false,
 			"action": "redirect",
 			"to": "https://gapis.geekzu.org/ajax/$1",
-			"id": 10
+			"group": "重定向"
 		},
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "google themes >> 极客族",
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https?:\\/\\/themes\\.googleusercontent\\.com\\/(.*)$",
 			"exclude": "",
-			"isFunction": 0,
+			"isFunction": false,
 			"action": "redirect",
 			"to": "https://gapis.geekzu.org/g-themes/$1",
-			"id": 11
+			"group": "重定向"
 		},
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "Wiki繁体 >> 简体",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -143,10 +143,10 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://zh.wikipedia.org/zh-cn/$2",
-			"id": 12
+			"group": "重定向"
 		},
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "常用hosts网站 http >> https",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -155,10 +155,10 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://$1$2$3",
-			"id": 13
+			"group": "重定向"
 		},
 		{
-			"enable": 1,
+			"enable": true,
 			"name": "奶酪网站去跳转",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -167,7 +167,7 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
-			"id": 14
+			"group": "重定向"
 		}
 	],
 	"sendHeader": [],

@@ -19,7 +19,8 @@
       ],
       "popup": true,
       "prompt": true,
-      "id": 3
+      "id": 3,
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOUlEQVQ4jXWTS0iUURTHr22MFkK4kggUih6GDaVhRWQGFq2KjLRVIG1EImojBBElaatwhtF0UhdWaFGQhD20oGUhNDHKzK4ooxkfM2r3ft/n/R6/Fjo6D/vDhcO5//953HuOEDkwDOOI1joATAFLq2dKax2wbftwLj8LjuP0kAFPSTwlM10opbo3FHue93GNNDxI8kojMyermKmtJNnUgPH8CZ5Sacp4ltg0zV4ANznPfNNFposLmN4qiPtKifvK+F1cwE8hWGi9mlnJQyGEEFrrAwBuCuYaGpkuEiSO7kP2BdGRMDoSZqmzg7n6U+ivE1ntSCl9AggB2JEg8XLBnz0VecT/wTTNXuFBDMCdrMAMCswX7VkkYxmUA+aqLS0P21m7jgoPJI7CHivEGRfgvs8Qe5y+rzh48y/H70rqOiSHbknuvLTS/yTXA3wohNcCFt9sGKCmTXKiTbKtZYnmAWM9AKst8KWc2FPBSCSQ14KxvGLfG7HYfHmR9ldrFUSFZVkhgB/fQ+zqKqFo4Cyf49/yHuxXHI7ddihpWeRT1E67e0QqlfIBJByoG21FPChj7+AZAuFBJhKThGejPIr1U93jZ0vTDM19Op0drfX+rBFOWgs0vL3OJv9uROcOtvfXUDpQi/DvRASLOTccYH5hRe66blfuKI+n63ocG+HSuxtUDdVTOXSeC6PXCE0+w2EWAMdxxjbcB6VUd2bf0jaQtpHpys+cC611tdbaD0RYX+cILn7DMKpz+f8AIoLZ2Eq/V7gAAAAASUVORK5CYII="
     },
     {
       "type": "link",
@@ -28,7 +29,8 @@
       "contexts": [
         "selection"
       ],
-      "id": 44
+      "id": 44,
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOUlEQVQ4jXWTS0iUURTHr22MFkK4kggUih6GDaVhRWQGFq2KjLRVIG1EImojBBElaatwhtF0UhdWaFGQhD20oGUhNDHKzK4ooxkfM2r3ft/n/R6/Fjo6D/vDhcO5//953HuOEDkwDOOI1joATAFLq2dKax2wbftwLj8LjuP0kAFPSTwlM10opbo3FHue93GNNDxI8kojMyermKmtJNnUgPH8CZ5Sacp4ltg0zV4ANznPfNNFposLmN4qiPtKifvK+F1cwE8hWGi9mlnJQyGEEFrrAwBuCuYaGpkuEiSO7kP2BdGRMDoSZqmzg7n6U+ivE1ntSCl9AggB2JEg8XLBnz0VecT/wTTNXuFBDMCdrMAMCswX7VkkYxmUA+aqLS0P21m7jgoPJI7CHivEGRfgvs8Qe5y+rzh48y/H70rqOiSHbknuvLTS/yTXA3wohNcCFt9sGKCmTXKiTbKtZYnmAWM9AKst8KWc2FPBSCSQ14KxvGLfG7HYfHmR9ldrFUSFZVkhgB/fQ+zqKqFo4Cyf49/yHuxXHI7ddihpWeRT1E67e0QqlfIBJByoG21FPChj7+AZAuFBJhKThGejPIr1U93jZ0vTDM19Op0drfX+rBFOWgs0vL3OJv9uROcOtvfXUDpQi/DvRASLOTccYH5hRe66blfuKI+n63ocG+HSuxtUDdVTOXSeC6PXCE0+w2EWAMdxxjbcB6VUd2bf0jaQtpHpys+cC611tdbaD0RYX+cILn7DMKpz+f8AIoLZ2Eq/V7gAAAAASUVORK5CYII="
     },
     {
       "type": "link",
@@ -38,7 +40,8 @@
         "selection"
       ],
       "popup": true,
-      "id": 5
+      "id": 5,
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOUlEQVQ4jXWTS0iUURTHr22MFkK4kggUih6GDaVhRWQGFq2KjLRVIG1EImojBBElaatwhtF0UhdWaFGQhD20oGUhNDHKzK4ooxkfM2r3ft/n/R6/Fjo6D/vDhcO5//953HuOEDkwDOOI1joATAFLq2dKax2wbftwLj8LjuP0kAFPSTwlM10opbo3FHue93GNNDxI8kojMyermKmtJNnUgPH8CZ5Sacp4ltg0zV4ANznPfNNFposLmN4qiPtKifvK+F1cwE8hWGi9mlnJQyGEEFrrAwBuCuYaGpkuEiSO7kP2BdGRMDoSZqmzg7n6U+ivE1ntSCl9AggB2JEg8XLBnz0VecT/wTTNXuFBDMCdrMAMCswX7VkkYxmUA+aqLS0P21m7jgoPJI7CHivEGRfgvs8Qe5y+rzh48y/H70rqOiSHbknuvLTS/yTXA3wohNcCFt9sGKCmTXKiTbKtZYnmAWM9AKst8KWc2FPBSCSQ14KxvGLfG7HYfHmR9ldrFUSFZVkhgB/fQ+zqKqFo4Cyf49/yHuxXHI7ddihpWeRT1E67e0QqlfIBJByoG21FPChj7+AZAuFBJhKThGejPIr1U93jZ0vTDM19Op0drfX+rBFOWgs0vL3OJv9uROcOtvfXUDpQi/DvRASLOTccYH5hRe66blfuKI+n63ocG+HSuxtUDdVTOXSeC6PXCE0+w2EWAMdxxjbcB6VUd2bf0jaQtpHpys+cC611tdbaD0RYX+cILn7DMKpz+f8AIoLZ2Eq/V7gAAAAASUVORK5CYII="
     },
     {
       "type": "folder",
@@ -52,7 +55,8 @@
             "selection"
           ],
           "popup": true,
-          "id": 7
+          "id": 7,
+          "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADH0lEQVRoge1Z7Y3sIAwkVdAGXdACHaQDWkgFFJEKUgIl0AJV4PdrIuAIOMmusnvvTrJ00jrB4xl/oAjR+Usp0SdYL8aPDfoSmKeDuwXi6aBugXg6mNsgng7k/wbwdBC3QTwdwB+ApwP4A4B/tNaklCKlFGmtyRhTWP67tZZSSmx/7z2t63roD9/Re+FnjPkJwHtP1lpSStE0TU2TUtKyLOS9p5QSbdtG8zwXPkIIEkLQNE00zzOt60opJQohkHOOtNY//LXW5JyjEMLhe/Pz4deUUIyRrLV7EPnDMcYmjeu6kpSyeGZZlqZvCKFIknPuUB7Lsux+Wuvm+c0aiDGSMaYAkNPWMmttwQDk0Hu3tfYwKUgMkpdnnVXE27YVWVVKdQ/z3heZPWLMe09SSlJKHQYFc86REOKQzS6AGCPN87xnVAhB27axWOjJY1kWEkLstdE7H0WLmjsFoNa2EIKUUt1DoW+wVrOA7B/puVZAT4osAMhCzkIvGy0WcvrRWTjZN8aQlHLI+nCQOeeKgLTWQxaklHtBgwXvPasZgCmu7xBAjHGXBWxUfHUPt9ayM4o64TDFApDLAgBGmQELeS1gsHEShi7FiY0FIJcFbFSExphisPV6eUuyvQF3GgACygGMshlCKNaF3iTPDdnn+J4CgBbIWS2OQI9a4rquw8F1GUBKaZ+0kMbooLqYR9NXa81m6hKAbdsKWfQKLZcQhwXvPQkhWIV+GQA0msvoqNggHyxk+RxpsQB/TqHfAoAFC9YabBhEyCY60pH0wBZncN0GkLOA7lIPnFrLdUeqawG1cjb7lwFgo2zdFdBJamnVHQm/Y3CNVpSXAsChkIWUcl/ysALXnQSyyjtSjHFfG0ZL4ksBpJSKayd6N6Zoa4fB/aJmARf4q3FcBhBCKIpZSjnc9fM2jC7Gudy8BUDr3jxNU3fbxDM58DNrw0sBtHTNGUL1XOAubW8BgBsb5MDZ9XPmuBvq2wAgo5y7a24o9jPPvA1ACIGstafaIDrS1db5UgBP21d/pfkd38h+BYBvBNH6WP81IJrBfwuIbvCfCqYX4z8UwrBWOPp89wAAAABJRU5ErkJggg=="
         },
         {
           "type": "link",
@@ -201,7 +205,8 @@
         "frame"
       ],
       "id": 24,
-      "prompt": true
+      "prompt": true,
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOUlEQVQ4jXWTS0iUURTHr22MFkK4kggUih6GDaVhRWQGFq2KjLRVIG1EImojBBElaatwhtF0UhdWaFGQhD20oGUhNDHKzK4ooxkfM2r3ft/n/R6/Fjo6D/vDhcO5//953HuOEDkwDOOI1joATAFLq2dKax2wbftwLj8LjuP0kAFPSTwlM10opbo3FHue93GNNDxI8kojMyermKmtJNnUgPH8CZ5Sacp4ltg0zV4ANznPfNNFposLmN4qiPtKifvK+F1cwE8hWGi9mlnJQyGEEFrrAwBuCuYaGpkuEiSO7kP2BdGRMDoSZqmzg7n6U+ivE1ntSCl9AggB2JEg8XLBnz0VecT/wTTNXuFBDMCdrMAMCswX7VkkYxmUA+aqLS0P21m7jgoPJI7CHivEGRfgvs8Qe5y+rzh48y/H70rqOiSHbknuvLTS/yTXA3wohNcCFt9sGKCmTXKiTbKtZYnmAWM9AKst8KWc2FPBSCSQ14KxvGLfG7HYfHmR9ldrFUSFZVkhgB/fQ+zqKqFo4Cyf49/yHuxXHI7ddihpWeRT1E67e0QqlfIBJByoG21FPChj7+AZAuFBJhKThGejPIr1U93jZ0vTDM19Op0drfX+rBFOWgs0vL3OJv9uROcOtvfXUDpQi/DvRASLOTccYH5hRe66blfuKI+n63ocG+HSuxtUDdVTOXSeC6PXCE0+w2EWAMdxxjbcB6VUd2bf0jaQtpHpys+cC611tdbaD0RYX+cILn7DMKpz+f8AIoLZ2Eq/V7gAAAAASUVORK5CYII="
     },
     {
       "type": "separator",
@@ -219,7 +224,8 @@
       "contexts": [
         "image"
       ],
-      "id": 26
+      "id": 26,
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOUlEQVQ4jXWTS0iUURTHr22MFkK4kggUih6GDaVhRWQGFq2KjLRVIG1EImojBBElaatwhtF0UhdWaFGQhD20oGUhNDHKzK4ooxkfM2r3ft/n/R6/Fjo6D/vDhcO5//953HuOEDkwDOOI1joATAFLq2dKax2wbftwLj8LjuP0kAFPSTwlM10opbo3FHue93GNNDxI8kojMyermKmtJNnUgPH8CZ5Sacp4ltg0zV4ANznPfNNFposLmN4qiPtKifvK+F1cwE8hWGi9mlnJQyGEEFrrAwBuCuYaGpkuEiSO7kP2BdGRMDoSZqmzg7n6U+ivE1ntSCl9AggB2JEg8XLBnz0VecT/wTTNXuFBDMCdrMAMCswX7VkkYxmUA+aqLS0P21m7jgoPJI7CHivEGRfgvs8Qe5y+rzh48y/H70rqOiSHbknuvLTS/yTXA3wohNcCFt9sGKCmTXKiTbKtZYnmAWM9AKst8KWc2FPBSCSQ14KxvGLfG7HYfHmR9ldrFUSFZVkhgB/fQ+zqKqFo4Cyf49/yHuxXHI7ddihpWeRT1E67e0QqlfIBJByoG21FPChj7+AZAuFBJhKThGejPIr1U93jZ0vTDM19Op0drfX+rBFOWgs0vL3OJv9uROcOtvfXUDpQi/DvRASLOTccYH5hRe66blfuKI+n63ocG+HSuxtUDdVTOXSeC6PXCE0+w2EWAMdxxjbcB6VUd2bf0jaQtpHpys+cC611tdbaD0RYX+cILn7DMKpz+f8AIoLZ2Eq/V7gAAAAASUVORK5CYII="
     },
     {
       "type": "link",
@@ -233,7 +239,7 @@
     },
     {
       "type": "link",
-      "name": "TinEye 搜图",
+      "name": "TinEye搜图",
       "address": "https://www.tineye.com/search?url=~$U$~",
       "contexts": [
         "image"
@@ -243,7 +249,7 @@
     },
     {
       "type": "link",
-      "name": "Baidu 搜图",
+      "name": "Baidu搜图",
       "address": "https://image.baidu.com/pcdutu?queryImageUrl=~$U$~",
       "contexts": [
         "image"
@@ -301,7 +307,17 @@
         "page",
         "link"
       ],
-      "id": 64
+      "id": 64,
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAVElEQVQ4jWNgYJj5nzLMMPM/MoDxkWlsYgg5NAXoinBpJNoAdIPQ1RJlAD42A4JBQSAOvAGofsIMPNz+J8IAfGJEG0CRC3DJUdcFxAQY7oAd6HQAAHRkJ4+ZfqapAAAAAElFTkSuQmCC"
+    },
+    {
+      "type": "link",
+      "name": "二维码解析",
+      "address": "https://zxing.org/w/decode?u=~$U$~",
+      "contexts": [
+        "image"
+      ],
+      "id": 69
     },
     {
       "type": "separator",
@@ -322,12 +338,13 @@
         "link",
         "frame"
       ],
-      "id": 59
+      "id": 59,
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOUlEQVQ4jXWTS0iUURTHr22MFkK4kggUih6GDaVhRWQGFq2KjLRVIG1EImojBBElaatwhtF0UhdWaFGQhD20oGUhNDHKzK4ooxkfM2r3ft/n/R6/Fjo6D/vDhcO5//953HuOEDkwDOOI1joATAFLq2dKax2wbftwLj8LjuP0kAFPSTwlM10opbo3FHue93GNNDxI8kojMyermKmtJNnUgPH8CZ5Sacp4ltg0zV4ANznPfNNFposLmN4qiPtKifvK+F1cwE8hWGi9mlnJQyGEEFrrAwBuCuYaGpkuEiSO7kP2BdGRMDoSZqmzg7n6U+ivE1ntSCl9AggB2JEg8XLBnz0VecT/wTTNXuFBDMCdrMAMCswX7VkkYxmUA+aqLS0P21m7jgoPJI7CHivEGRfgvs8Qe5y+rzh48y/H70rqOiSHbknuvLTS/yTXA3wohNcCFt9sGKCmTXKiTbKtZYnmAWM9AKst8KWc2FPBSCSQ14KxvGLfG7HYfHmR9ldrFUSFZVkhgB/fQ+zqKqFo4Cyf49/yHuxXHI7ddihpWeRT1E67e0QqlfIBJByoG21FPChj7+AZAuFBJhKThGejPIr1U93jZ0vTDM19Op0drfX+rBFOWgs0vL3OJv9uROcOtvfXUDpQi/DvRASLOTccYH5hRe66blfuKI+n63ocG+HSuxtUDdVTOXSeC6PXCE0+w2EWAMdxxjbcB6VUd2bf0jaQtpHpys+cC611tdbaD0RYX+cILn7DMKpz+f8AIoLZ2Eq/V7gAAAAASUVORK5CYII="
     },
     {
       "type": "link",
       "name": "网页时光机",
-      "address": "https://web.archive.org/web/*/~$U$~",
+      "address": "https://web.archive.org/web/2/~$U$~",
       "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFQElEQVRYhbWXy2tTTxTH576apOBCEbRNXHTX3iQ2uvPxD2hTitidCiI0idVuBBdZxJvUahcVCooI7l25sFRSG18USxpNti5s1NqHS/+BgMnnt3GGuUlqyw+8cLiPOXPme77ncWeEaZoIIRBCYFkWpmliWRaWZWEYBoZh4DiOGhNCYNs2gUBAiW3bmKaJYRjqLp/luxBC3eX3P+sKNUEflAYkGNM01cISsC6BQEABlfbkPB1QB4j2Adu2sW0by7K6LiSEIBwOk06nmZubI51O09fXt6uuBK57rQMTuvc9PT0dBgzDIBgMcuHCBZ49e0a1WqVer9NoNABoNBrU63VqtRpPnz5lbGyMw4cP/9UBnREVAun5uXPnGB8fp1Ao8OHDB/7v1Ww2efHiBdeuXWNkZESxJEMk70JDQk9PD/Pz8zx69Ij5+Xnm5uaYnZ1lZmaGu3fvMj09TaFQYHp62ieFQgHP8/A8j5mZGe7fv8/s7CwPHjzg4cOHPH78mOPHjysAOhNCeyAYDJLNZsnlcuRyOTzPI5/Pk8/nKRQK5PN5PM+jUCio9/Zx+ex5Hrlcjmw2y507dzh58qSPAbmmrwp6e3v/N+V7Xbdu3VLV0hECiSYQCFAul3n//j3FYpF3795RrVap1WpUKhWWlpZYWlpibW2NWq3Gx48fqVarvHnzhmKxyMrKCrVajVqtRrlcplgssri4yKdPnxgbG1NhliFXANppicfjjI+PMzAw4ItXMplkZGSkI6vj8TgXL14kHA531W9vRHovEHqzEUJw5MgRvn37BsCTJ08IBAJYlsXVq1cVnZcvX8a2bRzH4ejRo2xsbADw8uVLQqEQtm1z5coVpX/p0iVVadJhlYztH44dO6bqfGFhQfWGyclJGo0GjUaDGzduKE8jkQjr6+s0Gg1KpRKhUAghBDdv3uzQl/HXu6PQu5UE8PXrVwDevn2rWm86nVYepVIpX1eU+q9fv1aAu+nLsa5VIBmIRCI+g8FgECEEqVRKGUyn0z4A6+vrSr8bYKkvnWyTTgD1er3DoA5AZ6C/v58vX74AsLy8rLxMpVI0m01arZbS3xWA3qF0gzql+wFQKpV8DLRarf0x0A5AUloqlfYEEA6HFWPLy8s+xlqt1v4Y2C0E7ZTulgMyZ/QqyGQyHfqO4+zOgOxOehLuB0B/f39XBiYmJjoY+ysAvQz1JJRVoGd1JpNRBvSy1ZNWZ+D69es+AL4y9O1O/lDaLasnJycBaLVaTExM+ELQLQl1BqS+4zj+H5HshHoSRiIRHwDdYLPZ7AhBX1+fStpXr14pxjKZDL9///YloXTG1wnbAQwMDLC1taUAhEIhTNNkampKeTQ1NaX2eLr+ysoKvb29XfUNwyAQCHTbJQt9f4bjODx//pxfv35x+/Zt5emZM2fY2dlhe3ub06dPq++2bSv9e/fuqe9nz57l58+f7OzscOrUqd1zQC9By7IYHBwkHo9z4sQJ4vE4rusSjUaJxWIMDw+TSCRwXZdYLIbrugwODhKLxUgkEkSjUYaGhhgaGsJ1XRKJBMPDw0SjUQ4ePIjubNdd8YEDB/hXVzabxTCMjjwQ7ZScP3+e0dFRksmk2lAkk0lGR0f3FF1Pzpf2Dh06pBaWf18FQPaAhYUFKpUKq6urVCoVyuWykrW1tT1F19Xnrq6u8vnzZ2KxmMobXw5IWhYXF9ne3ubHjx9sbm6yubmpnre2tvaU3fS+f//OxsYGruv6+oA6mOit+F+Lvh/0HUz009Fu4jgOjuPsS6/bPL3+O6qg7bz2T7zudgr/D1btuaaMYsEYAAAAAElFTkSuQmCC",
       "contexts": [
         "page",

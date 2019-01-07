@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1540281174006,
-  "version": "1.17.2",
+  "timeStamp": 1546262825901,
+  "version": "1.17.4",
   "userSettings": {
     "advancedUserEnabled": false,
     "alwaysDetachLogger": false,
@@ -24,7 +24,6 @@
   },
   "selectedFilterLists": [
     "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt",
-    "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/ABP-FX.txt",
     "CHN-0",
     "CHN-1",
     "plowe-0",
@@ -41,14 +40,17 @@
     "assetFetchTimeout": 30,
     "autoUpdateAssetFetchPeriod": 120,
     "autoUpdatePeriod": 7,
+    "benchmarkingPane": false,
     "cacheStorageCompression": true,
-    "debugScriptlets": false,
     "cacheControlForFirefox1376932": "no-cache, no-store, must-revalidate",
+    "debugScriptlets": false,
+    "disableWebAssembly": false,
     "ignoreRedirectFilters": false,
     "ignoreScriptInjectFilters": false,
     "manualUpdateAssetFetchPeriod": 500,
     "popupFontSize": "unset",
     "requestJournalProcessPeriod": 1000,
+    "strictBlockingBypassDuration": 120,
     "suspendTabsUntilReady": false,
     "userResourcesLocation": "unset"
   },
