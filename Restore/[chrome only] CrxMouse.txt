@@ -1,104 +1,30 @@
 {
+  "isGesturesOff": false,
   "cfgver": 4.1,
-  "cursor": {
-    "img": null,
-    "scale": 1
+  "others": {
+    "tuilink": false
   },
-  "drag": {
-    "ddirect": true,
-    "ddirectcolor": "4991fc",
-    "ddirectopa": 0.9,
-    "dholdkey": "none",
-    "dragimage": true,
-    "draginput": true,
-    "draglink": true,
-    "dragtext": true,
-    "dragui": true,
-    "dstroke": false,
-    "dstrokecolor": "0066ff",
-    "dstrokeopa": 0.8,
-    "dstrokewidth": 5,
-    "dtooltip": true,
-    "dtooltipcolor": "120310",
-    "dtooltipopa": 0.9,
-    "dtooltipwidth": 18,
-    "image": [
-      {
-        "action": "I_copyurl",
-        "direct": "L"
-      },
-      {
-        "action": "I_open",
-        "direct": "R",
-        "moreDes": "打开图片(新标签页,前台)",
-        "morePinned": "unpinned",
-        "morePosition": "right",
-        "moreTarget": "newfront"
-      },
-      {
-        "action": "I_save",
-        "direct": "D"
-      },
-      {
-        "action": "I_open",
-        "direct": "U",
-        "moreDes": "打开图片",
-        "morePinned": "unpinned",
-        "morePosition": "chrome",
-        "moreTarget": "newfront"
-      }
-    ],
-    "imgfirst": "ctrl",
-    "imgfirstcheck": false,
-    "link": [
-      {
-        "action": "L_copyurl",
-        "direct": "L"
-      },
-      {
-        "action": "L_open",
-        "direct": "R",
-        "moreDes": "打开链接(新标签页,后台)",
-        "morePinned": "unpinned",
-        "morePosition": "right",
-        "moreTarget": "newback"
-      },
-      {
-        "action": "L_copytext",
-        "direct": "D"
-      },
-      {
-        "action": "L_copyaslink",
-        "direct": "U"
-      }
-    ],
-    "setdragurl": true,
-    "text": [
-      {
-        "action": "T_search",
-        "direct": "R",
-        "moreDes": "使用%name搜索\"%s\"(新标签页,前台)",
-        "morePinned": "unpinned",
-        "morePosition": "right",
-        "moreTarget": "newback",
-        "moreTsearch": "sbaidu"
-      },
-      {
-        "action": "T_copytext",
-        "direct": "D"
-      },
-      {
-        "action": "T_search",
-        "direct": "U",
-        "moreDes": "使用%name搜索\"%s\"",
-        "morePinned": "unpinned",
-        "morePosition": "chrome",
-        "moreTarget": "newback",
-        "moreTsearch": "sgoogle"
-      }
-    ]
+  "normal": {
+    "autocancel": false,
+    "autocancelvalue": 2,
+    "cancelcontextmenu": true,
+    "capturetype": "jpeg",
+    "clickedOptin": true,
+    "cursorimg": null,
+    "cursorimgscale": 1,
+    "dbclicktime": 600,
+    "drag": true,
+    "gesture": false,
+    "hidetrash": true,
+    "jpegquality": 100,
+    "lasttab": false,
+    "minilength": 10,
+    "newtabposition": "chrome",
+    "scroll": false,
+    "scrolleffects": true,
+    "scrollgesture": false,
+    "strokegesture": false
   },
-  "extid": "jlgkpaicikihijadgifklkbpdajbkhjo",
   "gesture": {
     "direct": false,
     "directcolor": "4991fc",
@@ -256,31 +182,99 @@
     "tooltipopa": "0.9",
     "tooltipwidth": 18
   },
-  "isGesturesOff": false,
-  "normal": {
-    "autocancel": false,
-    "autocancelvalue": 2,
-    "cancelcontextmenu": true,
-    "capturetype": "jpeg",
-    "clickedOptin": true,
-    "cursorimg": null,
-    "cursorimgscale": 1,
-    "dbclicktime": 600,
-    "drag": true,
-    "gesture": true,
-    "hidetrash": true,
-    "jpegquality": 100,
-    "lasttab": false,
-    "minilength": 10,
-    "newtabposition": "chrome",
-    "scroll": false,
-    "scrolleffects": true,
-    "scrollgesture": false,
-    "strokegesture": false
-  },
-  "optedout": true,
-  "others": {
-    "tuilink": false
+  "drag": {
+    "ddirect": false,
+    "ddirectcolor": "4991fc",
+    "ddirectopa": 0.9,
+    "dholdkey": "none",
+    "dragimage": true,
+    "draginput": true,
+    "draglink": true,
+    "dragtext": true,
+    "dragui": true,
+    "dstroke": false,
+    "dstrokecolor": "0066ff",
+    "dstrokeopa": 0.8,
+    "dstrokewidth": 5,
+    "dtooltip": false,
+    "dtooltipcolor": "120310",
+    "dtooltipopa": "1",
+    "dtooltipwidth": 18,
+    "image": [
+      {
+        "action": "I_copyurl",
+        "direct": "L"
+      },
+      {
+        "action": "I_open",
+        "direct": "R",
+        "moreDes": "打开图片(新标签页,前台)",
+        "morePinned": "unpinned",
+        "morePosition": "right",
+        "moreTarget": "newfront"
+      },
+      {
+        "action": "I_save",
+        "direct": "D"
+      },
+      {
+        "action": "I_open",
+        "direct": "U",
+        "moreDes": "打开图片",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront"
+      }
+    ],
+    "imgfirst": "ctrl",
+    "imgfirstcheck": false,
+    "link": [
+      {
+        "action": "L_copyurl",
+        "direct": "L"
+      },
+      {
+        "action": "L_open",
+        "direct": "R",
+        "moreDes": "打开链接(新标签页,后台)",
+        "morePinned": "unpinned",
+        "morePosition": "right",
+        "moreTarget": "newback"
+      },
+      {
+        "action": "L_copytext",
+        "direct": "D"
+      },
+      {
+        "action": "L_copyaslink",
+        "direct": "U"
+      }
+    ],
+    "setdragurl": true,
+    "text": [
+      {
+        "action": "T_search",
+        "direct": "R",
+        "moreDes": "使用%name搜索\"%s\"(新标签页,前台)",
+        "morePinned": "unpinned",
+        "morePosition": "right",
+        "moreTarget": "newback",
+        "moreTsearch": "sbaidu"
+      },
+      {
+        "action": "T_copytext",
+        "direct": "D"
+      },
+      {
+        "action": "T_search",
+        "direct": "U",
+        "moreDes": "使用%name搜索\"%s\"",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newback",
+        "moreTsearch": "sgoogle"
+      }
+    ]
   },
   "scroll": {
     "scrollaccele": 1,
@@ -342,5 +336,11 @@
     ],
     "strrightenable": true
   },
+  "cursor": {
+    "img": null,
+    "scale": 1
+  },
+  "extid": "jlgkpaicikihijadgifklkbpdajbkhjo",
+  "optedout": true,
   "sync": true
 }
