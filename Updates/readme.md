@@ -23,12 +23,12 @@
 **修改内容：**\
 ..\Profiles\V10\chrome\SubScript\QuickOpen.uc.js\
 ..\Profiles\V10\chrome\SubScript\MouseGestures.uc.js\
-..\Profiles\V10\chrome\SubScript\FloatingScrollbar.uc.js\
+..\Profiles\V10\chrome\SubScript\FloatingScrollbar.uc.js
 
 ..\Profiles\V10\chrome\css\chrome.css\
 ..\Profiles\V10\chrome\Local\_addmenu.js\
 ..\Profiles\V10\chrome\Local\_keychanger.js\
-..\Profiles\V10\user.js
+..\Profiles\V10\user.js\
 uBlock 更新规则： [2019-02-15](https://raw.githubusercontent.com/runningcheese/RunningCheese-Firefox/master/Restore/my-ublock-backup_2019-02-15.txt) 
 
 
