@@ -242,12 +242,6 @@ new function () {
 		text:'[%RLT_OR_UT%](%RLINK_OR_URL%)',
     image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEUAAAAAAABmZmbc3Ny3t7eRkZE6OjpRDxSxAAAAAXRSTlMAQObYZgAAADJJREFUCNdjwASCECDAIADhY2UwMQoKsgqAGUyMJiAGoyATYzJMhEEYxhDAoh1hBQYAAPxVA4qkxzcpAAAAAElFTkSuQmCC"
 },
-{},
-{
-		label:"复制链接Encode编码",
-		text:"%l",
-		image:" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyUlEQVQ4jbWTLw6DMBjFfwaDmauq5QhY9C4wyQWQOA6whAtwBS6wO0xOzeKQO8REH6EUwsqWvaRpk37vT7+28AfYX8gZ8NIcIgf6GJESGAATpBqAc2ySFrgDCZACD6CKJU/oNW5Ad5SMnEdc9OQbgQp4SqA8QsyAWu6W+WZaoPhEblQ8sGxah+vFKKHdyFbFl0C4A064G6lDsmV+QIWc0o19G6xXDkbxffcJtdyNaht/0z/jKp6Hq2pWbyPDNSffIU8oJLT1X47jDR7gLDGf5CLwAAAAAElFTkSuQmCC"
-},
 {	
 		command:"context-savelink",	
 		 image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbklEQVQ4jWNgoDH4PzQNkMVhgCy6QmxAmYGB4TUDA4M9mgH2UHFlYgyBKbaHGoDMJxrANP0nRzMMBEMNCCZHMwyYEKvQk4GB4RnURkL4GVQ9CnjGwMBgTaRl1lD1KIBQgvmPpgZDPcUuoDgMyAYA/mQv97JO38EAAAAASUVORK5CYII="
@@ -300,7 +294,7 @@ image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAR0l
 		label:"其他浏览器打开",
 		text:"%l",
     tooltiptext: "注意：需要手动指定其他浏览器.exe所在路径",
-		exec:"D:\\Internet\\Chrome\\chrome.exe",
+		exec:"D:\\Chrome\\RunningCheeseChrome\\chrome.exe",
 		image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDklEQVQ4jY2ToW7DQBBEH4sUFh5UEFAQaGQSUKk/YGKpX1CpIGFhBuGhIQEBRQVFplFQYH6gJKikoMggxAE3J63Wd1VHWkuendnds/cgjRnwBuwUS2Ce0Q6wBTqgT8QOGOeMc+CaMdr40YQDfPzDbOPRml+BErgZwRmoxdfSPCsqYBrNDzK8SNgDjcnFTlPgE9gr2phbydTJsJehNdNcxF3cMRpkiMS7hFXizKU6Wu6AHpYcSewLPBG+/qDA2pGnxLhXcb7ZhsRYPWELARb66gBFQleQqdwT9qLU6ABfLn/EYER+fQ+awvMTHGbArxN1yn07vvTmiAnhV0ZhRbhA8b3FbOBfKAhXeKwCTa7rHaO8i7rzBML3AAAAAElFTkSuQmCC"
 	},
 
@@ -384,7 +378,7 @@ image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAR0l
 		label:"其他浏览器打开",
 		text:"%u",
     tooltiptext: "注意：需要手动指定其他浏览器.exe所在路径",
-		exec:"D:\\Internet\\Chrome\\chrome.exe",
+		exec:"D:\\Chrome\\RunningCheeseChrome\\chrome.exe",
 		image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDklEQVQ4jY2ToW7DQBBEH4sUFh5UEFAQaGQSUKk/YGKpX1CpIGFhBuGhIQEBRQVFplFQYH6gJKikoMggxAE3J63Wd1VHWkuendnds/cgjRnwBuwUS2Ce0Q6wBTqgT8QOGOeMc+CaMdr40YQDfPzDbOPRml+BErgZwRmoxdfSPCsqYBrNDzK8SNgDjcnFTlPgE9gr2phbydTJsJehNdNcxF3cMRpkiMS7hFXizKU6Wu6AHpYcSewLPBG+/qDA2pGnxLhXcb7ZhsRYPWELARb66gBFQleQqdwT9qLU6ABfLn/EYER+fQ+awvMTHGbArxN1yn07vvTmiAnhV0ZhRbhA8b3FbOBfKAhXeKwCTa7rHaO8i7rzBML3AAAAAElFTkSuQmCC"
 	},	
 
@@ -409,12 +403,21 @@ image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAykl
 				},
 			}, 
 {
-				label : '谷歌页内翻译',
+				label : '谷歌全文翻译',
 				image : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACVklEQVQ4jY3TzU4TURwF8PEBeAiew4WBBBQ6lBaQmhhduWKhMUYSIyYqIbadaacWhSA1GgOGREiMVCrqQiUBIVhipnbu5E4/cL6IkrTQe9fHRduRABEXZ/k7/3MXVxhMMPV8gmMgwdGf4OhTOIIKRyDO4Q/vjgI49a8IHjyEe+McPZEKPbHAw4cLYhx+meHG9HZHuVxuPS6EkBahCQ9f741x+GMc8qufcBwXOzs7cF0XjuPAtm3Ytg3TNE0h2IBBhSOUZHB/VTC5vA9/o+BS8jfyeR2u63pxHMcrEgLx+tVAnCPxdh+LG3tQi1X4Yxw9MocoMSx91mAYhgcPrhB6D0zO0ipG5mpYJ1XcnK1BlDlEiWN0xsD6ZhbR1AyWV9aQ1yl0o9AoiNXxtec1lO0KVvNVZGkVmW97ECUOn8Qhjm1jRJnG3fGnuKVM4Wr4MVLz6XpB860La3tQ0vsQZY6gwlCwKriQZPBJHN2RGu5PpbHydQMTs/OYS7+HZVmwLAtCj8whyhyXJxmCCoMo1WdffMQQiDN0Rxm6ogxDDzdxPTyOYXkCRNdRLBZhmiaEJmjG10h39C/uijAMSA6G7im4nXiCPCEoFAoolUoQfFHmoSOwgc9FGM6Ga5jLZDHzegl3kilopL5C6Hqw6x5BDfgXM3SGGcZelkCIjsUPn7wVwulh0tI5QlqPy5krHzvaQhm0hd6hPZTB9Ow6NI2AUgpKab3gpM/S3v+GdgwuIfViFar6A4QQ6LoOSikMw/iPgr6F0alnX7C19R2qqiKXy0HTNBBCkMvltD/vDPwyHNhJmwAAAABJRU5ErkJggg==",
 				oncommand :
 				function ()
 				{
-					gBrowser.loadURI("javascript:{d=document;b=d.body;o=d.createElement('scri'+'pt');o.setAttribute('src','https://translate.glgoo.com/translate_a/element.js?cb=googleTranslateElementInit');o.setAttribute('type','text/javascript');b.appendChild(o);v=b.insertBefore(d.createElement('div'),b.firstChild);v.id='google_translate_element';v.style.display='none';p=d.createElement('scri'+'pt');p.text='function%20googleTranslateElementInit(){new%20google.translate.TranslateElement({pageLanguage:%22%22},%22google_translate_element%22);}';p.setAttribute('type','text/javascript');b.appendChild(p);}void%200", {triggeringPrincipal: gBrowser.contentPrincipal});
+					gBrowser.loadURI("javascript:{d=document;b=d.body;o=d.createElement('scri'+'pt');o.setAttribute('src','https://translate.google.cn/translate_a/element.js?cb=googleTranslateElementInit');o.setAttribute('type','text/javascript');b.appendChild(o);v=b.insertBefore(d.createElement('div'),b.firstChild);v.id='google_translate_element';v.style.display='none';p=d.createElement('scri'+'pt');p.text='function%20googleTranslateElementInit(){new%20google.translate.TranslateElement({pageLanguage:%22%22},%22google_translate_element%22);}';p.setAttribute('type','text/javascript');b.appendChild(p);}void%200", {triggeringPrincipal: gBrowser.contentPrincipal});
+				},
+			},
+{
+				label : '彩云全文翻译',
+				image : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABW0lEQVQ4ja3TzyvDcRzH8feFi3K0/AWOLsrNbVF+XKzk5EKZE6Xkx4WDg4NkCyUpWWGUX5nT5ufIr9QKyyTkK9KX7/e7zFKeDpv6zoz58arP6dPrUZ9PvQS4BvQfHC1+dOBa+GMkLv02WtrAxavKsnr8c0DR71kKHVC776Jwq4+T8J35Wk8CAobCwLmX2n0X+UvdyGgd0m0jZ7KFom0nAUNJDdxEHxBfI+KuREYrYmVnDeKswep1ULw39DVw9KQgPjtZK21U742R4W5kKuindK6fgtVeygIjHGpXqYFQ5Bbx2cnd7MKjHJI934ptbZi8iU4yx5uweDrSAPzNsWcs1CPTDYijHOkpQ9pLyB1sQn02UgOX0Xtkw44sViEL9Vg8HVi9Dlp3ZpgK+nkMJ5STgXUjhGzYaTudZVc9I/IS+Vj4FNDMn7ilh74rmaMlAL+I9i9jep+zeaZpz/kNeTuhwbCS/uYAAAAASUVORK5CYII=",
+				oncommand :
+				function ()
+				{
+					gBrowser.loadURI("javascript:%20void((function%20()%20{%20%20if%20(!document.body)%20{%20%20%20%20return%20%20}%20%20var%20popup%20=%20document.querySelectorAll('.cyxy-target-popup');%20%20if%20(popup%20&&%20popup.length%20>%200)%20{%20%20%20%20return%20%20}%20%20try%20{%20%20%20%20var%20trs%20=%20document.createElement('script');%20%20%20%20trs.type%20=%20'text/javascript';%20%20%20%20trs.charset%20=%20'UTF-8';%20%20%20%20trs.src%20=%20('https:'%20==%20document.location.protocol%20?%20'https://'%20:%20'http://')%20+%20'caiyunapp.com/dest/trs.js';%20%20%20%20document.body.appendChild(trs);%20%20}%20catch%20(e)%20{%20%20%20%20alert(e);%20%20}%20%20document.addEventListener('securitypolicyviolation',%20function%20handler(e)%20{%20%20%20%20console.error('securitypolicyviolation',%20e);%20%20%20%20alert('%E7%94%B1%E4%BA%8E%E5%BD%93%E5%89%8D%E7%BD%91%E7%AB%99%E7%9A%84%E5%86%85%E5%AE%B9%E5%AE%89%E5%85%A8%E7%AD%96%E7%95%A5(Content%20Security%20Policy)%EF%BC%8C%E5%B0%8F%E8%AF%91%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8%E7%BF%BB%E8%AF%91%E7%A8%8B%E5%BA%8F%EF%BC%8C%E6%82%A8%E5%8F%AF%E4%BB%A5%E5%9C%A8Chrome%20Web%E5%95%86%E5%BA%97%E6%90%9C%E7%B4%A2%E5%BD%A9%E4%BA%91%E5%B0%8F%E8%AF%91%EF%BC%88LingoCloud%EF%BC%89%E4%B8%8B%E8%BD%BD%E6%8F%92%E4%BB%B6%EF%BC%8C%E6%88%96%E8%80%85%E5%B0%86%E7%BD%91%E9%A1%B5%E4%BF%9D%E5%AD%98%E5%9C%A8%E6%9C%AC%E5%9C%B0%EF%BC%88%E5%8F%B3%E9%94%AE%20->%20%E5%8F%A6%E5%AD%98%E4%B8%BA%EF%BC%89%E8%BF%9B%E8%A1%8C%E7%BF%BB%E8%AF%91%EF%BC%8C%E4%B9%9F%E6%AC%A2%E8%BF%8E%E6%82%A8%E5%9C%A8%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E4%B8%8B%E8%BD%BD%E5%BD%A9%E4%BA%91%E5%B0%8F%E8%AF%91App%20%EF%BC%9A)');%20%20%20%20document.removeEventListener('securitypolicyviolation',%20handler);%20%20});})());", {triggeringPrincipal: gBrowser.contentPrincipal});
 				},
 			},
 {},
@@ -472,79 +475,6 @@ new function () {
 	  class: "context-copyimage", 
 	  oncommand: "gContextMenu.copyMediaLocation();",
 },
-{},
-{
-    label: "OCR文字识别",
-    image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAKlBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKE86IAAAADXRSTlMA8pCEUxQK59CV0pPm8Xt3/wAAAFlJREFUCNdjQALBCzhMQTSLuAJToQOQ4TuNgSHzCgMDqyRIeGIAA3MZ7927F9INGDgUQCJMC4AESATJEKAUSISpAagYxM0xgGrfGAA0cBsDQ/YVuBVwSxEAAEPFFhtdnlGhAAAAAElFTkSuQmCC",
-    oncommand: function() {
-        //apikey
-        var apikey = "aee93efca6438819212e64aa47711ee0";
-   
-        var base64str = img2base64(gContextMenu.mediaURL || gContextMenu.imageURL || gContextMenu.bgImageURL).replace("data:image/jpeg;base64,", "");
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("POST", "http://apis.baidu.com/apistore/idlocr/ocr", true);
-        xmlHttp.setRequestHeader("apikey", apikey);
-        var formData = new FormData();
-        for(var d of ("fromdevice=pc&clientip=10.10.10.0&detecttype=LocateRecognize&languagetype=CHN_ENG&imagetype=1&image=" + base64str).split('&'))
-            formData.append.apply(formData, d.split('=', 2));
-        xmlHttp.send(formData);
-        xmlHttp.onload = function() {
-            if (xmlHttp.status == 200) {
-                var data = JSON.parse(xmlHttp.responseText);
-                if (data.errNum != 0)
-                    alert("错误：" + data.errMsg);
-                else {
-                    var str = "";
-                    for (var i in data.retData) str += data.retData[i].word;
-                    alert("识别内容：" + str);//弹窗提示
-                    addMenu.copy(str);//自动复制识别内容到剪贴板
-                }
-            }
-        };
-   
-        function img2base64(imgsrc) {
-            if (typeof imgsrc == 'undefined') return "";
-   
-            const NSURI = "http://www.w3.org/1999/xhtml";
-            var img = new Image();
-            var that = this;
-            var canvas,
-                isCompleted = false;
-            img.onload = function() {
-                var width = this.naturalWidth,
-                    height = this.naturalHeight;
-                canvas = document.createElementNS(NSURI, "canvas");
-                canvas.width = width;
-                canvas.height = height;
-                var ctx = canvas.getContext("2d");
-                ctx.drawImage(this, 0, 0);
-                isCompleted = true;
-            };
-            img.onerror = function() {
-                Components.utils.reportError("Count not load: " + imgsrc);
-                isCompleted = true;
-            };
-            img.src = imgsrc;
-   
-            var thread = Cc['@mozilla.org/thread-manager;1'].getService().mainThread;
-            while (!isCompleted) {
-                thread.processNextEvent(true);
-            }
-   
-            var data = canvas ? canvas.toDataURL("image/jpeg", 1) : "";
-            canvas = null;
-            return data;
-        }
-    }
-},
-{
-		label: 'QR二维码解析',
-		image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAASklEQVQ4jWNgoBL4jwUzINH41GAoROajG4BTD7oGfAZgk8NrOlYN2AzA5b//RKihHGAznRhMWxcwMGCGxeBIB3gNwMYfIumAbAAAQZVapq3RMcUAAAAASUVORK5CYII=",
-   oncommand: function() {
-        var url = decodeURIComponent(gContextMenu.mediaURL || gContextMenu.imageURL || gContextMenu.bgImageURL);
-        gBrowser.addTrustedTab('https://zxing.org/w/decode?u=' + url);
-    }
-},
 {
     label: "在线编辑图片",
     condition: "image",
@@ -557,7 +487,7 @@ new function () {
    tooltiptext: "注意：需要手动指定Photoshop.exe所在路径",
    image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAElBMVEUAAAAbGxsbGxsbGxsbGxsAAAC8TvM5AAAABHRSTlMA+cXUPrUbAwAAAD9JREFUCNdjgAMmFzBQYGCB8B2QGKyhAVAGAyuCERoAYbDC1LAGgBggFawQKSCAMlhD4QYiM5gdBYFARAHuCgDDrgkmIWoUrQAAAABJRU5ErkJggg==",
     oncommand: function() {
-        var path ="..\\..\\..\\Program Files\\\Adobe\\Adobe Photoshop CC 2018\\photoshop.exe";	var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);file.initWithPath(path.replace(/^\./, Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("SysD", Components.interfaces.nsIFile).path));file.launch();
+        var path ="..\\..\\..\\Program Files\\\Adobe\\Adobe Photoshop CC 2019\\photoshop.exe";	var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);file.initWithPath(path.replace(/^\./, Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("SysD", Components.interfaces.nsIFile).path));file.launch();
 
     },
 },
@@ -852,7 +782,7 @@ oncommand : function () {
 },{
 		label: "关闭右侧标签",
     id:"context_closeTabsToTheLast",
-    oncommand:  function() {gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);	},
+    oncommand:  function() {gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab); gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);},
 	 image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAOUlEQVQ4jWNgGGzgPxQPNwPyGBhyGRgY/kNp8lwAMySTgaGNGAPwYnwuoZoLsGqmKAyIBQNvwBAEAIkvKboNt20DAAAAAElFTkSuQmCC"
 	},{
     command:"context_closeLeftTabs",
@@ -941,11 +871,7 @@ image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAb0l
 						var txt="";Array.slice(gBrowser.tabContainer.childNodes).forEach(function(tab){var url=gBrowser.getBrowserForTab(tab).currentURI.spec;txt+="["+title+"]"+"("+url+")\\"+"\r"});gClipboardHelper.copyString(txt);
         })();},image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAb0lEQVQ4jWNgGAzgPwUYbgC5FlPPACUsBsHEzzAgnHyGkAFpULE0JPG7UJqBgYGhg4GBoRyXAe+QbDgD5aMb4MLAwLAblwF3odgFiU2yAeVQfjkOA2bi88IZNIkzDJiBCLMdwwByAHUNoCgpDywAAOcYVL2aysArAAAAAElFTkSuQmCC"},
 	{},
-	{
-		label:"复制 Favicon 地址",
-		text:"%FAVICON%",
-		image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEUAAAAAAABmZmbc3Ny3t7eRkZE6OjpRDxSxAAAAAXRSTlMAQObYZgAAADJJREFUCNdjwASCECDAIADhY2UwMQoKsgqAGUyMJiAGoyATYzJMhEEYxhDAoh1hBQYAAPxVA4qkxzcpAAAAAElFTkSuQmCC"
-	}, {
+ {
 		label:"复制 Favicon 编码",
 		text:"%FAVICON_BASE64%",
 		image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbElEQVQ4jWNgGAzgPwUYbgC5FmMYcBTJdA8smo4yMDAo4zIgD4oZoIrQXZYHFcNpALLp6EAZKo/XBf+RbEH3AkwjUQbg8xpBA5ABsq3o0aeMzYCZaM7GFr14XQBTgGwLyQaQAlAMoCgpDywAAF13Uxwj2+klAAAAAElFTkSuQmCC"

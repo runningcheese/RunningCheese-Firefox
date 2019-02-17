@@ -861,12 +861,11 @@ toolbar :-moz-any(#back-button, #forward-button, #home-button, #stop-button, #re
 	list-style-image: url("../images/icons/netvideohunter.png")!important;
 }
 
-/*Feed Button*/
-#pageAction-urlbar-_97d566da-42c5-4ef4-a03b-5a2e5f7cbcb2_ {
-	list-style-image: url("../images/icons/feed_button.png")!important;
-	-moz-image-region: rect(0px,16px,16px,0px)!important;
-	opacity: .4!important;
+/*RSS Feed Button*/
+#_73239762-0d26-4b2e-82a5-49bfd13457f0_-browser-action {
+	list-style-image: url("../images/icons/rss.png")!important;
 }
+
 
 /*IdentityBox*/
 #identity-box {
@@ -1008,6 +1007,7 @@ toolbarbutton.bookmark-item {
 /*隐藏定制面板里的非线性图标*/
 #wrapper-juraj_masiar_gmail_com_scrollanywhere-browser-action,
 #wrapper-_7be2ba16-0f1e-4d93-9ebc-5164397477a9_-browser-action,
+#wrapper-popup-tool_harytfw-browser-action,
 #wrapper-glitterdrag_harytfw-browser-action,
 #wrapper-_0ad88674-2b41-4cfb-99e3-e206c74a0076_-browser-action,
 #wrapper-michal_simonfy_gmail_com-browser-action,
@@ -1016,8 +1016,7 @@ toolbarbutton.bookmark-item {
 #wrapper-download-filename-encoding_qw_linux-2g64_local-browser-action,
 #wrapper-_5f246670-f5e2-45ff-b183-be21cbeb065c_-browser-action,
 #wrapper-_1c26aa63-9254-43b0-ba27-7c3746171ad1_-browser-action,
-#wrapper-_4d7a31cf-6ff2-4302-af10-6278f5c65462_-browser-action,
-#wrapper-popup-tool_harytfw-browser-action
+#wrapper-_4d7a31cf-6ff2-4302-af10-6278f5c65462_-browser-action
 {
 	display: none !important;
 }
@@ -1249,12 +1248,12 @@ toolbarbutton.bookmark-item {
 
 /*森林绿 Green*/
 #TabsToolbar .tabbrowser-tab[selected]:-moz-any(
-[image*="/AA///4Af///AP///4H////D///////w=="],/*feedly*/
-[image*="/7gAf//4H///+H////j///////8="],/*evernote*/
-[image*="xBAACcQQAAnEEAAJxBAACcQQAAnEE="],/*iqiyi*/
+[image*="siv/TLIr/0yyK/9Msiv/TLIr/0yyK/9Msiv/TLIr/0yyK/9Msiv/T"],/*feedly*/
+[image*="YAG4EEAAAAAAAAAAAAAAEEAAHKZgAmC2pAP8tqAD/LagA/y2oAP8t"],/*evernote*/
+[image*="b/ANgG/wDYBv4A2Qb+ANkG/wDZBv4A2Qb/ANkG/wDZBv4A2Qb+ANk"],/*iqiyi*/
 [image*="E7ROCQAAAAAAAAAAAIQmqACRR/8AkUH/AHkl/wCuvf8A"],/*360*/
 [image*="EXcA/xF3AP8RdwD/EXcA/xF3AP8RdwD/EXcA/xF3AP8"],/*douban*/
-[image*="//AAD//wAA//8AAP//AAD//w=="]/*guokr*/
+[image*="kRn/N4UU/zeFFP86oFr/P8eK/z/Hiv8/x4r/P8eK/xtlUf8bZVH/RHdY/"]/*guokr*/
 ) {
 	background: -moz-linear-gradient(left, #68d045, #22ae02) !important;
 }
@@ -1361,7 +1360,6 @@ toolbarbutton.bookmark-item {
 
 /*隐藏标签右键菜单 Hide tabs menu option*/
 [id="placesContext_show:info"] + menuseparator,
-#placesContext_openSeparator,/*书签分割线*/
 #context_closeSelectedTabs,
 #side-view_mozilla_org-menuitem-_open-in-sidebar,
 #context_reloadTab,
@@ -1378,15 +1376,15 @@ toolbarbutton.bookmark-item {
 
 
 /*标签页右键菜单排序 Tabs Option Order*/
-#_bc21b9a1-3ad6-4b00-bca4-ef5b7e21253b_-menuitem-_BTH  {-moz-box-ordinal-group: 0 !important;}
-#context_CopyTab{-moz-box-ordinal-group: 1 !important;}
+#_bc21b9a1-3ad6-4b00-bca4-ef5b7e21253b_-menuitem-_BTH{-moz-box-ordinal-group: 0 !important;}
+#context_CopyTab,#placesContext_openSeparator {-moz-box-ordinal-group: 1 !important;}
 #context_pinTab, #context_unpinTab{-moz-box-ordinal-group: 2 !important;}
 #context_toggleMuteTab, #context_toggleMuteSelectedTabs{-moz-box-ordinal-group: 3 !important;}
 #context_reopenInContainer {-moz-box-ordinal-group: 4 !important;}
 #context_duplicateTab + menuseparator {-moz-box-ordinal-group: 5 !important;}
 #context_selectAllTabs{-moz-box-ordinal-group: 6 !important;}
-#context_SidebarOpen {-moz-box-ordinal-group: 7 !important;}
-#context_CloseTab {-moz-box-ordinal-group: 8 !important;}
+#context_CloseTab {-moz-box-ordinal-group: 7 !important;}
+#context_SidebarOpen {-moz-box-ordinal-group: 8 !important;}
 #context_sendTabToDevice + menuseparator{-moz-box-ordinal-group: 10 !important;}
 #context_sendTabToDevice {-moz-box-ordinal-group: 11 !important;}
 #context_bookmarkTab, #context_bookmarkSelectedTabs{-moz-box-ordinal-group:13 !important;}
@@ -1410,7 +1408,10 @@ toolbarbutton.bookmark-item {
 
 
 /*页面右键菜单排序 Page Menu Order*/
-[label="多功能菜单"]{-moz-box-ordinal-group:0 !important;}
+[label="多功能菜单"],
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_page
+{-moz-box-ordinal-group:0 !important;}
+
 [label="翻译当前页面"]{-moz-box-ordinal-group:1 !important;}
 #context-copylink_new,#context-sep-copylink{-moz-box-ordinal-group:1 !important;}
 
@@ -1420,32 +1421,36 @@ toolbarbutton.bookmark-item {
 {-moz-box-ordinal-group:2 !important;}
 
 [id*="_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-"],
-[id="_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_page"],
 [id="_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_link"],
 [id="_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_image"],
 [id="_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_selection"]
 {-moz-box-ordinal-group:2 !important;}
 
+#context-openlinkinusercontext-menu {-moz-box-ordinal-group:3 !important;}
+
+
 #context-sep-open,
 #_72d92df5-2aa0-4b06-b807-aa21767545cd_-menuitem-_save-in-_-_-root
-{-moz-box-ordinal-group:3 !important;}
-
-#context-saveimage,
-#context-viewimageinfo
 {-moz-box-ordinal-group:4 !important;}
 
-#context-sep-copyimage
+[id*="openwith_darktrojan_net-menuitem-"],
+#context-saveimage,
+[id*="mozilla_cc3_internetdownloadmanager_com-menuitem-"]
 {-moz-box-ordinal-group:5 !important;}
 
-[id*="s3google_translator-menuitem-"]
-{-moz-box-ordinal-group:6 !important;}
+#context-viewimageinfo{-moz-box-ordinal-group:6 !important;}
 
-#context-viewsource 
-{-moz-box-ordinal-group:7 !important;}
+#context-sep-copyimage{-moz-box-ordinal-group:7 !important;}
 
-#context-viewpartialsource-selection,
-#context-viewinfo {-moz-box-ordinal-group:8 !important;}
-#context-inspect {-moz-box-ordinal-group:9 !important;}
+[id*="s3google_translator-menuitem-"]{-moz-box-ordinal-group:8 !important;}
+
+
+#context-viewsource,
+[id*="mozilla_cc3_internetdownloadmanager_com-menuitem-"]
+{-moz-box-ordinal-group:9 !important;}
+
+#context-viewpartialsource-selection,#context-viewinfo {-moz-box-ordinal-group:10 !important;}
+#context-inspect {-moz-box-ordinal-group:11 !important;}
 
 
 
@@ -1462,9 +1467,7 @@ toolbarbutton.bookmark-item {
 #context-sep-selectall,
 [id*="support_lastpass_com-menuitem-"],
 [id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac_-menuitem-"],
-[id*="mozilla_cc3_internetdownloadmanager_com-menuitem-9"],
-[id*="mozilla_cc3_internetdownloadmanager_com-menuitem-1"],
-[id*="mozilla_cc3_internetdownloadmanager_com-menuitem-2"],
+[label="IDM Integration Module"],
 #thunder_cross-menuitem-_contextDownloadLink,
 #context-sendaudio,
 #context-sep-sendlinktodevice,
@@ -1493,8 +1496,7 @@ toolbarbutton.bookmark-item {
 #screenshots_mozilla_org-menuitem-_create-screenshot,
 #context-viewbgimage,
 #context-sep-viewsource,
-#context-sep-navigation,
-#context-openlinkinusercontext-menu{
+#context-sep-navigation{
 	display: none;
 }
 
@@ -1602,7 +1604,9 @@ toolbarbutton.bookmark-item {
 /*---------------------文本替换修改 Text Replace------------------*/
 
 #_bc21b9a1-3ad6-4b00-bca4-ef5b7e21253b_-menuitem-_BTH .menu-iconic-text {display: none !important;}
-#_bc21b9a1-3ad6-4b00-bca4-ef5b7e21253b_-menuitem-_BTH:after {	content: "添加书签到此..."; position: absolute !important; margin-left:-11px !important;}
+#_bc21b9a1-3ad6-4b00-bca4-ef5b7e21253b_-menuitem-_BTH:after {	content: "添加书签到此..."; position: absolute !important; margin-left:11px !important;}
+#_bc21b9a1-3ad6-4b00-bca4-ef5b7e21253b_-menuitem-_BTH .menu-iconic-left {display: none !important;}
+
 
 [id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac__"] .menu-iconic-text {display: none;}
 [id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac__"]:after {content: "添加到稍后阅读";	position: absolute !important; margin-left: -11px !important;}
@@ -1637,8 +1641,6 @@ toolbarbutton.bookmark-item {
 #context_toggleMuteTab .menu-iconic-text {display: none;}
 #context_toggleMuteTab:after {content: "静音当前标签";	position: absolute !important;margin-left: -11px !important;}
 
-
-
 #context-openlinkintab .menu-iconic-text {display: none;}
 #context-openlinkintab:after {content: "新标签页打开";	position: absolute !important;margin-left: -11px !important;}
 
@@ -1657,10 +1659,35 @@ toolbarbutton.bookmark-item {
 #context_selectAllTabs .menu-iconic-text {display: none;}
 #context_selectAllTabs:after {content: "选择所有标签";	position: absolute !important;margin-left: -11px !important;}
 
-
 #context_reopenInContainer .menu-iconic-text {display: none;}
 #context_reopenInContainer .menuitem-iconic .menu-iconic-text {display: block;}
 #context_reopenInContainer:after {content: "使用小号标签";	position: absolute !important;margin-left: -11px !important;}
+
+#context-openlinkinusercontext-menu .menu-iconic-text {display: none;}
+#context-openlinkinusercontext-menu .menuitem-iconic .menu-iconic-text {display: block;}
+#context-openlinkinusercontext-menu:after {content: "使用小号标签";	position: absolute !important;margin-left: -11px !important;}
+
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_link {padding-left:2px !important;}
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_link .menu-iconic-text {display: none;}
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_link .menuitem-iconic .menu-iconic-text {display: block;}
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_link .menu-iconic-left:after {content: "搜索当前链接";	position: absolute !important; margin-left: 11px !important;}
+[id*="_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_link_"] .menu-iconic-left:after{display: none;}
+
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_page {padding-left:2px !important;}
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_page .menu-iconic-text {display: none;}
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_page .menuitem-iconic .menu-iconic-text {display: block;}
+[label="网页信息查询"] .menu-iconic-text {display: block !important;}
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_page .menu-iconic-left:after {content: "搜索当前页面";	position: absolute !important; margin-left: 11px !important;}
+[id*="_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_page_"] .menu-iconic-left:after{display: none;}
+
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_image {padding-left:2px !important;}
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_image .menu-iconic-text {display: none;}
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_image .menuitem-iconic .menu-iconic-text {display: block;}
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_image .menu-iconic-left:after {content: "搜索当前图片";	position: absolute !important; margin-left: 11px !important;}
+[id*="_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_image_"] .menu-iconic-left:after{display: none;}
+
+/*调整图标倒三角距离*/
+[id*="_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_"] .menu-right{padding-left:15px !important;}
 
 
 
@@ -1711,13 +1738,7 @@ toolbarbutton.bookmark-item {
   -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
 	list-style-image: url("../images/icons/profile.png")!important;
 	padding-left: 4px !important;
-}
 
-
-#_bc21b9a1-3ad6-4b00-bca4-ef5b7e21253b_-menuitem-_BTH {
-  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic")!important;
-	list-style-image: url("../images/icons/tab.png")!important;
-	padding-left: 4px !important;
 }
 
 
@@ -2002,7 +2023,7 @@ menupopup:not([placespopup="true"]) {
 }
 
 /*右键菜单最大宽度*/
-#contentAreaContextMenu {max-width:220px !important;}
+#contentAreaContextMenu {max-width:222px !important;}
 
 popupset menupopup menu[_moz-menuactive="true"],
 popupset menupopup menuitem[_moz-menuactive="true"],

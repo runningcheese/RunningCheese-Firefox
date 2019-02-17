@@ -71,9 +71,7 @@
 
 
 		   'LDL': {name: '关闭左侧标签页', cmd: function(event) {	for (let i = gBrowser.selectedTab._tPos - 1; i >= 0; i--) if (!gBrowser.tabs[i].pinned){ gBrowser.removeTab(gBrowser.tabs[i], {animate: true});}}},
-		   'RDR': {name: '关闭右侧标签页', cmd: function(event) {gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);	}},
-			'RDRD': {name: '关闭其他所有标签页', cmd:  function(event) {gBrowser.removeAllTabsBut(gBrowser.selectedTab); }},
-			'DRDR': {name: '关闭所有标签页', cmd:  function(event) { gBrowser.removeAllTabsBut(openTrustedLinkIn('about:newtab', 'current')); }},
+		   'RDR': {name: '关闭右侧标签页', cmd: function(event) {gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);	gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);}},
 
 
 			'LDRUL': {name: '打开鼠标手势设置文件',  cmd: function(event) {FileUtils.getFile('UChrm',['SubScript', 'MouseGestures.uc.js']).launch();}},
