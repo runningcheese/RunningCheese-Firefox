@@ -11,11 +11,34 @@
 
 
 -------------
+### 02-17 更新说明
+
+1、内核更新至 64.0.2，惯例更新拓展和脚本。\
+2、修正更新各大视频网站广告过滤功能。\
+3、进一步增加浏览器的中文化程度。\
+4、重新排布部分功能选项，修复部分失效菜单选项。\
+5、删除 IDM 和 Everything 的集成，IDM 建议使用安装版IDM。
+
+
+**修改内容：**\
+..\Profiles\V10\chrome\SubScript\QuickOpen.uc.js\
+..\Profiles\V10\chrome\SubScript\MouseGestures.uc.js\
+..\Profiles\V10\chrome\SubScript\FloatingScrollbar.uc.js
+
+..\Profiles\V10\chrome\css\chrome.css\
+..\Profiles\V10\chrome\Local\_addmenu.js\
+..\Profiles\V10\chrome\Local\_keychanger.js\
+..\Profiles\V10\user.js\
+uBlock 更新规则： [2019-02-15](https://raw.githubusercontent.com/runningcheese/RunningCheese-Firefox/master/Restore/my-ublock-backup_2019-02-15.txt) 
+
+
+
+
+
+-------------
 ### 01-01 更新说明。
 修复已知BUG，稳定无BUG。
-
 修改的内容较多，建议全新下载。
-
 
 
 -------------
@@ -26,8 +49,8 @@
 \Profiles\V10\chrome\css\chrome.css\
 \Profiles\V10\chrome\Local\_addmenu.js\
 \Profiles\V10\chrome\SubScript\Tabplus.uc.js\
-\Profiles\V10\chrome\SubScript\ButtonEventListener.uc.js
-\Profiles\V10\chrome\SubScript\MouseGestures.uc.js
+\Profiles\V10\chrome\SubScript\ButtonEventListener.uc.js\
+\Profiles\V10\chrome\SubScript\MouseGestures.uc.js\
 \Profiles\V10\chrome\SubScript\QuickSnapshot.uc.js
 
 -------------
