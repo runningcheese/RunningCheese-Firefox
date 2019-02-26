@@ -12,7 +12,7 @@
 
 
 -------------
-### 02-17 更新说明
+### 02-26 更新说明
 1、修改音乐播放器里 Listen 1 的打开方式为新标签页打开。\
 （修改的文件：\Profiles\V10\chrome\SubScript\SimpleMusicPlayer.uc.js）
 
