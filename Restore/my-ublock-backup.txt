@@ -1,8 +1,8 @@
 {
-  "timeStamp": 1552117817167,
-  "version": "1.18.4",
+  "timeStamp": 1552660440487,
+  "version": "1.18.6",
   "userSettings": {
-    "advancedUserEnabled": false,
+    "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
     "autoUpdate": true,
     "cloudStorageEnabled": false,
@@ -45,6 +45,7 @@
     "cacheStorageAPI": "unset",
     "cacheStorageCompression": true,
     "cacheControlForFirefox1376932": "no-cache, no-store, must-revalidate",
+    "consoleLogLevel": "unset",
     "debugScriptlets": false,
     "disableWebAssembly": false,
     "ignoreRedirectFilters": false,
@@ -52,13 +53,14 @@
     "manualUpdateAssetFetchPeriod": 500,
     "popupFontSize": "unset",
     "requestJournalProcessPeriod": 1000,
+    "selfieAfter": 11,
     "strictBlockingBypassDuration": 120,
-    "suspendTabsUntilReady": false,
+    "suspendTabsUntilReady": "unset",
     "userResourcesLocation": "unset"
   },
   "netWhitelist": "about-scheme\nchrome-extension-scheme\nchrome-scheme\nmoz-extension-scheme\nopera-scheme\nvivaldi-scheme\nwyciwyg-scheme",
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-scripting: behind-the-scene false",
-  "userFilters": "||vali.cp31.ott.cibntv.net^$domain=v.youku.com,third-party\n@@mp4.ts\n"
+  "userFilters": "||vali.cp31.ott.cibntv.net^$domain=v.youku.com,third-party\n"
 }
