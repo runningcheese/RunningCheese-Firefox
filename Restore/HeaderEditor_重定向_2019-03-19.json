@@ -168,6 +168,18 @@
 			"action": "redirect",
 			"to": "$1",
 			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "Wikiwand繁体-->简体",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/www\\.wikiwand\\.com\\/(zh|zh-.*)\\/(.*)$",
+			"exclude": "",
+			"group": "重定向",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://www.wikiwand.com/zh-cn/$2"
 		}
 	],
 	"sendHeader": [],
