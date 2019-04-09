@@ -16,5 +16,5 @@
 |[firefox only] GlitterDrag_拖拽规则_谷歌优先.json|用于拓展 闪耀拖拽|
 |my-ublock-backup.txt|用于 拓展Ublock Origin|
 |vdh-settings.json|用于拓展 Video Download Helper|
-|search.json.mozlz4|搜索栏默认搜索引擎(firefox only)|
+|search.json.mozlz4|搜索栏默认搜索引擎（firefox only）|
 
