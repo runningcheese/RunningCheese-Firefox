@@ -10,6 +10,25 @@
 * UpdatesUnpackedFiles：Updates.zip 解压后的文件
 
 
+-------------
+### 04-09 更新说明
+1、拓展、用户脚本、广告规则循例更新。\
+2、优酷网广告过滤，需要在播放加载完毕后，按一下空格键才能播放。\
+3、优化标签和链接的打开方式。\
+4、重新精选了预设的搜索引擎。\
+5、更改暴力猴用户脚本更新方式为自动更新。
+
+**修改内容：**\
+\Profiles\V10\search.json.mozlz4\
+\Profiles\V10\chrome\css\newtab.css\
+
+\Profiles\V10\chrome\SubScript\Tabplus.uc.js\
+\Profiles\V10\chrome\SubScript\ButtonEventListener.uc.js\
+\Profiles\V10\chrome\SubScript\MouseGestures.uc.js\
+\Profiles\V10\chrome\SubScript\FloatingScrollbar.uc.js
+
+
+
 
 -------------
 ### 02-26 更新说明
@@ -35,7 +54,7 @@
 ..\Profiles\V10\chrome\Local\_addmenu.js\
 ..\Profiles\V10\chrome\Local\_keychanger.js\
 ..\Profiles\V10\user.js\
-uBlock 更新规则： [2019-02-15](https://raw.githubusercontent.com/runningcheese/RunningCheese-Firefox/master/Restore/my-ublock-backup_2019-02-15.txt) 
+uBlock 更新规则： [2019-02-15](https://raw.githubusercontent.com/runningcheese/RunningCheese-Firefox/master/Restore/my-ublock-backup.txt) 
 
 
 
