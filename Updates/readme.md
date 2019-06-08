@@ -9,6 +9,25 @@
 * Updates.zip：自动更新的文件打包
 * UpdatesUnpackedFiles：Updates.zip 解压后的文件
 
+
+-------------
+### 06-08 更新说明
+
+1、修复了一些用户反馈的问题，小幅度更新。\
+2、更新了部分暴力猴脚本，可在 Restore 看导入更新。\
+3、换用了更加好用的滚动条美化脚本，修改内容在 ButtonEventListener.uc.js\
+4、删除拓展 Add to Search，新增拓展 Add custom search engine\
+5、更新了拓展 Selection Context Search 的内容选项。\
+
+
+**修改内容：**\
+\Profiles\V10\chrome\css\chrome.css\
+\Profiles\V10\chrome\SubScript\ButtonEventListener.uc.js\
+\Profiles\V10\chrome\SubScript\FloatingScrollbar.uc.js\
+\Profiles\V10\chrome\SubScript\MouseGestures.uc.js\
+\Profiles\V10\chrome\Local\_keychanger.js\
+\Profiles\V10\chrome\Local\_addmenu.js\
+
 -------------
 ### 05-25 更新说明
 1、内核更新至67.0，并修复用户反馈的问题，建议全新下载。\
