@@ -1,3 +1,6 @@
+# 2019年度最喜欢浏览器拓展
+
+
 | **常用工具**     |                                                              |                                                              |
 | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 功能             | **介绍**                                                     | **安装**                                                     |
@@ -62,4 +65,4 @@
 | U2B地区解锁      | YouTube Unblocker，解锁 Youtube 国家地区限制的。[测试视频](https://www.runningcheese.com/go/?url=https://www.youtube.com/watch?v=kGNCWWbQqU0) | [![Firefox](https://tva1.sinaimg.cn/large/7a6a15d5gy1frr3ut4qekj200g00gwe9.jpg)](https://www.runningcheese.com/go/?url=https://addons.mozilla.org/zh-CN/firefox/addon/youtube-unblocker-plus/) |
 | U2B双语字幕      | Dualsub，让 YouTube 显示双语字幕，英语学习者必备。           | [![Firefox](https://tva1.sinaimg.cn/large/7a6a15d5gy1frr3ut4qekj200g00gwe9.jpg)](https://www.runningcheese.com/go/?url=https://addons.mozilla.org/zh-CN/firefox/addon/dualsub/)  [![Chrome](https://tva1.sinaimg.cn/large/7a6a15d5gy1frpw0218hnj200g00gt8h.jpg)](https://www.runningcheese.com/go/?url=https://chrome.google.com/webstore/detail/dualsub/gnlibmlfpencglodjpgnalbdebfhpmfp) |
 | 弹幕过滤器       | pakku，哔哩哔哩弹幕过滤器，屏蔽相似弹幕。                    | [![Firefox](https://tva1.sinaimg.cn/large/7a6a15d5gy1frr3ut4qekj200g00gwe9.jpg)](https://www.runningcheese.com/go/?url=https://addons.mozilla.org/zh-CN/firefox/addon/pakkujs/?src=external-home)  [![Chrome](https://tva1.sinaimg.cn/large/7a6a15d5gy1frpw0218hnj200g00gt8h.jpg)](https://www.runningcheese.com/go/?url=https://chrome.google.com/webstore/detail/pakku%EF%BC%9A%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%BC%B9%E5%B9%95%E8%BF%87%E6%BB%A4%E5%99%A8/jklfcpboamajpiikgkbjcnnnnooefbhh) |
-| 哔哩哔哩助手     | pakku，可以下载视频，查询弹幕发送人以及一些十分实用的直播区功能。 |                                                              |
+| 哔哩哔哩助手     | 哔哩哔哩助手，可以下载视频，查询弹幕发送人以及一些十分实用的直播区功能。 |                                                              |
