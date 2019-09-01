@@ -69,7 +69,7 @@ location == "chrome://browser/content/browser.xul" && (function () {
             if (!menupopup.firstChild) return;
 
             if (!menupopup._x_inited || !menupopup._x_scrollbox.scrollWidth) {
-                var scrollbox = menupopup._scrollBox._scrollbox;
+                var scrollbox = menupopup._scrollBox;
 
                 var firstMenu = menupopup.firstChild;
                 while (firstMenu) {
@@ -93,8 +93,9 @@ location == "chrome://browser/content/browser.xul" && (function () {
                     container.style.height = "auto";
                     container.style.display = "inline-flex";
                     container.style.flexFlow = "column wrap";
+					//container.style.overflow = "auto";
                     container.style.overflow = "-moz-hidden-unscrollable";
-                    menupopup._scrollBox.style.maxHeight = "calc(100vh - 20px)";
+                    menupopup._scrollBox.style.maxHeight = "calc(100vh - 129px)";
                 }
                 menupopup.style.maxWidth = "calc(100vw - 20px)";
             }
@@ -109,8 +110,8 @@ location == "chrome://browser/content/browser.xul" && (function () {
                 var menuitem = menupopup.lastChild;
                 while (menuitem) {
                     if (!menuitem.style.maxWidth) {
-                        menuitem.style.maxWidth = "280px";
-                        menuitem.style.minWidth = "100px";
+                        menuitem.style.maxWidth = "300px";
+                        menuitem.style.minWidth = "140px";
                     }
                     menuitem = menuitem.previousSibling;
                 }

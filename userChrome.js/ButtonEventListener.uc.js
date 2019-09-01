@@ -3,6 +3,7 @@
 // @description    为工具栏图标增加点击功能
 // @author          runningcheese
 // @reference      zbinlin, skofkyo, 小蛐蛐等等
+// @update         2019-01-01
 // @update         2018-04-20
 // @update         2018-04-04 增加一些功能
 // @update         2018-03-18 fix for 57+
@@ -62,24 +63,6 @@ Services.prefs.setCharPref('view_source.editor.path', PATH1);
 
 
 
-// 在网页的输入框里加入“粘贴并确定”
-{	let undo = document.getElementById('context-undo');
-	window.CQC = {};
-	undo.setAttribute('label', '粘贴并确定');
-	undo.removeAttribute('command');
-	window.CQC.pastego = () => {
-		goDoCommand("cmd_selectAll");
-		goDoCommand("cmd_paste");
-		window.QueryInterface(Ci.nsIInterfaceRequestor)
-			.getInterface(Ci.nsIDOMWindowUtils)
-			.sendKeyEvent("keypress", KeyEvent.DOM_VK_RETURN, 0, 0);
-	}
-	undo.setAttribute('oncommand', 'CQC.pastego()');
-}
-
-
-
-
 // 自动恢复地址栏地址显示
 {if (location == "chrome://browser/content/browser.xul") {
     var ub = document.getElementById("urlbar");
@@ -91,20 +74,6 @@ Services.prefs.setCharPref('view_source.editor.path', PATH1);
 
 
 
-
-// 搜索后自动清除搜索栏内容
-(function () {
-  var searchbar = document.getElementById("searchbar");
-  if (BrowserSearch.searchBar && !document.getElementById('omnibar-defaultEngine')) {
-			BrowserSearch.searchBar.addEventListener("blur", function () {
-				this.value = "";
-			}, !1);
-		}
-})();
-
-
-
-
 // 中键点击地址栏自动复制网址
 document.getElementById('urlbar').addEventListener('click', function(e) {
 	if (e.button == 1) goDoCommand('cmd_copy');
@@ -113,22 +82,8 @@ document.getElementById('urlbar').addEventListener('click', function(e) {
 
 
 
-// 失出焦点自动关闭查找栏
-(function() {
-	function closeFindbar(e) {
-		if (!gFindBar.hidden) {
-			if (e.target.id != "findbar-container") {
-				gFindBar.close();
-			}
-		}
-	}
-	addEventListener('blur', closeFindbar, false);
-})();
 
-
-
-
-// 右键 历史按钮 恢复最后关闭的标签
+// 右键「历史按钮」恢复最后关闭的标签
 	(function(doc) {
 		var UndoClosedTabs  = doc.getElementById('history-panelmenu');
 		if (!UndoClosedTabs ) return;
@@ -146,8 +101,23 @@ document.getElementById('urlbar').addEventListener('click', function(e) {
 
 
 
+//右键「下载按钮」打开下载历史
+	(function(doc) {
+		var ShowAllDownload = doc.getElementById('downloads-button');
+		if (!ShowAllDownload) return;
+		var menupopup = ShowAllDownload.firstChild;
+		ShowAllDownload.addEventListener("click", function(e) {
+			if (e.button == 2) {
+        e.preventDefault();
+				e.stopPropagation();
+        document.getElementById('toolbar-context-menu').style.display="none";
+        DownloadsPanel.showDownloadsHistory();
+			}
+		}, false);
+	})(document);
 
-//右键  三道杠 列出当前打开标签
+
+//右键「三道杠」列出当前打开标签
 	(function(doc) {
 		var OpenAllTabs = doc.getElementById('PanelUI-menu-button');
 		if (!OpenAllTabs) return;
@@ -163,12 +133,20 @@ document.getElementById('urlbar').addEventListener('click', function(e) {
 	})(document);
 
 
-
-
-// 左键点击书签菜单不自动关闭
-location == "chrome://browser/content/browser.xul" && document.querySelector("#personal-bookmarks").addEventListener("mouseover", function (event) {
-    event.originalTarget.classList.contains("bookmark-item") && event.originalTarget.setAttribute('closemenu', "none")
-}, true);
+// 左键「alltabs-button」用Tab Center Redux 代替展示
+	(function(doc) {
+		var OpenAllTabsButton = doc.getElementById('alltabs-button');
+		if (!OpenAllTabsButton) return;
+		var menupopup = OpenAllTabsButton.firstChild;
+		OpenAllTabsButton.addEventListener("click", function(e) {
+			if (e.button == 0) {
+        e.preventDefault();
+				e.stopPropagation();
+        document.getElementById('allTabsMenu-allTabsView').style.display="none";
+			document.getElementById("button__0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action").click();  Services.prefs.setBoolPref("sidebar.position_start",false); 
+			}
+		}, false);
+	})(document);
 
 
 
@@ -187,26 +165,7 @@ document.getElementById('toolbar-context-menu').style.display="-moz-popup";
 
 
 
-// 左键 alltabs-button 用Tab Center Redux 代替展示
-	(function(doc) {
-		var OpenAllTabsButton = doc.getElementById('alltabs-button');
-		if (!OpenAllTabsButton) return;
-		var menupopup = OpenAllTabsButton.firstChild;
-		OpenAllTabsButton.addEventListener("click", function(e) {
-			if (e.button == 0) {
-        e.preventDefault();
-				e.stopPropagation();
-        document.getElementById('alltabs-popup').style.display="none";
-			document.getElementById("button__0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action").click();  Services.prefs.setBoolPref("sidebar.position_start",false); 
-			}
-		}, false);
-	})(document);
-
-
-
-
-
-// 右键 地址栏书签图标 打开书签管理界面
+// 右键「地址栏书签图标」 打开书签管理界面
 	(function(doc) {
 		var OpenPlacesOrganizer = doc.getElementById('star-button-box');
 		if (!OpenPlacesOrganizer) return;
@@ -222,7 +181,7 @@ document.getElementById('toolbar-context-menu').style.display="-moz-popup";
 
 
 
-// 右键 新建标签按钮访问剪切板内容
+// 右键「新建标签按钮」访问剪切板内容
 location=="chrome://browser/content/browser.xul" &&
 window.addEventListener("click", function(e) {
     if (e.button === 2 && (e.originalTarget.matches(".tabs-newtab-button")||e.originalTarget.matches("#new-tab-button"))) {
@@ -240,7 +199,7 @@ window.addEventListener("click", function(e) {
 }, false);
 
 
-// 中键点击新建标签页按钮 恢复关闭的标签页
+// 中键「新建标签页按钮」恢复关闭的标签页
 (function() {
     var ucjsUndoCloseTab = function(e) {
         // Nur mit Mittelkick
@@ -310,7 +269,7 @@ window.addEventListener("click", function(e) {
 
 
 
-	// 右键  地址栏刷新图标 强制刷新页面（跳过缓存）
+	// 右键「地址栏刷新按钮」 强制刷新页面（跳过缓存）
 	(function() {
 		var UndoClosedTabs = document.getElementById('stop_reload_button');
 		if (!UndoClosedTabs) return;
@@ -324,10 +283,19 @@ window.addEventListener("click", function(e) {
 
 
 
+// Ctrl+F 显示/隐藏查找栏
+(function() {
+  if (location == 'chrome://browser/content/browser.xul') {
+    document.getElementById('cmd_find').setAttribute('oncommand',
+      'if (!gFindBar || gFindBar.hidden) { gLazyFindCommand("onFindCommand") } else { gFindBar.close() }'
+    );
+  };
+})();
 
 
 
-// 在 Firefox 57 新版的菜单中添加重启浏览器菜单选项
+
+// 在菜单中添加重启浏览器菜单选项
 (function()
 {
     var quitBtn = document.getElementById("appMenu-quit-button");
@@ -349,195 +317,6 @@ window.addEventListener("click", function(e) {
 
 
 
-
-
-
-
-
-
-// 新建Header Editor用户代理图标
-(function () {
-	CustomizableUI.createWidget({
-		id : "UserAgentChanger",
-		label : "用户代理",
-		tooltiptext : "Header Editor",
-		onClick : function (event) {
-			switch (event.button) {
-			case 0:
-				// 左键：选择用户代理
-  (function(){
-       window.open("moz-extension://7171b2f2-e3cc-4031-b9ab-a9a0273ab809/manage.html","Header Editor","resizable,scrollbars,status,title","centerscreen").resizeTo(450, 680);
-    })();
-				break;
-			case 1:
-				break;
-			case 2:
-				break;
-			}
-		}
-	});
-
-	var cssStr = '@-moz-document url("chrome://browser/content/browser.xul"){'
-		 + '#UserAgentChanger .toolbarbutton-icon {'
-		 + 'list-style-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAT0lEQVQ4jWNgoAaQl5d/Ly8v/59UjGzAfzzm47J0gA3AbRpuNdjC6T0pBmCogYsNDgMIxTdZBpDiArwpkaABxABiXEmUAbj4xBiAOyFRAgBPbmsFfCHniwAAAABJRU5ErkJggg==)'
-		 + '}}';
-	var sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService);
-	var ios = Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService);
-	sss.loadAndRegisterSheet(ios.newURI("data:text/css;base64," + btoa(cssStr), null, null), sss.USER_SHEET);
-})();
-
-
-
-
-// 书签增加“更新为当前书签”选项 （来自UpdateBookmark2.uc.js）
-location == "chrome://browser/content/browser.xul" && (function () {
-	var separator = document.getElementById("placesContext_openSeparator");
-	var repBM = document.createElement('menuitem');
-	separator.parentNode.insertBefore(repBM, separator);
-	repBM.id = "placesContext_replaceURL";
-	repBM.setAttribute("label", "更新为当前书签");
-	repBM.setAttribute("accesskey", "U");
-	repBM.addEventListener("command", function () {
-		var itemId = document.popupNode._placesNode.itemId;
-		PlacesUtils.bookmarks.update({
-                            guid: document.popupNode._placesNode.bookmarkGuid,
-                            url:gBrowser.currentURI.spec,
-                            title:gBrowser.contentTitle
-                           });
-	}, false);
-	var obs = document.createElement("observes");
-	obs.setAttribute("element", "placesContext_open");
-	obs.setAttribute("attribute", "hidden");
-	repBM.appendChild(obs);
-})();
-
-
-
-
-
-
-// 右键Identity-Box图标 弹出 选项菜单
-	(function() {
-
-		var faviconContextMenu = {
-
-			init: function() {
-				this.additem();
-				//$("identity-box").setAttribute("context", "faviconContextMenu");
-				//$("notification-popup-box").setAttribute("context", "faviconContextMenu");
-				$("urlbar").setAttribute("context", "faviconContextMenu");
-				$("urlbar").setAttribute('class', 'menu-iconic');
-			},
-
-			additem: function() {
-				var mp = $C("menupopup", {
-					id: "faviconContextMenu",
-				});
-				$('mainPopupSet').appendChild(mp);
-				var menues = [
-          {
-					label: "地址根目录",
-					oncommand:function() { gBrowser.loadURI("javascript:document.location.href=window.location.origin?window.location.origin+'/':window.location.protocol+'/'+window.location.host+'/'");},
-				},
-          {
-					label: "地址上一层",
-					oncommand:function() { gBrowser.loadURI("javascript:window.location.href=window.location.href.substring(0,window.location.href.substring(0,window.location.href.length-1).lastIndexOf('/')+1);");},
-				},{
-					label: "http转https",
-					oncommand:function() { gBrowser.loadURI("javascript:(function(){document.location.href=document.location.href.replace('http:','https:')})();");},
-				},{
-					label: "生成二维码",
-					oncommand: function() { gBrowser.loadURI("javascript:(function(){if(document.getElementById){var%20x=document.body;var%20o=document.createElement('script');if(typeof(o)!='object')%20o=document.standardCreateElement('script');o.setAttribute('src','https://git.oschina.net/runningcheese/JiathisQR.js/raw/master/jiathisqr.js');o.setAttribute('type','text/javascript');x.appendChild(o);}})();");},
-				},{
-					label: "sep",
-				}, {
-					label: "进入阅读模式",
-					oncommand: 'var url = "about:reader?url=" + gBrowser.currentURI.spec; gBrowser.selectedTab = gBrowser.loadURI(url);',
-				},{
-		label:"查看谷歌缓存",
-    tooltiptext: '注意：需科学上网',
-		oncommand: "gBrowser.addTab('https://webcache.googleusercontent.com/search?q=cache:' + decodeURIComponent(gBrowser.currentURI.spec));",
-	},	{
-					label: "网站综合信息",
-          tooltiptext: "包括IP, SEO, Alexa, Whois查询",
-					oncommand: function () {var eTLDService = Cc["@mozilla.org/network/effective-tld-service;1"].getService(Ci.nsIEffectiveTLDService); gBrowser.addTab('http://ip.chinaz.com/' + decodeURIComponent(gBrowser.currentURI.spec)); gBrowser.addTab('http://seo.chinaz.com/?q=' + decodeURIComponent(gBrowser.currentURI.spec)); gBrowser.addTab('http://www.alexa.com/siteinfo/' + decodeURIComponent(gBrowser.currentURI.spec)); gBrowser.addTab('http://whois.chinaz.com/' + eTLDService.getBaseDomain(makeURI(gBrowser.selectedBrowser.currentURI.spec)));}
-				}, 
-{
-					label: "sep",
-				},
-{
-					label: "复制图标地址",
-					oncommand: "faviconContextMenu.Copy(gBrowser.selectedTab.image);",
-				}, {
-					label: "复制图标编码",
-					oncommand: "faviconContextMenu.toBase64(gBrowser.selectedTab.image);",
-				}, 
-];
-				var i, item, menue;
-				for (i = 0; i < menues.length; i++) {
-					menue = menues[i];
-					if (menue.label == "sep") {
-						item = $C('menuseparator');
-					} else {
-						item = $C('menuitem', {
-							label: menue.label,
-							class: "menuitem-iconic",
-							oncommand: menue.oncommand,
-						});
-					}
-					mp.appendChild(item);
-				}
-			},
-
-			//command命令指定   
-
-			Copy: function(string) {
-				Components.classes["@mozilla.org/widget/clipboardhelper;1"].getService(Components.interfaces.nsIClipboardHelper).copyString(string);
-			},
-
-			toBase64: function(icon) {
-				const NSURI = "http://www.w3.org/1999/xhtml";
-				var img = new Image();
-				var that = this;
-				img.onload = function() {
-					var width = this.naturalWidth,
-						height = this.naturalHeight;
-					var canvas = document.createElementNS(NSURI, "canvas");
-					canvas.width = width;
-					canvas.height = height;
-					var ctx = canvas.getContext("2d");
-					ctx.drawImage(this, 0, 0);
-					that.Copy(canvas.toDataURL("image/png"));
-				};
-				img.onerror = function() {
-					Components.utils.reportError("Count not load: " + icon);
-				};
-				img.src = icon;
-			},
-
-		};
-
-		faviconContextMenu.init();
-		window.faviconContextMenu = faviconContextMenu;
-
-		function $(id) { return document.getElementById(id); }
-
-		function $C(name, attr) {
-			var el = document.createElement(name);
-			if (attr) Object.keys(attr).forEach(function(n) {
-				if (typeof attr[n] === 'function') {
-					el.setAttribute(n, '(' + attr[n].toSource() + ').call(this, event);');
-				} else {
-					el.setAttribute(n, attr[n]);
-				}
-			});
-			return el;
-		}
-	}());
-
-
-
-
 // 修改按钮名称和增加文字说明
 (function () {
   cars = ['2'];
@@ -546,8 +325,6 @@ location == "chrome://browser/content/browser.xul" && (function () {
     setTimeout(function () {
 
 document.getElementById('PanelUI-menu-button').setAttribute("tooltiptext","左键：打开菜单\n右键：列出所有标签");
-document.getElementById('identity-box').setAttribute("tooltiptext","左键：显示网站信息\n右键：打开网页菜单");
-document.getElementById('identity-icon').setAttribute("tooltiptext","左键：显示网站信息\n右键：打开网页菜单");
 document.getElementById('star-button').setAttribute("tooltiptext","左键：将此页加入书签\r\n右键：打开书签管理器");
 document.getElementById('stop_reload_button').setAttribute("tooltiptext","左键：刷新当前页面\r\n右键：强制刷新当前页面");
 document.getElementById('new-tab-button').setAttribute("tooltiptext","左键：刷新当前页面\r\n右键：强制刷新当前页面");
@@ -555,7 +332,3 @@ document.getElementById('new-tab-button').setAttribute("tooltiptext","左键：�
     }, cars[i] * 1000); //单位: 1秒
   }
 }) ();
-
-
-
-

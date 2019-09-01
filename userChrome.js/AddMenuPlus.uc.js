@@ -7,7 +7,7 @@
 // @license        MIT License
 // @compatibility  Firefox 57+
 // @charset        UTF-8
-// @version        2018.3.13
+// @version        2019.2.20
 // @startup        window.addMenu.init();
 // @shutdown       window.addMenu.destroy();
 // @config         window.addMenu.edit(addMenu.FILE);
@@ -171,12 +171,7 @@ location == "chrome://browser/content/browser.xul" && (function (css) {
             return gContextMenu && gContextMenu.target ? gContextMenu.target.ownerDocument.defaultView : content;
         },
         init: function () {
-
-            if (("isInitialized" in Services.search) && !Services.search.isInitialized) {
-                Services.search.init(this.init.bind(this));
-                return
-            }
-
+ 
             let he = "(?:_HTML(?:IFIED)?|_ENCODE)?";
             let rTITLE = "%TITLE" + he + "%|%t\\b";
             let rTITLES = "%TITLES" + he + "%|%t\\b";
@@ -354,8 +349,8 @@ location == "chrome://browser/content/browser.xul" && (function (css) {
             else openUILink(uri.spec, event);
         },
         exec: function (path, arg) {
-            var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);//修复失效exec命令
-            var process = Components.classes['@mozilla.org/process/util;1'].createInstance(Components.interfaces.nsIProcess);//修复失效exec命令
+            var file = Cc['@mozilla.org/file/local;1'].createInstance(Ci.nsIFile);
+            var process = Cc['@mozilla.org/process/util;1'].createInstance(Ci.nsIProcess);
             try {
                 var a;
                 if (typeof arg == 'string' || arg instanceof String) {
@@ -869,7 +864,7 @@ location == "chrome://browser/content/browser.xul" && (function (css) {
                 },
             };
             var tab = document.popupNode && document.popupNode.localName == "tab" ? document.popupNode : null;
-            var bw = tab && tab.linkedBrowser;
+            var bw = (tab && tab.linkedBrowser)||context.browser;
 
             return text.replace(this.regexp, function (str) {
                 str = str.toUpperCase().replace("%LINK", "%RLINK");
@@ -1075,7 +1070,7 @@ location == "chrome://browser/content/browser.xul" && (function (css) {
         },
         openScriptInScratchpad: function (parentWindow, file) {
 
-            let spWin = window.openDialog("chrome://devtools/content/scratchpad/scratchpad.xul", "Toolkit:Scratchpad", "chrome,dialog,centerscreen,dependent");
+            let spWin = window.openDialog("chrome://devtools/content/scratchpad/index.xul", "Toolkit:Scratchpad", "chrome,dialog,centerscreen,dependent");
             spWin.top.moveTo(0, 0);
             spWin.top.resizeTo(screen.availWidth, screen.availHeight);
 
@@ -1094,7 +1089,7 @@ location == "chrome://browser/content/browser.xul" && (function (css) {
         },
         copy: function (aText) {
             Cc["@mozilla.org/widget/clipboardhelper;1"].getService(Ci.nsIClipboardHelper).copyString(aText);
-            XULBrowserWindow.statusTextField.label = "Copy: " + aText;
+            //XULBrowserWindow.statusTextField.label = "Copy: " + aText;
         },
         copyLink: function (copyURL, copyLabel) {
             // generate the Unicode and HTML versions of the Link
@@ -1156,7 +1151,7 @@ location == "chrome://browser/content/browser.xul" && (function (css) {
     };
 
     window.addMenu.init();
-
+    
     function $(id) {
         return document.getElementById(id);
     }
@@ -1321,6 +1316,3 @@ menugroup.addMenu > .menuitem-iconic > .menu-accel-container {\
   display: none;\
 }\
 ');
-
-
-

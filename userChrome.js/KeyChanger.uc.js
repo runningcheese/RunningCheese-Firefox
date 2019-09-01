@@ -6,7 +6,7 @@
 // @description    为火狐添额外的快捷键
 // @license        MIT License
 // @charset        UTF-8
-// @version        2018.1.25.2
+// @version        2018.12.3.1
 // @note           0.0.2 メニューを右クリックで設定ファイルを開けるようにした
 // @note           0.0.2 Meta キーを装飾キーに使えるようになったかもしれない（未テスト）
 // @note           0.0.2 Windows キーを装飾キーに使えるようになったかもしれない（未テスト Firefox 17 以降）
@@ -255,8 +255,9 @@ location == "chrome://browser/content/browser.xul" && (function () {
 
         },
         openScriptInScratchpad: function (parentWindow, file) {
-            let spWin = window.openDialog("chrome://devtools/content/scratchpad/scratchpad.xul", "Toolkit:Scratchpad", "chrome,dialog,centerscreen,dependent");
-
+            let spWin = window.openDialog("chrome://devtools/content/scratchpad/index.xul", "Toolkit:Scratchpad", "chrome,dialog,centerscreen,dependent");
+            spWin.top.moveTo(0, 0);
+            spWin.top.resizeTo(screen.availWidth, screen.availHeight);
             spWin.addEventListener("load", function spWinLoaded() {
                 spWin.removeEventListener("load", spWinLoaded, false);
 

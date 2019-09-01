@@ -17,6 +17,7 @@
 // @note         	点击地址栏显示书签工具栏。
 // @note         	地址栏任意按键，地址栏失去焦点后自动隐藏书签工具栏。
 // @note       		左键点击书签后自动隐藏书签工具栏。
+// @version      	fix for ff64+ by runningcheese
 // @version      	0.3.2	2015.10.11 17:00 	地址栏只在输入框生效，“地址栏失去焦点”修改“页内点击”。
 // @version      	0.3.1	2015.04.17 10:00 	更多功能，表达能力略微提升.
 // @version      	0.3		2015.04.11 20:00 	绘制UI设置界面.
@@ -167,7 +168,7 @@ location == "chrome://browser/content/browser.xul" && (function() {
 			else if (tag === 2)
 				tag = gURLBar;
 			else if (tag === 3)
-				tag = gBrowser.mPanelContainer;
+				tag = gBrowser.tabpanels;
 
 			tag.removeEventListener(action, AwesomeBookmarkbar["Listener_" + name], false);
 

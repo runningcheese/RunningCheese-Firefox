@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name                 Mousegestures.uc.js
 // @namespace            Mousegestures@gmail.com
-// @description          自定义鼠标手势,自用 DIY版
+// @description          自定义鼠标手势
 // @author               紫云飞&黒仪大螃蟹
 // @homepageURL          http://www.cnblogs.com/ziyunfei/archive/2011/12/15/2289504.html
 // @include              chrome://browser/content/browser.xul
@@ -17,7 +17,7 @@
 		isMouseDownR: false,
 		hideFireContext: false,
 		shouldFireContext: false,
-		GESTURES: {
+	GESTURES: {
 			'L': {name: '后退', cmd: () => getWebNavigation().canGoBack && getWebNavigation().goBack()},
 			'R': {name: '前进', cmd: () => getWebNavigation().canGoForward && getWebNavigation().goForward()},
 
@@ -27,7 +27,7 @@
 
 
 			'UD': {name: '刷新当前页面', cmd: function() {document.getElementById("Browser:Reload").doCommand();}},
-			'DU': {name: '网址向上一层', cmd:  function() { loadURI(content.location.host + content.location.pathname.replace(/\/[^\/]+\/?$/, ""));}},
+			'DU': {name: '网址根目录', cmd:  function() { gBrowser.loadURI("javascript:document.location.href=window.location.origin?window.location.origin+'/':window.location.protocol+'/'+window.location.host+'/'", { triggeringPrincipal: Services.scriptSecurityManager.getSystemPrincipal(), });},},
 			'UDUD': {name: '跳过缓存刷新当前页面', cmd: function() {document.getElementById("Browser:ReloadSkipCache").doCommand();}},
 
 
@@ -49,12 +49,12 @@
 			'RD': {name: '转到页尾', cmd: () => goDoCommand('cmd_scrollBottom')},
 
 
-			'URD': {name: '打开附加组件',  cmd: function(event) {	BrowserOpenAddonsMgr();	}},
-			'DRU': {name: '打开选项',  cmd: function(event) {		openPreferences(); }},
+			//'URD': {name: '打开附加组件',  cmd: function(event) {	BrowserOpenAddonsMgr();	}},
+			//'DRU': {name: '打开选项',  cmd: function(event) {		openPreferences(); }},
 
 
 			'LU': {name: '查看页面信息', cmd: function(event) {	BrowserPageInfo(); }},
-			'LD': {name: '侧边栏打开当前页', cmd: function(event) { openWebPanel(document.title, gBrowser.currentURI.spec);}},
+			'LD': {name: '侧边栏打开当前页', cmd: function(event) { window.document.getElementById("pageActionButton").click(); window.setTimeout(function() {window.document.getElementById("pageAction-panel-side-view_mozilla_org").click();}, 0);}},
 
 
 			'LDR': {name: '打开历史窗口(侧边栏)',  cmd: function(event) {SidebarUI.toggle("viewHistorySidebar");	}},
@@ -70,23 +70,24 @@
 			'RULDR': {name: '添加到稍后阅读',  cmd: function(event) {document.getElementById("pageAction-urlbar-_cd7e22de-2e34-40f0-aeff-cec824cbccac_").click();}},
 
 
-		  'LDL': {name: '关闭左边的标签页', cmd: function(event) {	for (let i = gBrowser.mCurrentTab._tPos - 1; i >= 0; i--) if (!gBrowser.tabs[i].pinned){ gBrowser.removeTab(gBrowser.tabs[i], {animate: true});}}},
-		  'RDR': {name: '关闭右边的标签页', cmd: function(event) {	gBrowser.removeTabsToTheEndFrom(gBrowser.mCurrentTab);	}},
-		  'RDRD': {name: '关闭其他所有标签页', cmd: function(event) {gBrowser.removeAllTabsBut(gBrowser.mCurrentTab);	}},
+		   'LDL': {name: '关闭左侧标签页', cmd: function(event) {	for (let i = gBrowser.selectedTab._tPos - 1; i >= 0; i--) if (!gBrowser.tabs[i].pinned){ gBrowser.removeTab(gBrowser.tabs[i], {animate: true});}}},
+		   'RDR': {name: '关闭右侧标签页', cmd: function(event) {gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);	gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);}},
 
 
 			'LDRUL': {name: '打开鼠标手势设置文件',  cmd: function(event) {FileUtils.getFile('UChrm',['SubScript', 'MouseGestures.uc.js']).launch();}},
 			'RLD': {name: '将当前窗口置顶',  cmd: function(event) {TabStickOnTop();}},
 
 },
+
+
 		init: function() {
 			let self = this;
 			['mousedown', 'mousemove', 'mouseup', 'contextmenu', 'DOMMouseScroll'].forEach(type => {
-				gBrowser.mPanelContainer.addEventListener(type, self, true);
+				gBrowser.tabpanels.addEventListener(type, self, true);
 			});
-			gBrowser.mPanelContainer.addEventListener('unload', () => {
+			gBrowser.tabpanels.addEventListener('unload', () => {
 				['mousedown', 'mousemove', 'mouseup', 'contextmenu', 'DOMMouseScroll'].forEach(type => {
-					gBrowser.mPanelContainer.removeEventListener(type, self, true);
+					gBrowser.tabpanels.removeEventListener(type, self, true);
 				});
 			}, false);
 		},
@@ -137,7 +138,7 @@
 					}
 					if (direction != this.directionChain.charAt(this.directionChain.length - 1)) {
 						this.directionChain += direction;
-						XULBrowserWindow.statusTextField.label = this.GESTURES[this.directionChain] ? '手势: ' + this.directionChain + ' ' + this.GESTURES[this.directionChain].name : '未知手势:' + this.directionChain;
+						StatusPanel._label = this.GESTURES[this.directionChain] ? '手势: ' + this.directionChain + ' ' + this.GESTURES[this.directionChain].name : '未知手势:' + this.directionChain;
 					}
 				}
 				break;
@@ -174,7 +175,7 @@
 				this.xdTrailAreaContext = null;
 			}
 			this.directionChain = '';
-			setTimeout(() => XULBrowserWindow.statusTextField.label = '', 2000);
+			setTimeout(() => StatusPanel._label = '', 2000);
 			this.hideFireContext = true;
 		}
 	};
@@ -189,4 +190,6 @@
  function TabStickOnTop() {
 (function(){if(document.getElementById('main-window').hasAttribute('ontop'))onTop=false;else onTop=true;try{Components.utils.import("resource://gre/modules/ctypes.jsm");var lib=ctypes.open("user32.dll");var funcActiveWindow=0;try{funcActiveWindow=lib.declare("GetActiveWindow",ctypes.winapi_abi,ctypes.int32_t)}catch(ex){funcActiveWindow=lib.declare("GetActiveWindow",ctypes.stdcall_abi,ctypes.int32_t)}if(funcActiveWindow!=0){var activeWindow=funcActiveWindow();var funcSetWindowPos=0;try{funcSetWindowPos=lib.declare("SetWindowPos",ctypes.winapi_abi,ctypes.bool,ctypes.int32_t,ctypes.int32_t,ctypes.int32_t,ctypes.int32_t,ctypes.int32_t,ctypes.int32_t,ctypes.uint32_t)}catch(ex){funcSetWindowPos=lib.declare("SetWindowPos",ctypes.stdcall_abi,ctypes.bool,ctypes.int32_t,ctypes.int32_t,ctypes.int32_t,ctypes.int32_t,ctypes.int32_t,ctypes.int32_t,ctypes.uint32_t)}var hwndAfter=-2;if(onTop){hwndAfter=-1;document.getElementById('main-window').setAttribute('ontop','true')}else document.getElementById('main-window').removeAttribute('ontop');funcSetWindowPos(activeWindow,hwndAfter,0,0,0,0,19)}lib.close()}catch(ex){alwaysontop_log(ex)}})()
 };
+
+
 

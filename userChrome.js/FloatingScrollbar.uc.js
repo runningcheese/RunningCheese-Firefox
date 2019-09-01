@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name           FloatingScrollbar.uc.js
-// @namespace      nightson1988@gmail.com
+// @namespace   nightson1988@gmail.com
 // @include        main
-// @version        v2018-05-15 ÐÞ¸ÄÔÚÎ¢ÐÅÍøÒ³°æÉÏµÄ´íÎó
+// @version        fix 67+ï¼Œä¿®æ­£åœ¨å¾®ä¿¡ç½‘é¡µç‰ˆï¼Œæš´åŠ›çŒ´ç¼–è¾‘å™¨ä¸Šçš„æ»šåŠ¨æ¡é”™è¯¯ by @runningcheese
 // @version        0.0.3
 // @note           Thanks to Griever(https://github.com/Griever/userChromeJS/blob/master/SmartScrollbar.uc.js) and Paul Rouget(https://gist.github.com/4003205)
 // @note...........0.0.3 Fixed a problem of breaking hbox layout 
@@ -18,44 +18,51 @@
         prefs.setBoolPref('userChromeJS.floating_scrollbar.enabled', true);
         enabled = true;
     }
-// ÅÅ³ýÎ¢ÐÅÍøÒ³°æ
-    var css = '\
+
+ var css = '\
     @namespace url(http: //www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-    @-moz-document regexp("^((?!wx2.qq.com).)*$") {\
-    :not(select):not(hbox) > scrollbar {\
+    @-moz-document regexp("((?!wx2.qq.com).)*"){\
+    scrollbar {\
         -moz-appearance: none!important;\
         position: relative;\
         background-color: transparent;\
         background-image: none;\
-        z-index: 2147483647;\
+        z-index: 100000;\
         padding: 0px;\
     }\
-    :not(select):not(hbox) > scrollbar[orient = "vertical"] {\
-        -moz-margin-start: -13px;\
-        min-width: 13px;\
+    scrollbar[orient = "vertical"] {\
+        -moz-margin-start: -12px;\
+        min-width: 12px;\
     }\
-    :not(select):not(hbox) > scrollbar[orient = "vertical"] thumb {\
-        min-height: 60px;\
+    scrollbar[orient = "vertical"] thumb {\
+        min-height: 50px;\
     }\
-   :not(select):not(hbox) > scrollbar[orient = "horizontal"] {\
-        margin-top: -13px;\
-        min-height: 13px;\
+   scrollbar[orient = "horizontal"] {\
+        margin-top: -12px;\
+        min-height: 12px;\
     }\
-    :not(select):not(hbox) > scrollbar[orient = "horizontal"] thumb {\
-        min-width: 60px;\
+    scrollbar[orient = "horizontal"] thumb {\
+        min-width: 50px;\
     }\
-    :not(select):not(hbox) > scrollbar thumb {\
+    scrollbar thumb {\
         -moz-appearance: none!important;\
         border-width: 0px!important;\
         border-radius: 5px!important;\
         background-color: rgba(0, 0, 0, 0.2)!important;\
     }\
-    :not(select):not(hbox) > scrollbar thumb:active,\
-    :not(select):not(hbox) > scrollbar thumb:hover {\
+    scrollbar:hover thumb{\
         background-color: #9B9B9B!important;\
     }\
-    :not(select):not(hbox) > scrollbar scrollbarbutton, :not(select):not(hbox) > scrollbar gripper {\
+    scrollbar:active thumb{\
+        background-color: #9B9B9B!important;\
+    }\
+    scrollbar scrollbarbutton,scrollbar gripper{\
         display: none;}\
+}\
+    @-moz-document url-prefix("moz-extension://"){\
+    scrollbar {\
+         z-index: 2000!important;\
+    }}\
    }';
 
     var sss = Cc['@mozilla.org/content/style-sheet-service;1'].getService(Ci.nsIStyleSheetService);
@@ -63,7 +70,7 @@
 
     var p = document.getElementById('devToolsSeparator');
     var m = document.createElement('menuitem');
-    m.setAttribute('label', "Use Floating Scrollbar");
+    m.setAttribute('label', "Schwebende Scrollbar");
     m.setAttribute('type', 'checkbox');
     m.setAttribute('autocheck', 'false');
     m.setAttribute('checked', enabled);
