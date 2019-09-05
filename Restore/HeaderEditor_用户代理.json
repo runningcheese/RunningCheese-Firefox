@@ -16,7 +16,7 @@
 			"group": "用户代理"
 		},
 		{
-			"enable": true,
+			"enable": false,
 			"name": "全局用户代理：Firefox",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
@@ -160,7 +160,7 @@
 			"name": "直播平台 换用 Chrome Html5 播放器",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "^http(s?)://www\\.(douyu|yy|panda|iqiyi|meipai)(\\.com|\\.tv)/(.*)",
+			"pattern": "^http(s?)://www\\.(douyu|yy|panda|iqiyi|huya|meipai)(\\.com|\\.tv)/(.*)",
 			"exclude": "https://www.huya.com/$",
 			"isFunction": false,
 			"action": {
