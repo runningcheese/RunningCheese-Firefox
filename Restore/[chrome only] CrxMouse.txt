@@ -186,7 +186,7 @@
     "ddirect": false,
     "ddirectcolor": "4991fc",
     "ddirectopa": 0.9,
-    "dholdkey": "none",
+    "dholdkey": "alt",
     "dragimage": true,
     "draginput": true,
     "draglink": true,
@@ -227,7 +227,7 @@
       }
     ],
     "imgfirst": "ctrl",
-    "imgfirstcheck": false,
+    "imgfirstcheck": true,
     "link": [
       {
         "action": "L_copyurl",
