@@ -19,7 +19,7 @@
   "notifyOnSuccess": false,
   "notifyOnLinkPreferred": true,
   "page": false,
-  "paths": "Images/:date: // (alias: °´µ±Ç°ÈÕÆÚ·ÖÀà)\nImages/Desktop// (alias: ±£´æµ½×ÀÃæ)\nImages/:pagedomain: // (alias: °´µ±Ç°ÍøÕ¾·ÖÀà)\n---\nImages\nImages/@Beautiful  // (alias: Images/Beautiful)\nImages/@Cute  // (alias: Images/Cute)\nImages/@Funny  // (alias: Images/Funny)\nImages/@Knowledge // (alias: Images/Knowledge)\nImages/@Creative // (alias: Images/Creative)",
+  "paths": "Images/:date: // (alias: æŒ‰å½“å‰æ—¥æœŸåˆ†ç±»)\nImages/Desktop// (alias: ä¿å­˜åˆ°æ¡Œé¢)\nImages/:pagedomain: // (alias: æŒ‰å½“å‰ç½‘ç«™åˆ†ç±»)\n---\nImages\nImages/@Beautiful  // (alias: Images/Beautiful)\nImages/@Cute  // (alias: Images/Cute)\nImages/@Funny  // (alias: Images/Funny)\nImages/@Knowledge // (alias: Images/Knowledge)\nImages/@Creative // (alias: Images/Creative)",
   "prompt": false,
   "promptIfNoExtension": true,
   "promptOnFailure": true,
