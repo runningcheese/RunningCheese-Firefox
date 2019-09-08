@@ -13,10 +13,9 @@
 |Selection Context Search.json|用于拓展 Selection Context Search|
 |[chrome only] CrxMouse.txt|用于拓展 CrxMouse，只使用了拖拽功能|
 |[firefox only] GlitterDrag_拖拽规则.json|用于拓展 闪耀拖拽|
-|[firefox only] GlitterDrag_拖拽规则_谷歌优先.json|用于拓展 闪耀拖拽|
 |my-ublock-backup.txt|用于 拓展 Ublock Origin|
-|search.json.mozlz4|Firefox 搜索引擎列表，覆盖到 \Profiles\V10|
-|Web Data|Chrome 搜索引擎列表，覆盖到 \User Data\Default|
+|search.json.mozlz4|搜索引擎列表，用于 Firefox，覆盖到 \Profiles\V10|
+|Web Data|搜索引擎列表，用于 Chrome，覆盖到 \User Data\Default|
 |searchEngineJump.txt|用于脚本 searchEngineJump|
 |广告净化器.txt|用于拓展 广告净化器|
 |用户样式合集.json|用于拓展 Stylish、Stylus、Xtyle|
