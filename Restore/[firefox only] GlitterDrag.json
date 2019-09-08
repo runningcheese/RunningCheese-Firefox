@@ -154,7 +154,7 @@
         "search_onsite": false
       },
       "DIR_D": {
-        "act_name": "ACT_DL",
+        "act_name": "ACT_COPY",
         "tab_pos": "TAB_CRIGHT",
         "engine_name": "默认",
         "engine_url": "https://www.baidu.com/s?wd=%s",
@@ -296,7 +296,7 @@
         "engine_name": "默认",
         "engine_url": "https://www.baidu.com/s?wd=%s",
         "is_browser_search": false,
-        "download_directory": "8",
+        "download_directory": "0",
         "tab_active": false,
         "open_type": "OPEN_LINK",
         "search_type": "SEARCH_TEXT",
@@ -567,7 +567,7 @@
         "search_onsite": false
       },
       "DIR_D": {
-        "act_name": "ACT_OPEN",
+        "act_name": "ACT_DL",
         "tab_active": true,
         "tab_pos": "TAB_CRIGHT",
         "engine_name": "默认",
@@ -575,9 +575,9 @@
         "open_type": "OPEN_LINK",
         "search_type": "SEARCH_TEXT",
         "copy_type": "COPY_TEXT",
-        "download_type": "DOWNLOAD_LINK",
+        "download_type": "DOWNLOAD_IMAGE_LINK",
         "download_directory": 0,
-        "download_saveas": true,
+        "download_saveas": false,
         "search_onsite": false,
         "is_browser_search": false
       },
@@ -704,7 +704,7 @@
         "search_onsite": false
       },
       "DIR_D": {
-        "act_name": "ACT_OPEN",
+        "act_name": "ACT_DL",
         "tab_pos": "TAB_CRIGHT",
         "engine_name": "默认",
         "engine_url": "https://www.baidu.com/s?wd=%s",
@@ -714,8 +714,8 @@
         "open_type": "OPEN_LINK",
         "search_type": "SEARCH_TEXT",
         "copy_type": "COPY_TEXT",
-        "download_type": "DOWNLOAD_LINK",
-        "download_saveas": true,
+        "download_type": "DOWNLOAD_IMAGE",
+        "download_saveas": false,
         "search_onsite": false
       },
       "DIR_L": {
@@ -1241,55 +1241,55 @@
   "Engines": [],
   "Panel_imageAction": [
     {
-      "act_name": "ACT_OPEN",
-      "tab_active": true,
+      "act_name": "ACT_DL",
       "tab_pos": "TAB_CRIGHT",
       "engine_name": "默认",
       "engine_url": "https://www.baidu.com/s?wd=%s",
+      "is_browser_search": false,
+      "download_directory": "0",
+      "tab_active": true,
       "open_type": "OPEN_LINK",
       "search_type": "SEARCH_TEXT",
       "copy_type": "COPY_TEXT",
       "download_type": "DOWNLOAD_LINK",
-      "download_directory": 0,
-      "download_saveas": true,
+      "download_saveas": false,
       "search_onsite": false,
-      "icon": "",
-      "panel_tips": "%g-%a",
-      "is_browser_search": false
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAABOElEQVRYhe2WIZKDQBBFn+QGUVFY5Mq5QDSHWLtyJSYyJnrvkAPsHbhAPCYqCsmK7i4oMmyyomeoWl7VVIXmU/zQnx5g458y5DYwZzMUYz/5PSzUk1ECNyDosRkKWi9zmLKbBzU0Pc6GmRjWYMaoEUN1biNT3nLd+AB0yBN5tjrVu9Lxek6C6l15NgCHmcZ9YK7uCa0uQxt/YQccgRbodbVAo+eSUiNbxRkJb6EraO1GwsldI4G16dwC1UxTqcbd1A7591MDF+A9oq1U69q+BjjNap/A14L+hOTMjZbHwRiA64I+6DVu9Eh4pxRaj30l2rmkhkBa2QPfwAdjxgrg7mko1jKjRMJ9YWyTe8saZM68yhnnUMde+yWSvPYwDsbfTCUbjMaqtg7DNtcr8v1zRwJ8JMPmupGNHz8DYq1k1EkdAAAAAElFTkSuQmCC",
+      "panel_tips": "按当前日期分类"
     },
     {
-      "act_name": "ACT_OPEN",
-      "tab_active": true,
+      "act_name": "ACT_DL",
       "tab_pos": "TAB_CRIGHT",
       "engine_name": "默认",
       "engine_url": "https://www.baidu.com/s?wd=%s",
+      "is_browser_search": false,
+      "download_directory": "1",
+      "tab_active": true,
       "open_type": "OPEN_LINK",
       "search_type": "SEARCH_TEXT",
       "copy_type": "COPY_TEXT",
       "download_type": "DOWNLOAD_LINK",
-      "download_directory": 0,
-      "download_saveas": true,
+      "download_saveas": false,
       "search_onsite": false,
-      "icon": "",
-      "panel_tips": "%g-%a",
-      "is_browser_search": false
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAA9UlEQVRYhe3WwY2DMBSE4RSw1hOS0cxUkAboI51wymGboqpcOLsB9rKREouAHJzYB/8SJ2T0YT0sTqdWq4IkLaUNTzXQXg20VwPtVQTU9/3Pq3tboK11b+ec85JukoYUkKRB0s0557OjAFxIzmuoNZCkgeQM4JIds4eKQV/BbKEeQV/FvELdQUUwayhJS1HMCmopjolQoQrMvY+cM9XnvT+TnEiG/6E9dJEMJCfv/fldzAxgNLMuxwuaWQdgJDkno0hOAMYckDgAvySnVFDItTNxZtaRDEmLjv7fxPNz+PnV7dAnZ4jkNXmGqvvKHlB1nEOtVkJ/je2KRUBEvaAAAAAASUVORK5CYII=",
+      "panel_tips": "保存到桌面"
     },
     {
-      "act_name": "ACT_OPEN",
-      "tab_active": true,
+      "act_name": "ACT_DL",
       "tab_pos": "TAB_CRIGHT",
       "engine_name": "默认",
       "engine_url": "https://www.baidu.com/s?wd=%s",
+      "is_browser_search": false,
+      "download_directory": "2",
+      "tab_active": true,
       "open_type": "OPEN_LINK",
       "search_type": "SEARCH_TEXT",
       "copy_type": "COPY_TEXT",
       "download_type": "DOWNLOAD_LINK",
-      "download_directory": 0,
-      "download_saveas": true,
+      "download_saveas": false,
       "search_onsite": false,
-      "icon": "",
-      "panel_tips": "%g-%a",
-      "is_browser_search": false
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAABX0lEQVRYhe2WoW7DQAyGP1KyFygaCBsJHAqIBocP9BEG+whBfYDQvkbgWGBB6N4gpGQwLAO2tdspVTdwd5GWTzop5zi6v7bPLmz8U+bcAkI2QUs8es/zDXsyCuAK1Lo3QbXaixyi7PBaBfn7bJiIeQ1iDIcIcrmF+DznOvgVGJGI3Fuj+kdlBKpf+lbqH5V7DXAOfKI3zNVFaHU1tPEX9sAJGIBJ1wA0+i4pDhkVLVK8B6AHPpHauZKwczs91LrzAYnMMfAbgbfYYvbIry89WwN0C74VErGo6WuQNIW8s9yfzkidRWO4cXCHpC7E0hmNCdgt2Ht+/kt80v1Zv0kuqENSeUTSZ8tuXjTClDnkthV6eIfcrB3woL5RU+YXdQtc+I7Gy4J/S+Si9q/9xbN3SIR8SvWN3rWtMfZIenoV50/2Un2SdusJKdgTUi9WMy2JR4dhw/XDEzeoLflw3cjGF6mncUGa1sTgAAAAAElFTkSuQmCC",
+      "panel_tips": "按当前网站分类"
     },
     {
       "act_name": "ACT_DL",
@@ -1577,15 +1577,15 @@
   "disableAdjustTabSequence": false,
   "disableFixURL": false,
   "downloadDirectories": [
-    "${host}/",
-    "${pagetitle}/",
-    "${host}${pagetitle}/",
+    "Images/${today}/",
+    "Images/Desktop/",
+    "Images/${host}/",
+    "Images/${pagetitle}/",
     "",
     "",
     "",
     "",
-    "",
-    "function(){\n    return `Images/${host}/${filename}`\n}"
+    "function(){\n    return `Images/${today}/${filename}`\n}"
   ],
   "enableAutoSelectPreviousTab": true,
   "enableCtrlKey": false,
@@ -1605,7 +1605,7 @@
   "maxTriggeredDistance": 9999,
   "middleButtonSelect": false,
   "specialHosts": [],
-  "style": "/* Author：harytfw */\n\n#GDPrompt {\n    background-color: rgba(9, 150, 248, 0.85) !important;\n    border-color: rgb(6, 112, 204) !important;\n    border-radius: 0px !important;\n    color: white !important;\n    width: 130px !important;\n}\n\n#GDArrow {\n    font: normal normal normal 20px FontAwesome !important;\n    line-height: 2em !important;\n    height: 40px !important;\n    border-radius: 0px !important;\n    width: 130px !important;\n}\n\n.GDArrow-UP-R::after,\n.GDArrow-U::after,\n.GDArrow-UP-L::after {\n    content: \"\\f062\" !important;\n}\n\n.GDArrow-L::after {\n    content: \"\\f060\" !important;\n}\n\n.GDArrow-R::after {\n    content: \"\\f061\" !important;\n}\n\n.GDArrow-LOW-L::after,\n.GDArrow-D::after,\n.GDArrow-LOW-R::after {\n    content: \"\\f063\" !important;\n}\n\n#GDIndicator {\n    border-style: solid !important;\n    border-color: rgba(0, 0, 0, 0.25) !important;\n}",
+  "style": "300: jar:file:///D:/Internet/RunningCheese%20Firefox%20V10/Profiles/V10/extensions/glitterdrag@harytfw.xpi!/options/custom_style/\n200: filename content-length last-modified file-type\n201: style0.css 896 Thu,%2029%20Nov%201979%2016:00:00%20GMT FILE\n201: style1.css 18 Thu,%2029%20Nov%201979%2016:00:00%20GMT FILE\n",
   "switchToParentTab": false,
   "timeoutCancel": 2000,
   "tipsContent": {
