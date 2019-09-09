@@ -39,7 +39,7 @@
 			"isFunction": false,
 			"action": {
 				"name": "user-agent",
-				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36"
+				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"
 			},
 			"group": "用户代理"
 		},
@@ -160,12 +160,12 @@
 			"name": "直播平台 换用 Chrome Html5 播放器",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "^http(s?)://www\\.(douyu|yy|panda|iqiyi|huya|meipai)(\\.com|\\.tv)/(.*)",
+			"pattern": "^http(s?)://(.*)\\.(cctv|douyu|yy|panda|iqiyi|huya|meipai)(\\.com|\\.tv)/(.*)",
 			"exclude": "https://www.huya.com/$",
 			"isFunction": false,
 			"action": {
 				"name": "user-agent",
-				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36"
+				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"
 			},
 			"_exclude": {},
 			"group": "用户代理"
