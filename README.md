@@ -15,7 +15,6 @@ RunningCheese Firefox 是一款旨在提高Firefox易用性的浏览器，界面
 #### 下载地址：
 高速下载：https://firefox.runningcheese.com \
 百度网盘：https://pan.baidu.com/s/1nvGrYbR \
-腾讯网盘：https://share.weiyun.com/5pjDbnL \
 谷歌网盘：https://drive.google.com/drive/folders/19DUhiuNxoPciVSIZwkQjPz_tbuHT1dPO
 
 问题反馈：https://www.runningcheese.com/v10  
