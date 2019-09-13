@@ -10,7 +10,7 @@
 * UpdatesUnpackedFiles：Updates.zip 解压后的文件
 
 -------------
-### 09-13 更新说明\
+### 09-13 更新说明
 • 浏览器内核更新至 68.1.0 ESR，\
 • 拓展脚本惯例更新，以及BUG修复，\
 • 标签开启自动切换功能，增加标签保护功能，\
@@ -26,7 +26,7 @@
 2、更新了部分暴力猴脚本，可在 Restore 看导入更新。\
 3、换用了更加好用的滚动条美化脚本，修改内容在 ButtonEventListener.uc.js\
 4、删除拓展 Add to Search，新增拓展 Add custom search engine\
-5、更新了拓展 Selection Context Search 的内容选项。\
+5、更新了拓展 Selection Context Search 的内容选项。
 
 
 **修改内容：**\
@@ -35,7 +35,7 @@
 \Profiles\V10\chrome\SubScript\FloatingScrollbar.uc.js\
 \Profiles\V10\chrome\SubScript\MouseGestures.uc.js\
 \Profiles\V10\chrome\Local\_keychanger.js\
-\Profiles\V10\chrome\Local\_addmenu.js\
+\Profiles\V10\chrome\Local\_addmenu.js
 
 -------------
 ### 05-25 更新说明
