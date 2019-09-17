@@ -10,7 +10,6 @@
 
 
 // 01. 自动切换到鼠标移动到的标签页
-/*
 ((g, w) => {
   class TabPlus {
     constructor() {
@@ -19,14 +18,14 @@
     SelectedTabOnMouseover(timeout) {
       g.tabContainer.addEventListener('mouseover', e => {
         if (e.target.localName !== 'tab') return;
-        timeout = setTimeout(() => g.selectedTab = e.target, 250);
+        timeout = setTimeout(() => g.selectedTab = e.target, 150);
       }, false);
       g.tabContainer.addEventListener('mouseout', () => clearTimeout(timeout), false);
     }
   }
   new TabPlus();
 })(gBrowser, window);
-*/
+
 
 
 // 02. 右键关闭标签页

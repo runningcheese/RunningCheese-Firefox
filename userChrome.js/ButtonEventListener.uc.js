@@ -3,6 +3,7 @@
 // @description    为工具栏图标增加点击功能
 // @author          runningcheese
 // @reference      zbinlin, skofkyo, 小蛐蛐等等
+// @update         2019-09-17
 // @update         2019-01-01
 // @update         2018-04-20
 // @update         2018-04-04 增加一些功能
@@ -80,6 +81,17 @@ document.getElementById('urlbar').addEventListener('click', function(e) {
 }, false);
 
 
+
+// 双击 地址栏 显示或关闭书签栏 
+document.getElementById("urlbar").addEventListener('dblclick', function(event) {
+var bar = document.getElementById("PersonalToolbar"); setToolbarVisibility(bar, bar.collapsed);
+});
+
+
+// 双击 空白处 关闭书签栏 
+gBrowser.tabpanels.addEventListener('dblclick', function(event) {
+var bar = document.getElementById("PersonalToolbar"); setToolbarVisibility(bar, bar.hide);
+});
 
 
 
@@ -317,18 +329,98 @@ window.addEventListener("click", function(e) {
 
 
 
-// 修改按钮名称和增加文字说明
-(function () {
-  cars = ['2'];
-  for (var i = 0; i < cars.length; i++)
-  {
-    setTimeout(function () {
+// 搜索框增加“粘贴并搜索”选项
+var PasteAndGoForms = {
 
-document.getElementById('PanelUI-menu-button').setAttribute("tooltiptext","左键：打开菜单\n右键：列出所有标签");
-document.getElementById('star-button').setAttribute("tooltiptext","左键：将此页加入书签\r\n右键：打开书签管理器");
-document.getElementById('stop_reload_button').setAttribute("tooltiptext","左键：刷新当前页面\r\n右键：强制刷新当前页面");
-document.getElementById('new-tab-button').setAttribute("tooltiptext","左键：刷新当前页面\r\n右键：强制刷新当前页面");
+  init: function () {
+    let win = window, doc = win.document;
+    var item, menu = doc.getElementById("contentAreaContextMenu");
+    menu.addEventListener("popupshowing", function () {
+      if (!item)
+        return;
+      if (win.gContextMenu.onTextInput && win.gContextMenu.onKeywordField) {
+        item.hidden = false;
+        let controller = doc.commandDispatcher.getControllerForCommand("cmd_paste");
+        let enabled = controller.isCommandEnabled("cmd_paste");
+        if (enabled)
+          item.removeAttribute("disabled");
+        else
+          item.setAttribute("disabled", "true");
+      } else
+        item.hidden = true;
+    }, false);
 
-    }, cars[i] * 1000); //单位: 1秒
+    item = doc.createElement("menuitem");
+    item.setAttribute("id", "context-pasteandgo-forms");
+    let label = doc.getElementById("searchbar")._stringBundle.getString("cmd_pasteAndSearch");
+    item.setAttribute("label", label);
+    item.setAttribute("class", "menuitem-iconic");
+    item.setAttribute("image", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVQ4jWNgoAaQlJT8j47FxMTqSTIAnS8uLn6FaEOwGcDDwyNGtCHYDEDGJBuAyyCcYYPPAHQ+Vm+RYgDWsCHFAKxhQ6wBOOWwBRahGKAodoaYAeSED0kAAKqAUtm1wWCIAAAAAElFTkSuQmCC");
+    item.setAttribute("oncommand", "PasteAndGoForms.doCommand();");
+    var pasteItem = doc.getElementById("context-paste");
+    menu.insertBefore(item, pasteItem.nextSibling);
+
+    let framescript = {
+      init: function() {
+        addMessageListener("PasteAndGoForms.doPasteAndSubmit", this);
+      },
+      receiveMessage: function(message) {
+        switch(message.name) {
+          case "PasteAndGoForms.doPasteAndSubmit":
+           this.doPasteAndSubmit(message.data.targetSelectors, message.data.str)
+           break;
+        }
+      },
+      doPasteAndSubmit: function(selectors, str) {
+        let target = null;
+        let win = content;
+        let doc = win.document;
+        for (let i = 0; i < selectors.length; i++) {
+          let elem = doc.querySelector(selectors[i]);
+          if (!elem)
+            continue;
+          if (/iframe|frame/.test(elem.nodeName.toLowerCase())) {
+            win = elem.contentWindow;
+            doc = elem.contentDocument;
+          } else if (elem.shadowRoot != null) {
+            doc = elem.shadowRoot;
+          } else if (/textarea/.test(elem.nodeName.toLowerCase())) {
+            if (!elem.disabled) {
+              target = elem;
+            }
+            break;
+          } else if (/input/.test(elem.nodeName.toLowerCase())) {
+            if (/file|text|search|tel|url|email|password|datetime|date|month|week|time|datetime-local|number/.test(elem.type) || !elem.type) {
+              if (!elem.disabled) {
+                target = elem;
+              }
+            }
+            break;
+          }
+        }
+        if(target) {
+          target.select();
+          target.value = str;
+          target.form.submit();
+        }
+      },
+    };
+    window.messageManager.loadFrameScript(
+       'data:application/javascript,'
+        + encodeURIComponent(framescript.toSource() + ".init()")
+      , true, true);
+  },
+
+  doCommand: function() {
+    if (typeof gContextMenu == "object" && gContextMenu != null) {
+      let json = {
+        targetSelectors: gContextMenu.targetSelectors,
+        str: readFromClipboard()
+      }
+      gBrowser.selectedBrowser.messageManager.
+        sendAsyncMessage("PasteAndGoForms.doPasteAndSubmit", json);
+    }
   }
-}) ();
+};
+PasteAndGoForms.init();
+
