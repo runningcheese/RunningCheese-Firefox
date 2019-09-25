@@ -32,7 +32,7 @@
         "is_browser_search": false
       },
       "DIR_L": {
-        "act_name": "ACT_FIND",
+        "act_name": "ACT_TRANS",
         "tab_pos": "TAB_CRIGHT",
         "engine_name": "默认",
         "engine_url": "https://www.baidu.com/s?wd=%s",
