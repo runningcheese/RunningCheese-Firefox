@@ -26,7 +26,7 @@
 
 2、使用 <a href="https://addons.mozilla.org/zh-CN/firefox/addon/ext-saladict/" rel="noopener noreferrer" target="_blank">沙拉查词</a> 替换 S3Translator。<a href="https://github.com/runningcheese/RunningCheese-Firefox/blob/master/Restore/config.saladict" rel="noopener noreferrer" target="_blank">配置文件</a>\
 3、使用 <a href="https://addons.mozilla.org/zh-CN/firefox/addon/tree-style-tab/?src=search" rel="noopener noreferrer" target="_blank">Tree Style Tab</a> 替换 Tab Center Redux。<a href="https://github.com/runningcheese/RunningCheese-Firefox/blob/master/Restore/configs-treestyletab%40piro.sakura.ne.jp.json" rel="noopener noreferrer" target="_blank">配置文件</a>\
-4、使用 <a href="https://addons.mozilla.org/zh-CN/firefox/addon/bitwarden-password-manager/" rel="noopener noreferrer" target="_blank">Bitwarden</a> 替换 LastPass。
+4、使用 <a href="https://addons.mozilla.org/zh-CN/firefox/addon/bitwarden-password-manager/" rel="noopener noreferrer" target="_blank">Bitwarden</a> 替换 LastPass，迁移方法<a href="https://mp.weixin.qq.com/s/FCwQYA8PMSSRSVQisFvGXA" rel="noopener" target="_blank">参考这里</a>。
 
 
 
