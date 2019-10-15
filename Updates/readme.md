@@ -10,6 +10,27 @@
 * UpdatesUnpackedFiles：Updates.zip 解压后的文件
 
 -------------
+### 2019-10-15 更新说明：
+
+1、优化细节，修正网友反馈的问题，点击“火箭图标—>更新修复—>自动更新” 即可自动更新。\
+
+具体修改文件：\
+..\Profiles\V10\chrome\SubScript\Tabplus.uc.js\
+..\Profiles\V10\chrome\SubScript\MouseGestures.uc.js\
+..\Profiles\V10\chrome\SubScript\QuickOpen.uc.js\
+..\Profiles\V10\chrome\SubScript\ButtonEventListener.uc.js\
+..\Profiles\V10\chrome\Local\_addmenu.js\
+..\Profiles\V10\chrome\Local\_keychanger.js\
+..\Profiles\V10\chrome\css\chrome.css\
+..\Profiles\V10\chrome\css\builtin.css
+
+2、使用 <a href="https://addons.mozilla.org/zh-CN/firefox/addon/ext-saladict/" rel="noopener noreferrer" target="_blank">沙拉查词</a> 替换 S3Translator。<a href="https://github.com/runningcheese/RunningCheese-Firefox/blob/master/Restore/config.saladict" rel="noopener noreferrer" target="_blank">配置文件</a>\
+3、使用 <a href="https://addons.mozilla.org/zh-CN/firefox/addon/tree-style-tab/?src=search" rel="noopener noreferrer" target="_blank">Tree Style Tab</a> 替换 Tab Center Redux。<a href="https://github.com/runningcheese/RunningCheese-Firefox/blob/master/Restore/configs-treestyletab%40piro.sakura.ne.jp.json" rel="noopener noreferrer" target="_blank">配置文件</a>\
+4、使用 <a href="https://addons.mozilla.org/zh-CN/firefox/addon/bitwarden-password-manager/" rel="noopener noreferrer" target="_blank">Bitwarden</a> 替换 LastPass。
+
+
+
+-------------
 ### 09-26 更新说明：
 
 1、小幅度更新，点击“火箭图标—>更新修复—>自动更新” 即可自动更新。\
