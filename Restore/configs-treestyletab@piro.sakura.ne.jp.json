@@ -1,0 +1,25 @@
+{
+  "animation": false,
+  "applyBrowserTheme": false,
+  "autoAttachOnNewTabButtonMiddleClick": 3,
+  "closeParentBehaviorMode": 1,
+  "collapseExpandSubtreeByDblClick": true,
+  "configsVersion": 7,
+  "context_bookmarkTree": false,
+  "context_closeTree": false,
+  "context_collapseAll": false,
+  "context_expandAll": false,
+  "context_groupTabs": false,
+  "context_reloadTree": false,
+  "faviconizePinnedTabs": false,
+  "insertNewChildAt": -1,
+  "notifiedFeaturesVersion": 3,
+  "optionsExpandedSections": [
+    "section-debug",
+    "section-advanced",
+    "section-newTab"
+  ],
+  "showAutoGroupOptionHint": false,
+  "simulateSVGContextFill": false,
+  "style": "highcontrast"
+}
