@@ -18,10 +18,10 @@
 • 解决了网友反馈的一些问题。\
 • 点击“<strong>火箭图标—>更新修复—>自动更新</strong>” 即可一键更新。
 
-### 具体修改内容：
+*具体修改内容*
 更新：\
 ..\Profiles\V10\chrome\css\chrome.css\
-..\Profiles\V10\chrome\Local\_addmenu.js\
+..\Profiles\V10\chrome\Local\_addmenu.js
 
 新增：\
 ..\Profiles\V10\chrome\images\icons\url_go.png\
