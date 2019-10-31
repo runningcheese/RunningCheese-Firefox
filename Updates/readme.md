@@ -9,6 +9,49 @@
 * Updates.zip：自动更新的文件打包
 * UpdatesUnpackedFiles：Updates.zip 解压后的文件
 
+
+
+-------------
+### 2019-10-31 更新说明：
+
+• 解决 Win7 用户深色模式的兼容问题。\
+• 解决了网友反馈的一些问题。\
+• 点击“<strong>火箭图标—>更新修复—>自动更新</strong>” 即可一键更新。
+
+### 具体修改内容：
+更新：\
+..\Profiles\V10\chrome\css\chrome.css\
+..\Profiles\V10\chrome\Local\_addmenu.js\
+
+新增：\
+..\Profiles\V10\chrome\images\icons\url_go.png\
+..\Profiles\V10\chrome\images\icons\url_reload.png\
+..\Profiles\V10\chrome\images\icons\url_stop.png
+
+-------------
+### 2019-10-28 更新说明：
+
+• 崭新 70.0 内核，第 4 次提速，又双叒叕快了！
+
+• 解决多项网友反馈的问题，比如双击标签关闭不灵敏的问题。
+
+• 优化进程处理和内存使用，解决标签缓冲问题，内存得到了有效控制。
+
+• 采用全新 Logo，名称回归 Firefox Browser，加入 Firefox 的新产品和新功能。
+
+• 正式引入深色模式，启用方法，点击“定制”，在“主题”里选择“深邃”。
+
+1). 在 about:config 里，将 browser.display.background_color 的值改为 #1C1C1C，可以避免闪屏。\
+2). 如果想在网页上也使用深色模式，推荐安装拓展 <a href="https://addons.mozilla.org/en-US/firefox/addon/dark-mode-webextension/?src=userprofile" rel="noopener noreferrer" target="_blank">Dark Mode</a>，实测 模式 2 和 模式 3 最好。\
+3). 如果想白天用亮色模式，晚上用深色模式，可以安装拓展 <a href="https://addons.mozilla.org/zh-CN/firefox/addon/automatic-dark/?src=search" rel="noopener noreferrer" target="_blank">AutomaticDark</a>。
+
+• 翻译拓展换用 沙拉查词，使用方法<a href="https://mp.weixin.qq.com/s/MM5LBnXy_CaTi3HhfsWupA" rel="noopener noreferrer" target="_blank">参考这里</a>，<a href="https://mp.weixin.qq.com/s/eGlGz5vKlFU_6M--4hQxqg" rel="noopener noreferrer" target="_blank">还有这里</a>。
+
+•  密码管理拓展使用 Bitwarden ，使用方法<a href="https://mp.weixin.qq.com/s/FCwQYA8PMSSRSVQisFvGXA" rel="noopener noreferrer" target="_blank">参考这里</a>，<a href="https://mp.weixin.qq.com/s/Ae3SEV9W3CfKKgWANu6qjA" rel="noopener noreferrer" target="_blank">还有这里</a>。
+
+
+
+
 -------------
 ### 2019-10-15 更新说明：
 
