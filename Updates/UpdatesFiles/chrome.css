@@ -14,9 +14,6 @@
 
 
 
-
-
-
 /*START=================================================（01.Navbar）=========================================================*/
 /*==================================================导航栏调整 Navbar Adjustment==============================================*/
 
@@ -31,7 +28,7 @@
 #navigator-toolbox #nav-bar:not([tabsontop="false"]) .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,
 #navigator-toolbox #nav-bar:not([tabsontop="false"]) .toolbarbutton-1 {
 	padding: 0px 0px !important;
-	margin: 0px 2px 0px 0px !important;
+	margin: 0px 3px 0px 1px !important;
 }
 
 
@@ -108,27 +105,10 @@
 	margin-left: 8px !important;
 }
 
-
 #reload-button .toolbarbutton-icon {
-list-style-image: url("../images/icons/url_reload.png") !important;
-	width:30px !important;
-	height:30px !important;
-  background: #ffffff !important;
+list-style-image: url("../images/icons/refresh3.png") !important;
+
 }
-
-#reload-button .toolbarbutton-icon:-moz-lwtheme-brighttext,
-#reload-button .toolbarbutton-icon:-moz-lwtheme-darktext {
-background: transparent !important;
-}
-
-
-#stop-reload-button{
-margin-right:-4px !important;
-margin-left: -12px !important;
-background-color: transparent !important;
--moz-border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAcAQMAAABic7x4AAAABlBMVEUAAADf398zft1XAAAAAXRSTlMAQObYZgAAAA9JREFUCNdjQAEOFCAEAADP1AUBPgRr1AAAAABJRU5ErkJggg==") 0 3 0 / 5px 3px 5px repeat stretch;
-}
-
 
 #urlbar-go-button  {
 	list-style-image: url("../images/icons/url_go.png")!important;
@@ -136,20 +116,11 @@ background-color: transparent !important;
 }
 
 #stop-button .toolbarbutton-icon{
-	width:30px !important;
-	height:30px !important;
-  list-style-image: url("../images/icons/url_stop.png")!important;
-  background: #ffffff !important;
+  list-style-image: url("../images/icons/stop.png")!important;
 }
 
-#stop-button .toolbarbutton-icon:-moz-lwtheme-brighttext,
-#stop-button .toolbarbutton-icon:-moz-lwtheme-darktext {
-background: transparent !important;
-}
-
-
-
-
+#stop_reload_button {background:transparent !important;}
+#urlbar-input-container{margin-right:-4px !important;}
 
 
 /*地址栏文字大小 Urlbar font size*/
@@ -161,7 +132,9 @@ background: transparent !important;
 
 /* 地址栏边框 Urlbar Image Border*/
 #urlbar-container {
-	-moz-border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAcAQMAAABic7x4AAAABlBMVEUAAADf398zft1XAAAAAXRSTlMAQObYZgAAAA9JREFUCNdjQAYN5CNkAACpYwoBNgMRTQAAAABJRU5ErkJggg==") 0 3 0 / 5px 3px 5px repeat stretch;
+	-moz-border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAcAQMAAABic7x4AAAABlBMVEUAAADf398zft1XAAAAAXRSTlMAQObYZgAAABBJREFUCNdjQAYNDuQjJAAAePIPAZbp5voAAAAASUVORK5CYII=") 0 3 0 / 5px 3px 5px repeat stretch;
+  margin-right: 4px !important;
+	margin-left: 2px !important;
 }
 
 #urlbar-input-container:-moz-lwtheme-brighttext{background-color: #546172 !important;}
@@ -195,12 +168,9 @@ background: transparent !important;
 /* 搜索栏边框 Searchbar Image Border*/
 #searchbar {
 -moz-border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAcAQMAAABic7x4AAAABlBMVEUAAADf398zft1XAAAAAXRSTlMAQObYZgAAABBJREFUCNdjQAYNDuQjJAAAePIPAZbp5voAAAAASUVORK5CYII=") 0 3 0 / 2px 3px 2px repeat stretch !important;
-margin-left: -6px !important;
+margin-left: -10px !important;
 }
 #searchbar:-moz-lwtheme-brighttext{background-color: #546172 !important;}
-
-
-
 
 
 /*关闭面板动画 Remove Panel Open Animation*/
@@ -245,7 +215,7 @@ panel[type="arrow"][animate],#BMB_bookmarksPopup {
 
 /* 新建标签页位置调整 */
 	#main-window #TabsToolbar {
-		padding-right: 4px !important;
+		padding-right: 0px !important;
 	}
 	
 	#main-window #tabbrowser-tabs{
@@ -293,123 +263,161 @@ panel[type="arrow"][animate],#BMB_bookmarksPopup {
 /*Min*/
 #main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-min,
 #main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-min:hover,
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-min:active{
-background:no-repeat url("../images/contolbox_min.png") !important;
-}
-	
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-min {
--moz-image-region:rect(0px, 23px, 19px, 0px) !important;
-background-position: 0 7px !important;
-}
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-min:hover{
-background-position: 51% 7px !important;
-}
 #main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-min:active {
--moz-image-region:rect(0px, 69px, 19px, 46px) !important;
-background-position: 0 7px !important;
-}
+		list-style-image: url("../images/sport_min.png")!important;
+	}
+
+#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-min:-moz-lwtheme-brighttext{
+		filter: invert(1) !important; 
+	}	
+					
+		
+	#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-min {
+		-moz-image-region: rect(0,46px,40px,0px) !important;
+	}
+
+	#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-min:hover {
+		-moz-image-region: rect(0,92px,40px,46px) !important;
+	}
+
+	#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-min:active {
+		-moz-image-region: rect(0,138px,40px,92px) !important;
+	}
+
 
 /*Min_Fullscreen*/
 #main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-min,
 #main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-min:hover,
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-min:active{
-background:no-repeat url("../images/contolbox_min.png") !important;
-}
-	
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-min{
--moz-image-region:rect(0px, 23px, 19px, 0px) !important;
-background-position: 0 4px !important;
-}
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-min:hover{
-background-position: 51% 4px !important;
-}
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-min:active{
--moz-image-region:rect(0px, 69px, 19px, 46px) !important;
-background-position: 0 4px !important;
-}	
-	
-	
+#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-min:active {
+		list-style-image: url("../images/sport_min_maximized.png") !important;
+	}
+
+#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-min:-moz-lwtheme-brighttext{
+		filter: invert(1) !important; 
+	}			
+		
+	#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-min {
+		-moz-image-region: rect(0,46px,28px,0px) !important;
+	}
+
+	#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-min:hover {
+		-moz-image-region: rect(0,92px,28px,46px) !important;
+	}
+
+	#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-min:active {
+		-moz-image-region: rect(0,138px,28px,92px) !important;
+	}
+
+
+
+
 /*Max*/
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-max,
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-max:hover,
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-max:active {
-background:no-repeat url("../images/contolbox_max.png") !important;
-}
-	
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-max {
--moz-image-region:rect(0px, 23px, 19px, 0px) !important;
-background-position: 0 7px !important;
-}
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-max:hover{
-background-position: 51% 7px !important;
-}
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-max:active {
--moz-image-region:rect(0px, 69px, 19px, 46px) !important;
-background-position: 0 7px !important;
-}
+#main-window:not([inFullscreen]) .titlebar-max, 
+#main-window:not([inFullscreen]) .titlebar-max:hover, 
+#main-window:not([inFullscreen]) .titlebar-max:active {
+		list-style-image: url("../images/sport_max.png")!important;
+	}
+
+#main-window:not([inFullscreen]) .titlebar-max:-moz-lwtheme-brighttext{
+		filter: invert(1) !important; 
+	}					
+		
+	#main-window:not([inFullscreen]) .titlebar-max {
+		-moz-image-region: rect(0,46px,40px,0px) !important;
+	}
+
+	#main-window:not([inFullscreen]) .titlebar-max:hover {
+		-moz-image-region: rect(0,92px,40px,46px) !important;
+	}
+
+	#main-window:not([inFullscreen]) .titlebar-max:active {
+		-moz-image-region: rect(0,138px,40px,92px) !important;
+	}
 
 
-/*Restore*/
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-max,
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-max:hover,
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-max:active {
-background: no-repeat url("../images/contolbox_restore.png") !important;
-}
-	
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-max{
--moz-image-region:rect(0px, 23px, 19px, 0px) !important;
-background-position: 0 4px !important;
-}
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-max:hover{
-background-position: 51% 4px !important;
-}
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-max:active{
--moz-image-region:rect(0px, 69px, 19px, 46px) !important;
-background-position: 0 4px !important;
-}	
-	
-	
-	
+
 /*Close*/
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-close,
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-close:hover,
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-close:active {
-background: no-repeat url("../images/contolbox_close.png") !important;
-}
-	
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-close {
--moz-image-region:rect(0px, 23px, 19px, 0px) !important;
-background-position: 0 7px !important;
-}
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-close:hover{
-background-position: 51% 7px !important;
-}
-#main-window[tabsintitlebar="true"][sizemode="normal"] .titlebar-close:active {
--moz-image-region:rect(0px, 69px, 19px, 46px) !important;
-background-position: 0 7px !important;
-}
+#main-window:not([inFullscreen]) .titlebar-close, 
+#main-window:not([inFullscreen]) .titlebar-close:hover, 
+#main-window:not([inFullscreen]) .titlebar-close:active {
+		list-style-image: url("../images/sport_close.png")!important;
+	}
+
+#main-window:not([inFullscreen]) .titlebar-close:-moz-lwtheme-brighttext{
+		filter: invert(1) !important; 
+	}		
+#main-window:not([inFullscreen]) .titlebar-close:hover:-moz-lwtheme-brighttext, 
+#main-window:not([inFullscreen]) .titlebar-close:active:-moz-lwtheme-brighttext	{
+		filter: none !important; 
+	}		
+
+	#main-window:not([inFullscreen]) .titlebar-close {
+		-moz-image-region: rect(0,46px,40px,0px) !important;
+	}
+
+	#main-window:not([inFullscreen]) .titlebar-close:hover {
+		-moz-image-region: rect(0,92px,40px,46px) !important;
+	}
+
+	#main-window:not([inFullscreen]) .titlebar-close:active {
+		-moz-image-region: rect(0,138px,40px,92px) !important;
+	}
 
 
-/*Close_Fullscreen*/
+
+/*Close_FullScreen*/
 #main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-close,
 #main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-close:hover,
 #main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-close:active {
-background: no-repeat url("../images/contolbox_close.png") !important;
-}
+		list-style-image: url("../images/sport_close_maximized.png") !important;
+	}
+		
+#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-close:-moz-lwtheme-brighttext{
+		filter: invert(1) !important; 
+	}				
+		
+#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-close:hover:-moz-lwtheme-brighttext, 
+#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-close:active:-moz-lwtheme-brighttext	{
+		filter: none !important; 
+	}		
+			
+	#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-close {
+		-moz-image-region: rect(0,46px,28px,0px) !important;
+	}
+
+	#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-close:hover {
+		-moz-image-region: rect(0,92px,28px,46px) !important;
+	}
+
+	#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-close:active {
+		-moz-image-region: rect(0,138px,28px,92px) !important;
+	}
+
+
+/*Restore*/
+#main-window[sizemode="maximized"]:not([inFullscreen]) .titlebar-max, 
+#main-window[sizemode="maximized"]:not([inFullscreen]) .titlebar-max:hover, 
+#main-window[sizemode="maximized"]:not([inFullscreen]) .titlebar-max:active {
+		list-style-image: url("../images/sport_restore.png")!important;
+	}
+
+#main-window[sizemode="maximized"]:not([inFullscreen]) .titlebar-max:-moz-lwtheme-brighttext{
+		filter: invert(1) !important; 
+	}					
+			
+	#main-window[sizemode="maximized"]:not([inFullscreen]) .titlebar-max {
+		-moz-image-region: rect(0,46px,28px,0px) !important;
+	}
+
+	#main-window[sizemode="maximized"]:not([inFullscreen]) .titlebar-max:hover {
+		-moz-image-region: rect(0,92px,28px,46px) !important;
+	}
+
+	#main-window[sizemode="maximized"]:not([inFullscreen]) .titlebar-max:active {
+		-moz-image-region: rect(0,138px,28px,92px) !important;
+	}
+}	
 	
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-close{
--moz-image-region:rect(0px, 23px, 19px, 0px) !important;
-background-position: 0 4px !important;
-}
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-close:hover{
-background-position: 51% 4px !important;
-}
-#main-window[tabsintitlebar="true"][sizemode="maximized"] .titlebar-close:active{
--moz-image-region:rect(0px, 69px, 19px, 46px) !important;
-background-position: 0 4px !important;
-}		
-	
-}
 	
 	
 	
@@ -611,7 +619,8 @@ background-position: 0 4px !important;
 :-moz-lwtheme-brighttext:-moz-any(#downloads-button,#urlbar-stop-button,#back-button, #forward-button, #home-button,#stop-button,#reload-button, #print-button, #downloads-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #fullscreen-button, #sync-button, #feed-button, #tabview-button, #social-share-button, #open-file-button, #find-button, #developer-button, #preferences-button, #privatebrowsing-button, #save-page-button, #add-ons-button, #history-panelmenu, #PanelUI-menu-button, #characterencoding-button, #email-link-button, #sidebar-button, #zoom-out-button, #zoom-reset-button, #zoom-in-button, #cut-button, #copy-button, #paste-button, #e10s-button, #panic-button, #web-apps-button, #webide-button, #loop-button, #pocket-button, #containers-panelmenu, #library-button) .toolbarbutton-icon,
 :-moz-lwtheme-brighttext:-moz-any(#appMenu-fxa-avatar,#appMenu-fxa-label,#appMenu-fxa-icon,#appMenu-new-window-button,#appMenu-private-window-button,#appMenuRestoreLastSession,#appMenu-fullscreen-button,#appMenu-zoomEnlarge-button,#appMenu-zoomReduce-button,#appMenu-cut-button,#appMenu-copy-button,#appMenu-paste-button,#appMenu-library-button,#appMenu-addons-button,#appMenu-preferences-button,#appMenu-print-button,#appMenu-find-button,#appMenu-developer-button,#appMenu-developer-button,#appMenu-customize-button,#appMenu-help-button,#restart-button,#appMenu-quit-button,#appMenu-logins-button ) .toolbarbutton-icon,
 :-moz-lwtheme-brighttext:-moz-any(#identity-icon,#githublisten1_rcheese_gmail_com-browser-action,#side-view_mozilla_org-browser-action,#maximizevideo_ettoolong-browser-action,#_4853d046-c5a3-436b-bc36-220fd935ee1d_-browser-action,#saladict_crimx_com-browser-action,#ublock0_raymondhill_net-browser-action,#xstyle_addon_firefoxcn_net-browser-action,#xstyle-amo_addon_firefoxcn_net-browser-action,#_46551ec9-40f0-4e47-8e18-8e5cf550cfb8_-browser-action,#_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action,#firefox_tampermonkey_net-browser-action,#_e4a8a97b-f2ed-450b-b12d-ee082ba24781_-browser-action,#_aecec67f-0d10-4fa7-b7c7-609a2db280cf_-browser-action,#_cd7e22de-2e34-40f0-aeff-cec824cbccac_-browser-action ,#_446900e4-71c2-419f-a6a7-df9c091e268b_-browser-action,#support_lastpass_com-browser-action,#_73239762-0d26-4b2e-82a5-49bfd13457f0_-browser-action, #headereditor-amo_addon_firefoxcn_net-browser-action, #_86cda07c-9d06-4365-a128-0ec6638846ad_-browser-action) .toolbarbutton-icon,
-.searchbar-search-button:-moz-lwtheme-brighttext{
+.searchbar-search-button:-moz-lwtheme-brighttext,
+#stop_reload_button:-moz-lwtheme-brighttext{
 	filter: invert(1) !important; 
 }
 
@@ -791,7 +800,7 @@ list-style-image: url("chrome://browser/skin/tracking-protection.svg")!important
 	background: -moz-image-rect(url("../images/toolbar.png"), 18, 198, 36, 180) !important;
 }
 
-#downloads-button[progress] > #downloads-indicator-anchor {
+#downloads-button[progress] > .toolbarbutton-badge-stack > #downloads-indicator-anchor {
 	background: -moz-image-rect(url("../images/toolbar.png"), 0, 198, 18, 180 ) center no-repeat !important;
 	background-size: 12px !important;
 }
@@ -865,11 +874,16 @@ toolbar :-moz-any(#back-button, #forward-button, #home-button, #stop-button, #re
 
 
 /* 图标间距离 Button distance */
+#main-window #nav-bar .toolbarbutton-icon,#downloads-button,#QuickOpen{	
+	margin: 0px 1px  !important;
+}
+
 #nav-bar :-moz-any(#home-button, #stop-button, #reload-button, #print-button, #downloads-button, #bookmarks-menu-button, #new-tab-button, #new-window-button, #fullscreen-button, #sync-button, #feed-button, #tabview-button, #social-share-button, #open-file-button, #find-button, #developer-button, #preferences-button, #privatebrowsing-button, #save-page-button, #add-ons-button, #history-panelmenu, #nav-bar-overflow-button, #PanelUI-menu-button, #characterencoding-button, #email-link-button, #sidebar-button, #zoom-out-button, #zoom-reset-button, #zoom-in-button, #cut-button, #copy-button, #paste-button, #e10s-button, #panic-button, #web-apps-button, #webide-button, #loop-button, #pocket-button, #containers-panelmenu, #library-button):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])):not(:-moz-any(#zoom-out-button, #zoom-reset-button, #zoom-in-button, #cut-button, #copy-button, #paste-button)) > .toolbarbutton-icon {
-	padding: 5px !important;
+	padding: 5px !important;     
 	margin: 0px 3px  !important;
 	border-radius: 0px !important;
 }
+
 
 /* 密度为触屏时的调整 fix for uidensity=touch */
 #main-window[uidensity=touch] #nav-bar-overflow-button .toolbarbutton-icon {
@@ -1195,33 +1209,33 @@ toolbarbutton.bookmark-item {
 
 
 /*----------------------------------图标隐藏 Hide Icons--------------------------------*/
-#pageAction-urlbar-side-view_mozilla_org,
 /*隐藏导航栏上的图标 Hide Navbar Icons*/
+#pageActionButton, 
+#pageAction-urlbar-side-view_mozilla_org,
 #identity-icon-label,#extension-icon,/*隐藏拓展页面标识*/
 #reader-mode-button,/*阅读模式图标*/
 #pageActionSeparator,
 #historydropmarker,
-#pageActionButton, 
 #notification-popup-box,/*隐藏插件使用权限图标*/
 .search-go-button/*点击搜索按钮隐藏*/ {
 	display: none !important;
 }
 
 
+
 /*隐藏定制面板里的非线性图标*/
 #wrapper-juraj_masiar_gmail_com_scrollanywhere-browser-action,
 #wrapper-_7be2ba16-0f1e-4d93-9ebc-5164397477a9_-browser-action,
-#wrapper-popup-tool_harytfw-browser-action,
 #wrapper-glitterdrag_harytfw-browser-action,
 #wrapper-_0ad88674-2b41-4cfb-99e3-e206c74a0076_-browser-action,
 #wrapper-michal_simonfy_gmail_com-browser-action,
-#wrapper-weibopic_ac-browser-action,
 #wrapper-download-filename-encoding_qw_linux-2g64_local-browser-action,
 #wrapper-_5f246670-f5e2-45ff-b183-be21cbeb065c_-browser-action,
 #wrapper-_1c26aa63-9254-43b0-ba27-7c3746171ad1_-browser-action,
 #wrapper-_4d7a31cf-6ff2-4302-af10-6278f5c65462_-browser-action {
 	display: none !important;
 }
+
 
 
 
@@ -1735,7 +1749,7 @@ menuitem[anonid="paste-and-go"] {
 
 /*页面右键菜单排序 Page Menu Order*/
 [label="多功能菜单"],
-#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_page, {
+#_3923146e-98cb-472b-9c13-f6849d34d6b8_-menuitem-_page{
 	-moz-box-ordinal-group: 0 !important;
 }
 
@@ -1766,6 +1780,7 @@ menuitem[anonid="paste-and-go"] {
 	-moz-box-ordinal-group: 4 !important;
 }
 
+
 [id*="_db722c0c-d10e-4e23-af56-bbb6c3b62cc5_-menuitem-"],
 [id*="openwith_darktrojan_net-menuitem-"],
 #context-saveimage,
@@ -1773,6 +1788,7 @@ menuitem[anonid="paste-and-go"] {
 	-moz-box-ordinal-group: 5 !important;
 }
 
+#weibo-picture-store_ext_hub_moe-menuitem-_menu_upload_image,
 #context-viewpartialsource-selection,
 #context-viewimageinfo {
 	-moz-box-ordinal-group: 6 !important;
@@ -1789,9 +1805,11 @@ menuitem[anonid="paste-and-go"] {
 	-moz-box-ordinal-group: 9 !important;
 }
 
+[id*="_107ba15f-f686-4ef5-97fc-2b63ccb473f3_-menuitem-"],
 [id*="_cd7e22de-2e34-40f0-aeff-cec824cbccac_-menuitem-"] {
 	-moz-box-ordinal-group: 10 !important;
 }
+
 
 [id*="mozilla_cc3_internetdownloadmanager_com-menuitem-"],
 #context-inspect {
@@ -1903,6 +1921,22 @@ menuitem[anonid="paste-and-go"] {
 [id="placesContext_open:newprivatewindow"] {
 	display: none;
 }
+
+
+/*隐藏地址栏页面动作*/
+#pageActionButton{opacity: 0.3 !important;background: transparent !important;}
+#pageActionButton:-moz-lwtheme-brighttext{opacity: 1 !important;}
+#pageActionPanel{max-width:250px !important;}
+
+#pageAction-panel-bookmark,
+#pageAction-panel-pinTab,
+#pageAction-panel-bookmarkSeparator,
+#pageAction-panel-sendToDevice,
+#pageAction-panel-_cd7e22de-2e34-40f0-aeff-cec824cbccac_{
+	display: none;
+}
+
+
 
 
 
@@ -2609,16 +2643,23 @@ menuitem[type="checkbox"]:active>.menu-iconic-left {
 		font-family: "Segoe ui",sans-serif !important;
 	}
 	
-	#urlbar-results{
+	.urlbarView{
 		border-left:1px solid #CCCCCC;
 		border-right:1px solid #CCCCCC;
 	}
-	#urlbar-results:-moz-lwtheme-brighttext{
+	
+	.urlbarView:-moz-lwtheme-brighttext{
    border:none !important;
 }
 	}
 		
-  
+
+/*地址栏下拉菜单切换搜索引擎模块*/
+.search-panel-one-offs-header {display: none !important;}
+.urlbarView .search-panel-one-offs{margin-left: -23px !important;}
+.search-one-offs{border-top: 1px solid #eee !important;}
+.search-one-offs:-moz-lwtheme-brighttext{border-top: 1px solid #444 !important;}
+
 /*隐藏地址栏搜索前进按钮*/
 .urlbar-go-button {
 	display: none !important;
