@@ -5,8 +5,10 @@
 // @namespace   https://www.runningcheese.com
 // @include        main
 // @license         MIT License
-// @compatibility  Firefox 67+
+// @compatibility  Firefox 71+
 // @charset        UTF-8
+// @version        v2019.12.20 for 71+ 
+// @version        v2019.09.23 for 70+ 
 // @version        v2019.05.25 for 67+ 
 // @version        v2018.12.19 for 64+ 
 // @version        v2018.11.12 
@@ -36,7 +38,7 @@ function jsonToDOM(json, doc, nodes) {
     function tag(name, attr) {
         if (Array.isArray(name)) {
             var frag = doc.createDocumentFragment();
-            Array.forEach(arguments, function (arg) {
+            Array.prototype.forEach.call(arguments, function (arg) {
                 if (!Array.isArray(arg[0]))
                     frag.appendChild(tag.apply(null, arg));
                 else
@@ -47,7 +49,7 @@ function jsonToDOM(json, doc, nodes) {
             return frag;
         }
 
-        var args = Array.slice(arguments, 2);
+        var args = Array.prototype.slice.call(arguments, 2);
         var vals = namespace(name);
         var elem = doc.createElementNS(vals[0] || defaultNamespace, vals[1]);
 
@@ -123,7 +125,7 @@ CustomizableUI.createWidget({
                                 //['xul:menuitem', {label: 'IE浏览器',oncommand: 'QuickOpenIE();',class:'menuitem-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABEElEQVQ4jZXSnVuDYRQG8B8EQTAIgkEQBMEgDIIwGA4Hg0EYBMH+gyAIh0EwHIRBEARBEAzDwWAweIP3bD17rmd9nOu64X3ec9/3+eJ/cYpL9DHAwabEHZyjG7jAbQik0SsRHzBHlWGBYebaSclNvEfyFK8FkQoznCSGqxhGwmP0t9ggsBTZS8n7QbjHVSQ9oRUu3UJbN6lAB2O0E+d+CC/xnAnMU4F2uM1+KLuEtRmMs5+fmPyCZlpBrn5mPY7Ud5BiFXl/FUZoJOS8vdGS3PC9+1xkirfC+yJmhnoDFQ7Vq/vL8Ppp+YMYCPVUr+O7RPyQna9Qm2RvLfWh9MKgi2Ns5WTYxot6bXfhsFtKLMUX/+qC1cGn0mkAAAAASUVORK5CYII='}],
                                 //['xul:menuseparator', {}],
                                ['xul:menuitem', {label: '关联记事本',oncommand: 'SetNotepad2();',class:'menuitem-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAPklEQVQ4jWNgoCL4TyQWwGcAIQtgNFZDiDUAp1piDEDGBA3A6VdCBhAKRIIGEAOGqAuINoBiFwysAaRg6gAAE7tI6EZZDKkAAAAASUVORK5CYII='}],
-                                ['xul:menuitem', {label: '内存控制',oncommand: 'FirefoxMemoryControl();',class:'menuitem-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAI0lEQVQ4jWNgGNbgPxQPDgPIMoxmBuA1jBhNowZQIX0MMgAAHXQ5x38zRc4AAAAASUVORK5CYII='}],
+                                //['xul:menuitem', {label: '内存控制',oncommand: 'FirefoxMemoryControl();',class:'menuitem-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAI0lEQVQ4jWNgGNbgPxQPDgPIMoxmBuA1jBhNowZQIX0MMgAAHXQ5x38zRc4AAAAASUVORK5CYII='}],
                                 ['xul:menuseparator', {}],
 																['xul:menuitem', {label: '网络设置',oncommand: 'QuickOpenInetcpl();',class:'menuitem-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABYUlEQVQ4ja2SL28CQRDFf7ebzKWChKQJokmTGgwCgUHQoFtT06TmHKKSBEWCQuEwKASCD4BBkCD6AapQoFCnTqAqcRU8YPlX1ZdcsjN7783M24FL3AM9M1uZ2dbMtsA30AFyV/4/wUccxxnQB6rAHZD33jeApcRqt8hvQCqBuUgF59xYuTaQOOfGEj5BAcjMbAU8SWxuZtsoimZh6865LrDQqCfJoS5egXIcx5lzrivRIWBAW/FAvuT3GgvN9gIsgTWQ6C6n9lu6e1B+ou5A5uznWuvzwYhN5R4V1+VLLRTIAXUgBebARG1/npFrQAb0QhOXQBmYyn0DOjqnMhagqsodFTlgwO7ts2CUROSi4oqMHau7VihQBDYHU44LVVJcVtwDRsCG8BmFkWZ9PiOXFL+r+objC12gr3EGZ+TEe9/QuXmLDICqjLRcqcb6AaZA5U+y8BVF0UwCdXaLc7H7/4Zf1MVXuPDScn0AAAAASUVORK5CYII='}],
                                //['xul:menuitem', {label: 'Hosts更新',oncommand: 'HostsUpdate();',class:'menuitem-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAAC1JREFUCNdjAAL2BwwsCgysC4AkiM3YwMD/gYFDAITq6hicnBiiooAkkA1UCwC3Lwgg+P+xLwAAAABJRU5ErkJggg=='}],
@@ -155,7 +157,7 @@ CustomizableUI.createWidget({
                                ['xul:menuitem', {label: '标签页',oncommand:'Tabplusjs();var x = gBrowser.selectedTab._tPos + 1; gBrowser.moveTabTo(gBrowser.selectedTab =gBrowser.addTab("https://tva1.sinaimg.cn/large/7a6a15d5gy1g03gsvdkebj20l70dyn11.jpg", {triggeringPrincipal: gBrowser.contentPrincipal}), x);',class:'menuitem-iconic', tooltiptext: 'Tabplus.uc.js\n左键：编辑配置',image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAVElEQVQ4jc2Ruw0AIAgFr3IFJ3YB13EkhtBGEiuCnxheQgE8DhIgihJQAQG6I2T6kwIq0IDsXJinv2hBNoZXiGjSDaOrFw9gfeDPBbEAlt4CTuNOA8bzPo9tYBnVAAAAAElFTkSuQmCC'}],
                                ['xul:menuitem', {label: '快捷键',oncommand:'KeyChanger.edit(KeyChanger.file); var x = gBrowser.selectedTab._tPos + 1; gBrowser.moveTabTo(gBrowser.selectedTab =gBrowser.addTab("https://tva1.sinaimg.cn/large/7a6a15d5gy1fx5iyfagicj215o0ixdli.jpg", {triggeringPrincipal: gBrowser.contentPrincipal}), x);',onclick:'if (event.button == 2) { event.preventDefault(); setTimeout(function(){ KeyChanger.makeKeyset(true); }, 10);}',class:'menuitem-iconic', tooltiptext: 'keychanger.js\n左键：编辑配置\n右键：重载配置',image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAACVBMVEUAAAAAAAAAAACDY+nAAAAAAnRSTlMAxOqay5EAAAAiSURBVAjXY0ADUqtWrWRQYGBgYlACAgyW1ioIC0xAFKMCABYYBwHv+ZZuAAAAAElFTkSuQmCC'}],
                                 ['xul:menuitem', {label: '鼠标手势',oncommand: 'MouseGesturesjs();var x = gBrowser.selectedTab._tPos + 1; gBrowser.moveTabTo(gBrowser.selectedTab =gBrowser.addTab("https://tva1.sinaimg.cn/large/7a6a15d5gy1fx5j1647izj20k00hnwfq.jpg", {triggeringPrincipal: gBrowser.contentPrincipal}), x);',tooltiptext: 'MouseGestures.uc.js\n左键：编辑配置',class:'menuitem-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAkFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADDIYgjAAAAMHRSTlMA6kEK4JpdD/7v2su9q5Z5b05FJyAbFAP208K3r6SAZzsxBtbOxbmxpp6QhWJaWSwB0NSsAAAAm0lEQVQY00WOhw7DIAxEzcreTchuRvf+/7+rQYRY4ux7xtKBrqL3vTZ1wVSdBB9ZL4/gYMAzYgAhgMOl9jNXfz18r1GD/g0GMFKiuk04YUdLBc+w00s+EnLugiZMszuCb4xSzfTHcBnhnA9gq7iiLO0OJqFi+dKC2FEqjpuvfJ2+JFvkwawcrskquhUMIUleZKeYgT1Ob1FC9fgHj9IH8vwTbm8AAAAASUVORK5CYII='}],
-                              ['xul:menuitem', {label: '鼠标按键',oncommand:'ButtonEventListener();var x = gBrowser.selectedTab._tPos + 1; gBrowser.moveTabTo(gBrowser.selectedTab =gBrowser.addTab("https://tva1.sinaimg.cn/large/7a6a15d5gy1g72cvr10wwj20k00f3q5d.jpg", {triggeringPrincipal: gBrowser.contentPrincipal}), x);',class:'menuitem-iconic', tooltiptext: 'awesomebookmark.uc.js\n左键：编辑配置',image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAlUlEQVQ4jWNgoAJYzsDAcB8H/o1Hbj/MgP9E0q/RaJg4w38i8Gso/R6Nz8DAwMCwnoGBQQEHtsEjNxlmwHEGBoYEHHg2HrnNMAPmM5AHGogxQANZITkGMDBAAuw01DCyDNjMAAnx7wwMDA7kGFADNeA6uS7QgOLzUMNINgDZoBxKDEAHcAM2M0AyBjb8Ho/cYTItRgUAX/dLM5/IfscAAAAASUVORK5CYII='}],
+                                ['xul:menuitem', {label: '鼠标按键',oncommand:'ButtonEventListener();var x = gBrowser.selectedTab._tPos + 1; gBrowser.moveTabTo(gBrowser.selectedTab =gBrowser.addTab("https://tva1.sinaimg.cn/large/7a6a15d5gy1g72cvr10wwj20k00f3q5d.jpg", {triggeringPrincipal: gBrowser.contentPrincipal}), x);',class:'menuitem-iconic', tooltiptext: 'awesomebookmark.uc.js\n左键：编辑配置',image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAlUlEQVQ4jWNgoAJYzsDAcB8H/o1Hbj/MgP9E0q/RaJg4w38i8Gso/R6Nz8DAwMCwnoGBQQEHtsEjNxlmwHEGBoYEHHg2HrnNMAPmM5AHGogxQANZITkGMDBAAuw01DCyDNjMAAnx7wwMDA7kGFADNeA6uS7QgOLzUMNINgDZoBxKDEAHcAM2M0AyBjb8Ho/cYTItRgUAX/dLM5/IfscAAAAASUVORK5CYII='}],
                                ['xul:menuseparator', {}],
                                ['xul:menuitem', {label: '偏好设置',oncommand: 'QuickOpenUserjs();',tooltiptext: 'user.js',class:'menuitem-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAR0lEQVQ4jWNgoCL4TwA3EGMAPrnrhAwhZIA4IUMIGcBAyJD/SDQyxiaG1TJ8LiBKLdUMIBSdtHcBxQbgczp9XECRAaRg6gAArMpGck8h/nAAAAAASUVORK5CYII='}],
                                ['xul:menuitem', {label: '高级设置',oncommand: 'var x = gBrowser.selectedTab._tPos + 1; gBrowser.moveTabTo(gBrowser.selectedTab =gBrowser.addTrustedTab("about:config", {triggeringPrincipal: gBrowser.contentPrincipal}), x); ',tooltiptext: 'about:config',class:'menuitem-iconic', image:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAHklEQVQ4jWNgGFbgPxQjs/FhvAYMUTAaBqNhQDYAAG8lJtrslB7sAAAAAElFTkSuQmCC'}],
@@ -177,7 +179,7 @@ CustomizableUI.createWidget({
 
 
 //定义图标
-var cssStr = '@-moz-document url("chrome://browser/content/browser.xul"){'
+var cssStr = '@-moz-document url("chrome://browser/content/browser.xul"), url(chrome://browser/content/browser.xhtml){'
 		 + '#QuickOpen .toolbarbutton-icon {'
 		 + 'list-style-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2UlEQVQ4jbWRIRKDMBREn8NhOoPrDLoqtifgAnG9AUfgAJU9SS2uAoOt6gWqIiqjqlrBMhNChoLozjA/2ewu/yfwRxRAC3jVYmtAD5yBXLXfYj4BndZ71U78KtwAK9NLf7fiV8HLMLY9Bvg1ZgM8gSoKqMSbJXMFOOACZDKOI2TinXQzWB0eI76M9kfpbBzgf7UXwJC4j0+w3iXCjPiUfkI0DHM7htlbhud04pulgLsMJXBQmw/VUl8r3SzgDdTBPpdxDMqDs1r6CeLbh+HZvOoa/QwZcFVN4gv6nzt18jn5zAAAAABJRU5ErkJggg==)'
 		 + '}}';
@@ -301,3 +303,13 @@ var path ="..\\..\\System32\\drivers\\etc";	var file = Components.classes["@mozi
  function OpenProfilesManage() {
 				var path ="..\\..\\..\\Firefox Profiles.lnk";	var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsIFile);file.initWithPath(path.replace(/^\./, Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("ProfD", Components.interfaces.nsIFile).path));file.launch();
 };
+
+
+
+
+
+
+
+
+
+

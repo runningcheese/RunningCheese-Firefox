@@ -1,6 +1,7 @@
 ﻿// ==UserScript==
 // @name            SidebarPlus.uc.js
 // @description     侧边栏按钮以及功能增强
+// @include         chrome://browser/content/browser.xhtml
 // @include         chrome://browser/content/browser.xul
 // @charset         UTF-8
 // @note            v2018-12-19 fix for 64+, by runningcheese
@@ -48,9 +49,9 @@ break;
 }
 });
 
-	var cssStr = '@-moz-document url("chrome://browser/content/browser.xul"){'
+	var cssStr = '@-moz-document url("chrome://browser/content/browser.xul"), url(chrome://browser/content/browser.xhtml){'
 		 + '#Sidebar-button .toolbarbutton-icon {'
-		 + 'list-style-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAAAAAAPCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADm16n4AAAAC3RSTlMA7AoynI1/byniVqVdBlsAAAA4SURBVAjXY8AEzIG7RZdKbwxm4E5WMttmpJzNwA0U3cAApChlOO4W2SK90ZuBs0KpfXuTRiWm5QCyBRE/SPD7PAAAAABJRU5ErkJggg==)'
+		 + 'list-style-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAX0lEQVQ4je3SsQ2AMBAEwYnphNTF0AYlUAEduDrH9GCSBwKEcYw46ZJbafXB85kkrNhQo1tsU4OlQ1CxxDBEU2xv7BQ8pYv9gs8Isvu35Q4GCmaMrm8bY6sNVhrX9WUH9Zk60HZ5GFkAAAAASUVORK5CYII=)'
 		 + '}}';
 	var sss = Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService);
 	var ios = Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService);

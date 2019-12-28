@@ -4,7 +4,9 @@
 // @description          自定义鼠标手势
 // @author               紫云飞&黒仪大螃蟹
 // @homepageURL          http://www.cnblogs.com/ziyunfei/archive/2011/12/15/2289504.html
+// @include              chrome://browser/content/browser.xhtml
 // @include              chrome://browser/content/browser.xul
+// @version              v2019-09-09 fix 70+  
 // @charset              UTF-8
 // ==/UserScript==
 (() => {
@@ -42,7 +44,7 @@
 
 
 			'DL': {name: '添加/移除书签', cmd:  function() {document.getElementById("Browser:AddBookmarkAs").doCommand();	} },
-			'DR': {name: '关闭当前标签', cmd: function(event) {gBrowser.removeCurrentTab();}},
+			'DR': {name: '关闭当前标签', cmd: function(event) {if (gBrowser.selectedTab.getAttribute("pinned") !== "true") { gBrowser.removeCurrentTab();}}},
 
 
 			'RU': {name: '转到页首', cmd: () => goDoCommand('cmd_scrollTop')},
@@ -72,7 +74,7 @@
 
 		   'LDL': {name: '关闭左侧标签页', cmd: function(event) {	for (let i = gBrowser.selectedTab._tPos - 1; i >= 0; i--) if (!gBrowser.tabs[i].pinned){ gBrowser.removeTab(gBrowser.tabs[i], {animate: true});}}},
 		   'RDR': {name: '关闭右侧标签页', cmd: function(event) {gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);	gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);gBrowser.removeTabsToTheEndFrom(gBrowser.selectedTab);}},
-
+		   'RDLRDL': {name: '关闭其他标签页', cmd: function(event) {gBrowser.removeAllTabsBut(gBrowser.selectedTab);}},
 
 			'LDRUL': {name: '打开鼠标手势设置文件',  cmd: function(event) {FileUtils.getFile('UChrm',['SubScript', 'MouseGestures.uc.js']).launch();}},
 			'RLD': {name: '将当前窗口置顶',  cmd: function(event) {TabStickOnTop();}},
@@ -95,6 +97,7 @@
 			switch (event.type) {
 			case 'mousedown':
 				if (event.button == 2) {
+					(gBrowser.mPanelContainer || gBrowser.tabpanels).addEventListener("mousemove", this, false);
 					this.isMouseDownR = true;
 					this.hideFireContext = false;
 					[this.lastX, this.lastY, this.directionChain] = [event.screenX, event.screenY, ''];
@@ -113,7 +116,7 @@
 					if (distX > distY) direction = subX < 0 ? 'L' : 'R';
 					else direction = subY < 0 ? 'U' : 'D';
 					if (!this.xdTrailArea) {
-						this.xdTrailArea = document.createElement('hbox');
+						this.xdTrailArea = document.createXULElement('hbox');
 						let canvas = document.createElementNS('http://www.w3.org/1999/xhtml', 'canvas');
 						canvas.setAttribute('width', window.screen.width);
 						canvas.setAttribute('height', window.screen.height);
@@ -129,8 +132,8 @@
 						this.xdTrailAreaContext.lineCap = 'round';
 						this.xdTrailAreaContext.lineWidth = 2;
 						this.xdTrailAreaContext.beginPath();
-						this.xdTrailAreaContext.moveTo(this.lastX - gBrowser.selectedBrowser.boxObject.screenX, this.lastY - gBrowser.selectedBrowser.boxObject.screenY);
-						this.xdTrailAreaContext.lineTo(event.screenX - gBrowser.selectedBrowser.boxObject.screenX, event.screenY - gBrowser.selectedBrowser.boxObject.screenY);
+						this.xdTrailAreaContext.moveTo(this.lastX - gBrowser.selectedBrowser.screenX, this.lastY - gBrowser.selectedBrowser.screenY);
+						this.xdTrailAreaContext.lineTo(event.screenX - gBrowser.selectedBrowser.screenX, event.screenY - gBrowser.selectedBrowser.screenY);
 						this.xdTrailAreaContext.closePath();
 						this.xdTrailAreaContext.stroke();
 						this.lastX = event.screenX;
@@ -181,7 +184,6 @@
 	};
 	ucjsMouseGestures.init();
 })();
-
 
 
 

@@ -13,7 +13,7 @@
 // @note           2018.1.25.2 Firefox59+ 修复
 // ==/UserScript==
 
-location == "chrome://browser/content/browser.xul" && (function () {
+location.href.startsWith('chrome://browser/content/browser.x') && (function () {
     var useScraptchpad = true;  // 如果不存在编辑器，则使用代码片段速记器，否则设置编辑器路径
     //let {classes: Cc, interfaces: Ci, utils: Cu, results: Cr} = Components;
     window.KeyChanger = {
@@ -41,12 +41,12 @@ location == "chrome://browser/content/browser.xul" && (function () {
             var keyset = document.getElementById('keychanger-keyset');
             if (keyset)
                 keyset.parentNode.removeChild(keyset);
-            keyset = document.createElement('keyset');
+            keyset = document.createXULElement('keyset');
             keyset.setAttribute('id', 'keychanger-keyset');
             keyset.appendChild(keys);
 
             var df = document.createDocumentFragment();
-            Array.slice(document.getElementsByTagName('keyset')).forEach(function (elem) {
+            Array.prototype.slice(document.getElementsByTagName('keyset')).forEach(function (elem) {
                 df.appendChild(elem);
             });
             var insPos = document.getElementById('mainPopupSet');
@@ -152,7 +152,7 @@ location == "chrome://browser/content/browser.xul" && (function () {
                             break;
                     }
                 }
-                let elem = document.createElement('key');
+                let elem = document.createXULElement('key');
                 if (modifiers !== '')
                     elem.setAttribute('modifiers', modifiers.slice(0, -1));
                 if (key)
@@ -178,7 +178,7 @@ location == "chrome://browser/content/browser.xul" && (function () {
             return dFrag;
         },
         createMenuitem: function () {
-            var menuitem = document.createElement('menuitem');
+            var menuitem = document.createXULElement('menuitem');
             menuitem.setAttribute('id', 'toolsbar_KeyChanger_rebuild');
             menuitem.setAttribute('label', 'KeyChanger');
             menuitem.setAttribute('tooltiptext', '左键：重载配置\n右键：编辑配置');
@@ -284,7 +284,7 @@ location == "chrome://browser/content/browser.xul" && (function () {
             }
         },
         log: function () {
-            Services.console.logStringMessage("[KeyChanger] " + Array.slice(arguments));
+            Services.console.logStringMessage("[KeyChanger] " + Array.prototype.slice(arguments));
         },
     };
 

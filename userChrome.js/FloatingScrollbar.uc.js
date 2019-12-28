@@ -1,7 +1,8 @@
 // ==UserScript==
-// @name           FloatingScrollbar.uc.js
-// @namespace   nightson1988@gmail.com
+// @name          FloatingScrollbar.uc.js
+// @namespace  nightson1988@gmail.com
 // @include        main
+// @version        fix 70+
 // @version        fix 67+，修正在微信网页版，暴力猴编辑器上的滚动条错误 by @runningcheese
 // @version        0.0.3
 // @note           Thanks to Griever(https://github.com/Griever/userChromeJS/blob/master/SmartScrollbar.uc.js) and Paul Rouget(https://gist.github.com/4003205)
@@ -68,14 +69,7 @@
     var sss = Cc['@mozilla.org/content/style-sheet-service;1'].getService(Ci.nsIStyleSheetService);
     var uri = makeURI('data:text/css;charset=UTF=8,' + encodeURIComponent(css));
 
-    var p = document.getElementById('devToolsSeparator');
-    var m = document.createElement('menuitem');
-    m.setAttribute('label', "Schwebende Scrollbar");
-    m.setAttribute('type', 'checkbox');
-    m.setAttribute('autocheck', 'false');
-    m.setAttribute('checked', enabled);
-    p.parentNode.insertBefore(m, p);
-    m.addEventListener('command', command, false);
+  
 
     if (enabled) {
         sss.loadAndRegisterSheet(uri, sss.AGENT_SHEET);

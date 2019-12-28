@@ -132,7 +132,7 @@
 
  */
 
-location == "chrome://browser/content/browser.xul" && (function (css) {
+location.href.startsWith('chrome://browser/content/browser.x') && (function (css) {
 
     var useScraptchpad = true;  // 如果不存在编辑器，则使用代码片段速记器，否则设置编辑器路径
     var enableFileRefreshing = false;  // 打开右键菜单时，检查配置文件是否变化，可能会减慢速度
@@ -483,7 +483,7 @@ location == "chrome://browser/content/browser.xul" && (function (css) {
             if (isAlert) this.alert(U("配置已经重新载入"));
         },
         newGroupMenu: function (menuObj) {
-            var group = document.createElement('menugroup');
+            var group = document.createXULElement('menugroup');
             Object.keys(menuObj).map(function (key) {
                 var val = menuObj[key];
                 if (key === "_items") return;
@@ -508,8 +508,8 @@ location == "chrome://browser/content/browser.xul" && (function (css) {
             if (menuObj._group) {
                 return this.newGroupMenu(menuObj);
             }
-            var menu = document.createElement("menu");
-            var popup = menu.appendChild(document.createElement("menupopup"));
+            var menu = document.createXULElement("menu");
+            var popup = menu.appendChild(document.createXULElement("menupopup"));
             for (let key in menuObj) {
                 let val = menuObj[key];
                 if (key === "_items") continue;
@@ -575,20 +575,20 @@ location == "chrome://browser/content/browser.xul" && (function (css) {
             // label == separator か必要なプロパティが足りない場合は区切りとみなす
             if (obj.label === "separator" ||
                 (!obj.label && !obj.image && !obj.text && !obj.keyword && !obj.url && !obj.oncommand && !obj.command)) {
-                menuitem = document.createElement("menuseparator");
+                menuitem = document.createXULElement("menuseparator");
             } else if (obj.oncommand || obj.command) {
                 let org = obj.command ? document.getElementById(obj.command) : null;
                 if (org && org.localName === "menuseparator") {
-                    menuitem = document.createElement("menuseparator");
+                    menuitem = document.createXULElement("menuseparator");
                 } else {
-                    menuitem = document.createElement("menuitem");
+                    menuitem = document.createXULElement("menuitem");
                     if (obj.command)
                         menuitem.setAttribute("command", obj.command);
                     if (!obj.label)
                         obj.label = obj.command || obj.oncommand;
                 }
             } else {
-                menuitem = document.createElement("menuitem");
+                menuitem = document.createXULElement("menuitem");
                 // property fix
                 if (!obj.label)
                     obj.label = obj.exec || obj.keyword || obj.url || obj.text;
@@ -863,7 +863,7 @@ location == "chrome://browser/content/browser.xul" && (function (css) {
                     return ""
                 },
             };
-            var tab = document.popupNode && document.popupNode.localName == "tab" ? document.popupNode : null;
+            let tab = document.popupNode ? TabContextMenu.contextTab : null;
             var bw = (tab && tab.linkedBrowser)||context.browser;
 
             return text.replace(this.regexp, function (str) {
@@ -967,7 +967,7 @@ location == "chrome://browser/content/browser.xul" && (function (css) {
                 img.onload = function () {
                     var width = this.naturalWidth,
                         height = this.naturalHeight;
-                    canvas = document.createElementNS(NSURI, "canvas");
+                    canvas = document.createXULElementNS(NSURI, "canvas");
                     canvas.width = width;
                     canvas.height = height;
                     var ctx = canvas.getContext("2d");
@@ -1173,7 +1173,7 @@ location == "chrome://browser/content/browser.xul" && (function (css) {
     };
 
     function $C(name, attr) {
-        var el = document.createElement(name);
+        var el = document.createXULElement(name);
         if (attr) Object.keys(attr).forEach(function (n) {
             el.setAttribute(n, attr[n])
         });
