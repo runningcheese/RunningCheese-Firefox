@@ -583,7 +583,8 @@ panel[type="arrow"][animate],#BMB_bookmarksPopup {
 }
 
 #sidebar-button {
-	-moz-image-region: rect(0, 684px, 18px, 666px);
+/*-moz-image-region: rect(0, 684px, 18px, 666px);*/
+	-moz-image-region: rect(0, 630px, 18px, 612px);
 }
 
 #panic-button {
@@ -1955,6 +1956,15 @@ menuitem[anonid="paste-and-go"] {
 
 
 /*---------------------文本替换修改 Text Replace------------------*/
+#_000a756d-5efb-4897-b40c-57ef8c5caa59_-menuitem-_paste-enter .menu-iconic-text {
+	display: none !important;
+}
+
+#_000a756d-5efb-4897-b40c-57ef8c5caa59_-menuitem-_paste-enter:after {
+	content: "粘贴并前往";
+	position: absolute !important;
+	margin-left: -19px !important;
+}
 
 #_bc21b9a1-3ad6-4b00-bca4-ef5b7e21253b_-menuitem-_BTH .menu-iconic-text {
 	display: none !important;
