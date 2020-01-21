@@ -1598,7 +1598,7 @@
   "enableTimeoutCancel": false,
   "exclusionRules": [],
   "extraCommands": false,
-  "firefoxVersion": 68,
+  "firefoxVersion": 72,
   "imageReferrer": false,
   "keepui": false,
   "maxProcessSize": 5,
