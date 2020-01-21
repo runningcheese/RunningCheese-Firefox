@@ -19,7 +19,7 @@
   "notifyOnSuccess": false,
   "notifyOnLinkPreferred": true,
   "page": false,
-  "paths": "Images/:date: // (alias: 按当前日期分类)\nImages/Desktop// (alias: 保存到桌面)\nImages/:pagedomain: // (alias: 按当前网站分类)\n---\nImages\nImages/@Beautiful  // (alias: Images/Beautiful)\nImages/@Cute  // (alias: Images/Cute)\nImages/@Funny  // (alias: Images/Funny)\nImages/@Knowledge // (alias: Images/Knowledge)\nImages/@Creative // (alias: Images/Creative)",
+  "paths": "Images/:date: // (alias: 按当前日期分类)\nImages/@@Inbox // (alias: 保存到 Inbox)\nImages/Desktop// (alias: 保存到 桌面)\nImages/:pagedomain: // (alias: 按当前网站分类)\n---\nImages/\nImages/@Beautiful  // (alias: Images/Beautiful)\nImages/@Cute  // (alias: Images/Cute)\nImages/@Funny  // (alias: Images/Funny)\nImages/@Knowledge // (alias: Images/Knowledge)\n",
   "prompt": false,
   "promptIfNoExtension": true,
   "promptOnFailure": true,

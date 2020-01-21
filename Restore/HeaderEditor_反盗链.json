@@ -478,5 +478,6 @@
 			"group": "反盗链"
 		}
 	],
-	"receiveHeader": []
+	"receiveHeader": [],
+	"receiveBody": []
 }

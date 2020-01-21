@@ -25,7 +25,7 @@
 			"group": "重定向"
 		},
 		{
-			"enable": true,
+			"enable": false,
 			"name": "FT中文网 >> 全文",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -180,8 +180,21 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://www.wikiwand.com/zh-cn/$2"
+		},
+		{
+			"enable": true,
+			"name": "简书去跳转",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/links\\.jianshu\\.com\\/go\\?to=(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "$1",
+			"group": "重定向"
 		}
 	],
 	"sendHeader": [],
-	"receiveHeader": []
+	"receiveHeader": [],
+	"receiveBody": []
 }
