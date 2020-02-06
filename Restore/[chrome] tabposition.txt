@@ -1,0 +1,1 @@
+{"actb":"activebutton4","exlnk":true,"newt":"false","onactvtb":"onactbutton1","osel":"openbutton3","popt":"false","loadingurl":[{"sel":"last","url":"chrome-extension://"},{"sel":"last","url":"chrome://"}],"openurl":[],"expurl":[],"expexlnkurl":[]}

@@ -745,15 +745,6 @@
         "selection"
       ],
       "id": 36
-    },
-    {
-      "type": "link",
-      "name": "Runningcheese",
-      "address": "https://www.runningcheese.com/wp-comments-post.php?comment_post_ID=8964&comment_parent=0&_wp_unfiltered_html_comment=4bef4ba509&comment=",
-      "contexts": [
-        "selection"
-      ],
-      "id": 113
     }
   ],
   "sMenuLabel": "Find '%s' using ...",

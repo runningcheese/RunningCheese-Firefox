@@ -2,24 +2,34 @@
   "animation": false,
   "applyBrowserTheme": false,
   "autoAttachOnNewTabButtonMiddleClick": 3,
+  "autoGroupNewTabsFromPinned": false,
   "closeParentBehaviorMode": 1,
   "collapseExpandSubtreeByDblClick": true,
-  "configsVersion": 7,
+  "configsVersion": 8,
   "context_bookmarkTree": false,
   "context_closeTree": false,
   "context_collapseAll": false,
   "context_expandAll": false,
   "context_groupTabs": false,
+  "context_lockCollapsed": false,
   "context_reloadTree": false,
   "faviconizePinnedTabs": false,
   "insertNewChildAt": -1,
-  "notifiedFeaturesVersion": 3,
+  "lastConfirmedToCloseTabs": 1572977041459,
+  "migratedBookmarkUrls": [
+    "moz-extension://2797379f-4676-495a-9f7f-dc869d4be856/resources/group-tab.html",
+    "moz-extension://2797379f-4676-495a-9f7f-dc869d4be856/options/options.html",
+    "moz-extension://2797379f-4676-495a-9f7f-dc869d4be856/resources/startup.html",
+    "moz-extension://2797379f-4676-495a-9f7f-dc869d4be856/tests/runner.html"
+  ],
+  "notifiedFeaturesVersion": 4,
   "optionsExpandedSections": [
-    "section-debug",
-    "section-advanced",
-    "section-newTab"
+    "section-addons",
+    "section-debug"
   ],
   "showAutoGroupOptionHint": false,
   "simulateSVGContextFill": false,
-  "style": "highcontrast"
+  "style": "plain",
+  "treeDoubleClickBehavior": 1,
+  "warnOnCloseTabs": false
 }
