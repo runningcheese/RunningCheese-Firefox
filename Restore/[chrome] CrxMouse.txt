@@ -282,7 +282,7 @@
     "scrollgesture": false,
     "strokegesture": false
   },
-  "optedout": false,
+  "optedout": true,
   "others": {
     "tuilink": false
   },
