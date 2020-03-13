@@ -5,13 +5,14 @@
   "autoGroupNewTabsFromPinned": false,
   "closeParentBehaviorMode": 1,
   "collapseExpandSubtreeByDblClick": true,
-  "configsVersion": 8,
+  "configsVersion": 9,
   "context_bookmarkTree": false,
   "context_closeTree": false,
   "context_collapseAll": false,
+  "context_collapseTreeRecursively": false,
   "context_expandAll": false,
+  "context_expandTreeRecursively": false,
   "context_groupTabs": false,
-  "context_lockCollapsed": false,
   "context_reloadTree": false,
   "faviconizePinnedTabs": false,
   "insertNewChildAt": -1,
@@ -25,7 +26,8 @@
   "notifiedFeaturesVersion": 4,
   "optionsExpandedSections": [
     "section-addons",
-    "section-debug"
+    "section-debug",
+    "section-shortcuts"
   ],
   "showAutoGroupOptionHint": false,
   "simulateSVGContextFill": false,
