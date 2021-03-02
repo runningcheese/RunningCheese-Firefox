@@ -1,0 +1,366 @@
+{
+  "cfgver": "4.4.4",
+  "cursor": {
+    "img": null,
+    "scale": 1
+  },
+  "drag": {
+    "ddirect": false,
+    "ddirectcolor": "4991fc",
+    "ddirectopa": 0.9,
+    "dholdkey": "alt",
+    "dragimage": true,
+    "draginput": true,
+    "draglink": true,
+    "dragtext": true,
+    "dragui": true,
+    "dstroke": false,
+    "dstrokecolor": "0066ff",
+    "dstrokeopa": 0.8,
+    "dstrokewidth": 5,
+    "dtooltip": false,
+    "dtooltipcolor": "120310",
+    "dtooltipopa": "1",
+    "dtooltipwidth": 18,
+    "image": [
+      {
+        "action": "I_copyurl",
+        "direct": "L"
+      },
+      {
+        "action": "I_open",
+        "direct": "R",
+        "moreDes": "打开图片(新标签页,前台)",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront"
+      },
+      {
+        "action": "I_save",
+        "direct": "D"
+      },
+      {
+        "direct": "U",
+        "action": "I_search",
+        "moreDes": "使用%name搜索图片",
+        "moreIsearch": "sgoogleimage",
+        "moreTarget": "newfront",
+        "morePosition": "chrome",
+        "morePinned": "unpinned"
+      }
+    ],
+    "imgfirst": "ctrl",
+    "imgfirstcheck": false,
+    "link": [
+      {
+        "direct": "L",
+        "action": "L_copytext"
+      },
+      {
+        "action": "L_open",
+        "direct": "R",
+        "moreDes": "打开链接(新标签页,后台)",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newback"
+      },
+      {
+        "direct": "D",
+        "action": "L_open",
+        "moreDes": "打开链接",
+        "moreTarget": "curfront",
+        "morePosition": "chrome",
+        "morePinned": "unpinned"
+      },
+      {
+        "direct": "U",
+        "action": "L_open",
+        "moreDes": "打开链接",
+        "moreTarget": "newfront",
+        "morePosition": "chrome",
+        "morePinned": "unpinned"
+      }
+    ],
+    "setdragurl": true,
+    "text": [
+      {
+        "action": "T_search",
+        "direct": "R",
+        "moreDes": "使用%name搜索\"%s\"(新标签页,前台)",
+        "morePinned": "unpinned",
+        "morePosition": "right",
+        "moreTarget": "newfront",
+        "moreTsearch": "sbaidu"
+      },
+      {
+        "action": "T_copytext",
+        "direct": "D"
+      },
+      {
+        "action": "T_search",
+        "direct": "U",
+        "moreDes": "使用%name搜索\"%s\"",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront",
+        "moreTsearch": "sgoogle"
+      },
+      {
+        "direct": "L",
+        "action": "T_searchuser",
+        "moreName": "翻译",
+        "moreURL": "https://fanyi.baidu.com/#auto/zh/%s",
+        "moreDes": "使用%name搜索\"%s\"",
+        "moreTarget": "newfront",
+        "morePosition": "chrome",
+        "morePinned": "unpinned"
+      }
+    ]
+  },
+  "extid": "mjidkpedjlfnanainpdfnedkdlacidla",
+  "gesture": {
+    "direct": false,
+    "directcolor": "4991fc",
+    "directopa": 0.9,
+    "gesPos": "cc",
+    "geskey": "right",
+    "gesture": [
+      {
+        "action": "G_back",
+        "direct": "L",
+        "whitelist": []
+      },
+      {
+        "action": "G_go",
+        "direct": "R",
+        "whitelist": []
+      },
+      {
+        "action": "G_up",
+        "direct": "U",
+        "whitelist": []
+      },
+      {
+        "action": "G_down",
+        "direct": "D",
+        "whitelist": []
+      },
+      {
+        "action": "G_close",
+        "direct": "DR",
+        "moreCloseopts": "close",
+        "moreClosesel": "chrome",
+        "moreCloseurl": "chrome://newtab/",
+        "whitelist": []
+      },
+      {
+        "action": "G_BmManager",
+        "direct": "LU",
+        "whitelist": []
+      },
+      {
+        "action": "G_bottom",
+        "direct": "RD",
+        "whitelist": []
+      },
+      {
+        "action": "G_top",
+        "direct": "RU",
+        "whitelist": []
+      },
+      {
+        "action": "G_reload",
+        "direct": "UD",
+        "whitelist": []
+      },
+      {
+        "action": "G_reloadclear",
+        "direct": "UDU",
+        "whitelist": []
+      },
+      {
+        "action": "G_lefttab",
+        "direct": "UL",
+        "whitelist": []
+      },
+      {
+        "action": "G_righttab",
+        "direct": "UR",
+        "whitelist": []
+      },
+      {
+        "action": "G_closewindow",
+        "direct": "URDL",
+        "whitelist": []
+      },
+      {
+        "action": "G_chromepage",
+        "direct": "URD",
+        "moreChromepage": "crextensions",
+        "moreDes": "打开%name",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront",
+        "whitelist": []
+      },
+      {
+        "action": "G_chromepage",
+        "direct": "DRU",
+        "moreChromepage": "crsettings",
+        "moreDes": "打开%name",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront",
+        "whitelist": []
+      },
+      {
+        "action": "G_newtab",
+        "direct": "RDL",
+        "moreDes": "新建标签页",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront",
+        "whitelist": []
+      },
+      {
+        "action": "G_bookmark",
+        "direct": "DL",
+        "whitelist": []
+      },
+      {
+        "action": "G_reclosedtab",
+        "direct": "LDR",
+        "moreDes": "重新打开关闭的标签页",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront",
+        "whitelist": []
+      },
+      {
+        "action": "G_chromepage",
+        "direct": "LD",
+        "moreChromepage": "crhistory",
+        "moreDes": "打开%name",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront",
+        "whitelist": []
+      },
+      {
+        "action": "G_closerighttabs",
+        "direct": "RDR",
+        "whitelist": []
+      },
+      {
+        "action": "G_crxsettings",
+        "direct": "LDRUL",
+        "moreDes": "进入扩展设置页",
+        "morePinned": "unpinned",
+        "morePosition": "chrome",
+        "moreTarget": "newfront",
+        "whitelist": []
+      }
+    ],
+    "gestureui": true,
+    "gholdkey": "ctrl",
+    "gholdkeydisable": "alt",
+    "gholdkeytype": "enable",
+    "stenable": false,
+    "stroke": true,
+    "strokecolor": "0065FF",
+    "strokeopa": 0.8,
+    "strokewidth": "2",
+    "tooltip": true,
+    "tooltipcolor": "ffffff",
+    "tooltipopa": "0.9",
+    "tooltipwidth": 18
+  },
+  "isGesturesOff": false,
+  "normal": {
+    "autocancel": false,
+    "autocancelvalue": 2,
+    "cancelcontextmenu": true,
+    "capturetype": "jpeg",
+    "clickedOptin": true,
+    "cursorimg": null,
+    "cursorimgscale": 1,
+    "dbclicktime": 600,
+    "drag": true,
+    "gesture": false,
+    "hidetrash": true,
+    "jpegquality": 100,
+    "lasttab": false,
+    "minilength": "8",
+    "newtabposition": "chrome",
+    "scroll": false,
+    "scrolleffects": true,
+    "scrollgesture": false,
+    "strokegesture": false,
+    "backgroundtab": false
+  },
+  "optedout": true,
+  "others": {
+    "tuilink": false
+  },
+  "scroll": {
+    "scrollaccele": 1,
+    "scrollspeed": 3,
+    "smooth": true
+  },
+  "scrollgesture": {
+    "fastSwitch": false,
+    "reverseFS": false,
+    "sgsleft": [
+      {
+        "action": "G_top"
+      },
+      {
+        "action": "G_bottom"
+      }
+    ],
+    "sgsleftenable": true,
+    "sgsright": [
+      {
+        "action": "G_top"
+      },
+      {
+        "action": "G_bottom"
+      }
+    ],
+    "sgsrightenable": false,
+    "tablist": true,
+    "tablistVisual": true,
+    "tablistkey": "right"
+  },
+  "strokegesture": {
+    "strleft": [
+      {
+        "action": "G_none"
+      },
+      {
+        "action": "G_righttab"
+      }
+    ],
+    "strleftenable": true,
+    "strmiddle": [
+      {
+        "action": "G_lefttab"
+      },
+      {
+        "action": "G_righttab"
+      }
+    ],
+    "strmiddleenable": false,
+    "strpress": "up",
+    "strright": [
+      {
+        "action": "G_lefttab"
+      },
+      {
+        "action": "G_none"
+      }
+    ],
+    "strrightenable": true
+  },
+  "sync": "local"
+}
