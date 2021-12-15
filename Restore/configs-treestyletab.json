@@ -1,0 +1,43 @@
+{
+  "animation": false,
+  "autoAttachOnNewTabButtonMiddleClick": 3,
+  "autoGroupNewTabsFromPinned": false,
+  "chunkedUserStyleRules0": "LyogU2hvdyB0aXRsZSBvZiB1bnJlYWQgdGFicyB3aXRoIHJlZCBhbmQgaXRhbGljIGZvbnQgKi8KLyoKOnJvb3Quc2lkZWJhciB0YWItaXRlbS51bnJlYWQgLmxhYmVsLWNvbnRlbnQgewogIGNvbG9yOiByZWQgIWltcG9ydGFudDsKICBmb250LXN0eWxlOiBpdGFsaWMgIWltcG9ydGFudDsKfQoqLwoKLyogQWRkIHByaXZhdGUgYnJvd3NpbmcgaW5kaWNhdG9yIHBlciB0YWIgKi8KLyoKOnJvb3Quc2lkZWJhciB0YWItaXRlbS5wcml2YXRlLWJyb3dzaW5nIHRhYi1sYWJlbDpiZWZvcmUgewogIGNvbnRlbnQ6ICLwn5W2IjsKfQoqLw==",
+  "closeParentBehaviorMode": 1,
+  "collapseExpandSubtreeByDblClick": true,
+  "configsVersion": 24,
+  "context_bookmarkTree": false,
+  "context_closeTree": false,
+  "context_collapseAll": false,
+  "context_collapseTreeRecursively": false,
+  "context_expandAll": false,
+  "context_expandTreeRecursively": false,
+  "context_reloadTree": false,
+  "faviconizePinnedTabs": false,
+  "insertNewChildAt": -1,
+  "notifiedFeaturesVersion": 9,
+  "optionsExpandedSections": [
+    "section-addons",
+    "section-debug",
+    "section-shortcuts",
+    "section-contextMenu",
+    "section-appearance"
+  ],
+  "parentTabOperationBehaviorMode": 1,
+  "showAutoGroupOptionHint": false,
+  "sidebarPositionRighsideNotificationShown": true,
+  "simulateSVGContextFill": false,
+  "style": "photon",
+  "syncDevices": {
+    "device-1605845624872-24763": {
+      "id": "device-1605845624872-24763",
+      "name": "Firefox on Windows",
+      "icon": "device-desktop",
+      "timestamp": 1639547349089
+    }
+  },
+  "treeDoubleClickBehavior": 1,
+  "userStyleRules": "",
+  "userStyleRulesFieldHeight": "140px",
+  "warnOnCloseTabs": false
+}
