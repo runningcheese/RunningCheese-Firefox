@@ -13,7 +13,7 @@ RunningCheese Firefox 是一款旨在提高Firefox易用性的浏览器，界面
 * 配置一键自动更新，省去了不停折腾的烦恼，出现问题需要修复也可以一键修复。
 
 #### 下载地址：
-蓝奏云： https://www.lanzoui.com/b0ufrtlc （推荐！高速下载）\
+蓝奏云： https://www.lanzoui.com/b0ufrtlc
 
 问题反馈：https://www.runningcheese.com/firefox  
 使用手册：https://www.runningcheese.com/firefox-usage  
