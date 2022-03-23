@@ -1,6 +1,8 @@
 ## RunningCheese Firefox
 
-RunningCheese Firefox 是一款旨在提高Firefox易用性的浏览器，界面优美功能强大，操作简单容易上手是它的特色，为你在工作学习上提供极大的便利。V系列Firefox 将坚定地朝这个方向前进，力求简洁易用，让更多的人加入 Firefox 阵营。
+RunningCheese Firefox 是一款旨在提高Firefox易用性的浏览器。
+
+界面优美功能强大，操作简单容易上手是它的特色，为你在工作学习上提供极大的便利。V系列Firefox 将坚定地朝这个方向前进，力求简洁易用，让更多的人加入 Firefox 阵营。
 
 ![preview 00](https://raw.githubusercontent.com/runningcheese/RunningCheese-Firefox/master/Screenshots/0.jpg)
 
