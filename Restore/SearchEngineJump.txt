@@ -86,6 +86,16 @@
                 "blank": "_blank"
             },
             {
+                "favicon": "https://www.google.cn/favicon.ico",
+                "name": "转到谷歌英文",
+                "url": "javascript:(function()%7B(function()%20%7Bvar%20uri%20%3D%20window.location.href%3Bvar%20key%20%3D%20%22lr%22%3Bvar%20value%20%3D%20%22lang_en%22%3Bvar%20separator%20%3D%20%22%26%22%3Bvar%20re%20%3D%20new%20RegExp(%22(%5B%3F%26%5D)%22%20%2B%20key%20%2B%20%22%3D.*%3F(%26%7C%24)%22%2C%20%22i%22)%3Bif%20(uri.match(re))%20%7Bwindow.location.href%20%3D%20uri.replace(re%2C%20'%241'%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%20%2B%20'%242')%3B%7D%20else%20%7Bwindow.location.href%20%3D%20uri%20%2B%20separator%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%3B%7D%7D)()%7D)()"
+            },
+            {
+                "favicon": "https://www.google.cn/favicon.ico",
+                "name": "转到谷歌中文",
+                "url": "javascript:(function()%7B(function()%20%7Bvar%20uri%20%3D%20window.location.href%3Bvar%20key%20%3D%20%22lr%22%3Bvar%20value%20%3D%20%22lang_zh-CN%22%3Bvar%20separator%20%3D%20%22%26%22%3Bvar%20re%20%3D%20new%20RegExp(%22(%5B%3F%26%5D)%22%20%2B%20key%20%2B%20%22%3D.*%3F(%26%7C%24)%22%2C%20%22i%22)%3Bif%20(uri.match(re))%20%7Bwindow.location.href%20%3D%20uri.replace(re%2C%20'%241'%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%20%2B%20'%242')%3B%7D%20else%20%7Bwindow.location.href%20%3D%20uri%20%2B%20separator%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%3B%7D%7D)()%7D)()"
+            },
+            {
                 "favicon": "https://www.baidu.com/favicon.ico",
                 "name": "百度",
                 "url": "https://www.baidu.com/s?wd=%s&ie=utf-8"
@@ -99,22 +109,19 @@
                 "favicon": "https://www.sogou.com/favicon.ico",
                 "name": "搜狗",
                 "url": "https://www.sogou.com/web?query=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://yandex.st/lego/_/rBTjd6UOPk5913OSn5ZQVYMTQWQ.ico",
+                "name": "Yandex",
+                "url": "https://yandex.com/search/?text=%s",
+                "blank": "_blank",
                 "disable": "true"
             },
             {
-                "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOUlEQVQ4jXWTS0iUURTHr22MFkK4kggUih6GDaVhRWQGFq2KjLRVIG1EImojBBElaatwhtF0UhdWaFGQhD20oGUhNDHKzK4ooxkfM2r3ft/n/R6/Fjo6D/vDhcO5//953HuOEDkwDOOI1joATAFLq2dKax2wbftwLj8LjuP0kAFPSTwlM10opbo3FHue93GNNDxI8kojMyermKmtJNnUgPH8CZ5Sacp4ltg0zV4ANznPfNNFposLmN4qiPtKifvK+F1cwE8hWGi9mlnJQyGEEFrrAwBuCuYaGpkuEiSO7kP2BdGRMDoSZqmzg7n6U+ivE1ntSCl9AggB2JEg8XLBnz0VecT/wTTNXuFBDMCdrMAMCswX7VkkYxmUA+aqLS0P21m7jgoPJI7CHivEGRfgvs8Qe5y+rzh48y/H70rqOiSHbknuvLTS/yTXA3wohNcCFt9sGKCmTXKiTbKtZYnmAWM9AKst8KWc2FPBSCSQ14KxvGLfG7HYfHmR9ldrFUSFZVkhgB/fQ+zqKqFo4Cyf49/yHuxXHI7ddihpWeRT1E67e0QqlfIBJByoG21FPChj7+AZAuFBJhKThGejPIr1U93jZ0vTDM19Op0drfX+rBFOWgs0vL3OJv9uROcOtvfXUDpQi/DvRASLOTccYH5hRe66blfuKI+n63ocG+HSuxtUDdVTOXSeC6PXCE0+w2EWAMdxxjbcB6VUd2bf0jaQtpHpys+cC611tdbaD0RYX+cILn7DMKpz+f8AIoLZ2Eq/V7gAAAAASUVORK5CYII=",
-                "name": "转到谷歌英文",
-                "url": "javascript:(function()%7Bvar%20uri%20%3D%20window.location.href%3Bvar%20key%20%3D%20%22lr%22%3Bvar%20value%20%3D%20%22lang_en%22%3Bvar%20separator%20%3D%20%22%26%22%3Bvar%20re%20%3D%20new%20RegExp(%22(%5B%3F%26%5D)%22%20%2B%20key%20%2B%20%22%3D.*%3F(%26%7C%24)%22%2C%20%22i%22)%3Bif%20(uri.match(re))%20%7Bwindow.location.href%20%3D%20uri.replace(re%2C%20'%241'%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%20%2B%20'%242')%3B%7D%20else%20%7Bwindow.location.href%20%3D%20uri%20%2B%20separator%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%3B%7D%7D)()"
-            },
-            {
-                "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOUlEQVQ4jXWTS0iUURTHr22MFkK4kggUih6GDaVhRWQGFq2KjLRVIG1EImojBBElaatwhtF0UhdWaFGQhD20oGUhNDHKzK4ooxkfM2r3ft/n/R6/Fjo6D/vDhcO5//953HuOEDkwDOOI1joATAFLq2dKax2wbftwLj8LjuP0kAFPSTwlM10opbo3FHue93GNNDxI8kojMyermKmtJNnUgPH8CZ5Sacp4ltg0zV4ANznPfNNFposLmN4qiPtKifvK+F1cwE8hWGi9mlnJQyGEEFrrAwBuCuYaGpkuEiSO7kP2BdGRMDoSZqmzg7n6U+ivE1ntSCl9AggB2JEg8XLBnz0VecT/wTTNXuFBDMCdrMAMCswX7VkkYxmUA+aqLS0P21m7jgoPJI7CHivEGRfgvs8Qe5y+rzh48y/H70rqOiSHbknuvLTS/yTXA3wohNcCFt9sGKCmTXKiTbKtZYnmAWM9AKst8KWc2FPBSCSQ14KxvGLfG7HYfHmR9ldrFUSFZVkhgB/fQ+zqKqFo4Cyf49/yHuxXHI7ddihpWeRT1E67e0QqlfIBJByoG21FPChj7+AZAuFBJhKThGejPIr1U93jZ0vTDM19Op0drfX+rBFOWgs0vL3OJv9uROcOtvfXUDpQi/DvRASLOTccYH5hRe66blfuKI+n63ocG+HSuxtUDdVTOXSeC6PXCE0+w2EWAMdxxjbcB6VUd2bf0jaQtpHpys+cC611tdbaD0RYX+cILn7DMKpz+f8AIoLZ2Eq/V7gAAAAASUVORK5CYII=",
-                "name": "转到谷歌中文",
-                "url": "javascript:(function()%7Bvar%20uri%20%3D%20window.location.href%3Bvar%20key%20%3D%20%22lr%22%3Bvar%20value%20%3D%20%22lang_zh-CN%22%3Bvar%20separator%20%3D%20%22%26%22%3Bvar%20re%20%3D%20new%20RegExp(%22(%5B%3F%26%5D)%22%20%2B%20key%20%2B%20%22%3D.*%3F(%26%7C%24)%22%2C%20%22i%22)%3Bif%20(uri.match(re))%20%7Bwindow.location.href%20%3D%20uri.replace(re%2C%20'%241'%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%20%2B%20'%242')%3B%7D%20else%20%7Bwindow.location.href%20%3D%20uri%20%2B%20separator%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%3B%7D%7D)()"
-            },
-            {
-                "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOUlEQVQ4jXWTS0iUURTHr22MFkK4kggUih6GDaVhRWQGFq2KjLRVIG1EImojBBElaatwhtF0UhdWaFGQhD20oGUhNDHKzK4ooxkfM2r3ft/n/R6/Fjo6D/vDhcO5//953HuOEDkwDOOI1joATAFLq2dKax2wbftwLj8LjuP0kAFPSTwlM10opbo3FHue93GNNDxI8kojMyermKmtJNnUgPH8CZ5Sacp4ltg0zV4ANznPfNNFposLmN4qiPtKifvK+F1cwE8hWGi9mlnJQyGEEFrrAwBuCuYaGpkuEiSO7kP2BdGRMDoSZqmzg7n6U+ivE1ntSCl9AggB2JEg8XLBnz0VecT/wTTNXuFBDMCdrMAMCswX7VkkYxmUA+aqLS0P21m7jgoPJI7CHivEGRfgvs8Qe5y+rzh48y/H70rqOiSHbknuvLTS/yTXA3wohNcCFt9sGKCmTXKiTbKtZYnmAWM9AKst8KWc2FPBSCSQ14KxvGLfG7HYfHmR9ldrFUSFZVkhgB/fQ+zqKqFo4Cyf49/yHuxXHI7ddihpWeRT1E67e0QqlfIBJByoG21FPChj7+AZAuFBJhKThGejPIr1U93jZ0vTDM19Op0drfX+rBFOWgs0vL3OJv9uROcOtvfXUDpQi/DvRASLOTccYH5hRe66blfuKI+n63ocG+HSuxtUDdVTOXSeC6PXCE0+w2EWAMdxxjbcB6VUd2bf0jaQtpHpys+cC611tdbaD0RYX+cILn7DMKpz+f8AIoLZ2Eq/V7gAAAAASUVORK5CYII=",
-                "name": "转到谷歌内地",
-                "url": "javascript:(function()%7Bvar%20uri%20%3D%20window.location.href%3Bvar%20key%20%3D%20%22lr%22%3Bvar%20value%20%3D%20%22countryCN%22%3Bvar%20separator%20%3D%20%22%26%22%3Bvar%20re%20%3D%20new%20RegExp(%22(%5B%3F%26%5D)%22%20%2B%20key%20%2B%20%22%3D.*%3F(%26%7C%24)%22%2C%20%22i%22)%3Bif%20(uri.match(re))%20%7Bwindow.location.href%20%3D%20uri.replace(re%2C%20'%241'%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%20%2B%20'%242')%3B%7D%20else%20%7Bwindow.location.href%20%3D%20uri%20%2B%20separator%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%3B%7D%7D)()"
+                "favicon": "https://www.google.cn/favicon.ico",
+                "name": "网页多重搜索",
+                "url": "javascript:(function(){var%20%20keyword=%22%22+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!keyword)keyword=prompt(%22\\u8BF7\\u8F93\\u5165\\u641C\\u7D22\\u7684\\u5173\\u952E\\u8BCD:%22,%22%22);window.open('https://www.baidu.com/s?wd='+keyword);window.open('https://www.google.com/search?q='+keyword+'&ie=utf-8&oe=utf-8');window.open('https://cn.bing.com/search?q='+keyword)})();"
             }
         ],
         "image": [
@@ -126,46 +133,55 @@
             {
                 "favicon": "https://www.baidu.com/favicon.ico",
                 "name": "百度图片",
-                "url": "https://image.baidu.com/search/index?tn=baiduimage&ie=utf-8&word=%s"
+                "url": "https://image.baidu.com/search/index?tn=baiduimage&ie=utf-8&word=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://cn.bing.com/favicon.ico",
+                "name": "必应图片",
+                "url": "https://cn.bing.com/images/search?q=%s",
+                "blank": "_blank"
             },
             {
                 "favicon": "https://www.sogou.com/favicon.ico",
                 "name": "搜狗图片",
                 "url": "https://pic.sogou.com/pics?query=%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             },
             {
                 "favicon": "https://huaban.com/favicon.ico",
                 "name": "花瓣",
-                "url": "http://huaban.com/search/?q=%s"
+                "url": "http://huaban.com/search/?q=%s",
+                "blank": "_blank"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.pinterest.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.pinterest.com",
                 "name": "Pinterest",
-                "url": "https://www.pinterest.com/search/pins/?q=%s&rs=typed&term_meta"
+                "url": "https://www.pinterest.com/search/pins/?q=%s&rs=typed&term_meta",
+                "blank": "_blank"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.pixabay.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.pixabay.com",
                 "name": "Pixabay",
                 "url": "https://pixabay.com/images/search/%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.unsplash.com",
-                "name": "Unsplash",
-                "url": "https://unsplash.com/search/photos/%s",
-                "blank": "_blank"
-            },
-            {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.dbbqb.com",
-                "name": "表情包搜索",
-                "url": "https://www.dbbqb.com/s?w=%s",
-                "blank": "_blank"
-            },
-            {
-                "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOUlEQVQ4jXWTS0iUURTHr22MFkK4kggUih6GDaVhRWQGFq2KjLRVIG1EImojBBElaatwhtF0UhdWaFGQhD20oGUhNDHKzK4ooxkfM2r3ft/n/R6/Fjo6D/vDhcO5//953HuOEDkwDOOI1joATAFLq2dKax2wbftwLj8LjuP0kAFPSTwlM10opbo3FHue93GNNDxI8kojMyermKmtJNnUgPH8CZ5Sacp4ltg0zV4ANznPfNNFposLmN4qiPtKifvK+F1cwE8hWGi9mlnJQyGEEFrrAwBuCuYaGpkuEiSO7kP2BdGRMDoSZqmzg7n6U+ivE1ntSCl9AggB2JEg8XLBnz0VecT/wTTNXuFBDMCdrMAMCswX7VkkYxmUA+aqLS0P21m7jgoPJI7CHivEGRfgvs8Qe5y+rzh48y/H70rqOiSHbknuvLTS/yTXA3wohNcCFt9sGKCmTXKiTbKtZYnmAWM9AKst8KWc2FPBSCSQ14KxvGLfG7HYfHmR9ldrFUSFZVkhgB/fQ+zqKqFo4Cyf49/yHuxXHI7ddihpWeRT1E67e0QqlfIBJByoG21FPChj7+AZAuFBJhKThGejPIr1U93jZ0vTDM19Op0drfX+rBFOWgs0vL3OJv9uROcOtvfXUDpQi/DvRASLOTccYH5hRe66blfuKI+n63ocG+HSuxtUDdVTOXSeC6PXCE0+w2EWAMdxxjbcB6VUd2bf0jaQtpHpys+cC611tdbaD0RYX+cILn7DMKpz+f8AIoLZ2Eq/V7gAAAAASUVORK5CYII=",
+                "favicon": "https://www.google.cn/favicon.ico",
                 "name": "图片聚合搜索",
-                "url": "javascript:(function(){var%20%20keyword=%22%22+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!keyword)keyword=prompt(%22\\u8BF7\\u8F93\\u5165\\u641C\\u7D22\\u7684\\u5173\\u952E\\u8BCD:%22,%22%22);window.open('https://www.google.com/search?tbm=isch&as_q='+keyword+'%20(site:www.pexels.com%20OR%20site:pixabay.com%20OR%20site:unsplash.com)')})();"
+                "url": "javascript:(function(){var%20%20keyword=%22%22+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!keyword)keyword=prompt(%22请输入搜索的关键词:%22,%22%22);window.open('https://www.google.com/search?tbm=isch&as_q='+keyword+'%20(site:stickpng.com%20OR%20site:pngpix.com%20OR%20site:pngimg.com%20OR%20site:pngall.com%20OR%20site:pixelsquid.com%20OR%20site:pngmart.com%20OR%20site:freepngimg.com%20OR%20site:cleanpng.com%20OR%20site:snipstock.com%20OR%20site:hiclipart.com)')})();"
+            },
+            {
+                "favicon": "https://www.google.cn/favicon.ico",
+                "name": "PNG聚合搜索",
+                "url": "javascript:(function(){var%20%20keyword=%22%22+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!keyword)keyword=prompt(%22请输入搜索的关键词:%22,%22%22);window.open('https://www.google.com/search?tbm=isch&as_q='+keyword+'%20(site:stickpng.com%20OR%20site:pngpix.com%20OR%20site:pngimg.com%20OR%20site:pngall.com%20OR%20site:pixelsquid.com%20OR%20site:pngmart.com%20OR%20site:freepngimg.com%20OR%20site:cleanpng.com%20OR%20site:snipstock.com%20OR%20site:hiclipart.com)')})();"
+            },
+            {
+                "favicon": "https://www.google.cn/favicon.ico",
+                "name": "图片多重搜索",
+                "url": "javascript:(function(){var%20%20keyword=%22%22+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!keyword)keyword=prompt(%22\\u8BF7\\u8F93\\u5165\\u641C\\u7D22\\u7684\\u5173\\u952E\\u8BCD:%22,%22%22);window.open('https://image.baidu.com/search/index?tn=baiduimage&ipn=&word='+keyword);window.open('https://www.google.com/search?tbm=isch&q='+keyword+'&ie=utf-8&oe=utf-8');window.open('https://cn.bing.com/images/search?q='+keyword)})();"
             }
         ],
         "translate": [
@@ -180,24 +196,23 @@
                 "url": "https://fanyi.baidu.com/#auto/auto/%s"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://dict.eudic.net",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://dict.eudic.net",
                 "name": "欧路词典",
                 "url": "https://dict.eudic.net/dicts/en/%s"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.iciba.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://edu-web.iciba.com",
                 "name": "词霸翻译",
                 "url": "https://www.iciba.com/%s",
                 "disable": "true"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.deepl.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.deepl.com",
                 "name": "DeepL",
-                "url": "https://www.deepl.com/translator#zh/en/%s",
-                "disable": "true"
+                "url": "https://www.deepl.com/translator#zh/en/%s"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.urbandictionary.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.urbandictionary.com",
                 "name": "俚语词典",
                 "url": "https://www.urbandictionary.com/define.php?term=%s",
                 "disable": "true"
@@ -241,21 +256,28 @@
                 "url": "https://weixin.sogou.com/weixin?ie=utf8&type=2&query=%s"
             },
             {
-                "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC2klEQVRYhcWXXU/TYBTH+0H4Pt00aEyIiUGzNU4CRLwgkJCFRbwwqBAQFWW8OVxYRbMQiOIkU3kRosM3UAMXzgihZYN1a9nWjrHu78WgywS2Flf2JP+LPj0959dzzpM8hyAIguAqjWUMRbpYE8kyZgP0FGsiWYYiXVylsYzYD75OkZzegf/VOkVyXKWxjGAo0nXSwRVRpIsoatqpUxlpKAeRzyDc1479FXnclddZ6O51xVZ4NqgaIi+A9P2T4jTYXJPXUXx2UrEN99z6f4BQhw1qljDSj0CDCendZEFbOSqoA9hsqYMsxgAAO7+WwdN2yJKYefavIDLQiciTB+CdDxG0ViG55gcAJNd+g6ftiHnHlaAx7zh42g6etiPUZi0MIIw6lb9J/PgCtupsToplMQ7myhkwZgMCjRRSfHgvuB8b1y5k/FjKISckAEDU49ZWgrScgizGEfW4wdZWgLGUK022uxVAklnFRv1FMGYDtlobAQDxOS/Y6nO5/bO0ADkhQVx4rw1AcDvA1lYoXZ2WUwh12MCYDYhOPIf4YUqRtOhDklnN2TtKvLNb+ymIz3mVtAcaTEj8/KqqMQ9b8fk32gECjeasgzkvNlvqwA/3qBdtPx5AsLkaoTYrQu1WxN6+gLTow/Y4rfpsK6KMxwMQfTN79ZeVPa77JnYDjCptjw0XHyAy0Km63rF3L/UF4J/2HfiG67qRBZiaKDXAK30Bkut/IH6ez9GOfyULMK0zQKEVn/boCxAZug+GMuYo/Kg1G2zmtc4AjoOXk4jjnvJeuZDoBSB9+4jtMZeiqMeNFM8BAFJCBIH6S8UHCA90IJ1OHyk5KkD0zSDYZMn6KibAcbRx9XwWYHbyZACCthoI7iEIo04klhfz9k1BAFmMaQY47C4pLS2AuXxaPUDYfgc83YugrVZ76i3l4OleCG4HhJF+bN1uyhzVI+yLO5hoVGYwKfVoVvLhtNTj+V+U7aAW/VXQewAAAABJRU5ErkJggg==",
-                "name": "简书",
-                "url": "https://www.jianshu.com/search?utf8=?&q=%s",
-                "blank": "_blank"
-            },
-            {
-                "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABGElEQVRYhWNgKOfzZCgXfMZQLvifzvgZQzmfJ8MAWY5wxABaDsGDzgEP3j36Tyvw4N2jUQcMgTQwaBxw4dllqgX9hWeXh7gDbry6/b9hdwdJ+Mar29RzwIarW0mO2w1Xt446YBg5YMATIaVgaDoAhnfc3As36NGHJ/8VOvTx4kcfnsDV77i5l3B6IaQgZU0eim/Ue0xxqlXvMUVRm7Imj3IHyLRpoxhasLkKp9qCzVUoamXatCl3AEO54P9Lz6/CDd15ax9OdTtv7YOru/T8KnFZlhhFnQcmwg3+8fvHf64aKQw1XDVS/3/8/gFX13lgInkOoDUYdQBZaYCmeNQBDAPZOS0TfM7AUMrnxVAm+HwAHPCEoZTPCwCpFBoqmuUyPAAAAABJRU5ErkJggg==",
+                "favicon": "https://www.douban.com/favicon.ico",
                 "name": "豆瓣",
                 "url": "https://www.douban.com/search?source=suggest&q=%s",
+                "blank": "_blank",
+                "disable": "true"
+            },
+            {
+                "favicon": "http://www.woshipm.com/favicon.ico",
+                "name": "产品经理",
+                "url": "http://api.woshipm.com/search/list.html?key=%s",
                 "blank": "_blank"
             },
             {
                 "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFY0lEQVRYhcWX+VNTVxTH8zcBhiyEXTYRAS1lrDuKSysqKKh0sGLdt2qxLoAMyjCKC2oVcaFqF0FxHRdwrQpmJGAkQN5LhOTTHw7PJBRpZ1rlztzJe3n3nHvuOd/zPefqdIPDarUGORyOg4qidLrdbj7FVBSl0+FwHLRarUE6/2Gz2RJVVX3k9Xr51MPr9aKq6iObzZb44eSqqrZ+8p2HDFVVW61Wa5DO4XAc8Hg8n3t/PB4PDofjgM7pdNo+++6Dw6mqNp3L7f7/Au/1wsAAvH8Pigq9vWB/Bx02aH8Nz59DSyvcuQtN1+i/2ODVuV0uEXK7QVGgpxfsdujogLZ2ePYcHrbA7TvQ2AS/XIa6ejhWC1XVsK8cdpTAhs2wqhgKVkJOLsxdANOzIHMqpGfA+DRISIaYBIiMhbAoMEWg8xQWQf4KWLgEsufDtFmQOQXSMiA5FeKTISYeInxCGCygN8MYE4QYZQaFQpDB9x5ihBCTrPGferPM0DAIDUMXKGAcfrHe7PvuJ/xh6s2Qkg4J4wNlQ8PAGA7mSDlAdJy8+8nqhlXmf7IQkyjIXwmbt0FSSqARerO49nozPHoMB6uhohIOH4FTp+FCA/z2B9y6AzduQsZk0T+sAQYLFK+FyirYvhO+WwMzZkN0PDx4CE5FQuSnAIMFSssFgCB46u8XTPU5BYQut3zr6YGpM//BgPpzgci+8ivEjRP09vbBlBk+BXozpEyEp89kbV8fHD0OSwtg5hzIXgBlFQJqjwdO1wkIAzAwNARz5omrS8vh+An44Udx8ZOn0O0QgPp7wBgOXy+C5puSfj298PtV2L1Pfl0ueGuHkt0QHiNhHREDM+dIGs2YDRlfSRYkpcDLV9DVBRO/DDRAb5bMmJ4lGw43Hj+Bn/ZCYZF40GD5FyFwueQ0J07BpEyw2YQXxk3wuVBvhuWF0HgN3ryR2Pf3C3ecOQvNN8DWKZ7RRtN1CI8ewQPrNsKlK4LYp88kprPnCUndewBRcb40G2OCQzXgdML9B/Kclw8LcmDTVliyDNK+gIWL5f1QDewpFT4Z1oAQky9GYVEQmygktHaDWH+hAcYmSb6npMvzolxhwaXL5Tk3X8AGYtTeMjhQBUeOQf15KK/4iAGmCKHRXbtlUfUhqD0JZ+vhxUtR2NUl8Xz5Cjo7hYYrKkFVJe08Hl86akOjeacinrp0GSzDhSAiFm7dDhRSFFGq5bB/XWi+Ad+vh6LVgpOqaijbDzt3QcMlkbnaKAT27SpYtlwAmJz2ERCaIuCbxVBQCDlLJB3L9g9a74TidVJg1qyDvAIx2BguWAiPkY1/PiNh2LRVDKg5CpOnwb378OcLWJwHwYYR0jDEJAuCDWJ5R4cgeE+pfF9aIGT0rluM1ai6aLWsa2uTjNmyTQw4VisHqznqw0Ry6ghEpOX0hs3Q3S2nL9svoNGbpSbUnhRlt+8OgnGi4MLjgY1bpCpu2S5rDh8RIydMkrC96YD1m0YwwBIttb2rC96+hZ0lsqkmMMYkRFRXD+cuwKxsIaCKSnF7dLxvTV6BFB5Nd2IKpE6CuKSPhEBvhsixkvNZc0VYi/FQLxnDZWpg0qqnv6HBBt9/2nctvH7l38+AQeXaomCDr7YP7Rn8lWikZLBI+MKiBKAx8ULjyanS3GROkUqaPV+an/wVeAqL0H0QioyVSpWQLO1Teoa0U9OzBP05ucITq4oFIztKhAeqqgVsdfXSrjU2SbwftkjatrULmO12oXZFEWwNDOB2udD1X2zw0nRNGsWWVmkc219LI2l/J42logrKBwb+TjT/Ybjcbq/Oqaqj1pYrimIb/YvJqF/NRv1yOtrX878Ay8kNNVA8RtQAAAAASUVORK5CYII=",
-                "name": "头条",
+                "name": "今日头条",
                 "url": "https://www.toutiao.com/search/?keyword=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADQUlEQVR4nO2WXYhUZRjHf8+ZzS0Jw9oUtMSa2V0TI1MJwqiETSzNWnFnxkzpoi5CSqKLCIwGL2Shqz4uFvoAtZCZYEet9GI1Ay+EDRQ1ktWZvNiIVNA+2V3dc/5eNDvunPPOeLS9Uv9X5zw8z/P/vec9vM8Lt3Szy+Im7kkx5W+PTnyWCRYYTBc0A2cMymb0kaCYHmBgQgEKj3OHzvGOxJvA1Ks0k6A4yWPTqlOc+N8AhRRzJfKCedUC4yjGF+bxEz5DwMxALDfjZYmmStMhYGOmzKfXDVBIMVdwUOLuarLHxzaft9Jf40fykywMoI9xX8kz3k2X6L5mgN453HNplKMSM8eFD2ZKPGWGGkCvDMSuGgOPlzKn2FGvxnMFL15iS8gcS7C5kTlAusRujCM1QfHhtw/X/3ciAMUUSYPXQuEL9ggHGplXQY1ijb+4959h3o4NcBEyim7NYde+OwECfowExZrYAIhnHXnlOOYVlRw9Hyy00x4PAGaFAwZ/xLY3/nSF5TM7HoAxPVJsDMf1b064c6VoXzeAOB9lojkuwIiY4oqbcSYegDHogLorLgDelYNrvG5r4rQr3hT14nvgsRBUcuwx38ZzCnjFoBW4U/ALRq/Xwrb0IYYsYFrExRjszFIi5+INEyWip5bgUeXwdrUzA5/diC6J+RIpxFICenSW/uIcZgcBixwmn1mOwPUFIgCrBzgG9IYIWgpf8cQLA/wmjw0Y3Ubt2BXMGxllD2JpzeKNc02T6XGZQ51ZsDPJ/SNwXFzZe4N9mTLPjL0feJrbz/7KdonVDZrLS7C86yR76+U4Z8GLZQa9BM9XxioAgo58im7l/qtZ8gPD0+5jHXCsjrlvxoZG5pW8+sq38qTEDsSMaoHRr8p9wIy/NMoKiS2Oxp2ZMjurC8jh8T4KD7Sr3oi+aaPlX58Pxl84Ysn4PFviVYB8Gx3y6QP2Z8t0XBPAmArtPCCf9cAyYIHEpEqD34GfMRZLtQeWwXdm9AewHpE0+ChTZuN1AYQ1NuNXHOcCQL6V9xSwuWGRsTBb4vCEAIRV6CKhI2yVWFvH/JNsiTei4QmUcnj5L1lj4nWMhxAJjBN49GROsnUivW7pxtFlNM8U1KJDSwUAAAAASUVORK5CYII=",
+                "name": "Quora",
+                "url": "https://www.quora.com/search?q=%s",
                 "blank": "_blank",
                 "disable": "true"
             },
@@ -266,21 +288,15 @@
                 "blank": "_blank"
             },
             {
-                "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADQUlEQVR4nO2WXYhUZRjHf8+ZzS0Jw9oUtMSa2V0TI1MJwqiETSzNWnFnxkzpoi5CSqKLCIwGL2Shqz4uFvoAtZCZYEet9GI1Ay+EDRQ1ktWZvNiIVNA+2V3dc/5eNDvunPPOeLS9Uv9X5zw8z/P/vec9vM8Lt3Szy+Im7kkx5W+PTnyWCRYYTBc0A2cMymb0kaCYHmBgQgEKj3OHzvGOxJvA1Ks0k6A4yWPTqlOc+N8AhRRzJfKCedUC4yjGF+bxEz5DwMxALDfjZYmmStMhYGOmzKfXDVBIMVdwUOLuarLHxzaft9Jf40fykywMoI9xX8kz3k2X6L5mgN453HNplKMSM8eFD2ZKPGWGGkCvDMSuGgOPlzKn2FGvxnMFL15iS8gcS7C5kTlAusRujCM1QfHhtw/X/3ciAMUUSYPXQuEL9ggHGplXQY1ijb+4959h3o4NcBEyim7NYde+OwECfowExZrYAIhnHXnlOOYVlRw9Hyy00x4PAGaFAwZ/xLY3/nSF5TM7HoAxPVJsDMf1b064c6VoXzeAOB9lojkuwIiY4oqbcSYegDHogLorLgDelYNrvG5r4rQr3hT14nvgsRBUcuwx38ZzCnjFoBW4U/ALRq/Xwrb0IYYsYFrExRjszFIi5+INEyWip5bgUeXwdrUzA5/diC6J+RIpxFICenSW/uIcZgcBixwmn1mOwPUFIgCrBzgG9IYIWgpf8cQLA/wmjw0Y3Ubt2BXMGxllD2JpzeKNc02T6XGZQ51ZsDPJ/SNwXFzZe4N9mTLPjL0feJrbz/7KdonVDZrLS7C86yR76+U4Z8GLZQa9BM9XxioAgo58im7l/qtZ8gPD0+5jHXCsjrlvxoZG5pW8+sq38qTEDsSMaoHRr8p9wIy/NMoKiS2Oxp2ZMjurC8jh8T4KD7Sr3oi+aaPlX58Pxl84Ysn4PFviVYB8Gx3y6QP2Z8t0XBPAmArtPCCf9cAyYIHEpEqD34GfMRZLtQeWwXdm9AewHpE0+ChTZuN1AYQ1NuNXHOcCQL6V9xSwuWGRsTBb4vCEAIRV6CKhI2yVWFvH/JNsiTei4QmUcnj5L1lj4nWMhxAJjBN49GROsnUivW7pxtFlNM8U1KJDSwUAAAAASUVORK5CYII=",
-                "name": "Quora",
-                "url": "https://www.quora.com/search?q=%s",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.facebook.com",
+                "name": "Facebook",
+                "url": "https://www.facebook.com/search/results.php?q=%s",
                 "blank": "_blank"
             },
             {
                 "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAMZUlEQVRYhZ2X51OUC7LG58verf0Xbm3V3j0GVBiGNEQ9oiIqCmbEgCAgKIggIKiAogJGUFAwoAIiiiQFRckZUXIa4hkQEUGRHASGeX/3w5xr1dm7p27V7ar+2N1PP/10V7VI9C+m61zzl3WuHdINLu2HzJ1l5za6tjVtPNKi2OwiY4tzM5ZOzWx3bMT6UAP77Oqws63FcX8NzjbVuFpX476rCs/tVXhbvlf4WbyXBWysDAoyq3a4sKbMIEhd9h//Wu8PttFOZmV5uOP9FqdW5TaXLrY7d7LdsYXt9g3ssKtn98Fa9h2o4eC+KhxtPnDEupJju97huaMC723l+FmWc2ZzGWc3lnLevJQQswqurasizLSKq8YVynDjiurrhuU7/m3xrTaNPjsPyJS7D8jYvbcOa5sa9thUs3dPFfut32O/q5LDOytw3V6Gx9YSfCyLObW5kIBNBQRtyCd4fT6X1uZxzTSX8F9ziTDJ5ZZRLlGGuUQb5BFtWMA9ozLuGpYLkfqFZ/5QfL9F7Zb92+uVB7ZVY2tViZ3VOw5ZVuBgWYaTRTHOZvkcXZ3N8VVv8DZ+jZ9RJgEGLzkvfUGIbjpXtNMIk6RyUzOVW+JUosVp3JO84KFeJo/0s3ik/4ZH+m95ZJDDI4N84gxKhPt62TtFIpFItGlT5F8dzMpqXMw/4LyuhCPrinFdW4ibaT5HDd9wakM2UW4VpFyq5+3tZgrvyyh9IKPigYzKmBY+xLRQfb+Z6nvNVEc38eFGPWVBH3jjUMBTk3TiNZJJ1HvJU2kmidLXJEqzSDLIJ0EvpynZKPlvIlfjfOkxkxLl8ZUFeJrk4WWSwwmDLE4aZpAZ3sT3T5P8f2384zi1l2tI0U4iVTuVNL0XpOhlkCJ9Rao0W3iu98ZEdMw479DJVSX4GL/Fz+Q1p4wy8DdKpS6r52eikd5R5Ply2tJkyBIbkT2upzWuntbYetpi62mPracjroGuhEbkyS18zutisnf0Z3xPWicZWolk6jwnUzeVDN103uhnk6qTcVjkuzIjKPDXXAJWvuScSRqBOk/Ii6gBYHZyjvxz+TwwvMtD8S3iNSJJVI8gacVNUpbfIG3ZDdLVbvJyaQQvl6j8xaIbpPz9MmlLr1EXkINieh6Alkvveb08jmydJN7oJpOt95JM3fQykb9JWvP5lS+4YJJMiOFTbq5LZGJQRXvh2RzuqYXxTDeKNGkUGdLbvNa7xRvdSLJ1b5KrHU6edjgFOjco1I6gUBJBvsZNGrxe03wxj4xfQmgMfAvATN84hYaPyZc8Jk/nKbk6SeTrpiM6b5KiCDZO4opxItd1HpLu9hqA0Z5hEvRvkqIbQYZeJFl6EeTo3SBXJ4zcFaHka4RQLL1KqfQqJeohlCwPoVT9EvV7H/+kvu1CNjlLgpn5NAJAnV0GRSseUKydQKF2IgXazxCFGj/lmnECkUZx3NaMpuxyMQAfs1tJWnGJ17rh5OiGka97nULNUIp1Qmk9/YLvRe1Mdw8xLR9iuLCNjpOpVKwIpNb8BvPfpxAUSto80ij4zwCG8toB6DxbQOnSaMq1YinVjqdY+wmiMON4bhvFEmNwnxiNG9RFlQMgf1ZFxrIL5OlcoVjnEiXiC1SuvsJwWeefqn6kUEa1XiCN66/Ran2fanEw7xadZTC5VtXU9VIqFkdQKYnhneQR5VpxiKKMHvLA4B4J+lEkrLiCLKZCBSC2nGy1AEq0L1IuOU+ldiCjFari898n6Lv+klbrMNr2hNMfnoliRKWbsaIW6pb7Ur88kAbNi9QsCeDrk/cA9EWW8X5RGFWad/kgiaFS8hDRQ4O7PNG/TbL0JsnLL9LxSMVAT0wRRUtPUqkVwPtlPsj9k1TFh8Zp2xZK3X8dpUnNiyY1Lxr+4UrXrqsohlUgen2e0LTUjxZJEA1LTvMtXpWzP6qM6kVXqNW8TbXkLlWS+4ie6N8iRXqDTL2rvFI/Q3ecSgOfH+bwQXyUen0PGrSPMvFOBsDA9ec0/fMQ7ZpedIh96BCfpEPDh5Z/uPD1ZgYAE4UtyNR8aBUH0LzYl6G4UlXsnWJqFwVTL46gTjOKGskdRGkG18gyCqbAJJBiXXc+P8kFYDD+FU0GB2hf7UCnmRPznwcB+HTgDL/pHKRb/wjdOseQSzyQi0/QucSV3j2XAZiTD9Kp5UeHxilki7z4Hqtq6uudIhqWnKNJHE6DOJI6zShE2avPUrzGj0ozT6pW2jOYlAXA98Q0Ok230bPRml7LfSj6B1RdOJ7gk8lOPq+2pW+lPZ8MnOjVOUK3mhN91iG/AxjgN4k3XeonaV/kyXBsEQDf7hTQtCSAFslVmsQ3aBBHIirfcIIqCzcaLZ1oXr+L7ykvVWJKfk7vJnP6d1ryxXIjs7Wq6zh+7z5fVq3h64YdDJpZM2C6ly8mB+hV28FIxHMApgsakS9xRa7hRecv7ozEFv4OII+WJadp1QqlWXKNRvFNRLXbnGneaU+79V66rCwYS08GYDL9KQM7VzF0YD1Du1cxGXUJAOXIMKNujgytNWbI3IxvazcyIDVjyN4L5cg4AEPe9+lZ5EKPuiddv7gyGqcCMBSdi2yxL22SYGRal2nWvI5IZrOfzv3W9BzcxifrNUy8eALATFYi3/frMXp4FWNOJow5rELRrFonYXSYmdgoxk8cZtzjCFMxD1COjQEwW1ZDv64dfRpH6FU/jvwXF8YSVCMYinxL62If2iUXaNUKpUXrCqIuux18dLCk//AGBuyMmEq/r0pU8JwxRzGT7vpMueszdUSbaa91LDSV/+khmntXydCW/Qwa7uGLngN94qN0/9OJieQyFYBrmbQv9qZDEqRiQXIJUa+zBf2u6/nmbsp3Fx2mk64AoKh+y5SrGjMntZjx1eKHjxY/jmvww12LuUenWWgoQvmlG2V/N4rqEmbCgxi1Ws+w+SaG1u3iq8l++nUd+Lj4ENN5daotCHxGx2JvOjTP/mRB9MV9reKb52qGfYwZ85QwfcdFRfNgNz98xcyeWc5coDpzAerMnVFnzncFs8cWM3t0GT/cdJlx0WfqgBaT1rpMWK9mbLs5IxaWDK3dxYDBXvqkDig+fVXdFttIutR86NQMpF1ynlZJCKJBb5PmsdPGjPtLmQzUYjrYGGFMtXKKlFPMnfo788HLmQ/VYD5Eg/kLGswHajDnp8HcCXVmj4n54aLNjKOUKVtjJvaYMrZ1A9/Xb2ZAYs5o8F3VBf00RI+eL3J1P7o0A2iXBNGlFYpoKMAwaD7YiMlgPWYu6/AjWI2Fwuuqoc5OspAVgCJCiiJcHUWYOoqrK5gPXc78uWXMnVJjznMps0eW8MNejel9Gkzu1GZssxEjlhZMXI1AmJkBYDg4CfliN+RiFQC55AIyzYtloonz0kPKMCNmwqTMRkqZj9ZDcc8AoTPrp7iE0V4EeSGC7AVCYxLK2icoqxJQVj5moSyehaI4FHnxKHITmc9PZ76yGGX/55/xUy+K6BU706N+4ncA/vRqBdOmdf6waPy6sXQ2wkg5d9eY+diVLCSuZiFpNQvJ6xAa78BU/5+q/v+yhc99TEbe44uxDX3ah+kRn0Au9qVL058uzSChReuCiagrctNfp2NMa0gyYyHFHGWGBco3VihztqJ8uxmhcB9CTSBCazRCZzxC1zOEziSE9iQE2VOExkSUtQkoK+NYKHqA4tVt5uJDmQpyY9TGkqG1Gxg0teGzoRMfJR7Ixb581DpLmzigKdlo999EIpFINJ1ksUXI2KokewfKfGuUxfsQym0R3tkjVNojvLNFKN+HUGqDUGSNkL8L5dvtKDMsWUjehCJ+PYpoU+avrmQ2wIhpDyMmHVYytseMYSsrvq7fQ7+JAx+13ekW+9GjGSC0qPvv/MN3pMyx9hHK7ZRUH4YqZ4RaV4R6d4RGD4RGT5U3eCDUuSNUuyK8c0FZ4ogy7yALr/ay8HwXikdbmYvYzMzFjUx5b2DcYQPDO7bwdeNu+n+154vUg4+afkKb5uk/vmb/Y5Q7WNFw/D0yrwXk/vDxHPwWiNARoPJ2f4TW0wjNvgj1XghV7ijLj6DMd2ThlS0LSXuYf7CD2XArps9uYer4Fn7YbmfCyoaBtfbKT/pu1Z0Sz3//nP4EUeP8FzpOSZGfP0RP8FnkIc3IQxX0hII8BH67CO3nEGT+CA1+CFUnUJa5ocx1YuHlQRQJNsxF72I6dNvChLeVbNh+W9DgZmuHwTW2BjL13f/rPf9vXbf0ha3497kAAAAASUVORK5CYII=",
                 "name": "Instagram",
                 "url": "https://www.instagram.com/explore/tags/%s",
-                "blank": "_blank"
-            },
-            {
-                "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAl0lEQVQ4jWNgoAbQtE48bOXX9J8UrGmdeBhugEvs7P8eSYtJwi6xs//DDcCnMCx31f9j5x79//X7z//3H7//v3H3NVyOKAP2n7j3Hx2QZMDXbz///////39+3RK4/0kyAAZcYmdhyOE1ABd4/PwjZQYsWXecOANg/oUBGN8hYhJ5YYBNbjgZYOJRdZhUA8w9a48QmVfxAwATIfnUl6gLIAAAAABJRU5ErkJggg==",
-                "name": "Facebook",
-                "url": "https://www.facebook.com/search/results.php?q=%s",
                 "blank": "_blank"
             }
         ],
@@ -296,19 +312,51 @@
                 "url": "https://y.qq.com/portal/search.html#page=1&searchid=1&remoteplace=txt.yqq.top&t=song&w=%s"
             },
             {
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.kugou.com",
+                "name": "酷狗音乐",
+                "url": "https://www.kugou.com/yy/html/search.html#searchType=song&searchKeyWord=%s",
+                "disable": "true"
+            },
+            {
                 "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdklEQVQ4jc2SURHAIAxDI6ESkIAEJCABCZOAJCQgBSfZD/3ZDTbox5a7fEHeXdsAvxEBIRC688D6LtdwIsBFJw37jbDag0A0ABL6bPcfWiNDmAHyHKAqhXTOAKh1E9AaGePjCOMlirxaou2M5iINqnxwpcqf6gRg3lq818aBPAAAAABJRU5ErkJggg==",
                 "name": "Youtube",
                 "url": "https://www.youtube.com/results?search_query=%s",
                 "blank": "_blank"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://music.apple.com",
+                "favicon": "https://www.bilibili.com/favicon.ico",
+                "name": "Bilibili",
+                "url": "https://search.bilibili.com/all?keyword=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://music.apple.com",
                 "name": "Apple Music",
                 "url": "https://music.apple.com/cn/search?term=%s",
                 "blank": "_blank"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://tool.liumingye.cn",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://soundcloud.com",
+                "name": "Soundcloud",
+                "url": "https://soundcloud.com/search?q=%s",
+                "blank": "_blank",
+                "disable": "true"
+            },
+            {
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://genius.com",
+                "name": "Genius.com",
+                "url": "https://genius.com/search?q=%s",
+                "blank": "_blank",
+                "disable": "true"
+            },
+            {
+                "favicon": "https://www.aekun.com/favicon.ico",
+                "name": "AeKun",
+                "url": "https://www.aekun.com/Search?keyword=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://tool.liumingye.cn",
                 "name": "MyFreeMp3",
                 "url": "http://tool.liumingye.cn/music/?page=audioPage&type=migu&name=%s",
                 "blank": "_blank"
@@ -336,7 +384,7 @@
                 "url": "https://www.soku.com/search_video/q_%s"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.ixigua.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.ixigua.com",
                 "name": "西瓜视频",
                 "url": "https://www.ixigua.com/search/%s",
                 "blank": "_blank"
@@ -360,10 +408,15 @@
                 "blank": "_blank"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.kuaishou.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.kuaishou.com",
                 "name": "快手",
                 "url": "https://www.kuaishou.com/search/video?searchKey=%s",
                 "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.cn/favicon.ico",
+                "name": "视频多重搜索",
+                "url": "javascript:(function(){var%20%20keyword=%22%22+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!keyword)keyword=prompt(%22\\u8BF7\\u8F93\\u5165\\u641C\\u7D22\\u7684\\u5173\\u952E\\u8BCD:%22,%22%22);window.open('https://www.youtube.com/results?search_query='+keyword);window.open('https://search.bilibili.com/all?keyword='+keyword+'&ie=utf-8&oe=utf-8');window.open('https://www.ixigua.com/search/'+keyword)})();"
             }
         ],
         "download": [
@@ -374,15 +427,15 @@
                 "blank": "_blank"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.dalipan.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.dalipan.com",
                 "name": "百度网盘搜索",
                 "url": "https://www.dalipan.com/#/main/search?keyword=%s",
                 "blank": "_blank"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.alipanso.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.alipanso.com",
                 "name": "阿里云盘搜索",
-                "url": "https://www.alipanso.com/search.html?page=1&keyword=%s",
+                "url": "https://www.alipansou.com/search?k=%s",
                 "blank": "_blank"
             },
             {
@@ -392,20 +445,38 @@
                 "blank": "_blank"
             },
             {
-                "favicon": "data:image/x-icon;base64,AAABAAEAEBAAAAAAIACJAQAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAVBJREFUeJzVkk0rhGEUhq/neT9mGGYwZSXlIz9gsiJWo1gQxaT8BUuUnSws/ARbyyklCzXKwsJCERurIWtlZmpoGu/rHAtiGDSxctdZPJ3T/dzn6sC/UHqd9PQm6a96thGDeBPXiQgHI6ukfmWws8x1oqWF7iSnw0us1PZM7SOzTX6gLd4XiqChIaiCBoIIqBjCRyiU7ymUyOY2yNQnEDoAjLzGM2AsGPv+T3usmZ7O2NzsGlqXYOaQfJeb6JOqoAEEgUEDgRCeAqAC9klxQwirUCw9NELgZ5ndcTTe6RBFiKsSVYhZiPrQ7ILnAP5recAtV2aL/g8Q9yfR1qQl6guOtURc8BzBcwy+A54LvgXfU/wris72C6s3iBN7mPsbyVbu3mAiNfVJhW/3yQ2ycjKPXi5a/TWUoyFSFwvo+RS9jczXXeLoMWdaZkzKjRn8Wc/HVG5h5+kwfgAAAABJRU5ErkJggg==",
-                "name": "BT搜索",
-                "url": "https://btsow.rest/search/%s"
+                "favicon": "https://www.baidu.com/favicon.ico",
+                "name": "百度电子书",
+                "url": "javascript:(function()%7B(function()%20%7Bvar%20uri%20%3D%20window.location.href%3Bvar%20key%20%3D%20%22%20filetype%3A%22%3Bvar%20value%20%3D%20%22all%22%3Bvar%20re%20%3D%20new%20RegExp(%22(%5B%3F%26%5D)%22%20%2B%20key%20%2B%20%22%3D.*%3F(%26%7C%24)%22%2C%20%22i%22)%3Bif%20(uri.match(re))%20%7Bwindow.location.href%20%3D%20uri.replace(re%2C%20'%241'%20%2B%20key%20%20%2B%20value%20%2B%20'%242')%3B%7D%20else%20%7Bwindow.location.href%20%3D%20uri%20%20%2B%20key%20%20%2B%20value%3B%7D%7D)()%7D)()"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.423down.com",
-                "name": "软件搜索",
-                "url": "https://www.423down.com/search/%s",
+                "favicon": "https://www.google.cn/favicon.ico",
+                "name": "谷歌电子书",
+                "url": "javascript:(function()%7B(function()%20%7Bvar%20uri%20%3D%20window.location.href%3Bvar%20key%20%3D%20%22%20%22%3Bvar%20value%20%3D%20%22(filetype%3Apdf%20OR%20filetype%3Aepub%20OR%20filetype%3Amobi%20OR%20filetype%3Aazw3%20OR%20filetype%3Atxt)%22%3Bvar%20re%20%3D%20new%20RegExp(%22(%5B%3F%26%5D)%22%20%2B%20key%20%2B%20%22%3D.*%3F(%26%7C%24)%22%2C%20%22i%22)%3Bif%20(uri.match(re))%20%7Bwindow.location.href%20%3D%20uri.replace(re%2C%20'%241'%20%2B%20key%20%20%2B%20value%20%2B%20'%242')%3B%7D%20else%20%7Bwindow.location.href%20%3D%20uri%20%20%2B%20key%20%20%2B%20value%3B%7D%7D)()%7D)()"
+            },
+            {
+                "favicon": "data:image/x-icon;base64,AAABAAEAEBAAAAAAIACJAQAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAVBJREFUeJzVkk0rhGEUhq/neT9mGGYwZSXlIz9gsiJWo1gQxaT8BUuUnSws/ARbyyklCzXKwsJCERurIWtlZmpoGu/rHAtiGDSxctdZPJ3T/dzn6sC/UHqd9PQm6a96thGDeBPXiQgHI6ukfmWws8x1oqWF7iSnw0us1PZM7SOzTX6gLd4XiqChIaiCBoIIqBjCRyiU7ymUyOY2yNQnEDoAjLzGM2AsGPv+T3usmZ7O2NzsGlqXYOaQfJeb6JOqoAEEgUEDgRCeAqAC9klxQwirUCw9NELgZ5ndcTTe6RBFiKsSVYhZiPrQ7ILnAP5recAtV2aL/g8Q9yfR1qQl6guOtURc8BzBcwy+A54LvgXfU/wris72C6s3iBN7mPsbyVbu3mAiNfVJhW/3yQ2ycjKPXi5a/TWUoyFSFwvo+RS9jczXXeLoMWdaZkzKjRn8Wc/HVG5h5+kwfgAAAABJRU5ErkJggg==",
+                "name": "BT搜索",
+                "url": "https://btsow.rest/search/%s",
+                "disable": "true"
+            },
+            {
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.cupfox.app",
+                "name": "电影搜索",
+                "url": "https://www.cupfox.app/search?key=%s",
                 "blank": "_blank"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://xiaoshesoso.com",
-                "name": "电影搜索",
-                "url": "https://xiaoshesoso.com/search?keyword=%s",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.423down.com",
+                "name": "软件搜索",
+                "url": "https://www.423down.com/search/%s",
+                "blank": "_blank",
+                "disable": "true"
+            },
+            {
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.52pojie.cn",
+                "name": "52PJ搜索",
+                "url": "https://www.baidu.com/s?wd=%s%20site:www.52pojie.cn",
                 "blank": "_blank"
             }
         ],
@@ -417,9 +488,9 @@
                 "blank": "_blank"
             },
             {
-                "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEg0lEQVR4nMWXXUwcVRTH/3d2IVblI2FLiolFUkzIFNFIH5o+mGpc+qY8GGJ88sFEU22DpIGqiBSIqcZoqpY2xFQ+hALbsqgopEQxhkQhjaUWJxhadE2hsizLxy77wdy5x4fdgQvd5UtIT3Iyc2d37v93/vfc2VlGRAz3MKzyYN/YTLJ18exJYTUWbQkprb9kFo/sNACTHXhgABXC2luUmHRFtVgtPClxV+2eFFvVQNLr3p0CUORBiJATCtnVcLBAC1sMqxv+4yMLEyOZnuriV1FnjTfJtgEIBVYoQNhvV3V/gUYWhiDTbePk+7h15vbvWb4PnttRACgAWOSoz9pVY9aukQWAhcGHcM4/YqYzdb6yJ2fho7ydAWAALMsQ3GtXDY9dEwpACiBAmKNgwZjhvWrzV9ceXDiTvr0AlugV86gANG1XaepZTf6aToZ12vC/NsTdIxm+mtIiOBK3B0CRkknnk3YV7pUQABAGT/1X+E53z98Yzgx++ML/B5BFTRfMZXHHhgAAP4Wzby9621N97/2YE/jkwNYBlBgpLQcm7SqmnokJIUCYE6HDt/jUr2lzpy48Gfj8oc0DyA7Eg5k8osIdGwIAOBmKF4GX9y/83AnXnnLg6fs2DiDtgLjJALiPxHUCAApDo8NNM44D0Cer4BrUcOfhlzYGgKiAmbL9q5ckjhOFwdFh57QzFxSdQwQegT7+Fe6k9MOdfWh9AHkHmOO1nJAgCgOjw06PM3epADI/IUDMHwK5+uFJqwOKlrbtyue7BYCI3myKE+KHiEIwaM/fX8edU848WJY1AWkuACAOkPcVeL6bgA2VdzsgVy8f1+mL9xsm4KwZWykW7y2DAM4DXJZceVMsiDWyprteK/vhooohWx7OPT68VL3ZA5KDBEA3cP76OE7HBlgtalYhN6bUiNVd9VpZb6tKxEDEQNd35y5BSA4QAdxAvy+IgwkZdDQ/n+I4IEPIjqxuPgZUfVOvlfa0qkIQiAACi+RQei5ql50wDPwd4njRupeeSs6iwVhyyyE33ypB2YFTzgbtRFdbpHIwCIpUScRAAqDfdufys/sHFzne/gvI2bWP2u8qNBrx33IURLrc3AnR3VHpaNRKvm5TibHIJSIwRQEhQkFgggtxYX7gwfL0M+TOjisQD8AUXn3OgIr2Rq2ks10FYyCiqGMRByAIhiJ+0hd5Seq1vqE1n7/rOiB3bxTi3bYm7c0Oh0pRcUVhIEFQGINBuBkGStMGejs3qLsBACnKm5u04ksO1VwJhSkQRCBgNkRGjeua59N8uspjTbU5AHO9pT38TlOzdrz9kkqMLcEZJLguxBdGKFiR8Wefx7YV5ZgAq+KtxmbtWKtDhcIgiMAAcBJXFjkv2ftHT9xfw60DSNafrG/Rjl28rBIYhCAYIE0nKs280fX9dgjHBhCCAwrKvmzR3mi5rJLCYBB5dRKVrhHf+cPUt6V13gyAVtrQph1t7lANxrjOjdpAWK98zNU1m7XdytFY8d/w0c+6kzvO1Z9ICOs8BL3liVvf3twh3dgA9yL+A+DGIba7GhlTAAAAAElFTkSuQmCC",
-                "name": "Google Play",
-                "url": "https://play.google.com/store/search?q=%s",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://apkpure.com",
+                "name": "ApkPure",
+                "url": "https://apkpure.com/cn/search?q=%s",
                 "blank": "_blank"
             },
             {
@@ -437,15 +508,21 @@
                 "disable": "true"
             },
             {
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.producthunt.com",
+                "name": "ProductHunt",
+                "url": "https://www.producthunt.com/search?q=%s",
+                "blank": "_blank"
+            },
+            {
                 "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEmklEQVR4nK1XX2hbVRz+vnNv02xrIxu9N1mSlTiuIL26PdStiMjciyjq9ElkTwMfrMhEdOjDYEunU/BBJw71QXwUpA+WoQznZGygOOdEO6aCQWKbP7e5rptpM9qkyc+HJttdctNma76nnN/vnO/7zrknv3MO0SFs2w7Muu5uAfZAZAhAVMgoAFAkByAH8ncCJzYZxpnLly+XO+Hlah0ShhFZIA+LyF4AoQ79Fkl+HhQZS7uuc0cGLMvqnS8WDwJ4VUQ2dCh8KzlZAvBeXyh0NJVKLXZsoD7rCREZuRNhHyPngyLP+K1Gi4G4aW5bEvlagHg3xD1CGZ18IlMoTLY1kDCMyAJwodviXhNBYId3JVTjh2VZvQvkhFecwB8EviB55Q70rhEYJ/BLIyBAfIGcsCyrt8XAfLF4sPmbU6ljjus+d+/QUARKPQ9y2Tk5D/ISgXMEzoKcBPDfcoqzBPYPmGbYcd1nSR71corISH1zNyZ5Y9Olmnc7NW2n4zgXGm3bMPquaNrg6Ojon8lkstZEzHg8fo+mae7U1NTVRjwcDt+NWu3vW3jJUlDESruuQwCImObHIjLavIZK1x/I5/MX/da3U0Sj0cFqpfJPc5zkJ06h8KKybTtQLzKtqFaH1iIOALVazfaLi8he27YDatZ1d8OnwpEsQdPOrdWApmk/kfzXJxWadd3dSoA9bcYeyefzLUt3u8hms1cg8rpfToA9qn6wtEAPBL5cq3gDwQ0b/LlEhhSAaHOcZGl6ejrVLQPpdPoaySmfVFQ1jtQmFEhKtwwAAERmWkJkVNFTjG72lYGuigMA2cJJQCkAfju0PxwOm93STiQSQfh8agCuAuB7YVAij3bLwOL167tEpNcn5SiK/Og3SEReFpFVb0ydQIBX/OIUOa9Anm0zaMfmcPi1tYpHDGOfiDzmmyTPqtDGjd8CmPM1IfJuxDSPDA8P99yucDKZVBHTPCDAp226zG0SOdU4jI6LyEt1V+9r5M9VkTcgsg0ACEyD/EwB36tA4GImk5n1Y9y6detdpVJpWAEP1kT2QcRqZ5BKHXdmZvYrANBFjpEsAwCXB7oDIg+B/BUABNgiIoerIqcq5fKJZDLZ8tcFgOtzcxOo1b6r1WpvrShOLvaIHKtPbhkR0xwTkUP1ZlEPBGyS65bK5R+8dUFT6unczMwJP+JIJPKIVKtn2gl7DIw5hUIS8BShvlDo7frNBgBC1XJ5LJPJ/BUUuZ/kAQAfKKVeWN/f/007Yl3XJ9vlPOqTfaHQOzea3lw0Gt1SrVTOA9gMoEpNe8pxnJOrknoQNowKAL1NOq/19IzkcrlpXwMAEDPN7UsiJ2+YIE8DOE1gToDww7t2HR0fH6+uYGAJgOYnrpOPZwuF37xB30ITi8XiS5XKVxDZ3pwbMM3eld59YcOoovl8IS9puv5kLpdrORF9d3M2m830h0IjJMdI3vKkKpVKvmO8cjd1WSb55rr163f6ibc1AACpVGrRKRSSPYBNpT4EUAQ5n0gkllZUJ6+CnCf5kR4I3OcUCofS6fTCKqZXh20YfYODgxtX6xeLxeKWZXX6isb/mQzVdYidKdgAAAAASUVORK5CYII=",
                 "name": "Github",
                 "url": "https://www.runningcheese.com/go/?url=https://github.com/search?q=%s",
                 "blank": "_blank"
             },
             {
-                "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3ggEBCQHM3fXsAAAAVdJREFUOMudkz2qwkAUhc/goBaGJBgUtBCZyj0ILkpwAW7Bws4yO3AHLiCtEFD8KVREkoiFxZzX5A2KGfN4F04zMN+ce+5c4LMUgDmANYBnrnV+plBSi+FwyHq9TgA2LQpvCiEiABwMBtzv95RSfoNEHy8DYBzHrNVqVEr9BWKcqNFoxF6vx3a7zc1mYyC73a4MogBg7vs+z+czO50OW60Wt9stK5UKp9Mpj8cjq9WqDTBHnjAdxzGQZrPJw+HA31oulzbAWgLoA0CWZVBKIY5jzGYzdLtdE9DlcrFNrY98zobqOA6TJKHW2jg4nU5sNBpFDp6mhVe5rsvVasUwDHm9Xqm15u12o+/7Hy0gD8KatOd5vN/v1FozTVN6nkchxFuI6hsAAIMg4OPxMJCXdtTbR7JJCMEgCJhlGUlyPB4XfumozInrupxMJpRSRtZlKoNYl+m/6/wDuWAjtPfsQuwAAAAASUVORK5CYII=",
-                "name": "GreaseFork",
-                "url": "https://greasyfork.org/zh-CN/scripts?utf8=%E2%9C%93&q=%s",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.reddit.com",
+                "name": "Reddit",
+                "url": "https://www.reddit.com/search/?q=%s",
                 "blank": "_blank"
             },
             {
@@ -457,19 +534,27 @@
                 "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADT0lEQVR4nO2VT2gcZRjGf983U9du4ia7aYy4s8SEnooieBAVPCsWRFCiIsVL7VmoWKXX9iBUT8V/RTA2KkICIiJ4aSHooVBv1YaG7KrdDZoxu4nkz053dl8PO7O7k5lpd5qolz6w7Mz7zvc8z/t+3zsDd/A/QwEsLy/LzoRIKHRLJF1jWZYyAZRSIZLeWL/CSdb4MKOIbiXmum5kzjCMxCbMfoU9XFFKnRkfH5+OSpbL5VeBN4AHExnoFwMDA+8MDQ3NxOUty5quVqvN7e3t8/1y6iQG6vX6Cdu2j8Tlbds+4jjOm0k4Y6egX9zOtPjI5/MqUQf+DezKwG6q3xMDe4HbNrAX1UPCMQRordXYmv0cqa3h/l5skxQeQGWz7H/hFfRwNhGfAqhUKjctx7n0A/Vv5mhV/wKvcsFb4nfCZxBB50a4+7kpUo89GcspIhQKhfa3IJ1Oxz7YWrWpn/+EFIA2gqI7THTC62vI9Mfsf/gR9IF7b7pdCqBWq0U+UTv6EuK6Pcxh0e5ttCllmGSn5yLFc7lc/HvAXVxAGo1diSOCuA3ca1fjZKI7UDt9Erm2ECTtJY4Ujzbgh4zJgwydei8gHtuBL8w/90a8J9csLkZJhcdwpjTPB4cyFAc1Jy/ZwaTHmT3zPub9VsCEblQYvP76DvHg0dr6+zuczDOBWKgD35YvIwjfFwaCwgJoTfr5l1H3WVy4qjgxq3hrTnNxQeGaeZzsFN6uhsRBuGtzPtSBwBn4svQjp67Mdqp6+/Iqh0sbnUpHZ76msm5w/CvdQ9vFuy82sYabZIpTIXH/fyv3Gk7mKSDiDPxUXQrs60cPDbOxT7djStFSBmcvqhBt2yCcvaBpitHThaA4gFn/JWAtYODnteudbguwmjI4/KwFCKlHn+DcvKK0ojp5X9j3vLSiODevaQw+HimOCOaNYryBFWc9kBQRGl4x+yYOUrLDVfv0frxoQys1SfgMtKHcatiA4zjHAEZTGUSk8/Ppp57Os/3rIhOj3Yr9Ee/IeDcTo6CdpWCwp01i5vA0j4I3hmNjY5+Wy2V9wLznw99aK6F3dyVtMFv7g4mRG0hTd6i7reheTo60aG4sIW4rIi+4RobNzc1jlmV9FtmiO/iv8Q8bO7AiEMGc8wAAAABJRU5ErkJggg==",
                 "name": "Chrome WebStore",
                 "url": "https://chrome.google.com/webstore/search/%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             },
             {
                 "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD3UlEQVR4nLWW3U+bdRTHP+dpFSllI6hzJmucEWiTZizTQtG5uRcgYRoS451eqBcmXHjhjf+B116Z6JIlvt0YExONAsqiw0zNKIWCkeTpYGrEFEIclDGElbbHi2elb89DW+m+V+3vvHy/Oe15EQoxtdBGeqcblSXC/nFEFDtEEx4y65dQeQEYo4XXCQQ2bH0BItdPo5kjuIxpQn6z0CQAqAqT8XfJ6lt5i0zS6jpFe/udomSzy01sJb8BPVOQ5mdaGCgToepmIn4F9NmCvB/Q7X8TkQyAAVBGbgV3kUw/XUa+vTZcTA6gJ0kyimk2Fz1PXj9RRG7lHSISfy/31SB2o72MPC/3wO7HuRUv28lRlOfsfe+KmFvx5sOzTfauOkRkPmgJSKW67BMCGSybaTazsTqK6ilH35yIjdVvdyuh0unsmg0BCNfMs6A/2DqJKMovCH5UH9qbvChwBSGG6nnAbevicvXT1XFZUBUi8QlUnStRb4hE6faHEclaXTA/38AaPUi2CaWTrL4D6qojYRbkbYzsNBj/Ih0xQrIDuTYsxYT5Parn6ijgKuHAaTuTUfZi/YGO1Y3cwjFif7RUFjC34iXJCKoP15VetYXUnTGiNw6WmvI/wexyk9XnlVptX5gAdz897bdyD1YFogkP22vD95gcIIykvyucmAbRhIf0rWHnCVdnKD2sszusDDLrl8pn+70Woc+wzicAbmul2mxd4SYq72MQB21HeQPl0YrJRZKgHyL8inIUZQh4xEbF86iKGxgDXipJksXgJF2B+O7btHmRHR1DCe5B/jcu6SMUyO/86J8XyWwtoHiK+eUyImrQ3PoaIleLjSwXkQM8GUgg9w0Aaw7s2xjugdKDg9DRJRSzxHmKhoZXAAyCh27zQMsAwo8FDilbju62RUQ+txegI3S1/WavjfxRIzKDx9PHiceTlgCA44c3cR28gMiXQBrRj+1JAGTJ4X3ROUQ+A9IgP4G3l87HdqtYvgsWFxvx+bYck10zvwIdtGEZpydw1jFubsVL8NDtsijHgFJR/6QbSKUGQT9C1T5OjFfp7vjU8Zi1C9nTqipEzCs1DSmRLOg2KhHc/v7c2nVC+TYsxNTvvponpKphtZyeIb3wVCX3vQWEnvgL5IuaBOQgMkO4bXJ/AgCa/S+DjNZIPgve3tztvz8BQUnxoOtFhLEqyWfwNp0jfORmVe5VJQWrExKbX9+9dJ2yxfB6ewn6VqtNW7kCOfh8W7gODIKMO3hM0+g5Xws51FKBHOwuJ5EojY39hROuWlRfgRyOH97E22qNbWEHZIT7G/r+D/n+4TQRa8B/kvpzjBrBCDkAAAAASUVORK5CYII=",
                 "name": "Firefox Add-ons",
                 "url": "https://addons.mozilla.org/zh-CN/firefox/search/?platform=windows&q=%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://microsoftedge.microsoft.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://microsoftedge.microsoft.com",
                 "name": "Edge Extensions",
                 "url": "https://microsoftedge.microsoft.com/addons/search/%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
+            },
+            {
+                "favicon": "https://www.google.cn/favicon.ico",
+                "name": "技术聚合搜索",
+                "url": "javascript:(function()%7B(function()%20%7Bvar%20uri%20%3D%20window.location.href%3Bvar%20key%20%3D%20%22%20%22%3Bvar%20value%20%3D%20%22(site:stackoverflow.com%20OR%20site:reddit.com)%22%3Bvar%20re%20%3D%20new%20RegExp(%22(%5B%3F%26%5D)%22%20%2B%20key%20%2B%20%22%3D.*%3F(%26%7C%24)%22%2C%20%22i%22)%3Bif%20(uri.match(re))%20%7Bwindow.location.href%20%3D%20uri.replace(re%2C%20'%241'%20%2B%20key%20%20%2B%20value%20%2B%20'%242')%3B%7D%20else%20%7Bwindow.location.href%20%3D%20uri%20%20%2B%20key%20%20%2B%20value%3B%7D%7D)()%7D)()"
             }
         ],
         "shopping": [
@@ -500,19 +585,20 @@
                 "blank": "_blank"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.xiaohongshu.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.xiaohongshu.com",
                 "name": "小红书",
                 "url": "https://www.baidu.com/s?wd=%s%20site:www.xiaohongshu.com",
                 "blank": "_blank"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://you.163.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://you.163.com",
                 "name": "网易严选",
                 "url": "https://you.163.com/search?keyword=%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             },
             {
-                "favicon": "https://t0.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://pub.alimama.com",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://pub.alimama.com",
                 "name": "阿里联盟",
                 "url": "https://pub.alimama.com/promo/search/index.htm?fn=search&q=%s",
                 "blank": "_blank"
