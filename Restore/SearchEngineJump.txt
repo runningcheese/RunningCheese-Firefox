@@ -447,7 +447,7 @@
             {
                 "favicon": "https://book4you.org/favicon.ico",
                 "name": "电子书搜索",
-                "url": "https://book4you.org/s/%ss",
+                "url": "https://book4you.org/s/%s",
                 "blank": "_blank"
             },
             {
