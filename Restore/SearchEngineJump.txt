@@ -96,6 +96,16 @@
                 "url": "javascript:(function()%7B(function()%20%7Bvar%20uri%20%3D%20window.location.href%3Bvar%20key%20%3D%20%22lr%22%3Bvar%20value%20%3D%20%22lang_zh-CN%22%3Bvar%20separator%20%3D%20%22%26%22%3Bvar%20re%20%3D%20new%20RegExp(%22(%5B%3F%26%5D)%22%20%2B%20key%20%2B%20%22%3D.*%3F(%26%7C%24)%22%2C%20%22i%22)%3Bif%20(uri.match(re))%20%7Bwindow.location.href%20%3D%20uri.replace(re%2C%20'%241'%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%20%2B%20'%242')%3B%7D%20else%20%7Bwindow.location.href%20%3D%20uri%20%2B%20separator%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%3B%7D%7D)()%7D)()"
             },
             {
+                "favicon": "https://www.google.cn/favicon.ico",
+                "name": "谷歌搜索前10页",
+                "url": "javascript:%20(function()%20%7B%0A%20%20%20%20(function()%20%7B%0A%20%20%20%20%20%20%20%20var%20uri%20=%20window.location.href;%0A%20%20%20%20%20%20%20%20var%20key%20=%20%22num%22;%0A%20%20%20%20%20%20%20%20var%20value%20=%20%22100%22;%0A%20%20%20%20%20%20%20%20var%20separator%20=%20%22&%22;%0A%20%20%20%20%20%20%20%20var%20re%20=%20new%20RegExp(%22(%5B?&%5D)%22%20+%20key%20+%20%22=.*?(&%7C$)%22,%20%22i%22);%0A%20%20%20%20%20%20%20%20if%20(uri.match(re))%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20window.location.href%20=%20uri.replace(re,%20'$1'%20+%20key%20+%20%22=%22%20+%20value%20+%20'$2');%0A%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20window.location.href%20=%20uri%20+%20separator%20+%20key%20+%20%22=%22%20+%20value;%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D)()%0A%7D)();"
+            },
+            {
+                "favicon": "https://www.google.cn/favicon.ico",
+                "name": "谷歌完全匹配",
+                "url": "javascript:void(location.href='https://www.google.com/search?q='+'%22%s%22');"
+            },
+            {
                 "favicon": "https://www.baidu.com/favicon.ico",
                 "name": "百度",
                 "url": "https://www.baidu.com/s?wd=%s&ie=utf-8"
@@ -381,7 +391,8 @@
             {
                 "favicon": "data:image/png;base64,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",
                 "name": "优酷",
-                "url": "https://www.soku.com/search_video/q_%s"
+                "url": "https://www.soku.com/search_video/q_%s",
+                "disable": "true"
             },
             {
                 "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.ixigua.com",
@@ -560,7 +571,7 @@
             {
                 "favicon": "https://www.google.cn/favicon.ico",
                 "name": "技术聚合搜索",
-                "url": "javascript:(function(){var%20%20keyword='%s';window.open('https://www.google.com/search?lr=lang_en&q='+keyword+'%20(site:stackoverflow.com%20OR%20site:reddit.com)')})();"
+                "url": "javascript:(function(){var%20%20keyword='%s';window.open('https://www.google.com/search?lr=lang_en&q='+keyword+'%20(site:stackoverflow.com%20OR%20site:reddit.com%20OR%20site:github.com)')})();"
             }
         ],
         "shopping": [
