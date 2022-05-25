@@ -1,0 +1,197 @@
+[
+{
+  "key":"q r","label":"生成二维码","bookmark":"生成二维码","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"shift+q shift+r","label":"生成二维码图片","bookmark":"生成二维码图片","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"w b c","label":"博客一键留言","bookmark":"博客一键留言","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"b j","label":"购物党比价","bookmark":"购物党比价","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"d l","label":"查看下载资源","bookmark":"查看下载资源","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"c s s","label":"谷歌扩展下载","bookmark":"谷歌扩展下载","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"g f","label":"油猴脚本下载","bookmark":"油猴脚本下载","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"w e i","label":"公众号封面下载","bookmark":"公众号封面下载","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"d v","label":"视频解析下载 1","bookmark":"视频解析下载 1","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"shift+d shift+v","label":"视频解析下载 2","bookmark":"视频解析下载 2","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"v i p","label":"VIP 视频解析 1","bookmark":"VIP 视频解析 1","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"shift+v shift+i shift+p","label":"VIP 视频解析 2","bookmark":"VIP 视频解析 2","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"e d","label":"编辑当前网页","bookmark":"编辑当前网页","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"r e","label":"解除网页限制","bookmark":"解除网页限制","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"c l","label":"网页剪切工具","bookmark":"网页剪切工具","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"p r","label":"网页打印工具","bookmark":"网页打印工具","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"c c","label":"复制网页地址","bookmark":"复制网页地址","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"w c","label":"网页快照查询","bookmark":"网页快照查询","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"w a","label":"网页存档查询","bookmark":"网页存档查询","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"a w","label":"存档当前网页 1","bookmark":"存档当前网页 1","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"a s","label":"自动滚屏","bookmark":"自动滚屏","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"a r","label":"自动刷新","bookmark":"自动刷新","action":"javascript","sites":"","sitesArray":[""],"code":"javascript:(function(){var intv=prompt('#Secs. between reloads?','60');if(intv&&!isNaN(intv)){with(document){write('<html><frameset rows=\\'*,22\\' framespacing=0 border=0 frameborder=no><frame noresize frameborder=no><frame scrolling=no noresize frameborder=no></frameset></html>');frames[0].location.href=document.location.href;var docstr='<html><body bgcolor=cyan style=\\'margin-top:0px\\'>\\n';docstr+='Reloading in <span id=\\'caption\\'></span>secs.</body>\\n';docstr+='<script>\\nvar reloadIntv='+intv+';\\nvar secsLeft='+intv+';\\nfunction reloadFrame(){secsLeft=reloadIntv+1;parent.frames[0].location.href=parent.frames[0].location.href;}\\nfunction countDown(){secsLeft--;showTime();}\\nfunction showTime(){document.getElementById(\\'caption\\').innerHTML=parseInt(secsLeft)+\\' \\';}\\nsetInterval(\\'reloadFrame()\\','+intv*1000+');\\nsetInterval(\\'countDown()\\',1000);\\nshowTime();\\n</script>\\n</html>';frames[1].document.write(docstr);}}})()"
+}
+,{
+  "key":"n n","label":"护眼模式","bookmark":"护眼模式","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"p p","label":"纸墨模式","bookmark":"纸墨模式","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"d a","label":"黑夜模式","bookmark":"黑夜模式","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"h v","label":"水平分屏模式","bookmark":"水平分屏模式","action":"javascript","sites":"","sitesArray":[""],"code":"javascript:(function (w,d){var href=location.href;var website=w.prompt('请输入网址','')||href;d.write('<HTML><HEAD></HEAD><FRAMESET ROWS=\\'50%,*\\'><FRAME SRC='+location.href+'><FRAME SRC='+website+'></FRAMESET></HTML>');})(window,document)"
+}
+,{
+  "key":"v v","label":"垂直分屏模式","bookmark":"垂直分屏模式","action":"javascript","sites":"","sitesArray":[""],"code":"javascript:(function (w,d){var href=location.href;var website=w.prompt('请输入网址','')||href;d.write('<HTML><HEAD></HEAD><FRAMESET COLS=\\'50%,*\\'><FRAME SRC='+location.href+'><FRAME SRC='+website+'></FRAMESET></HTML>');})(window,document)"
+}
+,{
+  "key":"c r","label":"长句着色阅读","bookmark":"长句着色阅读","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"v r","label":"朗读选中文字","bookmark":"朗读选中文字","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"f o n","label":"衬线字体","bookmark":"衬线字体","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"shift+f shift+o shift+n","label":"无衬线字体","bookmark":"无衬线字体","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"b i","label":"百度站内搜索","bookmark":"百度站内搜索","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"g i","label":"谷歌站内搜索","bookmark":"谷歌站内搜索","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"b g","label":"度谷双重搜索","bookmark":"度谷双重搜索","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"s w","label":"网页多重搜索","bookmark":"网页多重搜索","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"s i","label":"图片多重搜索","bookmark":"图片多重搜索","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"s v","label":"视频多重搜索","bookmark":"视频多重搜索","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"s c","label":"网页简体转换","bookmark":"网页简体转换","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"t c","label":"网页繁体转换","bookmark":"网页繁体转换","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"b f","label":"百度网页翻译","bookmark":"百度网页翻译","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"c y","label":"彩云双语翻译","bookmark":"彩云双语翻译","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"g t","label":"谷歌中文翻译","bookmark":"谷歌中文翻译","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"shift+g shift+t","label":"谷歌英文翻译","bookmark":"谷歌英文翻译","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"s s s","label":"网页地址加密","bookmark":"网页地址加密","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"u u u","label":"文本地址转链接","bookmark":"文本地址转链接","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"t t t","label":"按Alt链接转文本","bookmark":"按Alt链接转文本","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"r r r","label":"网页地址根目录","bookmark":"网页地址根目录","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"w w w","label":"网页地址上一层","bookmark":"网页地址上一层","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"y y y","label":"网页地址洗白白","bookmark":"网页地址洗白白","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"l l l","label":"查看所有链接","bookmark":"查看所有链接","action":"javascript","sites":"","sitesArray":[""],"code":"javascript:LnkW=open('','LnkW','width=600,height=300,scrollbars,resizable,menubar');sLFw=window.name;if(!sLFw){sLFw=window.name='sLFw'};sLFd=document;DlnK=document.links;with(LnkW.document){write('<base target='+sLFw+'>'+DlnK.length+' total links from:<br /><b>'+sLFd.title+'</b><br />'+sLFd.URL.link(sLFd.URL)+'</p><hr>');for(lNK=0;lNK<DlnK.length;lNK++){write('<p>'+DlnK[lNK].text+'<br />'+DlnK[lNK].href.link(DlnK[lNK]))};close();LnkW.focus()}"
+}
+,{
+  "key":"k k k","label":"隐藏已读链接","bookmark":"隐藏已读链接","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"] ] ]","label":"总是新建标签打开","bookmark":"总是新建标签打开","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"[ [ [","label":"总是当前标签打开","bookmark":"总是当前标签打开","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"i i i","label":"查看所有图片","bookmark":"查看所有图片","action":"javascript","sites":"","sitesArray":[""],"code":"javascript:outText='';for(i=0;i<document.images.length;i++){if(outText.indexOf(document.images[i].src)==-1){outText+='<tr><td><img src='+document.images[i].src+'></td><td>'+document.images[i].height+'</td><td>'+document.images[i].width+'</td><td>'+document.images[i].src+'</td></tr><p>'}};if(outText!=''){imgWindow=window.open('','imgWin','width=800,height=600');imgWindow.document.write ('<table border=1 cellpadding=10><tr><th>Image</th><th>Height</th><th>Width</th><th>URL</th></tr><p>'+outText+'</table><p>');imgWindow.document.close()}else{alert('No images!')}"
+}
+,{
+  "key":"i i b","label":"查看高清图片","bookmark":"查看高清图片","action":"javascript","sites":"","sitesArray":[""],"code":"javascript:var w=200;var h=300;var n='';var imag=document.images;for (var i=0;i<imag.length;i++){if(imag[i].width>=w&&imag[i].height>=h){n+='<img src='+document.images[i].src+'> '+document.images[i].width+'x'+document.images[i].height+'</p><p>'}};if(n!=''){document.write('<p style=font-size:11px;font-family:verdana,sans;>'+n+'</p><p>');void(document.close())}else{alert('i see no large images')}"
+}
+,{
+  "key":"t a b","label":"表格顺序重排","bookmark":"表格顺序重排","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"c o o","label":"查看网页 Cookie","bookmark":"查看网页 Cookie","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"u a","label":"查看浏览器 UA","bookmark":"查看浏览器 UA","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"c o l","label":"系统颜色选择器","bookmark":"系统颜色选择器","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"i p","label":"IP 查询","bookmark":"IP 查询","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"s e o","label":"SEO 查询","bookmark":"SEO 查询","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"d n s","label":"DNS 查询","bookmark":"DNS 查询","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"w h o","label":"Whois 查询","bookmark":"Whois 查询","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"b u i","label":"Buildwith 查询","bookmark":"Buildwith 查询","action":"openbookmark","sites":"","sitesArray":[""]
+}
+,{
+  "key":"n e t","label":"网站综合查询","bookmark":"网站综合查询","action":"openbookmark","sites":"","sitesArray":[""]
+}
+]
