@@ -1,14 +1,14 @@
 {
     "status": 1,
-    "message": "$相关说明$(status: 这个在将来或许很重要)...(version: 若有新功能加入,靠这个版本号识别)...(addSearchItems: 允许更新时,添加新的搜索网站到你的搜索列表)...(modifySearchItems: 允许更新时,修改你的搜索列表中的项目)...(connectToTheServer: 允许连接到我的服务器(更新列表,将图标转换为base64等),将来更新使用或永不使用)...(closeBtn: 设置页面右上角的“关闭”按钮是否显示。true显示,false隐藏)...(newtab: 新标签页打开。0为默认设置,1为新标签页打开)...(foldlist: 折叠当前搜索分类列表。true为折叠,false为展开。)...(settingOpacity: 设置按钮的透明度,值为0-1之间的数,0为透明,1为完全显示,中间值半透明。注：-1为直接关闭按钮,关闭之前请确定自己知道如何再次打开它)...(debug: debug模式,开启后,控制台会输出一些信息,“关闭并保存”按钮将不会在刷新页面)...(fixedTop: 将搜索栏固定到顶端。 true开启,false关闭)...(fixedTopUpward: 固定顶端后，搜索栏下拉不会出现，只有上拉时才出现。 true开启,false关闭)...(baiduOffset: 在百度页面鼠标划过的菜单会出现位移,若有使用其他的style样式,可以修改这个来修复二级菜单的偏移)...(getIcon: 自己添加搜索后获取图标的方式。0为自动，能连接谷歌的情况下用谷歌获取，无法连接的情况下，域名加favicon.ico获取；1为域名加favicon获取，2为使用谷歌获取，3为使用dnspot的服务获取(不建议使用)。或者添加网址，关键字使用%s代替，未测试)...(allOpen:一键搜索，点击相关分类后，打开该分类下的所有搜索)...(center:是否居中显示，主要是为了兼容脚本 ac 百度  ： 0 不居中，强制在左。 1, 强制居中 。 2,自动判断)...(icon: 图标的显示方式, true显示抽象图标,false显示网站图标。当脚本中不存在抽象图标时,显示网站图标)...(transtion: 是否有动画效果, true为开启所有动画效果,false关闭所有动画(包括模糊效果)。)(engineDetails: 第一个值为分类列表标题名称,第二个值与enginelist相关联,必须匹配,第三个值true为显示列表,false为禁用列表。排列顺序与跳转栏上的显示顺序相同，可以用它将分类列表按自己喜欢排序)...(engineList: 各个搜索的相关信息)(rules: 已弃用--将搜索样式插入到目标网页,同脚本中的rules设置相同,优先级高于脚本中自带的规则。自带了360搜索,可仿写)...",
-    "version": 4.05,
+    "message": "$相关说明$(status: 这个在将来或许很重要)...(version: 若有新功能加入,靠这个版本号识别)...(addSearchItems: 允许更新时,添加新的搜索网站到你的搜索列表)...(modifySearchItems: 允许更新时,修改你的搜索列表中的项目)...(closeBtn: 设置页面右上角的“关闭”按钮是否显示。true显示,false隐藏)...(newtab: 新标签页打开。0为默认设置,1为新标签页打开)...(foldlist: 折叠当前搜索分类列表。true为折叠,false为展开。)...(setBtnOpacity: 设置按钮的透明度,值为0-1之间的数,0为透明,1为完全显示,中间值半透明。注：-1为直接关闭按钮,关闭之前请确定自己知道如何再次打开它)...(debug: debug模式,开启后,控制台会输出一些信息,“关闭并保存”按钮将不会在刷新页面)...(fixedTop: 将搜索栏固定到顶端。 true开启,false关闭)...(fixedTopUpward: 固定顶端后，搜索栏下拉不会出现，只有上拉时才出现。 true开启,false关闭)...(baiduOffset: 在百度页面鼠标划过的菜单会出现位移,若有使用其他的style样式,可以修改这个来修复二级菜单的偏移)...(getIcon: 自己添加搜索后获取图标的方式。0为自动，能连接谷歌的情况下用谷歌获取，无法连接的情况下，域名加favicon.ico获取；1为域名加favicon获取，2为使用谷歌获取，3为使用dnspot的服务获取(不建议使用)。或者添加网址，关键字使用%s代替，未测试)...(allOpen:一键搜索，点击相关分类后，打开该分类下的所有搜索)...(HideTheSameLink:隐藏同站链接。默认开启,百度页面会隐藏百度搜索。如果想在同一个搜索网站,但是想通过不同语言来搜索, 可以选择false来实现)...(center:是否居中显示，主要是为了兼容脚本 ac 百度  ： 0 不居中，强制在左。 1, 强制居中 。 2,自动判断)...(icon: 图标的显示方式, 0 关闭文字, 只保留图标, 1 显示网站图标,2 显示抽象图标。当脚本中不存在抽象图标时,显示网站图标)...(transtion: 是否有动画效果, true为开启所有动画效果,false关闭所有动画(包括模糊效果)。)(engineDetails: 第一个值为分类列表标题名称,第二个值与enginelist相关联,必须匹配,第三个值true为显示列表,false为禁用列表。排列顺序与跳转栏上的显示顺序相同，可以用它将分类列表按自己喜欢排序)...(engineList: 各个搜索的相关信息)(rules: 已弃用--将搜索样式插入到目标网页,同脚本中的rules设置相同,优先级高于脚本中自带的规则。自带了360搜索,可仿写)...",
+    "version": 5,
     "addSearchItems": true,
     "modifySearchItems": true,
     "connectToTheServer": true,
     "closeBtn": true,
     "newtab": 0,
     "foldlist": true,
-    "setBtnOpacity": "0.8",
+    "setBtnOpacity": "1",
     "debug": false,
     "fixedTop": false,
     "fixedTopUpward": false,
@@ -97,13 +97,23 @@
             },
             {
                 "favicon": "https://www.google.cn/favicon.ico",
-                "name": "谷歌搜索前10页",
+                "name": "谷歌搜索10页",
                 "url": "javascript:%20(function()%20%7B%0A%20%20%20%20(function()%20%7B%0A%20%20%20%20%20%20%20%20var%20uri%20=%20window.location.href;%0A%20%20%20%20%20%20%20%20var%20key%20=%20%22num%22;%0A%20%20%20%20%20%20%20%20var%20value%20=%20%22100%22;%0A%20%20%20%20%20%20%20%20var%20separator%20=%20%22&%22;%0A%20%20%20%20%20%20%20%20var%20re%20=%20new%20RegExp(%22(%5B?&%5D)%22%20+%20key%20+%20%22=.*?(&%7C$)%22,%20%22i%22);%0A%20%20%20%20%20%20%20%20if%20(uri.match(re))%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20window.location.href%20=%20uri.replace(re,%20'$1'%20+%20key%20+%20%22=%22%20+%20value%20+%20'$2');%0A%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20window.location.href%20=%20uri%20+%20separator%20+%20key%20+%20%22=%22%20+%20value;%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D)()%0A%7D)();"
             },
             {
                 "favicon": "https://www.google.cn/favicon.ico",
                 "name": "谷歌完全匹配",
                 "url": "javascript:void(location.href='https://www.google.com/search?q='+'%22%s%22');"
+            },
+            {
+                "favicon": "https://www.google.cn/favicon.ico",
+                "name": "谷歌安全模式",
+                "url": "javascript:(function()%7B(function()%20%7Bvar%20uri%20%3D%20window.location.href%3Bvar%20key%20%3D%20%22safe%22%3Bvar%20value%20%3D%20%22images%22%3Bvar%20separator%20%3D%20%22%26%22%3Bvar%20re%20%3D%20new%20RegExp(%22(%5B%3F%26%5D)%22%20%2B%20key%20%2B%20%22%3D.*%3F(%26%7C%24)%22%2C%20%22i%22)%3Bif%20(uri.match(re))%20%7Bwindow.location.href%20%3D%20uri.replace(re%2C%20'%241'%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%20%2B%20'%242')%3B%7D%20else%20%7Bwindow.location.href%20%3D%20uri%20%2B%20separator%20%2B%20key%20%2B%20%22%3D%22%20%2B%20value%3B%7D%7D)()%7D)()"
+            },
+            {
+                "favicon": "https://www.google.cn/favicon.ico",
+                "name": "谷歌高级搜索",
+                "url": "javascript:void(location.href='https://www.google.com/advanced_search?q='+'%s');"
             },
             {
                 "favicon": "https://www.baidu.com/favicon.ico",
@@ -119,7 +129,8 @@
                 "favicon": "https://www.sogou.com/favicon.ico",
                 "name": "搜狗",
                 "url": "https://www.sogou.com/web?query=%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             },
             {
                 "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://yandex.com",
@@ -196,9 +207,9 @@
         ],
         "translate": [
             {
-                "favicon": "https://translate.google.cn/favicon.ico",
+                "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://translate.google.com",
                 "name": "谷歌翻译",
-                "url": "https://translate.google.cn/?sl=auto&tl=zh-CN&text=%s"
+                "url": "https://translate.google.com/?sl=auto&tl=zh-CN&text=%s"
             },
             {
                 "favicon": "https://fanyi.baidu.com/favicon.ico",
@@ -360,12 +371,6 @@
                 "disable": "true"
             },
             {
-                "favicon": "https://www.aekun.com/favicon.ico",
-                "name": "AeKun",
-                "url": "https://www.aekun.com/Search?keyword=%s",
-                "blank": "_blank"
-            },
-            {
                 "favicon": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://tool.liumingye.cn",
                 "name": "MyFreeMp3",
                 "url": "http://tool.liumingye.cn/music/?page=audioPage&type=migu&name=%s",
@@ -456,9 +461,9 @@
                 "blank": "_blank"
             },
             {
-                "favicon": "https://book4you.org/favicon.ico",
+                "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAbFBMVEX////19fVoZmjw7/D8/Pz39/fy8vKLzeLIyMj6+vrq9vrm5ubj4+N2w9zOzc6ysbKpp6mNi42GhIZ3dXdzcXNjYWPU5u3s7Ozs6+zO4+t8xd3Z2Nm7u7usq6yamZqSkJJ/fX9xb3FsamxlY2XLvGZDAAAARGVYSWZNTQAqAAAACAABh2kABAAAAAEAAAAaAAAAAAADoAEAAwAAAAEAAQAAoAIABAAAAAEAAAAQoAMABAAAAAEAAAAQAAAAADRVcfIAAABxSURBVBgZbc1XEoMwDEXRJxk7Nh3TSwpk/3uESTBt8J+O7sjAzTO191NF69IUqZQkNQtXp6MgRTZzM4IyJhF+9Qb4vFWTTO7E4gOHQf7aAwhOdNkfAFlui//fq8bMz2MAVO0pAB7RObiB7lL4/gW2cQY7BQOMzsPA3AAAAABJRU5ErkJggg==",
                 "name": "电子书搜索",
-                "url": "https://book4you.org/s/%s",
+                "url": "https://zh.booksc.me/s/%s",
                 "blank": "_blank"
             },
             {
@@ -688,6 +693,7 @@
     "forEach": "function(func){\r\n        for(var key in this){\r\n            if(!(key in this.constructor.prototype)){\r\n                func(this[key],key,this)\r\n            }else if(this[key] != this.constructor.prototype[key]){\r\n                func(this[key],key,this)\r\n            }\r\n        }\r\n    }",
     "allOpen": false,
     "center": 2,
-    "icon": false,
-    "transtion": true
+    "icon": 1,
+    "transtion": true,
+    "HideTheSameLink": true
 }
