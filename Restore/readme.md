@@ -5,7 +5,7 @@
 | --------| --------|
 |HeaderEditor_用户代理.json|用于拓展 Header Editor|
 |HeaderEditor_反盗链.json|用于拓展 Header Editor（参考自 <a href="https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor" rel="noopener" target="_blank">dupontjoy</a>）|
-|HeaderEditor_重定向.json|用于拓展 Header Editor（参考自 <a href="https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor" rel="noopener" target="_blank">dupontjoy</a>）|
+|HeaderEditor_重定向.json|用于拓展 Header Editor|
 |MouseInc.zip |桌面鼠标手势软件以及配置文件|
 |OmegaOptions.bak|用于拓展 Proxy SwithyOmega|
 |S3Translator.txt|用于拓展 s3 Translator|
