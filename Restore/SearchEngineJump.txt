@@ -113,7 +113,8 @@
             {
                 "favicon": "https://www.google.cn/favicon.ico",
                 "name": "谷歌高级搜索",
-                "url": "javascript:void(location.href='https://www.google.com/advanced_search?q='+'%s');"
+                "url": "javascript:void(location.href='https://www.google.com/advanced_search?q='+'%s');",
+                "disable": "true"
             },
             {
                 "favicon": "https://www.baidu.com/favicon.ico",
