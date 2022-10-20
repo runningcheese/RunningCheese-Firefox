@@ -1,0 +1,57 @@
+{
+  "timeStamp": 1666178885345,
+  "version": "1.44.4",
+  "userSettings": {
+    "advancedUserEnabled": true,
+    "alwaysDetachLogger": false,
+    "contextMenuEnabled": false,
+    "externalLists": "https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/minority-mv.tx\nhttps://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/minority-mv.txt\nhttps://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/mv.txt\nhttps://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/rule.txt\nhttps://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/ABP-FX.txt\nhttps://www.i-dont-care-about-cookies.eu/abp/",
+    "importedLists": [
+      "https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/minority-mv.tx",
+      "https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/minority-mv.txt",
+      "https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/mv.txt",
+      "https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/rule.txt",
+      "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/ABP-FX.txt",
+      "https://www.i-dont-care-about-cookies.eu/abp/"
+    ],
+    "popupPanelSections": 31,
+    "showIconBadge": false,
+    "tooltipsDisabled": true
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-quick-fixes",
+    "ublock-abuse",
+    "ublock-unbreak",
+    "easylist",
+    "easyprivacy",
+    "urlhaus-1",
+    "CHN-0",
+    "https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/rule.txt",
+    "https://www.i-dont-care-about-cookies.eu/abp/",
+    "https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/mv.txt",
+    "https://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule@master/minority-mv.txt"
+  ],
+  "hiddenSettings": {
+    "autoUpdatePeriod": 7,
+    "blockingProfiles": "11111/#F00 11011/#C0F 11001/#00F 00001",
+    "selfieAfter": 11
+  },
+  "whitelist": [
+    "about-scheme",
+    "chrome-extension-scheme",
+    "chrome-scheme",
+    "moz-extension-scheme",
+    "opera-scheme",
+    "pan.baidu.com",
+    "vivaldi-scheme",
+    "wyciwyg-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false",
+  "userFilters": "! 2022-08-16 https://www.gaoding.com\ngaoding.com##.editor-watermark\ngaoding.com##.remove-watermark\ngaoding.com##.editor-bottom\n\n\n! 2022-08-16 https://idocv.com\nidocv.com##.mask_div\n"
+}
