@@ -173,6 +173,7 @@
         "tab_pos": "TAB_CUR",
         "engine_name": "默认",
         "engine_url": "https://www.baidu.com/s?wd=%s",
+        "is_browser_search": false,
         "download_directory": 0,
         "tab_active": true,
         "open_type": "OPEN_LINK",
@@ -180,8 +181,7 @@
         "copy_type": "COPY_LINK",
         "download_type": "DOWNLOAD_TEXT",
         "download_saveas": true,
-        "search_onsite": false,
-        "is_browser_search": false
+        "search_onsite": false
       },
       "DIR_R": {
         "act_name": "ACT_OPEN",
@@ -966,18 +966,18 @@
     "linkAction": {
       "DIR_U": {
         "act_name": "ACT_SEARCH",
-        "tab_active": true,
         "tab_pos": "TAB_CRIGHT",
         "engine_name": "默认",
         "engine_url": "https://www.baidu.com/s?wd=%s",
+        "is_browser_search": false,
+        "download_directory": 0,
+        "tab_active": true,
         "open_type": "OPEN_LINK",
         "search_type": "SEARCH_TEXT",
         "copy_type": "COPY_TEXT",
         "download_type": "DOWNLOAD_LINK",
-        "download_directory": 0,
         "download_saveas": true,
-        "search_onsite": false,
-        "is_browser_search": false
+        "search_onsite": false
       },
       "DIR_D": {
         "act_name": "ACT_DL",
@@ -996,18 +996,18 @@
       },
       "DIR_L": {
         "act_name": "ACT_COPY",
-        "tab_active": true,
         "tab_pos": "TAB_CRIGHT",
         "engine_name": "默认",
         "engine_url": "https://www.baidu.com/s?wd=%s",
+        "is_browser_search": false,
+        "download_directory": 0,
+        "tab_active": true,
         "open_type": "OPEN_LINK",
         "search_type": "SEARCH_TEXT",
-        "copy_type": "COPY_LINK",
+        "copy_type": "COPY_TEXT",
         "download_type": "DOWNLOAD_LINK",
-        "download_directory": 0,
         "download_saveas": true,
-        "search_onsite": false,
-        "is_browser_search": false
+        "search_onsite": false
       },
       "DIR_R": {
         "act_name": "ACT_OPEN",
