@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" xmlns="http://www.w3.org/2000/svg">
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.228 14.518"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 8.667 13.55"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543" transform="matrix(1, 0, 0, 1, 33.043134, -0.178329)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575" transform="matrix(1, 0, 0, 1, 33.043134, -0.178329)"/>
+  <g fill="#000000" transform="matrix(1, 0, 0, 1, 57.547506, 4.123159)"/>
+  <g fill="none" transform="matrix(0.859928, 0, 0, 0.859928, -0.344087, -0.422203)" style=""/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543" transform="matrix(1, 0, 0, 1, 2.241447, -3.338638)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575" transform="matrix(1, 0, 0, 1, 2.241447, -3.338638)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.228 14.518" transform="matrix(1, 0, 0, 1, 2.241447, -3.338638)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 8.667 13.55" transform="matrix(1, 0, 0, 1, 2.241447, -3.338638)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543" transform="matrix(1, 0, 0, 1, 35.28458, -3.516967)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575" transform="matrix(1, 0, 0, 1, 35.28458, -3.516967)"/>
+  <g fill="#000000" transform="matrix(1, 0, 0, 1, 59.788952, 0.784521)"/>
+  <g fill="none" transform="matrix(0.859928, 0, 0, 0.859928, 1.89736, -3.760841)" style=""/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.849 14.661"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.288 13.693"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.042 14.636"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 8.481 13.668"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 42.892 14.483"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 42.331 13.515"/>
+  <g fill="#000000" transform="matrix(1, 0, 0, 1, 57.361198, 4.241189)"/>
+  <g fill="none" transform="matrix(0.803318, 0, 0, 0.906812, 0.259395, -0.880045)" style="">
+    <path d="M 5.539 3.037 C 6.367 3.037 7.039 3.709 7.039 4.537 L 7.039 19.537 C 7.039 20.365 6.367 21.037 5.539 21.037 L 3.539 21.037 C 2.711 21.037 2.039 20.365 2.039 19.537 L 2.039 4.537 C 2.039 3.709 2.711 3.037 3.539 3.037 L 5.539 3.037 Z M 12.088 3.037 C 12.916 3.037 13.588 3.709 13.588 4.537 L 13.588 19.537 C 13.588 20.365 12.916 21.037 12.088 21.037 L 10.088 21.037 C 9.26 21.037 8.588 20.365 8.588 19.537 L 8.588 4.537 C 8.588 3.709 9.26 3.037 10.088 3.037 L 12.088 3.037 Z M 19.84 6.161 L 23.054 18.68 C 23.26 19.482 22.777 20.3 21.974 20.506 L 20.098 20.986 C 19.296 21.192 18.478 20.709 18.272 19.906 L 15.058 7.391 C 14.852 6.589 15.336 5.771 16.138 5.565 L 18.014 5.082 C 18.816 4.877 19.633 5.36 19.84 6.162 L 19.84 6.161 Z" style="fill: rgb(238, 238, 238);"/>
+  </g>
+</svg>

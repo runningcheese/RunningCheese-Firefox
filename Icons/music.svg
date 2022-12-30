@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" xmlns="http://www.w3.org/2000/svg">
+  <path fill="none" d="M9 14h6v5H9zm2-9h2v2h-2z" transform="matrix(1, 0, 0, 1, 72.07674, -10.672713)"/>
+  <path fill="none" d="M7 14c0-1.103.897-2 2-2h6c1.103 0 2 .897 2 2v5h2.001L19 8.414L15.586 5H15v4H7V5H5v14h2v-5z" transform="matrix(1, 0, 0, 1, 72.07674, -10.672713)"/>
+  <path fill="none" d="M9 14h6v5H9zm2-9h2v2h-2z" transform="matrix(1, 0, 0, 1, 25.47356, -7.87963)"/>
+  <path fill="none" d="M7 14c0-1.103.897-2 2-2h6c1.103 0 2 .897 2 2v5h2.001L19 8.414L15.586 5H15v4H7V5H5v14h2v-5z" transform="matrix(1, 0, 0, 1, 25.47356, -7.87963)"/>
+  <path fill="none" d="M9 14h6v5H9zm2-9h2v2h-2z" transform="matrix(1, 0, 0, 1, 105.614532, -9.769573)"/>
+  <path fill="none" d="M7 14c0-1.103.897-2 2-2h6c1.103 0 2 .897 2 2v5h2.001L19 8.414L15.586 5H15v4H7V5H5v14h2v-5z" transform="matrix(1, 0, 0, 1, 105.614532, -9.769573)"/>
+  <path fill="none" d="M9 14h6v5H9zm2-9h2v2h-2z" transform="matrix(1, 0, 0, 1, 59.011352, -6.976489)"/>
+  <path fill="none" d="M7 14c0-1.103.897-2 2-2h6c1.103 0 2 .897 2 2v5h2.001L19 8.414L15.586 5H15v4H7V5H5v14h2v-5z" transform="matrix(1, 0, 0, 1, 59.011352, -6.976489)"/>
+  <path fill="none" d="M9 14h6v5H9zm2-9h2v2h-2z" transform="matrix(1, 0, 0, 1, 137.087204, 40.397485)"/>
+  <path fill="none" d="M7 14c0-1.103.897-2 2-2h6c1.103 0 2 .897 2 2v5h2.001L19 8.414L15.586 5H15v4H7V5H5v14h2v-5z" transform="matrix(1, 0, 0, 1, 137.087204, 40.397485)"/>
+  <path fill="none" d="M9 14h6v5H9zm2-9h2v2h-2z" transform="matrix(1, 0, 0, 1, 91.302138, -7.703163)"/>
+  <path fill="none" d="M7 14c0-1.103.897-2 2-2h6c1.103 0 2 .897 2 2v5h2.001L19 8.414L15.586 5H15v4H7V5H5v14h2v-5z" transform="matrix(1, 0, 0, 1, 91.302138, -7.703163)"/>
+  <path d="M 16.927 2.922 C 15.019 1.065 12.494 0 10 0 C 7.506 0 4.981 1.065 3.073 2.922 C 1.091 4.852 0 7.322 0 10 C 0 12.679 1.198 15.29 2.028 16.798 C 2.858 18.304 3.973 20 5 20 C 6.428 20 9.286 18.572 9.286 18.572 L 4.286 9.286 L 1.856 10.703 C 1.827 10.423 1.812 10.143 1.812 9.862 C 1.812 7.693 2.674 5.66 4.318 4.058 C 5.903 2.515 7.947 1.697 10 1.697 C 12.053 1.697 14.096 2.515 15.682 4.059 C 17.326 5.66 18.188 7.693 18.188 9.863 C 18.188 10.144 18.174 10.424 18.143 10.703 L 15.714 9.286 L 10.714 18.572 C 10.714 18.572 13.572 20 15 20 C 16.027 20 17.143 18.304 17.973 16.798 C 18.802 15.291 20 12.679 20 10 C 20 7.322 18.909 4.852 16.927 2.922 Z" style="fill: rgb(90, 90, 90);"/>
+</svg>

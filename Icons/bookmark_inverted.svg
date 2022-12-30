@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" xmlns="http://www.w3.org/2000/svg">
+  <path fill="none" d="M9 14h6v5H9zm2-9h2v2h-2z" transform="matrix(1, 0, 0, 1, 72.07674, -10.672713)"/>
+  <path fill="none" d="M7 14c0-1.103.897-2 2-2h6c1.103 0 2 .897 2 2v5h2.001L19 8.414L15.586 5H15v4H7V5H5v14h2v-5z" transform="matrix(1, 0, 0, 1, 72.07674, -10.672713)"/>
+  <path fill="none" d="M9 14h6v5H9zm2-9h2v2h-2z" transform="matrix(1, 0, 0, 1, 25.47356, -7.87963)"/>
+  <path fill="none" d="M7 14c0-1.103.897-2 2-2h6c1.103 0 2 .897 2 2v5h2.001L19 8.414L15.586 5H15v4H7V5H5v14h2v-5z" transform="matrix(1, 0, 0, 1, 25.47356, -7.87963)"/>
+  <rect x="0.776" y="7.798" width="17.986" height="9.201" style="fill: rgb(115, 115, 115);"/>
+  <g fill="none" stroke="#484848" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="matrix(0.659927, 0, 0, 0.659927, -0.543689, -0.158687)" style="">
+    <path d="M2 26h28V7H14l-4-3H2zm28-14H2" style="stroke: rgb(255, 255, 255);"/>
+  </g>
+</svg>

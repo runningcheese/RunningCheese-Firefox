@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" xmlns="http://www.w3.org/2000/svg">
+  <g class="icon-tabler" fill="none" stroke="#626262" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.911038, 0, 0, 0.911038, -0.975946, -0.937819)" style="">
+    <circle cx="12" cy="12" r="9" style="stroke: rgb(0, 0, 0);"/>
+    <path d="M12 3v4" style="stroke: rgb(0, 0, 0);"/>
+    <path d="M12 21v-3" style="stroke: rgb(0, 0, 0);"/>
+    <path d="M3 12h4" style="stroke: rgb(0, 0, 0);"/>
+    <path d="M21 12h-3" style="stroke: rgb(0, 0, 0);"/>
+    <path d="M12 12v.01" style="stroke: rgb(0, 0, 0);"/>
+  </g>
+</svg>
