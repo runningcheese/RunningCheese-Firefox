@@ -1,0 +1,49 @@
+{
+	"request": [
+		{
+			"enable": true,
+			"name": "必应中文  >> 英文",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://cn\\.bing\\.com/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://www.bing.com/$1&setmkt=en-US&setlang=zh-CN",
+			"group": "NewBing",
+			"code": "if (detail.type === \"main_frame\") {\n\treturn val.replace(\"640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1\", \"\").replace(\"640?wx_fmt=png\", \"\").replace(\"640?wx_fmt=gif&wxfrom=5&wx_lazy=1\", \"\");\n}"
+		}
+	],
+	"sendHeader": [
+		{
+			"enable": true,
+			"name": "必应英文  >> 美国版",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://(.*)\\.bing\\.com/(.*)",
+			"exclude": "",
+			"group": "NewBing",
+			"isFunction": false,
+			"action": {
+				"name": "x-forwarded-for",
+				"value": "4.4.4.4"
+			}
+		},
+		{
+			"enable": true,
+			"name": "必应 Chat 代理：Edge 安卓浏览器",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://(.*)\\.bing\\.com/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Linux; Android 12; 22081212C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36 EdgA/112.0.0.0"
+			},
+			"group": "NewBing"
+		}
+	],
+	"receiveHeader": [],
+	"receiveBody": []
+}
