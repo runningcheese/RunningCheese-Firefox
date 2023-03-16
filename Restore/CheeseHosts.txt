@@ -1,0 +1,10 @@
+# Google Translate
+64.233.189.191 translate.googleapis.com
+64.233.189.191 translate.google.com
+
+# New Bing Chat
+20.196.210.19 bing.com
+20.196.210.19 www.bing.com 
+20.196.210.19 r.bing.com
+20.196.210.19 cn.bing.com
+20.196.210.19 edgeservices.bing.com
