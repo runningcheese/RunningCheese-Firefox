@@ -1,13 +1,16 @@
+# https://www.runningcheese.com
+# Last updated: 2023-03-19
+
 # Google Translate
 64.233.189.191 translate.googleapis.com
 64.233.189.191 translate.google.com
 
 # New Bing Chat
-20.196.210.19 bing.com
-20.196.210.19 www.bing.com 
-20.196.210.19 r.bing.com
-20.196.210.19 cn.bing.com
-20.196.210.19 edgeservices.bing.com
+20.219.54.1 bing.com
+20.219.54.1 www.bing.com 
+20.219.54.1 r.bing.com
+20.219.54.1 cn.bing.com
+20.219.54.1 edgeservices.bing.com
 
 # New Bing Login
 40.126.35.80  login.microsoftonline.com
