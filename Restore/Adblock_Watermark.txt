@@ -1,0 +1,25 @@
+[Adblock Plus 2.0]
+! Title: 奶酪 网页水印过滤规则
+! Version: 202303251
+! Expires: 2 days
+! Homepage: https://github.com/runningcheese/RunningCheese-Firefox/tree/master/Restore
+
+! gaoding.com 
+gaoding.com##.editor-watermark
+gaoding.com##.remove-watermark
+gaoding.com##.editor-bottom
+
+! idocv.com
+idocv.com##.mask_div
+
+! fotor.com
+fotor.com##.lower-canvas
+
+! feishu.cn
+feishu.cn##.ssrWaterMark
+
+! weiciyun.com
+www.weiciyun.com###svgBox
+
+! yuque.com
+www.yuque.com##.wm
