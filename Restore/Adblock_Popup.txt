@@ -1,8 +1,13 @@
 [Adblock Plus 2.0]
 ! Title: 奶酪 网页弹窗过滤规则
-! Version: 202303251
+! Version: 202304131
 ! Expires: 2 days
 ! Homepage: https://github.com/runningcheese/RunningCheese-Firefox/tree/master/Restore
+
+
+! 移除 Google 搜索拖拽导致的 Lens 弹窗
+www.google.com##+js(aeld, dragenter)
+www.google.com.hk##+js(aeld, dragenter)
 
 ! www.mvcat.com
 www.mvcat.com##.right
@@ -11,10 +16,6 @@ www.mvcat.com##.breath2.closewxfollow
 ||mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQGd7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyMWZLamx0UkRmUEMxbmRtLTF6MVQAAgRNHHVjAwSAOgkA$image
 ||mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQFN8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAybGlYWmxIUkRmUEMxazJuLXh6MU0AAgSCHHVjAwSAOgkA$image
 www.mvcat.com##.wxfollow
-
-! 移除 Google 搜索拖拽导致的 Lens 弹窗
-www.google.com##+js(aeld, dragenter)
-www.google.com.hk##+js(aeld, dragenter)
 
 ! upyunso.com 
 upyunso.com###layui-layer1
