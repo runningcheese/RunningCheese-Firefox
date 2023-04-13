@@ -1,13 +1,14 @@
 [Adblock Plus 2.0]
 ! Title: 奶酪 网页水印过滤规则
-! Version: 202303251
+! Version: 202304131
 ! Expires: 2 days
 ! Homepage: https://github.com/runningcheese/RunningCheese-Firefox/tree/master/Restore
 
-! gaoding.com 
-gaoding.com##.editor-watermark
-gaoding.com##.remove-watermark
-gaoding.com##.editor-bottom
+
+!--------------------------文档----------------------------------
+
+! docs.qq.com
+docs.qq.com##.watermark-bg
 
 ! idocv.com
 idocv.com##.mask_div
@@ -23,3 +24,39 @@ www.weiciyun.com###svgBox
 
 ! yuque.com
 www.yuque.com##.wm
+
+
+!--------------------------设计----------------------------------
+
+! gaoding.com 
+gaoding.com##.editor-watermark
+gaoding.com##.remove-watermark
+gaoding.com##.editor-bottom
+
+! ue.818ps.com
+ue.818ps.com##.image-watermark
+
+! www.eqxiu.com
+www.eqxiu.com##div.eqc-watermark
+www.eqxiu.com##.eqc-wm-close
+
+! www.isheji.com
+www.isheji.com##.editor-watermask
+www.isheji.com###editorDrag > div.undefined.scrolly > div.scrolly-viewport.editor-center > div > div:nth-child(1)
+
+! www.chuangkit.com
+www.chuangkit.com##div[style*='ckt-watermark']
+www.chuangkit.com##.remove-cktTemplate-watermark
+
+! bigesj.com
+bigesj.com##div.water
+bigesj.com##.water-tip
+
+! www.logosc.cn
+www.logosc.cn##.watermarklayer
+
+! www.logomaker.com.cn
+www.logomaker.com.cn##div.watermark
+
+! ai.logo123.com
+ai.logo123.com##.watermarklayer
