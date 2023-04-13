@@ -25,6 +25,11 @@ www.weiciyun.com###svgBox
 ! yuque.com
 www.yuque.com##.wm
 
+! wx.zsxq.com
+wx.zsxq.com##[watermark="main"]:style(background-image:none!important)
+
+
+
 
 !--------------------------设计----------------------------------
 
