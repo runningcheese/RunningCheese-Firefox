@@ -27,6 +27,7 @@ www.yuque.com##.wm
 
 ! wx.zsxq.com
 wx.zsxq.com##[watermark="main"]:style(background-image:none!important)
+articles.zsxq.com##.js_watermark:style(background-image:none!important)
 
 
 
