@@ -10,24 +10,37 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://www.bing.com/$1&setmkt=en-US&setlang=zh-CN",
-			"group": "NewBing",
-			"code": "if (detail.type === \"main_frame\") {\n\treturn val.replace(\"640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1\", \"\").replace(\"640?wx_fmt=png\", \"\").replace(\"640?wx_fmt=gif&wxfrom=5&wx_lazy=1\", \"\");\n}"
+			"group": "NewBing"
 		}
 	],
 	"sendHeader": [
 		{
-			"enable": false,
+			"enable": true,
 			"name": "必应英文  >> 美国版",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "^http(s?)://(.*)\\.bing\\.com/(.*)",
+			"pattern": "^http(s?)://www\\.bing\\.com/(.*)",
 			"exclude": "",
 			"group": "NewBing",
 			"isFunction": false,
 			"action": {
 				"name": "x-forwarded-for",
-				"value": "4.4.4.4"
+				"value": "1.1.1.1"
 			}
+		},
+		{
+			"enable": true,
+			"name": "必应 Chat 代理：Edge 浏览器（Firefox）",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://(.*)\\.bing\\.com/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58"
+			},
+			"group": "NewBing"
 		},
 		{
 			"enable": true,
@@ -38,22 +51,8 @@
 			"exclude": "",
 			"isFunction": false,
 			"action": {
-				"name": "user-agent",
-				"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.24"
-			},
-			"group": "NewBing"
-		},
-		{
-			"enable": false,
-			"name": "必应 Chat 代理：Edge 安卓浏览器",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^http(s?)://(.*)\\.bing\\.com/(.*)",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "user-agent",
-				"value": "Mozilla/5.0 (Linux; Android 12; 22081212C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36 EdgA/112.0.0.0"
+				"name": "sec-ch-ua",
+				"value": "\"Chromium\";v=\"112\", \"Microsoft Edge\";v=\"112\", \"Not:A-Brand\";v=\"99\""
 			},
 			"group": "NewBing"
 		}
