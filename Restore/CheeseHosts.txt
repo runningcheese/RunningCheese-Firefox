@@ -1,20 +1,6 @@
 # https://www.runningcheese.com
-# Last updated: 2023-03-21
+# Last updated: 2023-04-25
 
 # Google Translate
-64.233.189.191 translate.googleapis.com
-64.233.189.191 translate.google.com
-
-# New Bing Chat
-52.187.10.5 bing.com
-52.187.10.5 www.bing.com 
-52.187.10.5 r.bing.com
-52.187.10.5 edgeservices.bing.com
-
-# New Bing Login
-40.126.35.80  login.microsoftonline.com
-20.190.163.18 login.live.com
-13.107.253.59 logincdn.msauth.net
-13.107.253.59 acctcdn.msauth.net
-13.107.253.59 acctcdn.msftauth.net
-13.107.253.59 lgincdnvzeuno.azureedge.net
+108.177.97.100 translate.googleapis.com
+108.177.97.100 translate.google.com
