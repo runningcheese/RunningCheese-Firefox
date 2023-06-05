@@ -1,0 +1,17 @@
+{
+  "translationService": "transmart",
+  "updatedAt": "2023-06-02T01:03:10.105Z",
+  "loadingTheme": "none",
+  "translationMode": "dual",
+  "autoSync": false,
+  "generalRule": {
+    "mouseHoverHoldKey": "Alt",
+    "lineBreakMaxTextCount": 280,
+    "blockMinTextCount": 0,
+    "blockMinWordCount": 0
+  },
+  "translationTheme": "none",
+  "isShowContextMenu": true,
+  "translationStartMode": "immediate",
+  "tempTranslateDomainMinutes": 0
+}
