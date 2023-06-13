@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="context-fill" fill-opacity="context-fill-opacity" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 3.292 1.388 L 19.499 18.009 C 19.499 18.009 18.085 19.423 18.085 19.423 L 1.878 2.802 L 3.292 1.388 Z" style="stroke: none; stroke-width: 0px;" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 13.085 2.595 L 11.461 4.22 L 9.836 5.844 M 7.266 7.277 L 6.176 7.686 L 5.085 8.095 L 4.335 8.845 L 3.585 9.595 L 7.085 13.095 L 10.585 16.595 L 11.335 15.845 L 12.085 15.095 L 12.495 14.002 L 12.905 12.909 M 14.335 10.346 L 15.96 8.721 L 17.585 7.095" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" style=""/>
+  <path d="M 9.129 5.137 L 12.378 1.888 L 13.792 3.302 L 10.543 6.551 Z M 7.617 8.213 L 5.639 8.955 L 4.999 9.595 L 10.585 15.181 L 11.225 14.541 L 11.969 12.558 L 13.841 13.26 L 12.945 15.649 L 10.585 18.009 L 2.171 9.595 L 4.531 7.235 L 6.915 6.341 Z M 13.628 9.639 L 16.878 6.388 L 18.292 7.802 L 15.042 11.053 Z" style=""/>
+  <path d="M 7.085 13.095 L 2.585 17.595" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" style=""/>
+  <path d="M 7.792 13.802 L 3.292 18.302 L 1.878 16.888 L 6.378 12.388 Z" style=""/>
+  <path d="M 12.585 2.095 L 15.335 4.845 L 18.085 7.595" stroke-linecap="round" stroke-linejoin="round" fill="none" style="stroke-width: 0px;"/>
+  <path d="M 11.878 2.802 L 14.628 5.552 L 17.378 8.302 L 18.792 6.888 L 16.042 4.138 L 13.292 1.388 Z" style=""/>
+</svg>

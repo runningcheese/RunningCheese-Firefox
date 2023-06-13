@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" transform="matrix(0.886441, 0, 0, 0.886441, -0.714289, -0.45843)" style="">
+    <path d="M21.257 10.962c.474.62.474 1.457 0 2.076C19.764 14.987 16.182 19 12 19c-4.182 0-7.764-4.013-9.257-5.962a1.692 1.692 0 0 1 0-2.076C4.236 9.013 7.818 5 12 5c4.182 0 7.764 4.013 9.257 5.962z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(0, 0, 0);"/>
+    <circle cx="12" cy="12" r="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(0, 0, 0);"/>
+  </g>
+</svg>

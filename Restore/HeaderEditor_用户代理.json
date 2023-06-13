@@ -112,8 +112,197 @@
 				"value": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.901.400 QQBrowser/9.0.2524.400"
 			},
 			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "视频网站代理：Safari",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://www\\.(douyu|yy|panda|iqiyi|huya|meipai|bilibili|youtube)(\\.com|\\.tv)/(.*)",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15"
+			}
+		},
+		{
+			"enable": false,
+			"name": "豆瓣 FM 手机版：iPhone",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://fm\\.douban\\.com/(.*)",
+			"exclude": "",
+			"isFunction": true,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			},
+			"group": "用户代理",
+			"code": "if (window.matchMedia(\"(max-width: 480px)\").matches) {\nfor (const a in val) {\n\tif (val[a].name.toLowerCase() === 'user-agent') {\n\t\tval[a].value += 'Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Mobile Safari/537.36 Edg/45.3.4.4958';\n\t\tbreak;\n\t}\n}\n}"
+		},
+		{
+			"enable": false,
+			"name": "网站默认语言：英语",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https://(.*)\\.(bing|google|mozilla|youtube)\\.(.*)",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "accept-language",
+				"value": "en-US"
+			}
+		},
+		{
+			"enable": false,
+			"name": "全局访问 IP：美国",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://(.*)",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "x-forwarded-for",
+				"value": "18.82.38.83"
+			}
+		},
+		{
+			"enable": false,
+			"name": "全局访问语言：英语",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "accept-language",
+				"value": "en-US"
+			}
+		},
+		{
+			"enable": false,
+			"name": "Z-Library 代理：修改访问 IP",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://(.*)?(z-lib|b-ok|booksc|1lib)(.*)?",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "x-forwarded-for",
+				"value": "183.48.70.25"
+			}
+		},
+		{
+			"enable": true,
+			"name": "谷歌小窗搜索：iPhone",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://www\\.google\\.com(.hk)?/search(.*)&igu=1(.*)",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Android 10; Mobile; rv:68.0) Gecko/68.0 Firefox/68.0"
+			},
+			"code": "if (detail.type === \"main_frame\") {\nfor (const a in val) {\n    if (val[a].name.toLowerCase() === 'user-agent') {\n        val[a].value += 'Mozilla/5.0 (Linux; Android 11; SM-A505F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36';   break;  }}}"
+		},
+		{
+			"enable": true,
+			"name": "必应小窗搜索：iPhone",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://wp\\.m\\.bing\\.com/(.*)",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Mobile Safari/537.36 Mobile Edge/42.0.0.2028"
+			},
+			"code": "if (detail.type === \"main_frame\") {\nfor (const a in val) {\n    if (val[a].name.toLowerCase() === 'user-agent') {\n        val[a].value += 'Mozilla/5.0 (Linux; Android 11; SM-A505F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36';   break;  }}}"
+		},
+		{
+			"enable": true,
+			"name": "必应英文搜索：美国版",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://www\\.bing\\.com/(.*)",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "x-forwarded-for",
+				"value": "8.8.8.8"
+			}
+		},
+		{
+			"enable": true,
+			"name": "小红书搜索：iPhone",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://www.xiaohongshu.com/mobile/(.*)",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			}
+		},
+		{
+			"enable": true,
+			"name": "边栏搜索代理：iPhone",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://(.*)?(zhihu|baidu|google|bing|sogou|twitter|facebook|instagram|wikipedia)\\.(.*)",
+			"exclude": "如果想加入 zhihu.com，那么括号里加入 zhihu| 即可，注意后面有 | 竖线。",
+			"isFunction": true,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			},
+			"group": "用户代理",
+			"code": "if (detail.type === \"sub_frame\") {\nfor (const a in val) {\n    if (val[a].name.toLowerCase() === 'user-agent') {\n        val[a].value += 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mobile/15E148 Snapchat/10.77.5.59 (like Safari/604.1)';   break;  }}}",
+			"_exclude": {}
 		}
 	],
-	"receiveHeader": [],
+	"receiveHeader": [
+		{
+			"enable": true,
+			"name": "iframe 框架：全局允许",
+			"ruleType": "modifyReceiveHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "x-frame-options",
+				"value": "ALLOWALL"
+			}
+		},
+		{
+			"name": "网站 CSP 移除：白名单",
+			"ruleType": "modifyReceiveHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://(.*)?(google|deepl|oki|github)\\.(.*)",
+			"action": {
+				"name": "content-security-policy",
+				"value": "_header_editor_remove_"
+			},
+			"isFunction": false,
+			"enable": true,
+			"group": "用户代理",
+			"exclude": "如果想加入 google.com，那么括号里加入 google| 即可，注意后面有 | 竖线。p",
+			"_exclude": {}
+		}
+	],
 	"receiveBody": []
 }

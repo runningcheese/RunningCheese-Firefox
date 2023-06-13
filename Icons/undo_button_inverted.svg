@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="4" stroke-linecap="square" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 1px;" d="M 12.182 12.309"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 1px;" d="M 2.774 12.043"/>
+  <g id="#515151ff" transform="matrix(0.186286, 0, 0, 0.186286, -0.246203, 0.155388)" style="">
+    <path style="stroke: rgb(0, 0, 0); stroke-width: 1px; fill: rgb(238, 238, 238);" d="M 142.533 55.952"/>
+    <path style="stroke: rgb(0, 0, 0); stroke-width: 1px; fill: rgb(238, 238, 238);" d="M 126.855 51.807"/>
+    <path style="stroke: rgb(0, 0, 0); stroke-width: 1px; fill: rgb(238, 238, 238);" d="M 126.314 55.051"/>
+    <g id="#5a5a5aff" transform="matrix(1.237641, 0, 0, 1.237641, -12.040815, -15.320188)" style="">
+      <path opacity="1.00" d=" M 68.44 25.58 C 78.21 23.32 88.93 23.39 98.05 27.95 C 105.81 31.68 111.74 38.94 113.81 47.31 C 116.34 57.17 114.20 67.69 109.86 76.72 C 103.11 90.76 91.12 101.86 77.32 108.84 C 86.25 99.70 92.30 87.67 94.06 75.00 C 94.68 69.37 94.67 62.83 90.72 58.33 C 87.61 54.78 82.19 55.18 78.36 57.25 C 70.23 61.48 64.70 69.27 60.43 77.15 C 64.83 81.02 69.25 84.87 73.66 88.72 C 54.10 91.93 34.53 95.11 14.97 98.28 C 15.37 78.36 15.76 58.43 16.20 38.50 C 20.79 42.47 25.33 46.49 29.91 50.46 C 39.69 38.39 53.25 29.16 68.44 25.58 Z" style="stroke-width: 0px; fill: rgb(238, 238, 238);"/>
+    </g>
+  </g>
+</svg>

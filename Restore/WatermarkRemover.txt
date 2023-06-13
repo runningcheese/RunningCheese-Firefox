@@ -1,0 +1,16 @@
+[Adblock Plus 2.0]
+! Title: 网站去水印
+! Version: 20221031
+! Expires: 1 day
+! Homepage: https://www.runningcheese.com/adblock
+
+! www.gaoding.com 去水印
+gaoding.com##.editor-watermark
+gaoding.com##.remove-watermark
+gaoding.com##.editor-bottom
+
+! idocv.com 去水印
+idocv.com##.mask_div
+
+! fotor.com 去水印
+fotor.com##.lower-canvas

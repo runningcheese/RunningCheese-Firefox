@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" xmlns="http://www.w3.org/2000/svg">
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.228 14.518"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 8.667 13.55"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543" transform="matrix(1, 0, 0, 1, 33.043134, -0.178329)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575" transform="matrix(1, 0, 0, 1, 33.043134, -0.178329)"/>
+  <g fill="#000000" transform="matrix(1, 0, 0, 1, 57.547506, 4.123159)"/>
+  <g fill="none" transform="matrix(0.859928, 0, 0, 0.859928, -0.344087, -0.422203)" style=""/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543" transform="matrix(1, 0, 0, 1, 2.241447, -3.338638)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575" transform="matrix(1, 0, 0, 1, 2.241447, -3.338638)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.228 14.518" transform="matrix(1, 0, 0, 1, 2.241447, -3.338638)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 8.667 13.55" transform="matrix(1, 0, 0, 1, 2.241447, -3.338638)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543" transform="matrix(1, 0, 0, 1, 35.28458, -3.516967)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575" transform="matrix(1, 0, 0, 1, 35.28458, -3.516967)"/>
+  <g fill="#000000" transform="matrix(1, 0, 0, 1, 59.788952, 0.784521)"/>
+  <g fill="none" transform="matrix(0.859928, 0, 0, 0.859928, 1.89736, -3.760841)" style=""/>
+  <g fill="none" transform="matrix(1.108843, 0, 0, 1.173005, -1.088424, -1.681951)" style="">
+    <path d="M9.104 2.899a1 1 0 0 1 1.794 0l1.93 3.911l4.317.627a1 1 0 0 1 .554 1.706l-3.124 3.045l.738 4.299a1 1 0 0 1-1.451 1.054l-3.86-2.03l-3.862 2.03a1 1 0 0 1-1.45-1.054l.737-4.3l-3.124-3.044a1 1 0 0 1 .554-1.706l4.317-.627L9.104 2.9z" style="fill: rgb(238, 238, 238);"/>
+    <path d="M4.39 12.688a.5.5 0 0 1-.078.702l-2.5 2a.5.5 0 1 1-.624-.78l2.5-2a.5.5 0 0 1 .702.078z" style="fill: rgb(238, 238, 238);"/>
+    <path d="M4.312 5.11a.5.5 0 0 1-.624.78l-2.5-2a.5.5 0 1 1 .624-.78l2.5 2z" style="fill: rgb(238, 238, 238);"/>
+    <path d="M15.61 12.688a.5.5 0 0 0 .078.702l2.5 2a.5.5 0 1 0 .624-.78l-2.5-2a.5.5 0 0 0-.703.078z" style="fill: rgb(238, 238, 238);"/>
+    <path d="M15.688 5.11a.5.5 0 0 0 .624.78l2.5-2a.5.5 0 1 0-.624-.78l-2.5 2z" style="fill: rgb(238, 238, 238);"/>
+  </g>
+</svg>

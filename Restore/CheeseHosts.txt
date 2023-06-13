@@ -1,0 +1,6 @@
+# https://www.runningcheese.com
+# Last updated: 2023-04-25
+
+# Google Translate
+108.177.97.100 translate.googleapis.com
+108.177.97.100 translate.google.com

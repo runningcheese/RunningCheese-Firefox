@@ -325,20 +325,6 @@
 		},
 		{
 			"enable": true,
-			"name": "imgur图片盗链",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*\\.imgur\\.com.*",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": ""
-			},
-			"group": "图片反盗链"
-		},
-		{
-			"enable": true,
 			"name": "quora图片盗链",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",

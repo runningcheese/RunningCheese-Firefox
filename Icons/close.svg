@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" xmlns="http://www.w3.org/2000/svg">
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.228 14.518"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 8.667 13.55"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543" transform="matrix(1, 0, 0, 1, 33.043134, -0.178329)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575" transform="matrix(1, 0, 0, 1, 33.043134, -0.178329)"/>
+  <g fill="#000000" transform="matrix(1, 0, 0, 1, 57.547506, 4.123159)"/>
+  <g fill="none" transform="matrix(0.859928, 0, 0, 0.859928, -0.344087, -0.422203)" style=""/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543" transform="matrix(1, 0, 0, 1, 2.241447, -3.338638)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575" transform="matrix(1, 0, 0, 1, 2.241447, -3.338638)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.228 14.518" transform="matrix(1, 0, 0, 1, 2.241447, -3.338638)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 8.667 13.55" transform="matrix(1, 0, 0, 1, 2.241447, -3.338638)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543" transform="matrix(1, 0, 0, 1, 35.28458, -3.516967)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575" transform="matrix(1, 0, 0, 1, 35.28458, -3.516967)"/>
+  <g fill="#000000" transform="matrix(1, 0, 0, 1, 59.788952, 0.784521)"/>
+  <g fill="none" transform="matrix(0.859928, 0, 0, 0.859928, 1.89736, -3.760841)" style=""/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.849 14.661"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.288 13.693"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.042 14.636"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 8.481 13.668"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 42.892 14.483"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 42.331 13.515"/>
+  <g fill="#000000" transform="matrix(1, 0, 0, 1, 57.361198, 4.241189)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543" transform="matrix(1, 0, 0, 1, -5.231618, -4.011077)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575" transform="matrix(1, 0, 0, 1, -5.231618, -4.011077)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.228 14.518" transform="matrix(1, 0, 0, 1, -5.231618, -4.011077)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 8.667 13.55" transform="matrix(1, 0, 0, 1, -5.231618, -4.011077)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 10.035 14.543" transform="matrix(1, 0, 0, 1, 27.811514, -4.189406)"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 9.474 13.575" transform="matrix(1, 0, 0, 1, 27.811514, -4.189406)"/>
+  <g fill="#000000" transform="matrix(1, 0, 0, 1, 52.315886, 0.112082)"/>
+  <path d="M 9.828 3.119 C 13.762 3.119 16.947 6.302 16.947 10.236 C 16.947 14.168 13.762 17.353 9.828 17.353 C 5.896 17.353 2.713 14.17 2.713 10.236 C 2.713 6.302 5.894 3.119 9.828 3.119 M 9.828 1.41 C 4.955 1.41 1.004 5.363 1.004 10.236 C 1.004 15.11 4.955 19.061 9.828 19.061 C 14.702 19.061 18.656 15.11 18.656 10.236 C 18.656 5.363 14.702 1.41 9.828 1.41 Z" fill="#000000" style=""/>
+  <path fill="#000000" d="M 10.852 10.382 L 13.958 7.326 C 14.353 6.937 14.172 6.271 13.632 6.129 C 13.383 6.062 13.116 6.134 12.932 6.314 L 9.834 9.378 L 6.735 6.314 C 6.34 5.925 5.666 6.103 5.521 6.635 C 5.454 6.882 5.527 7.145 5.709 7.326 L 8.814 10.382 L 5.709 13.439 C 5.425 13.717 5.425 14.172 5.709 14.45 C 5.991 14.731 6.452 14.731 6.735 14.45 L 9.834 11.387 L 12.932 14.45 C 13.215 14.731 13.676 14.731 13.958 14.45 C 14.243 14.172 14.243 13.717 13.958 13.439 Z" style=""/>
+</svg>

@@ -1,4 +1,11 @@
 {
+  "backup": {
+    "drag": true,
+    "gesture": true,
+    "scroll": false,
+    "scrollgesture": false,
+    "strokegesture": false
+  },
   "cfgver": "4.4.4",
   "cursor": {
     "img": null,
@@ -30,7 +37,7 @@
       {
         "action": "I_open",
         "direct": "R",
-        "moreDes": "´ò¿ªÍ¼Æ¬(ĞÂ±êÇ©Ò³,Ç°Ì¨)",
+        "moreDes": "æ‰“å¼€å›¾ç‰‡(æ–°æ ‡ç­¾é¡µ,å‰å°)",
         "morePinned": "unpinned",
         "morePosition": "chrome",
         "moreTarget": "newfront"
@@ -40,13 +47,13 @@
         "direct": "D"
       },
       {
-        "direct": "U",
         "action": "I_search",
-        "moreDes": "Ê¹ÓÃ%nameËÑË÷Í¼Æ¬",
+        "direct": "U",
+        "moreDes": "ä½¿ç”¨%nameæœç´¢å›¾ç‰‡",
         "moreIsearch": "sgoogleimage",
-        "moreTarget": "newfront",
+        "morePinned": "unpinned",
         "morePosition": "chrome",
-        "morePinned": "unpinned"
+        "moreTarget": "newfront"
       }
     ],
     "imgfirst": "ctrl",
@@ -54,31 +61,31 @@
     "link": [
       {
         "direct": "L",
-        "action": "L_copytext"
+        "action": "L_copyurl"
       },
       {
         "action": "L_open",
         "direct": "R",
-        "moreDes": "´ò¿ªÁ´½Ó(ĞÂ±êÇ©Ò³,ºóÌ¨)",
+        "moreDes": "æ‰“å¼€é“¾æ¥(æ–°æ ‡ç­¾é¡µ,åå°)",
         "morePinned": "unpinned",
         "morePosition": "chrome",
         "moreTarget": "newback"
       },
       {
-        "direct": "D",
         "action": "L_open",
-        "moreDes": "´ò¿ªÁ´½Ó",
-        "moreTarget": "curfront",
+        "direct": "D",
+        "moreDes": "æ‰“å¼€é“¾æ¥",
+        "morePinned": "unpinned",
         "morePosition": "chrome",
-        "morePinned": "unpinned"
+        "moreTarget": "curfront"
       },
       {
-        "direct": "U",
         "action": "L_open",
-        "moreDes": "´ò¿ªÁ´½Ó",
-        "moreTarget": "newfront",
+        "direct": "U",
+        "moreDes": "æ‰“å¼€é“¾æ¥",
+        "morePinned": "unpinned",
         "morePosition": "chrome",
-        "morePinned": "unpinned"
+        "moreTarget": "newfront"
       }
     ],
     "setdragurl": true,
@@ -86,7 +93,7 @@
       {
         "action": "T_search",
         "direct": "R",
-        "moreDes": "Ê¹ÓÃ%nameËÑË÷\"%s\"(ĞÂ±êÇ©Ò³,Ç°Ì¨)",
+        "moreDes": "ä½¿ç”¨%nameæœç´¢\"%s\"(æ–°æ ‡ç­¾é¡µ,å‰å°)",
         "morePinned": "unpinned",
         "morePosition": "right",
         "moreTarget": "newfront",
@@ -99,21 +106,21 @@
       {
         "action": "T_search",
         "direct": "U",
-        "moreDes": "Ê¹ÓÃ%nameËÑË÷\"%s\"",
+        "moreDes": "ä½¿ç”¨%nameæœç´¢\"%s\"",
         "morePinned": "unpinned",
         "morePosition": "chrome",
         "moreTarget": "newfront",
         "moreTsearch": "sgoogle"
       },
       {
-        "direct": "L",
         "action": "T_searchuser",
-        "moreName": "·­Òë",
-        "moreURL": "https://fanyi.baidu.com/#auto/zh/%s",
-        "moreDes": "Ê¹ÓÃ%nameËÑË÷\"%s\"",
-        "moreTarget": "newfront",
+        "direct": "L",
+        "moreDes": "ä½¿ç”¨%nameæœç´¢\"%s\"",
+        "moreName": "ç¿»è¯‘",
+        "morePinned": "unpinned",
         "morePosition": "chrome",
-        "morePinned": "unpinned"
+        "moreTarget": "newfront",
+        "moreURL": "https://fanyi.baidu.com/#auto/zh/%s"
       }
     ]
   },
@@ -197,7 +204,7 @@
         "action": "G_chromepage",
         "direct": "URD",
         "moreChromepage": "crextensions",
-        "moreDes": "´ò¿ª%name",
+        "moreDes": "æ‰“å¼€%name",
         "morePinned": "unpinned",
         "morePosition": "chrome",
         "moreTarget": "newfront",
@@ -207,7 +214,7 @@
         "action": "G_chromepage",
         "direct": "DRU",
         "moreChromepage": "crsettings",
-        "moreDes": "´ò¿ª%name",
+        "moreDes": "æ‰“å¼€%name",
         "morePinned": "unpinned",
         "morePosition": "chrome",
         "moreTarget": "newfront",
@@ -216,7 +223,7 @@
       {
         "action": "G_newtab",
         "direct": "RDL",
-        "moreDes": "ĞÂ½¨±êÇ©Ò³",
+        "moreDes": "æ–°å»ºæ ‡ç­¾é¡µ",
         "morePinned": "unpinned",
         "morePosition": "chrome",
         "moreTarget": "newfront",
@@ -230,7 +237,7 @@
       {
         "action": "G_reclosedtab",
         "direct": "LDR",
-        "moreDes": "ÖØĞÂ´ò¿ª¹Ø±ÕµÄ±êÇ©Ò³",
+        "moreDes": "é‡æ–°æ‰“å¼€å…³é—­çš„æ ‡ç­¾é¡µ",
         "morePinned": "unpinned",
         "morePosition": "chrome",
         "moreTarget": "newfront",
@@ -240,7 +247,7 @@
         "action": "G_chromepage",
         "direct": "LD",
         "moreChromepage": "crhistory",
-        "moreDes": "´ò¿ª%name",
+        "moreDes": "æ‰“å¼€%name",
         "morePinned": "unpinned",
         "morePosition": "chrome",
         "moreTarget": "newfront",
@@ -254,7 +261,7 @@
       {
         "action": "G_crxsettings",
         "direct": "LDRUL",
-        "moreDes": "½øÈëÀ©Õ¹ÉèÖÃÒ³",
+        "moreDes": "è¿›å…¥æ‰©å±•è®¾ç½®é¡µ",
         "morePinned": "unpinned",
         "morePosition": "chrome",
         "moreTarget": "newfront",
@@ -276,9 +283,11 @@
     "tooltipwidth": 18
   },
   "isGesturesOff": false,
+  "lastEditedGesture": null,
   "normal": {
     "autocancel": false,
     "autocancelvalue": 2,
+    "backgroundtab": false,
     "cancelcontextmenu": true,
     "capturetype": "jpeg",
     "clickedOptin": true,
@@ -295,8 +304,7 @@
     "scroll": false,
     "scrolleffects": true,
     "scrollgesture": false,
-    "strokegesture": false,
-    "backgroundtab": false
+    "strokegesture": false
   },
   "optedout": true,
   "others": {
@@ -362,5 +370,5 @@
     ],
     "strrightenable": true
   },
-  "sync": "local"
+  "sync": true
 }
