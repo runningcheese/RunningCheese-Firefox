@@ -9,6 +9,9 @@
 www.google.com##+js(aeld, dragenter)
 www.google.com.hk##+js(aeld, dragenter)
 
+! 移除b站的各种弹窗，包括投票、三连、打星窗口等。
+www.bilibili.com##.bpx-player-cmd-dm-inside
+
 ! www.mvcat.com
 www.mvcat.com##.right
 ||mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQGd7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyMWZLamx0UkRmUEMxbmRtLTF6MVQAAgRNHHVjAwSAOgkA$image
