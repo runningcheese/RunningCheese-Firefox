@@ -35,12 +35,15 @@ xinghuo.xfyun.cn###watermark-wrapper
 
 
 
+
+
 !--------------------------设计----------------------------------
 
 ! gaoding.com 
 gaoding.com##.editor-watermark
 gaoding.com##.remove-watermark
 gaoding.com##.editor-bottom
+gaoding.com##.dbu-remove-watermark-button
 
 ! ue.818ps.com
 ue.818ps.com##.image-watermark
@@ -69,3 +72,7 @@ www.logomaker.com.cn##div.watermark
 
 ! ai.logo123.com
 ai.logo123.com##.watermarklayer
+
+! www.picup.shop
+www.picup.shop##.subs:style(background-image:none!important)
+
