@@ -1,5 +1,16 @@
 
+<br/>
 
+## 117.0
+
+
+- 新增 iTab 新标签页
+
+  但默认没有开启，如果需要，你可以手动开启。
+
+- 修复 UC 脚本 KeyChanger.uc.js
+- 修复 UC 脚本 addMenusPlus.uc.js
+- 其它惯例更新...
 
 
 
