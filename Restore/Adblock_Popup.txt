@@ -13,11 +13,6 @@ www.google.com.hk##+js(aeld, dragenter)
 www.bilibili.com##.bpx-player-cmd-dm-inside
 
 ! www.mvcat.com
-www.mvcat.com##.right
-||mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQGd7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyMWZLamx0UkRmUEMxbmRtLTF6MVQAAgRNHHVjAwSAOgkA$image
-www.mvcat.com##.breath2.closewxfollow
-||mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQGd7zwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyMWZLamx0UkRmUEMxbmRtLTF6MVQAAgRNHHVjAwSAOgkA$image
-||mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQFN8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAybGlYWmxIUkRmUEMxazJuLXh6MU0AAgSCHHVjAwSAOgkA$image
 www.mvcat.com##.wxfollow
 
 ! upyunso.com 
