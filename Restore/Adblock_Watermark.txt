@@ -33,7 +33,8 @@ articles.zsxq.com##.js_watermark:style(background-image:none!important)
 ! xinghuo.xfyun.cn
 xinghuo.xfyun.cn###watermark-wrapper
 
-
+! chat.baidu.com
+chat.baidu.com##.watermark_XdcUQ
 
 
 
