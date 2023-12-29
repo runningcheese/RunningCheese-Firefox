@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 奶酪 网页弹窗过滤规则
-! Version: 2023-10-11
+! Version: 2023-12-30
 ! Expires: 2 days
 ! Homepage: https://github.com/runningcheese/RunningCheese-Firefox/tree/master/Restore
 
@@ -27,3 +27,14 @@ www.cuppaso.com##.show.fade.modal-backdrop
 
 ! www.6453.net
 www.6453.net###mainshadow
+
+! xclient.info
+xclient.info##.show.abptip
+
+! www.123pan.com
+www.123pan.com##.advBanner
+www.123pan.com##.ant-layout > div
+
+! ruancang.net
+ruancang.net##.pass-box
+ruancang.net###password
