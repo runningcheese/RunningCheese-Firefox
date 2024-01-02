@@ -1,9 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: 奶酪 网页弹窗过滤规则
-! Version: 2023-12-30
+! Version: 2024-01-02
 ! Expires: 2 days
 ! Homepage: https://github.com/runningcheese/RunningCheese-Firefox/tree/master/Restore
 
+
+! 移除 Google 在 Youtube 人为添加的延迟载入
+www.youtube.com##+js(nano-stb, resolve(1), *, 0.001)
+www.youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.ab_pl_man, false)
+www.youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.web_enable_ab_rsp_cl, false)
+||googlevideo.com/videoplayback$xhr,3p,method=get,domain=www.youtube.com
 
 ! 移除 Google 搜索拖拽导致的 Lens 弹窗
 www.google.com##+js(aeld, dragenter)
