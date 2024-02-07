@@ -1,0 +1,294 @@
+{
+	"request": [],
+	"sendHeader": [
+		{
+			"enable": false,
+			"name": "全局用户代理：iPhone",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Firefox",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/99.0"
+			}
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Chrome",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Chrome_新版UA",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "sec-ch-ua",
+				"value": "\"Chromium\";v=\"112\", \"Microsoft Edge\";v=\"112\", \"Not:A-Brand\";v=\"99\""
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Edge",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.0.0"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Android",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Linux; U; Android 2.0; en-us; Droid Build/ESD20) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Safari",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：iPad",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5355d Safari/8536.25"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Google爬虫",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：微信浏览器",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) MicroMessenger/6.8.0(0x16080000) MacWechat/3.5.5(0x13050513) Safari/605.1.15 NetType/WIFI"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：简单搜索",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Linux; Android 8.0; MI 6 Build/OPR1.170623.027; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.116 Mobile Safari/537.36 T7/10.3 SearchCraft/2.6.3 (Baidu; P1 8.0.0)"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局访问 IP：全新 IP",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://(.*)",
+			"exclude": "PS：4 段数字，你可以在 0-255 之间随意填写，自带的 241.125.231.66 为保留 IP 地址。",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "x-forwarded-for",
+				"value": "241.125.231.66"
+			},
+			"_exclude": {}
+		},
+		{
+			"enable": false,
+			"name": "全局访问语言：英语",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "accept-language",
+				"value": "en-US"
+			}
+		},
+		{
+			"enable": false,
+			"name": "视频网站代理：Safari",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://www\\.(douyu|yy|panda|iqiyi|huya|meipai|bilibili|youtube)(\\.com|\\.tv)/(.*)",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15"
+			}
+		},
+		{
+			"enable": true,
+			"name": "小窗搜索代理：iPhone",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://www\\.google\\.com(.hk)?/search(.*)&igu=1(.*)|^http(s?)://(www2|wp.m)\\.bing\\.com/(.*)",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Linux; Android 12; 22081212C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36 EdgA/112.0.0.0"
+			},
+			"code": "if (detail.type === \"main_frame\") {\nfor (const a in val) {\n    if (val[a].name.toLowerCase() === 'user-agent') {\n        val[a].value += 'Mozilla/5.0 (Linux; Android 11; SM-A505F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.79 Mobile Safari/537.36';   break;  }}}"
+		},
+		{
+			"enable": true,
+			"name": "边栏搜索代理：iPhone",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://(.*)?(zhihu|baidu|google|sogou|twitter|facebook|instagram|wikipedia)\\.(.*)",
+			"exclude": "https://wp.m.bing.com/(.*)",
+			"isFunction": true,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			},
+			"group": "用户代理",
+			"code": "if (detail.type === \"sub_frame\") {\nfor (const a in val) {\n    if (val[a].name.toLowerCase() === 'user-agent') {\n        val[a].value += 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mobile/15E148 Snapchat/10.77.5.59 (like Safari/604.1)';   break;  }}}",
+			"_exclude": {}
+		},
+		{
+			"enable": true,
+			"name": "必应 Chat 代理 : Edge 浏览器",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://(.*)\\.bing\\.com/(.*)",
+			"exclude": "https://(www2|wp.m).bing.com/(.*)",
+			"isFunction": false,
+			"action": {
+				"name": "sec-ch-ua",
+				"value": "\"Chromium\";v=\"112\", \"Microsoft Edge\";v=\"112\", \"Not:A-Brand\";v=\"99\""
+			},
+			"group": "用户代理",
+			"_exclude": {}
+		},
+		{
+			"enable": true,
+			"name": "虎扑评分代理：iPhone",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://m.hupu.com/score-(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/98.0.4758.85 Mobile/15E148 Safari/604.1"
+			},
+			"group": "用户代理"
+		}
+	],
+	"receiveHeader": [
+		{
+			"enable": true,
+			"name": "iframe 框架：全局允许",
+			"ruleType": "modifyReceiveHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "x-frame-options",
+				"value": "ALLOWALL"
+			}
+		},
+		{
+			"name": "网站 CSP 移除：白名单",
+			"ruleType": "modifyReceiveHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://(.*)?(google|deepl|github|douyin|weixin.qq|baidu|bing)\\.(.*)",
+			"action": {
+				"name": "content-security-policy",
+				"value": "_header_editor_remove_"
+			},
+			"isFunction": false,
+			"enable": true,
+			"group": "用户代理",
+			"exclude": "如果想加入 google.com，那么括号里加入 google| 即可，注意后面有 | 竖线。",
+			"_exclude": {}
+		}
+	],
+	"receiveBody": []
+}

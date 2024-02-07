@@ -1,0 +1,51 @@
+{
+	"request": [],
+	"sendHeader": [
+		{
+			"enable": true,
+			"name": "必应 Chat 代理 : Edge 浏览器（Firefox）",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://(.*)\\.bing\\.com/(.*)",
+			"exclude": "https://(www2|wp.m).bing.com/(.*)",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.58"
+			},
+			"group": "Firefox 专用",
+			"_exclude": {}
+		},
+		{
+			"enable": true,
+			"name": "飞书浏览代理 : Edge 浏览器（Firefox）",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://(.*)\\.(feishu|capcut)\\.(com|cn)/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.24"
+			},
+			"group": "Firefox 专用"
+		},
+		{
+			"enable": true,
+			"name": "Youtube 代理 : Chrome 浏览器",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://www.youtube.com/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "sec-ch-ua",
+				"value": "\"Chromium\";v=\"112\", \"Microsoft Edge\";v=\"112\", \"Not:A-Brand\";v=\"99\""
+			},
+			"group": "Firefox 专用",
+			"_exclude": {}
+		}
+	],
+	"receiveHeader": [],
+	"receiveBody": []
+}
