@@ -24,6 +24,10 @@ xinghuo.xfyun.cn###watermark-wrapper
 chat.tiangong.cn##div:style(background-image:none!important)
 search.tiangong.cn##div:style(background-image:none!important)
 
+! 百川大模型
+www.baichuan-ai.com##div[class*='water-mark_watermark'] span:style(display:none!important)
+
+
 
 
 !--------------------------文档水印----------------------------------
