@@ -1,44 +1,54 @@
 [Adblock Plus 2.0]
 ! Title: 奶酪 网页水印过滤规则
-! Version: 2024-01-02
+! Version: 2024-02-11
 ! Expires: 2 days
 ! Homepage: https://github.com/runningcheese/RunningCheese-Firefox/tree/master/Restore
 
 
-!--------------------------文档----------------------------------
 
-! docs.qq.com
+!-------------------------- AI 水印----------------------------------
+
+! 百度文心一言
+chat.baidu.com##.watermark_XdcUQ
+
+! 百度 AI 助手
+chat.baidu.com##.watermark:style(display:none!important)
+
+! 知谱ChatGLM
+chatglm.cn###wm_div_id:style(height:0 !important;width:0 !important;transform: rotate(90deg);overflow: hidden;)
+
+! 讯飞星火
+xinghuo.xfyun.cn###watermark-wrapper
+
+
+
+
+
+!--------------------------文档水印----------------------------------
+
+! 腾讯文档
 docs.qq.com##.watermark-bg
 
-! idocv.com
+! iDocView
 idocv.com##.mask_div
 
-! fotor.com
-fotor.com##.lower-canvas
-
-! feishu.cn
+! 飞书文档
 feishu.cn##.ssrWaterMark
 feishu.cn##div:style(background-image:none!important)
 
-! weiciyun.com
+! 微词云
 www.weiciyun.com###svgBox
 
-! yuque.com
+! 语雀文档
 www.yuque.com##.wm
 
-! wx.zsxq.com
+! 知识星球
 wx.zsxq.com##[watermark="main"]:style(background-image:none!important)
 articles.zsxq.com##.js_watermark:style(background-image:none!important)
 
-! xinghuo.xfyun.cn
-xinghuo.xfyun.cn###watermark-wrapper
-
-! chat.baidu.com
-chat.baidu.com##.watermark_XdcUQ
 
 
-
-!--------------------------设计----------------------------------
+!--------------------------设计水印----------------------------------
 
 ! gaoding.com 
 gaoding.com##.editor-watermark
@@ -46,6 +56,9 @@ gaoding.com##.remove-watermark
 gaoding.com##.editor-bottom
 gaoding.com##.dbu-remove-watermark-button
 gaoding.com##div:style(background-image:none!important)
+
+! fotor.com
+fotor.com##.lower-canvas
 
 ! ue.818ps.com
 ue.818ps.com##.image-watermark
