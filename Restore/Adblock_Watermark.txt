@@ -20,7 +20,9 @@ chatglm.cn###wm_div_id:style(height:0 !important;width:0 !important;transform: r
 ! 讯飞星火
 xinghuo.xfyun.cn###watermark-wrapper
 
-
+! 天工 AI
+chat.tiangong.cn##div:style(background-image:none!important)
+search.tiangong.cn##div:style(background-image:none!important)
 
 
 
