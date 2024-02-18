@@ -8,8 +8,8 @@
 
 !-------------------------- AI 水印----------------------------------
 
-! 百度文心一言
-chat.baidu.com##.watermark_XdcUQ
+! 文心一言
+www.baidu.com##div[class*='watermark_']:style(background-image:none!important)
 
 ! 百度 AI 助手
 chat.baidu.com##.watermark:style(display:none!important)
@@ -26,6 +26,18 @@ search.tiangong.cn##div:style(background-image:none!important)
 
 ! 百川大模型
 www.baichuan-ai.com##div[class*='water-mark_watermark'] span:style(display:none!important)
+
+! 商汤商量
+chat.sensetime.com##.adm-water-mark:style(display:none!important)
+
+! 腾讯混元
+hunyuan.tencent.com##.__water_mark__:style(display:none!important)
+
+! 360 智脑
+chat.360.com##div:style(background-image:none!important)
+
+! CSDN AI
+so.csdn.net##.username_mask_cover:style(background-image:none!important)
 
 
 
