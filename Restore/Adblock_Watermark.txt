@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 奶酪 网页水印过滤规则
-! Version: 2024-02-11
+! Version: 2024-02-18
 ! Expires: 2 days
 ! Homepage: https://github.com/runningcheese/RunningCheese-Firefox/tree/master/Restore
 
