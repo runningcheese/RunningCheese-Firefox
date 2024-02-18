@@ -112,3 +112,23 @@ www.picup.shop##.subs:style(background-image:none!important)
 ! tusij.com
 888-ue.tusij.com##div:style(background-image:none!important)
 
+
+
+
+!--------------------------视频水印----------------------------------
+
+! 腾讯视频 Logo
+v.qq.com##.txp-watermark:style(opacity:0!important)
+v.qq.com##.reative-player-pause-layer:style(display:none!important)
+
+! 优酷视频 Logo
+v.youku.com##.kui-watermark-0:style(display:none!important)
+
+! B站直播 Logo
+live.bilibili.com##.web-player-icon-roomStatus:style(opacity:0!important)
+
+! 爱奇艺 Logo
+www.iqiyi.com##.iqp-logo-box:style(display:none!important)
+
+
+
