@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 奶酪 网页水印过滤规则
-! Version: 2024-02-18
+! Version: 2024-04-11
 ! Expires: 2 days
 ! Homepage: https://github.com/runningcheese/RunningCheese-Firefox/tree/master/Restore
 
@@ -39,6 +39,11 @@ chat.360.com###nworld-app-container div>div[style*=pointer-events][style*="data:
 ! CSDN AI
 so.csdn.net##.username_mask_cover:style(background-image:none!important)
 
+! 海螺问问
+hailuoai.com##.adm-water-mark:style(display:none!important)
+
+! Liblib
+www.liblib.art##.watermark-text
 
 
 
@@ -64,6 +69,8 @@ www.yuque.com##.wm
 wx.zsxq.com##[watermark="main"]:style(background-image:none!important)
 articles.zsxq.com##.js_watermark:style(background-image:none!important)
 
+! 字条跳动社区
+bytedance.larkoffice.com##.TIAWBFTROSIDWYKTTIAW3_clear:style(background-image:none!important)
 
 
 !--------------------------设计水印----------------------------------
@@ -112,7 +119,8 @@ www.picup.shop##.subs:style(background-image:none!important)
 ! tusij.com
 888-ue.tusij.com##div:style(background-image:none!important)
 
-
+! Vividshare
+vividshare.io##.drop-shadow-md:style(display:none!important)
 
 
 !--------------------------视频水印----------------------------------
