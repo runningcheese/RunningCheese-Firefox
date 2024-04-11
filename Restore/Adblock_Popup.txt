@@ -1,9 +1,21 @@
 [Adblock Plus 2.0]
 ! Title: 奶酪 网页弹窗过滤规则
-! Version: 2024-01-02
+! Version: 2024-04-11
 ! Expires: 2 days
 ! Homepage: https://github.com/runningcheese/RunningCheese-Firefox/tree/master/Restore
 
+! 雪球
+xueqiu.com##.js-shown.dimmer.modals
+
+! B 站首页 
+www.bilibili.com##.adblock-tips
+
+! 屏蔽 Sharethis 社会化插件
+platform-api.sharethis.com
+
+! ChatGPT 免弹窗
+chat.openai.com##.md\:grid-rows-\[minmax\(20px\,_1fr\)_auto_minmax\(20px\,_1fr\)\].grid-rows-\[minmax\(10px\,_1fr\)_auto_minmax\(10px\,_1fr\)\].overflow-y-auto.grid-cols-\[10px_1fr_10px\].w-full.h-full.grid
+chat.openai.com##.dark\:bg-black\/80.bg-black\/50.inset-0.fixed
 
 ! 移除 Google 在 Youtube 人为添加的延迟载入
 www.youtube.com##+js(nano-stb, resolve(1), *, 0.001)
