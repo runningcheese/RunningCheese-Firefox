@@ -45,6 +45,8 @@ hailuoai.com##.adm-water-mark:style(display:none!important)
 ! Liblib
 www.liblib.art##.watermark-text
 
+! DeepSeek
+chat.deepseek.com##.ds-watermark:style(display:none!important)
 
 
 !--------------------------文档水印----------------------------------
