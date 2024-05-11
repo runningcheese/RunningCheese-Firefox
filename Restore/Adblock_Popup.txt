@@ -13,12 +13,6 @@ www.bilibili.com##.adblock-tips
 ! 屏蔽 Sharethis 社会化插件
 platform-api.sharethis.com
 
-! ChatGPT 免弹窗
-chat.openai.com##.md\:grid-rows-\[minmax\(20px\,_1fr\)_auto_minmax\(20px\,_1fr\)\].grid-rows-\[minmax\(10px\,_1fr\)_auto_minmax\(10px\,_1fr\)\].overflow-y-auto.grid-cols-\[10px_1fr_10px\].w-full.h-full.grid
-chat.openai.com##.dark\:bg-black\/80.bg-black\/50.inset-0.fixed
-chatgpt.com##.md\:grid-rows-\[minmax\(20px\,_1fr\)_auto_minmax\(20px\,_1fr\)\].grid-rows-\[minmax\(10px\,_1fr\)_auto_minmax\(10px\,_1fr\)\].overflow-y-auto.grid-cols-\[10px_1fr_10px\].w-full.h-full.grid
-chatgpt.com##.dark\:bg-black\/80.bg-black\/50.inset-0.fixed
-
 ! 移除 Google 在 Youtube 人为添加的延迟载入
 www.youtube.com##+js(nano-stb, resolve(1), *, 0.001)
 www.youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.ab_pl_man, false)
