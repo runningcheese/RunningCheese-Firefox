@@ -36,6 +36,9 @@ hunyuan.tencent.com##.__water_mark__:style(display:none!important)
 ! 360 智脑
 chat.360.com###nworld-app-container div>div[style*=pointer-events][style*="data:image/"]:style(display:none!important)
 
+! 360 AI 搜索
+so.360.com##div:style(background-image:none!important)
+
 ! CSDN AI
 so.csdn.net##.username_mask_cover:style(background-image:none!important)
 
