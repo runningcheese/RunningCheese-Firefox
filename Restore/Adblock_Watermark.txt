@@ -38,6 +38,7 @@ chat.360.com###nworld-app-container div>div[style*=pointer-events][style*="data:
 
 ! 360 AI 搜索
 so.360.com##div:style(background-image:none!important)
+www.sou.com##div:style(background-image:none!important)
 
 ! CSDN AI
 so.csdn.net##.username_mask_cover:style(background-image:none!important)
