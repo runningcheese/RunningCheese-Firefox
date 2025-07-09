@@ -4,7 +4,7 @@ RunningCheese Firefox 是一款旨在提高Firefox易用性的浏览器。
 
 界面优美功能强大，操作简单容易上手是它的特色，为你在工作学习上提供极大的便利。V系列Firefox 将坚定地朝这个方向前进，力求简洁易用，让更多的人加入 Firefox 阵营。
 
-![preview 00](https://raw.githubusercontent.com/runningcheese/RunningCheese-Firefox/master/Screenshots/0.jpg)
+![preview 00](https://image.baidu.com/search/down?url=https%3A%2F%2Ffc.sinaimg.cn%2Flarge%2F008i3skNgy1gt09coc8k5j31400p0dky.jpg)
 
 开发前后经历4年的 RunningCheese Firefox V10 正式版发布了！全新的 Firefox Quantum 架构让 Firefox 焕发了第二春，有史以来最棒的 Firefox，高速流畅，一别卡顿。在速度比肩 Chrome 浏览器的同时，还保留了 Firefox 的强大功能，正式版V10已经可以完全替代传统架构的V9，如果你追求的是简洁高效，那么这款 Firefox 浏览器一定适合你！
 
